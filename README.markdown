@@ -2,14 +2,14 @@
 
 - Author: Stephen Bau
 - Version: 0.1
-- Date: 13 July 2009
+- Date: 14 July 2009
 - Github Repository: <http://github.com/bauhouse/sym-bauhouse>
 
 ## Overview
 
-### My old portfolio site, updated from it's Symphony 1.5.06 incarnation
+### My old portfolio site, updated from Symphony 1.5.06 to 2.0.4
 
-It's about time I updated my site. It might need a design refresh, but I still like the old site. With the freelance business a thing of the past, it might be nice to share the old site design, but brought back to life as a brand new version of Symphony 2.0.4.
+It's about time I updated my site. It might need a design refresh, but I still like the old site. With the freelance business a thing of the past, it might be nice to share the old site design, but brought back to life with a brand new version of Symphony 2.0.4.
 
 Visit the old site at <http://bauhouse.ca/>
 
