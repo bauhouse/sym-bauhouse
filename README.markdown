@@ -37,13 +37,21 @@ It is best to install this ensemble with Git, but you can also install this ense
 
 		cd extensions
 		git clone git://github.com/carsten/collapse_sectionfields.git
+		git clone git://github.com/pointybeard/content_type_mappings.git
+		git clone git://github.com/czheng/enhancedtaglist.git
+		git clone git://github.com/bauhouse/export_install_file.git
+		git clone git://github.com/carsten/globalparamloader.git
+		git clone git://github.com/rowan-lewis/globalresourceloader.git
 		git clone git://github.com/ahwayakchih/markitup.git
+		git clone git://github.com/pointybeard/numberfield.git
 		git clone git://github.com/nickdunn/order_entries.git
+		git clone git://github.com/pointybeard/pagesfield.git
 		git clone git://github.com/nickdunn/publishfiltering.git
 		git clone git://github.com/rowan-lewis/logsdevkit.git
 		git clone git://github.com/nickdunn/entity_diagram.git
+		git clone git://github.com/czheng/referencelink.git
+		git clone git://github.com/rowan-lewis/reflectionfield.git
 		git clone git://github.com/nickdunn/section_schemas.git
-		git clone git://github.com/bauhouse/export_install_file.git
 
 5. Clone the Symphony workspace for DesignProjectX:
 
