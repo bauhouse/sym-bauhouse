@@ -3,8 +3,14 @@
 
 <xsl:template name="page-title">
 	<xsl:value-of select="$website-name"/>
-	<xsl:text> &#8212; </xsl:text>
+	<xsl:text> - </xsl:text>
 	<xsl:value-of select="$page-title"/>
+	<xsl:if test="$current-page = 'entries'">
+		<xsl:if test="$entry != ''">
+			<xsl:text> - </xsl:text>
+			<xsl:value-of select="data/entries/entry/fields/title"/>
+		</xsl:if>
+	</xsl:if>
 </xsl:template>
 
 </xsl:stylesheet>

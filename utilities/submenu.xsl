@@ -3,6 +3,14 @@
 
 <xsl:import href="../utilities/common.xsl"/>
 
+<xsl:output
+	method="xml" 
+	doctype-public="-//W3C//DTD XHTML 1.0 Strict//EN" 
+	doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"
+	omit-xml-declaration="yes"
+	encoding="UTF-8" 
+	indent="yes" />
+
 <xsl:template match="/">
 	<html>
 		<xsl:call-template name="head"/>
@@ -11,9 +19,8 @@
 				<xsl:call-template name="top"/>
 				<div id="subheader">
 					<ul id="submenu">
-						<xsl:for-each select="data/navigation/page[@handle = 'contact']">
-							<li class="right"><a href="{$root}/{@handle}/"><xsl:value-of select="name"/></a></li>
-						</xsl:for-each>
+						<xsl:apply-templates select="data/navigation/page[@handle = $root-page]/page"/>
+						<li class="right"><a href="{$root}/contact/">Contact</a></li>
 					</ul>
 				</div><!-- END #submenu -->
 
