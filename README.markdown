@@ -15,6 +15,8 @@ Visit the old site at <http://bauhouse.ca/>
 
 ## Installation
 
+### Note: This is a work in progress
+
 It is best to install this ensemble with Git, but you can also install this ensemble by downloading a copy of Symphony 2.0.4 and each of the required extensions and this workspace. 
 
 ### Installing with Git
@@ -53,10 +55,10 @@ It is best to install this ensemble with Git, but you can also install this ense
 		git clone git://github.com/rowan-lewis/reflectionfield.git
 		git clone git://github.com/nickdunn/section_schemas.git
 
-5. Clone the Symphony workspace for DesignProjectX:
+5. Clone the Symphony workspace for Bauhouse:
 
 		cd ..
-		git clone git@github.com:bauhouse/sym-designprojectx.git
+		git clone git://github.com/bauhouse/sym-bauhouse.git
 
 6. Rename the `sym-bauhouse` directory as `workspace`:
 
