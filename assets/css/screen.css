@@ -368,7 +368,7 @@ em.ir, strong.ir {
 /* sectionimg
 ----------------------------------------------- */
 #sectionimg {
-	background:url(/workspace/images/elementary_forms_gs.jpg) left top no-repeat;
+	background:url(../../images/elementary_forms_gs.jpg) left top no-repeat;
 	width:756px;
 	height:215px;
 	margin: 0 auto;
