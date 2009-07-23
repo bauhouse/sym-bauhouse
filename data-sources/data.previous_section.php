@@ -2,33 +2,44 @@
 
 	require_once(TOOLKIT . '/class.datasource.php');
 	
-	Class datasourcenavigation extends Datasource{
+	Class datasourceprevious_section extends Datasource{
 		
-		public $dsParamROOTELEMENT = 'navigation';
+		public $dsParamROOTELEMENT = 'previous-section';
 		public $dsParamORDER = 'desc';
+		public $dsParamLIMIT = '1';
 		public $dsParamREDIRECTONEMPTY = 'no';
+		public $dsParamSORT = 'sort';
+		public $dsParamSTARTPAGE = '1';
 		
 		public $dsParamFILTERS = array(
-				'type' => 'nav',
+				'10' => 'yes',
+				'9' => 'mysql: value < {$ds-section}',
 		);
+		
+		public $dsParamINCLUDEDELEMENTS = array(
+				'title',
+				'page',
+				'sort'
+		);
+
 		public function __construct(&$parent, $env=NULL, $process_params=true){
 			parent::__construct($parent, $env, $process_params);
-			$this->_dependencies = array();
+			$this->_dependencies = array('$ds-section');
 		}
 		
 		public function about(){
 			return array(
-					 'name' => 'Navigation',
+					 'name' => 'Previous Section',
 					 'author' => array(
 							'name' => 'Stephen Bau',
 							'website' => 'http://localhost/sym/bauhouse',
 							'email' => 'bauhouse@gmail.com'),
 					 'version' => '1.0',
-					 'release-date' => '2009-07-21T03:20:59+00:00');	
+					 'release-date' => '2009-07-21T04:37:09+00:00');	
 		}
 		
 		public function getSource(){
-			return 'navigation';
+			return '2';
 		}
 		
 		public function allowEditorToParse(){
@@ -39,7 +50,7 @@
 			$result = new XMLElement($this->dsParamROOTELEMENT);
 				
 			try{
-				include(TOOLKIT . '/data-sources/datasource.navigation.php');
+				include(TOOLKIT . '/data-sources/datasource.section.php');
 			}
 			catch(Exception $e){
 				$result->appendChild(new XMLElement('error', $e->getMessage()));

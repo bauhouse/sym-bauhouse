@@ -2,15 +2,38 @@
 
 	require_once(TOOLKIT . '/class.datasource.php');
 	
-	Class datasourcenavigation extends Datasource{
+	Class datasourceportfolio extends Datasource{
 		
-		public $dsParamROOTELEMENT = 'navigation';
+		public $dsParamROOTELEMENT = 'portfolio';
 		public $dsParamORDER = 'desc';
+		public $dsParamLIMIT = '20';
 		public $dsParamREDIRECTONEMPTY = 'no';
-		
-		public $dsParamFILTERS = array(
-				'type' => 'nav',
+		public $dsParamSORT = 'system:id';
+		public $dsParamSTARTPAGE = '1';
+		public $dsParamINCLUDEDELEMENTS = array(
+				'title',
+				'link',
+				'created',
+				'client',
+				'project',
+				'media',
+				'description',
+				'body',
+				'firm',
+				'type',
+				'creative-direction',
+				'art-direction',
+				'design',
+				'photography',
+				'printing',
+				'copywriting',
+				'image',
+				'preview',
+				'preview-off',
+				'thumbnail',
+				'thumbnail-off'
 		);
+
 		public function __construct(&$parent, $env=NULL, $process_params=true){
 			parent::__construct($parent, $env, $process_params);
 			$this->_dependencies = array();
@@ -18,17 +41,17 @@
 		
 		public function about(){
 			return array(
-					 'name' => 'Navigation',
+					 'name' => 'Portfolio',
 					 'author' => array(
 							'name' => 'Stephen Bau',
-							'website' => 'http://localhost/sym/bauhouse',
+							'website' => 'http://home/bauhouse/www',
 							'email' => 'bauhouse@gmail.com'),
 					 'version' => '1.0',
-					 'release-date' => '2009-07-21T03:20:59+00:00');	
+					 'release-date' => '2009-07-22T05:35:10+00:00');	
 		}
 		
 		public function getSource(){
-			return 'navigation';
+			return '12';
 		}
 		
 		public function allowEditorToParse(){
@@ -39,7 +62,7 @@
 			$result = new XMLElement($this->dsParamROOTELEMENT);
 				
 			try{
-				include(TOOLKIT . '/data-sources/datasource.navigation.php');
+				include(TOOLKIT . '/data-sources/datasource.section.php');
 			}
 			catch(Exception $e){
 				$result->appendChild(new XMLElement('error', $e->getMessage()));

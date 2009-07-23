@@ -2,15 +2,21 @@
 
 	require_once(TOOLKIT . '/class.datasource.php');
 	
-	Class datasourcenavigation extends Datasource{
+	Class datasourcecategories extends Datasource{
 		
-		public $dsParamROOTELEMENT = 'navigation';
+		public $dsParamROOTELEMENT = 'categories';
 		public $dsParamORDER = 'desc';
+		public $dsParamLIMIT = '20';
 		public $dsParamREDIRECTONEMPTY = 'no';
-		
-		public $dsParamFILTERS = array(
-				'type' => 'nav',
+		public $dsParamSORT = 'system:id';
+		public $dsParamSTARTPAGE = '1';
+		public $dsParamINCLUDEDELEMENTS = array(
+				'title',
+				'type',
+				'description',
+				'body'
 		);
+
 		public function __construct(&$parent, $env=NULL, $process_params=true){
 			parent::__construct($parent, $env, $process_params);
 			$this->_dependencies = array();
@@ -18,17 +24,17 @@
 		
 		public function about(){
 			return array(
-					 'name' => 'Navigation',
+					 'name' => 'Categories',
 					 'author' => array(
 							'name' => 'Stephen Bau',
-							'website' => 'http://localhost/sym/bauhouse',
+							'website' => 'http://home/bauhouse/www',
 							'email' => 'bauhouse@gmail.com'),
 					 'version' => '1.0',
-					 'release-date' => '2009-07-21T03:20:59+00:00');	
+					 'release-date' => '2009-07-23T03:51:39+00:00');	
 		}
 		
 		public function getSource(){
-			return 'navigation';
+			return '6';
 		}
 		
 		public function allowEditorToParse(){
@@ -39,7 +45,7 @@
 			$result = new XMLElement($this->dsParamROOTELEMENT);
 				
 			try{
-				include(TOOLKIT . '/data-sources/datasource.navigation.php');
+				include(TOOLKIT . '/data-sources/datasource.section.php');
 			}
 			catch(Exception $e){
 				$result->appendChild(new XMLElement('error', $e->getMessage()));
