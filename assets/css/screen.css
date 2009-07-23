@@ -5,7 +5,7 @@ Screen Styles
 Bauhouse
 file:		/workspace/assets/css/screen.css
 author:		Stephen Bau
-date:		2 January 2007
+date:		22 July 2009
 ----------------------------------------------- */
 
 
@@ -15,14 +15,13 @@ body {
 	margin: 0;
 	padding: 0;
 	background: #ddd;
+	color: #666;
 	font: normal 75%/1.5em helvetica, arial, sans-serif;
 	}
 body * {
 	margin:0;
 	padding:0;
 	text-decoration:none;
-	border:none;
-	color: #666;
 	list-style-type:none;
 }
 
@@ -35,12 +34,17 @@ a {
 a:link, a:visited, a:active  { 
 	color: #333;
 	text-decoration: none;
+	outline:none;
 	}
 a:hover {
 	color: #F00;
 	text-decoration: none;
 	}
 
+
+a, img {
+	border:none;
+}
 
 /* image replacement
 ----------------------------------------------- */
@@ -55,36 +59,39 @@ em.ir, strong.ir {
 
 /* blocks
 ----------------------------------------------- */
-#top, #middle, #bottom {
+.top, .middle, .bottom {
 	display:block;
 	}
-#bottom {
+.middle {
+	overflow:hidden;
+	padding-bottom: 3em;
+}
+.bottom {
 	clear:both;
-	padding-top: 3em;
 	}
 
 
 /* box content
 ----------------------------------------------- */
-#box {
+.box {
 	width: auto;
 	margin: 0;
 	border: 0;
 	background: #fff;
 	}
-#box_header {
+.box_header {
 	border: 0;
 	background: #666 url(../img/shadow_tab.gif) center bottom repeat-x;
 	}
-#box_mainhead {
+.box_mainhead {
 	background: #000;
 	}
-#box_content {
+.box_content {
 	width: 756px;
 	margin: 0 auto;
 	background: #fff;
 	}
-#box h1 {
+.box h1 {
 	width: 754px;
 	margin: 0 auto;
 	padding: 1.5em 0 1.7em 0;
@@ -92,7 +99,7 @@ em.ir, strong.ir {
 	text-transform:lowercase;
 	background: #000;
 	}
-#box h1 a {
+.box h1 a {
 	display: inline;
 	width: auto;
 	color: #fff;
@@ -101,14 +108,14 @@ em.ir, strong.ir {
 	font-weight: normal;
 	background: #000 url(../img/bauhouse_ampersand.gif) 10px center no-repeat;
 	}
-#box h1 a:hover {
+.box h1 a:hover {
 	color: #f00;
 	}
-#box h1 a strong {
+.box h1 a strong {
 	color: #f00;
 	font-weight: normal;
 	}
-#box h1 a:hover strong {
+.box h1 a:hover strong {
 	color: #fff;
 	}
 
@@ -140,96 +147,92 @@ em.ir, strong.ir {
 	}
 
 
-/* mainMenu
+/* main_menu
 ----------------------------------------------- */
-#mainMenu {
+.main_menu {
 	width: 756px;
 	margin: 0 auto;
 	border: 0;
 	padding: 0;
 	height: 3em;
 	}
-#mainMenu li {
+.main_menu .menu {
+	float:right;
+	}
+.main_menu li {
 	display: inline;
 	height: 3em;
 	border: 0;
 	padding: 0;
 	}
-#mainMenu li a {
+.main_menu li a {
 	float:left;
 	display: block;
 	margin:0;
 	padding:0 .7em;
-	color:#ccc;
+	color: #ccc;
 	background:none;
 	line-height:3em;
 	}
-#mainMenu li a:hover {
-	color:#fff;
-	background:#555;
+.main_menu li a:hover {
+	color: #fff;
+	background: #555;
 	}
-#mainMenu li a:active,
-#mainMenu li a.active,
-#mainMenu li a.active:hover {
-	color:#fff;
-	background:#444;
+.main_menu li a:active,
+.main_menu li a.active,
+.main_menu li a.active:hover {
+	color: #fff;
+	background: #444;
 	}
 
-/* menu
+
+/* select_tabs
 ----------------------------------------------- */
-#menu {
-	float:right;
-	}
-
-
-
-/* selectTabs
------------------------------------------------ */
-#selectTabs {
+.select_tabs {
 	padding: 0;
 	border: 0;
 	height: 3em;
 	}
-#selectTabs li {
+.select_tabs li {
 	display: inline;
 	height: 2.5em;
 	border: 0;
 	padding: 0;
 	}
-#selectTabs li a {
+.select_tabs li a {
 	float:left;
 	display: block;
 	margin: 0;
 	margin-right: 2px;
-	margin-top:.5em;
+	margin-top: .5em;
 	line-height: 2.5em;
 	padding: 0 1em;
-	color:#000;
+	color: #000;
 	background: #ddd url(../img/shadow_tab_off.gif) center bottom repeat-x;
 	border: 0;
 	}
-#selectTabs li a:hover {
-	color:#900;
+.select_tabs li a:hover {
+	color: #900;
 	background: #eee url(../img/shadow_tab_over.gif) center bottom repeat-x;
 	}
-#selectTabs li a:active,
-#selectTabs li a.active,
-#selectTabs li a.active:hover {
-	color:#f00;
-	background:#fff url(../img/shadow_tab_active.gif) center bottom repeat-x;
+.select_tabs li a:active,
+.select_tabs li a.active,
+.select_tabs li a.active:hover {
+	color: #f00;
+	background: #fff url(../img/shadow_tab_active.gif) center bottom repeat-x;
 	}
 
 
 /* subheader, submenu
 ----------------------------------------------- */
-#subheader {
+.subheader {
 	margin:0;
 	padding:0;
 	background: #ddd url(../img/shadow_tab_off.gif) center bottom repeat-x;
 	border-top:1px solid #fff;
 	border-bottom:1px solid #777;
 	}
-#submenu {
+.submenu {
 	width: 755px;
 	margin: 0 auto;
 	padding: 0;
@@ -238,92 +241,92 @@ em.ir, strong.ir {
 	font-size:1em;
 	border-left:1px solid #aaa;
 	}
-#submenu ul {
+.submenu ul {
 	border-left:1px solid #aaa;
 	}
-#submenu li {
+.submenu li {
 	margin:0;
 	padding:0;
 	display:inline;
 	border:0;
 	height:2em;
 	}
-#submenu li a {
+.submenu li a {
 	float:left;
 	display: block;
 	margin:0;
 	padding: 0 1em;
 	line-height: 2em;
-	color:#000;
+	color: #000;
 	background: #ddd url(../img/shadow_tab_off.gif) center bottom repeat-x;
 	border-right:1px solid #aaa;
 	border-left:1px solid #ccc;
 	}
-#submenu li a:hover {
+.submenu li a:hover {
 	background: #eee url(../img/shadow_tab_over.gif) center bottom repeat-x;
-	color:#900;
+	color: #900;
 	}
-#submenu li a:active,
-#submenu li a.active {
-	background:#fff url(../img/shadow_tab_active.gif) center bottom repeat-x;
-	color:#f00;
+.submenu li a:active,
+.submenu li a.active {
+	background: #fff url(../img/shadow_tab_active.gif) center bottom repeat-x;
+	color: #f00;
 	}
 
 
 /* section
 ----------------------------------------------- */
-#section { 
-	background:#bbb;
+.section { 
+	background: #bbb;
 	height:215px;
 	}
 
 
 /* section_box
 ----------------------------------------------- */
-#section_box { 
+.section_box { 
 	width:756px;
 	height:215px;
 	margin: 0 auto;
-	background:#fff;
+	background: #fff;
 	}
 
 
 /* sectionhead
 ----------------------------------------------- */
-#sectionhead { 
-	color:#fff;
-	background:#444;
+.sectionhead { 
+	color: #fff;
+	background: #444;
 	}
-#sectionhead h2 { 
+.sectionhead h2 { 
 	width:732px;
 	margin:0 auto;
 	padding: 0 12px .2em 12px;
 	font-weight:normal;
 	font-size:1.2em;
 	line-height:1.8em;
-	color:#fff;
-	background:#000;
+	color: #fff;
+	background: #000;
 	}
 
 
 /* sectionmenu
 ----------------------------------------------- */
-#sectionmenu {
+.section_menu {
 	float:left;
 	width:215px;
 	height:215px;
-	background:#ddd;
+	background: #ddd;
 	margin:0;
 	padding:0;
 	}
-#sectionmenu li {
-	color:#666;
+.section_menu li {
+	color: #666;
 	line-height:1.2em;
 	margin:0;
 	list-style: none;
 	}
-#sectionmenu li a { 
-	color:#000;
+.section_menu li a { 
+	color: #000;
 	line-height: 1.3em;
 	display:block;
 	margin:0;
@@ -332,18 +335,18 @@ em.ir, strong.ir {
 	border-bottom:1px solid #fff;
 	width:206px;
 	}
-#sectionmenu li a:link, 
-#sectionmenu li a:visited  { 
-  color:#000;
+.section_menu li a:link, 
+.section_menu li a:visited  { 
+  color: #000;
 	}
-#sectionmenu li a:hover {
-	color:#000;
+.section_menu li a:hover {
+	color: #000;
 	line-height: 1.3em;
 	background: #eee url(../img/arrowred.gif) no-repeat right center;
 	}
-#sectionmenu li a:active,
-#sectionmenu li a.active {
-	color:#f00;
+.section_menu li a:active,
+.section_menu li a.active {
+	color: #f00;
 	line-height: 1.3em;
 	background: #fff url(../img/arrowred.gif) no-repeat right center;
 	}
@@ -351,49 +354,49 @@ em.ir, strong.ir {
 
 /* sectionsidebar
 ----------------------------------------------- */
-#sectionsidebar {
+.sectionsidebar {
 	float:left;
 	width:215px;
 	height:215px;
 	margin:0;
 	padding:0;
-	background:#ddd;
+	background: #ddd;
 	border-right:1px solid #fff;
 	}
-#sectionsidebar h4 {
-	color:#000;
+.sectionsidebar h4 {
+	color: #000;
 	}
 
 
 /* sectionimg
 ----------------------------------------------- */
-#sectionimg {
+.sectionimg {
 	width:756px;
 	height:215px;
 	margin: 0 auto;
 	padding:0;
 	}
-#sectionimg p {
+.sectionimg p {
 	display:none;
 	}
 
 
 /* sectionimage
 ----------------------------------------------- */
-#sectionimage {
+.sectionimage {
 	margin:0;
 	padding:0;
-	background-color:#fff;
+	background-color: #fff;
 	}
-#sectionimage img {
+.sectionimage img {
 	float:left;
 	margin:0;
 	padding:0;
 	}
-#section_identity #sectionimage img,
-#section_print #sectionimage img,
-#section_web #sectionimage img,
-#section_type #sectionimage img {
+.section_identity .sectionimage img,
+.section_print .sectionimage img,
+.section_web .sectionimage img,
+.section_type .sectionimage img {
 	width:323px;
 	height:215px;
 	border-right:1px solid #fff;
@@ -402,16 +405,16 @@ em.ir, strong.ir {
 
 /* sectionthumbs
 ----------------------------------------------- */
-#sectionthumbs {
+.section_thumbs {
 	float:left;
 	width:216px;
 	height:215px;
 	background: url(../img/thumbs_grid_215.gif) left top no-repeat;
 	}
-#sectionthumbs h3 {
+.section_thumbs h3 {
 	display:none;
 	}
-#sectionthumbs a {
+.section_thumbs a {
 	float:left;
 	display:block;
 	padding:0;
@@ -419,77 +422,77 @@ em.ir, strong.ir {
 	width:54px;
 	height:54px;
 	}
-#sectionthumbs a img {
+.section_thumbs a img {
 	width:53px;
 	height:53px;
 	}
 
-#sectionthumbs a img.thumb_over {display:none;}
-#sectionthumbs a.current img.thumb_over {display:block;}
-#sectionthumbs a img.thumb_off {display:block;}
-#sectionthumbs a.current img.thumb_off {display:none;}
+.section_thumbs a img.thumb_over {display:none;}
+.section_thumbs a.current img.thumb_over {display:block;}
+.section_thumbs a img.thumb_off {display:block;}
+.section_thumbs a.current img.thumb_off {display:none;}
 
-#sectionthumbs a:link img.thumb_over {display:none;}
-#sectionthumbs a.current:link img.thumb_over {display:block;}
-#sectionthumbs a:link img.thumb_off {display:block;}
-#sectionthumbs a.current:link img.thumb_off {display:none;}
+.section_thumbs a:link img.thumb_over {display:none;}
+.section_thumbs a.current:link img.thumb_over {display:block;}
+.section_thumbs a:link img.thumb_off {display:block;}
+.section_thumbs a.current:link img.thumb_off {display:none;}
 
-#sectionthumbs a:visited img.thumb_over {display:none;}
-#sectionthumbs a.current:visited img.thumb_over {display:block;}
-#sectionthumbs a:visited img.thumb_off {display:block;}
-#sectionthumbs a.current:visited img.thumb_off {display:none;}
+.section_thumbs a:visited img.thumb_over {display:none;}
+.section_thumbs a.current:visited img.thumb_over {display:block;}
+.section_thumbs a:visited img.thumb_off {display:block;}
+.section_thumbs a.current:visited img.thumb_off {display:none;}
 
-* html #sectionthumbs a:hover {background: url(../img/thumbs_grid_215.gif) left top no-repeat;} /* ie win hovers won't work without this rule */
+* html .section_thumbs a:hover {background: url(../img/thumbs_grid_215.gif) left top no-repeat;} /* ie win hovers won't work without this rule */
 
-#sectionthumbs a:hover img.thumb_over {display:block; filter:alpha(opacity=50); -moz-opacity: 0.5; opacity: 0.5;}
-#sectionthumbs a.current:hover img.thumb_over {display:block; filter:alpha(opacity=100); -moz-opacity: 1; opacity: 1;}
-#sectionthumbs a:hover img.thumb_off {display:none;}
-#sectionthumbs a.current:hover img.thumb_off {display:none;}
+.section_thumbs a:hover img.thumb_over {display:block; filter:alpha(opacity=50); -moz-opacity: 0.5; opacity: 0.5;}
+.section_thumbs a.current:hover img.thumb_over {display:block; filter:alpha(opacity=100); -moz-opacity: 1; opacity: 1;}
+.section_thumbs a:hover img.thumb_off {display:none;}
+.section_thumbs a.current:hover img.thumb_off {display:none;}
 
-#sectionthumbs a:active img.thumb_over {display:block; filter:alpha(opacity=100); -moz-opacity: 1; opacity: 1;}
-#sectionthumbs a.current:active img.thumb_over {display:block; filter:alpha(opacity=100); -moz-opacity: 1; opacity: 1;}
-#sectionthumbs a:active img.thumb_off {display:none;}
-#sectionthumbs a.current:active img.thumb_off {display:none;}
+.section_thumbs a:active img.thumb_over {display:block; filter:alpha(opacity=100); -moz-opacity: 1; opacity: 1;}
+.section_thumbs a.current:active img.thumb_over {display:block; filter:alpha(opacity=100); -moz-opacity: 1; opacity: 1;}
+.section_thumbs a:active img.thumb_off {display:none;}
+.section_thumbs a.current:active img.thumb_off {display:none;}
 
-#sectionthumbs a span {
+.section_thumbs a span {
 	position:absolute;
 	width:100%;
 	top:2.3em;
 	right:0;
-	color:#fff;
+	color: #fff;
 	}
-#sectionthumbs a span strong {
+.section_thumbs a span strong {
 	display:none;
 	margin:0 auto;
 	padding-left:214px;
 	padding-right:15px;
 	width:525px;
-	color:#fff;
+	color: #fff;
 	text-align:right;
 	}
-#sectionthumbs a:hover span {
+.section_thumbs a:hover span {
 	display:block;
 	}
-#sectionthumbs a:hover span strong {
+.section_thumbs a:hover span strong {
 	display:block;
 	font-weight:normal;
 	}
-#sectionthumbs em {
-	color:#f00;
+.section_thumbs em {
+	color: #f00;
 	font-style:normal;
 	font-weight:normal;
 	}
-#sectionthumbs br {display:none;}
+.section_thumbs br {display:none;}
 
 
 /* contentthumbs
 ----------------------------------------------- */
-#contentthumbs {
+.content_thumbs {
 	width: 756px;
 	margin: 1px auto 0 auto;
 	border: 0;
 	}
-#contentthumbs a {
+.content_thumbs a {
 	float:left;
 	display:block;
 	padding:0;
@@ -498,144 +501,110 @@ em.ir, strong.ir {
 	margin-bottom:1px;
 	height:107px;
 	}
-#contentthumbs a img {
+.content_thumbs a img {
 	display: block;
 	}
-#contentthumbs a:hover {
-	background:#fff;
+.content_thumbs a:hover {
+	background: #fff;
 	}
-#contentthumbs a:link img.preview_over {display:none;}
-#contentthumbs a:visited img.preview_over {display:none;}
-#contentthumbs a:hover img.preview_over {display:block;}
-#contentthumbs a:active img.preview_over {display:block;}
+.content_thumbs a:link img.preview_over {display:none;}
+.content_thumbs a:visited img.preview_over {display:none;}
+.content_thumbs a:hover img.preview_over {display:block;}
+.content_thumbs a:active img.preview_over {display:block;}
 
-#contentthumbs a:link img.preview_off {display:block;}
-#contentthumbs a:visited img.preview_off {display:block;}
-#contentthumbs a:hover img.preview_off {display:none;}
-#contentthumbs a:active img.preview_off {display:none;}
+.content_thumbs a:link img.preview_off {display:block;}
+.content_thumbs a:visited img.preview_off {display:block;}
+.content_thumbs a:hover img.preview_off {display:none;}
+.content_thumbs a:active img.preview_off {display:none;}
 
-#contentthumbs br {display:none;}
+.content_thumbs br {display:none;}
 
 
 /* content
 ----------------------------------------------- */
-#content p { 
+.content p { 
 	margin-bottom:1em;
 	}
-#content del { 
+.content del { 
 	text-decoration:line-through;
 	}
-#content h2 {
-	margin-top:.5em;
+.content h2 {
+	margin-top: .5em;
 	margin-bottom:1em;
 	font-size:1.5em;
 	font-weight:normal;
-	color:#000;
+	color: #000;
 	}
-#content h3,
-#content_secondary h3,
-#content h4 { 
-	font-size:.9em;
+.section_import .content h2 {
+	padding-top:.5em;
+	}
+.content h3,
+.content_secondary h3,
+.content h4 { 
+	font-size: .9em;
 	font-weight: normal;
-	letter-spacing:.2em;
+	letter-spacing: .2em;
 	text-transform: uppercase;
 	}
-#content h3,
-#content_secondary h3 { 
+.content h3,
+.content_secondary h3 { 
 	margin: 2em 0 1.5em 0;
 	padding:3px 0;
 	border-top:1px solid #000;
 	border-bottom:1px solid #ccc;
 	}
-#content h4,
-#content h4 span {color:#f00;}
-#content h4,
-#content h5,
-#content h6 { 
+.content h4,
+.content h4 span {color: #f00;}
+.content h4,
+.content h5,
+.content h6 { 
 	margin-bottom: .8em;
 	}
-#content h5 { 
+.content h5 { 
 	font-size:1em;
-	color:#000;
+	color: #000;
 	}
-#content form { 
-	background:#eee;
-	margin: 12px 0;
-	border-top:1px solid #ccc;
-	border-left:1px solid #ccc;
-	}
-#content form input { 
-	margin-right:6px;
-	}
-#content form input#s { 
-	width:170px;
-	margin-bottom:6px;
-	}
-#content #articles form {
-	margin:15px 0 15px 0;
-	border:0;
-	border-top:1px solid #ccc;
-	border-bottom:1px solid #ccc;
-	}
-#content #articles form li {
-	list-style-type:none;
-	margin-left:0;
-	}
-#content #articles form label {
-	display:block;
-	font-size:.8em;
-	font-weight: normal;
-	letter-spacing:.2em;
-	text-transform: uppercase;
-	margin:5px 0;
-	}
-#content #articles form input.text {
-	width:250px;
-	}
-#content #articles form textarea {
-	width:400px;
-	}
-#content #articles h3 {
+.content .articles h3 {
 	margin-left:0;
 	padding-left:0;
 	}
-#content h3 a.view {
+.content h3 a.view {
 	letter-spacing:0;
 	text-transform: none;
 	}
-#content a {
+.content a {
 	font-weight:bold;
 	}
 
 
 /* articles
 ----------------------------------------------- */
-#articles { 
+.articles { 
 	margin-right:15px;
 	}
-#articles ol,
-#articles ul { 
+.articles ol,
+.articles ul { 
 	margin-left:1em;
 	margin-bottom:1em;
 	}
-#articles ol li,
-#articles ul li { 
+.articles ol li,
+.articles ul li { 
 	margin-left:1em;
 	list-style-type:square;
-	margin-bottom:.5em;
+	margin-bottom: .5em;
 	}
-#articles ol li {
+.articles ol li {
 	list-style-type:decimal-leading-zero;
 	}
-#articles pre { 
+.articles pre { 
 	padding:15px;
 	margin-bottom:15px;
-	background:#eee;
+	background: #eee;
 	overflow:auto;
 	}
-#articles blockquote {
+.articles blockquote {
 	padding-left:15px;
-	border-left:1px dotted #999;
+	border-left:1px dotted .999;
 	}
 
 
@@ -643,95 +612,95 @@ em.ir, strong.ir {
 
 /* entry
 ----------------------------------------------- */
-#content .entry { 
+.content .entry { 
 	clear:both;
 	border-top:1px solid #000;
 	margin:1em 0 2em 0;
 	}
-#content .entry .entry_data { 
+.content .entry .entry_data { 
 	float:left;
 	width:216px;
 	padding-top:1.5em;
 	border-top:4px solid #000;
 	}
-#content .entry .entry_body { 
+.content .entry .entry_body { 
 	padding-top:1em;
 	margin-left:216px;
 	border-bottom:1px solid #ccc;
 	}
-#content.content_2col .entry .entry_data { 
+.content.content_2col .entry .entry_data { 
 	float:left;
 	width:108px;
 	padding-top:1em;
 	border-top:4px solid #000;
 	}
-#content.content_2col .entry .entry_body { 
-	padding-top:.5em;
+.content.content_2col .entry .entry_body { 
+	padding-top: .5em;
 	margin-left:108px;
 	border-bottom:1px solid #ccc;
 	}
-#section_about #content .entry .entry_body,
-#section_contact #content .entry .entry_body { 
+.section_about .content .entry .entry_body,
+.section_contact .content .entry .entry_body { 
 	border-bottom:0;
 	}
-#content .entry .entry_body a span { 
+.content .entry .entry_body a span { 
 	color: #333;
 	text-decoration: none;
 	}
-#content .entry .entry_body a:hover span { 
+.content .entry .entry_body a:hover span { 
 	color: #F00;
 	text-decoration: none;
 	}
-#content .entry .entry_info { 
+.content .entry .entry_info { 
 	margin:0;
-	padding:.5em 0 .7em 0;
+	padding: .5em 0 .7em 0;
 	border-top:1px solid #ccc;
 	font-size:0.9em;
 	}
-#content .entry .entry_info span { 
+.content .entry .entry_info span { 
 	float:left;
 	width:162px;
 	font-weight:bold;
 	}
-#content.content_2col .entry .entry_info span { 
+.content.content_2col .entry .entry_info span { 
 	float:left;
 	width:108px;
 	font-weight:bold;
 	}
-#content .entry .entry_cont { 
+.content .entry .entry_cont { 
 	float:right;
 	}
-#content .entry blockquote { 
+.content .entry blockquote { 
 	margin-left:2em;
 	margin-bottom:2em;
 	}
-#content .entry ul { 
+.content .entry ul { 
 	padding-left:2em;
 	margin-bottom:2em;
 	}
-#section_contact #content .entry ul { 
+.section_contact .content .entry ul { 
 	padding-left:0;
 	}
-#content .entry ul li { 
+.content .entry ul li { 
 	list-style-type:square;
 	}
-#content .entry pre { 
+.content .entry pre { 
 	padding:15px;
 	margin-bottom:15px;
 	border:1px solid #ccc;
-	background:#eee;
+	background: #eee;
 	overflow:auto;
 	}
 
 
 /* entry images
 ----------------------------------------------- */
-#image-block {
+.image-block {
 	margin: 20px;
 	margin-left: 2em;
 	padding: 0;
 	}
-#image-block img {
+.image-block img {
 	float: none;
 	display: inline;
 	border: 1px solid #ccc;
@@ -763,24 +732,24 @@ img.right {
 .content_1col .entry .entry_data { 
 	float:left;
 	width:215px;
-	padding-top:.9em;
+	padding-top: .9em;
 	border-top:4px solid #000;
 	}
 
 
 /* content_secondary
 ----------------------------------------------- */
-#content_secondary { 
+.content_secondary { 
 	margin-top:12px;
 	margin-left:108px;
 	padding-top:18px;
 	border-top:5px solid #000;
 	}
-#content_secondary h2 { 
+.content_secondary h2 { 
 	padding-bottom:12px;
 	font-weight:normal;
 	}
-#content_secondary a {
+.content_secondary a {
 	font-weight:bold;
 	}
 
@@ -788,15 +757,15 @@ img.right {
 /* lists
 ----------------------------------------------- */
 .lists { 
-	font-size:.9em;
+	font-size: .9em;
 	line-height:1.4em;
 	margin-top:12px;
 	}
-#content .lists h3,
-#content_secondary .lists h3 { 
+.content .lists h3,
+.content_secondary .lists h3 { 
 	margin: 0 0 1em 0;
-	padding:.7em 0;
-	color:#f00;
+	padding: .7em 0;
+	color: #f00;
 	}
 .lists ul { 
 	margin-bottom:10px;
@@ -835,42 +804,42 @@ img.right {
 	height:1%; /* IE WIN */
 }
 .lists ul li {
-	border-bottom-color:#eee;
+	border-bottom-color: #eee;
 }
 .lists li a:hover {
-	color:#f00;
+	color: #f00;
 }
 .lists li a:active {
-	color:#f00;
+	color: #f00;
 }
 
-.lists li.date_small {font-size:.8em; margin:0;}
+.lists li.date_small {font-size: #8em; margin:0;}
 
-#content .lists ul li a span {
+.content .lists ul li a span {
 	font-weight:normal;
 	}
 
 
 /* box footer
 ----------------------------------------------- */
-#box_footer {
+.box_footer {
 	width: auto;
 	margin: 0;
 	border: 0;
 	background: #ddd url(../img/shadow_footer.gif) center top repeat-x;
 	}
-#footer {
+.footer {
 	width: 732px;
 	margin: 0 auto;
 	padding: 25px 12px;
 	border: 0;
 	}
-#footer p {
-	font-size:.9em;
+.footer p {
+	font-size: .9em;
 	padding: 0;
 	margin: 0;
 	}
-#footer .top {
+.footer .top {
 	float:right;
 	text-transform: uppercase;
 	letter-spacing: .1em;
@@ -886,7 +855,7 @@ img.right {
 hr {display:none;}
 
 .clear {clear: both;}
-.top {
+#top {
 	float:right;
 	text-transform: uppercase;
 	letter-spacing: .1em;
@@ -903,6 +872,9 @@ hr {display:none;}
 form {
 	background: #eee;
 	border: 1px solid #ccc;
+	padding: 12px;
+	margin-left:-1px;
+	margin-right:-1px;
 	}
 fieldset {
 	padding: 12px;
@@ -949,34 +921,28 @@ td {
 /* About page
 ----------------------------------------------- */
 
-#section_about .entry ul li,
-#section_contact .entry ul li {
+.entry ul li {
 	margin-left:2em;
 	margin-right:48px;
 	list-style-type:square;
 	margin-bottom:1em;
-	font-size:.8em;
+	font-size: .8em;
 	line-height:1.5em;
 	}
 
-#section_about form,
-#section_contact form {
+form {
 	background-color: #eee;
 	width: 500px;
-	font-size: 90%;
-	padding: 12px 12px 36px 12px;
+	padding: 12px;
+	overflow:hidden;
 }
-
-form label {
+label {
 	display: block;
 	color: #333;
-	text-transform: uppercase;
-	letter-spacing: .2em;
 	line-height: 150%;
 	margin-bottom: 15px;
 }
-
-form label small {
+label small {
 	display: block;
 	color: #888;
 	font-size: 80%;
@@ -985,27 +951,25 @@ form label small {
 	margin-left: 40%;
 	margin-top: -1.55em;
 }
-
-form label small a:hover {
+label small a:hover {
 	color: #666;
 	border-color: #888; 
 }
-
-form input, form textarea {
+textarea {
 	display: block;
-	width: 100%;
+	width: 99%;
 }
-
-form textarea {
+input[type="text"] {
+	width: 98%;
+}
+textarea {
 	height: 200px;
 }
-
-form input#submit {
+input.submit {
 	float: right;
 	display: block;
 	width: 120px;
 }
-
 form p.success {
 	color: #6cc33c;
 	background: #e2e4db url("../img/icon-tick.gif") left center no-repeat;
@@ -1013,7 +977,6 @@ form p.success {
 	margin: 0 0 9px;
 	padding-left: 24px;
 }
-
 form p.error {
 	color: #ff4242;
 	background: #e2e4db url("../img/icon-cross.gif") left center no-repeat;
@@ -1046,45 +1009,45 @@ dl.listing dd {
 
 /* Archive page
 ----------------------------------------------- */
-#archive a small {
+.archive a small {
 	color: #aaa;
 	font-style: italic;
 	font-size: 85%;
 }
 
-#archive a {
+.archive a {
 	display: block;
 	padding: 0 10px;
 }
 
-#archive a:hover {
+.archive a:hover {
 	color: #fff;
 	background-color: #ccc;	
 }
 
-#archive a.active {
+.archive a.active {
 	color: #fff;
 	background-color: #ccc;
 }
 
-#archive ul li {
+.archive ul li {
 	margin: 0 0 5px;
 }
 
-ul#year {
+ul.year {
 	float: left;
 	list-style: none;
 	margin: 0;
 }
 
-ul#month {
+ul.month {
 	float: left;
 	list-style: none;
 }
 
-ul#past-entries {
+ul.past-entries {
 	list-style: none;
-	border-left: 1px dotted #333;
+	border-left: 1px dotted .333;
 	padding-left: 20px;
 	margin-left: 216px;
 }
