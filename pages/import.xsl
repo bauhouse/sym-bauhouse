@@ -33,14 +33,18 @@
 <xsl:template match="data">
 	<xsl:param name="sym-data" select="/"/>
 	<xsl:param name="total-entries" select="count($datasource-entries)"/>
-
-	<div id="middle">
-		<div id="box_content">
-			<div id="content" class="content_2col">
+	<div class="sectionhead">
+		<h2 class="first">Import XML</h2>
+	</div><!-- END sectionhead -->
+	<div class="middle">
+		<div class="box_content">
+			<div class="content content_2col">
 				<div class="colA">
-					<h2>Import</h2>
-					<div id="articles">
-						<xsl:apply-templates select="section-schema[@handle='portfolio']" mode="form"/>
+					<div class="articles">
+						<div class="entry">
+							<h2>Import</h2>
+							<xsl:apply-templates select="section-schema[@handle='portfolio']" mode="form"/>
+						</div>
 					</div><!-- End articles -->
 				</div><!-- End colA -->
 				<div class="colB">
@@ -103,7 +107,7 @@
 		</xsl:call-template>
 		
 		<xsl:if test="*[@location='main']">
-			<div id="main">			
+			<div class="main">			
 				<xsl:apply-templates select="*[@location='main']" mode="control">
 					<xsl:sort select="@sortorder" data-type="number" order="ascending"/>
 				</xsl:apply-templates>
@@ -111,7 +115,7 @@
 		</xsl:if>
 		
 		<xsl:if test="*[@location='sidebar']">
-			<div id="sidebar">			
+			<div class="sidebar">			
 				<xsl:apply-templates select="*[@location='sidebar']" mode="control">
 					<xsl:sort select="@sortorder" data-type="number" order="ascending"/>
 				</xsl:apply-templates>

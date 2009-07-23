@@ -10,7 +10,7 @@
 <xsl:import href="../utilities/about-link.xsl"/>
 
 <xsl:template match="data">
-	<div id="sectionhead">
+	<div class="sectionhead">
 		<h2>Journal : Archive
 			<xsl:if test="$year">
 				<xsl:text>: </xsl:text>
@@ -23,11 +23,11 @@
 			</xsl:if>
 		</h2>
 	</div><!-- END sectionhead -->
-	<div id="middle">
-		<div id="box_content">
-			<div id="content" class="content_2col">
+	<div class="middle">
+		<div class="box_content">
+			<div class="content content_2col">
 				<div class="colA">
-					<div id="articles">
+					<div class="articles">
 						<xsl:apply-templates select="archive-entry-list/year/month/day/entry"/>
 					</div><!-- End articles -->
 				</div><!-- End colA -->

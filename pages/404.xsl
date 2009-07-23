@@ -7,12 +7,12 @@
 <xsl:import href="../utilities/page-title.xsl"/>
 
 <xsl:template match="data">
-	<div id="sectionhead">
+	<div class="sectionhead">
 		<h2>Error</h2>
 	</div><!-- END sectionhead -->
-	<div id="middle">
-		<div id="box_content">
-			<div id="content" class="content_1col">
+	<div class="middle">
+		<div class="box_content">
+			<div class="content content_1col">
 				<div class="entry">
 					<div class="entry_data">
 						<h4>404 Error</h4>

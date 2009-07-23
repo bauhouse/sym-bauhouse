@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	
-<xsl:import href="../utilities/sections.xsl"/>
-
 <xsl:template name="design-portfolio">
-	<div id="section" class="identity">
-		<div id="section_box">
-			<div id="sectionsidebar">
-				<ul id="sectionmenu" class="section_menu">
+	<div class="section {$current-page}">
+		<div class="section_box">
+			<div class="sectionsidebar">
+				<ul class="section_menu">
 					<xsl:apply-templates select="navigation/page[@handle = $root-page]/page"/>
 				</ul>
 			</div><!-- END sectionsidebar -->
-			<div id="sectionimage">
+			<div class="sectionimage">
 				<xsl:choose>
 					<xsl:when test="$entry">
 						<xsl:for-each select="portfolio/entry[title/@handle = $entry]">
@@ -25,7 +23,7 @@
 					</xsl:otherwise>
 				</xsl:choose>
 			</div><!-- END sectionimage -->
-			<div id="sectionthumbs">
+			<div class="section_thumbs">
 				<xsl:for-each select="portfolio/entry[media/item/@handle = $current-page][position() &lt;= 16]">
 					<xsl:sort select="created" order="descending"/>
 					<a href="{$root}/{$root-page}/{$current-page}/{title/@handle}/" title="{title}">
@@ -50,9 +48,9 @@
 </xsl:template>
 
 <xsl:template name="portfolio-content">
-	<div id="middle">
-		<div id="box_content">
-			<div id="content" class="content_1col">
+	<div class="middle">
+		<div class="box_content">
+			<div class="content content_1col">
 				<xsl:for-each select="portfolio/entry[title/@handle = $entry]">
 					<div class="entry">
 						<p class="entry_data">Created<xsl:text> </xsl:text>
@@ -106,8 +104,8 @@
 					</div>
 				</xsl:for-each>
 			</div><!-- END content -->
-		</div><!-- END #box_content -->
-	</div><!-- END #middle -->
+		</div><!-- END box_content -->
+	</div><!-- END middle -->
 </xsl:template>
 
 </xsl:stylesheet>

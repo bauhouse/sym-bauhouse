@@ -12,26 +12,26 @@
 </xsl:template>
 
 <xsl:template name="top">
-	<div id="top">
-		<div id="box_header">
-			<div id="box_mainhead">
+	<div class="top">
+		<div class="box_header">
+			<div class="box_mainhead">
 				<h1><a href="{$root}/" title="Bauhouse Design"><strong>Bauhouse</strong> Design</a></h1>
 			</div><!-- END box_mainhead -->
-			<div id="mainMenu">
+			<div class="main_menu">
 				<xsl:call-template name="navigation"/>
-				<ul id="selectTabs">
+				<ul class="select_tabs">
 					<xsl:apply-templates select="data/navigation/page[types/type = 'tabs']" mode="select-tabs" />
 				</ul>
-			</div><!-- END mainMenu -->
+			</div><!-- END main_menu -->
 			<hr class="clear" />
-		</div><!-- END #box_header -->
-	</div><!-- END #top -->
+		</div><!-- END box_header -->
+	</div><!-- END top -->
 </xsl:template>
 
 <xsl:template name="bottom">
-	<div id="bottom">
-		<div id="box_footer">
-			<div id="footer">
+	<div class="bottom">
+		<div class="box_footer">
+			<div class="footer">
 				<p class="top right"><a href="#top" title="Back to top">Back to top</a></p>
 				<p>Copyright <xsl:value-of select="$this-year"/> Stephen Bau, 
 					<a href="http://www.gdc.net/" title="Member of the Society of Graphic Designers of Canada: www.gdc.net">MGDC</a>, 
@@ -43,8 +43,8 @@
 					<a href="{$root}/rss/" title="Subscribe to the RSS feed">RSS</a>
 				</p>
 			</div><!-- END footer -->
-		</div><!-- END #box_footer -->
-	</div><!-- END #bottom -->
+		</div><!-- END box_footer -->
+	</div><!-- END bottom -->
 </xsl:template>
 
 </xsl:stylesheet>

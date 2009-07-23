@@ -9,7 +9,7 @@
 <xsl:import href="../utilities/about-link.xsl"/>
 
 <xsl:template match="data">
-	<div id="sectionhead">
+	<div class="sectionhead">
 		<h2>Journal : Category
 			<xsl:if test="$category != ''">
 			<xsl:text>: </xsl:text>
@@ -19,11 +19,11 @@
 			</xsl:if>
 		</h2>
 	</div><!-- END sectionhead -->
-	<div id="middle">
-		<div id="box_content">
-			<div id="content" class="content_2col">
+	<div class="middle">
+		<div class="box_content">
+			<div class="content content_2col">
 				<div class="colA">
-					<div id="articles">
+					<div class="articles">
 						<xsl:for-each select="entries/entry[fields/categories/item/@handle = $category]">
 							<div class="entry">
 								<p class="entry_data">
@@ -37,7 +37,7 @@
 									<xsl:copy-of select="fields/body/*"/>
 									<xsl:if test="@handle = $entry">
 										<xsl:if test="fields/photo/item">
-											<div id="image-block">
+											<div class="image-block">
 												<xsl:apply-templates select="fields/photo/item"/>
 											</div>
 										</xsl:if>

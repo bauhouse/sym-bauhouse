@@ -13,11 +13,11 @@
 <xsl:template match="data">
 	<xsl:call-template name="section-image"/>
 	<xsl:call-template name="section-head"/>
-	<div id="middle">
-		<div id="box_content">
+	<div class="middle">
+		<div class="box_content">
 			<xsl:choose>
 				<xsl:when test="$entry">
-					<div id="content" class="content_1col">
+					<div class="content content_1col">
 						<xsl:for-each select="entry/entry">
 							<div class="entry">
 								<p class="entry_data">
@@ -31,7 +31,7 @@
 									<xsl:copy-of select="body/*"/>
 									<xsl:if test="@handle = $entry">
 										<xsl:if test="photo/item">
-											<div id="image-block">
+											<div class="image-block">
 												<xsl:apply-templates select="photo/item"/>
 											</div>
 										</xsl:if>
@@ -56,9 +56,9 @@
 					</div><!-- END content -->
 				</xsl:when>
 				<xsl:otherwise>
-					<div id="content" class="content_2col">
+					<div class="content content_2col">
 						<div class="colA">
-							<div id="articles">
+							<div class="articles">
 								<xsl:for-each select="entries/entry">
 									<div class="entry">
 										<p class="entry_data">

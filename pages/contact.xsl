@@ -12,9 +12,9 @@
 
 <xsl:template match="data">
 	<xsl:call-template name="section-head"/>
-	<div id="middle">
-		<div id="box_content">
-			<div id="content" class="content_1col">
+	<div class="middle">
+		<div class="box_content">
+			<div class="content content_1col">
 				<div class="entry">
 					<div class="entry_data">
 						<xsl:copy-of select="section/entry/description/*"/>

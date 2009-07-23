@@ -27,7 +27,7 @@
 							'website' => 'http://home/bauhouse/www',
 							'email' => 'bauhouse@gmail.com'),
 					 'version' => '1.0',
-					 'release-date' => '2009-07-22T14:54:28+00:00');	
+					 'release-date' => '2009-07-23T16:42:03+00:00');	
 		}
 		
 		public function getSource(){
