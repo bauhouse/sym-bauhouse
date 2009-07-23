@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+	
+<xsl:import href="../utilities/sections.xsl"/>
 
 <xsl:template name="design-portfolio">
-	<xsl:param name="sort-num" select="content/entry[@handle = $current-page]/fields/sort"/>
-	<xsl:param name="sort-next" select="$sort-num + 1"/>
-	<xsl:param name="sort-prev" select="$sort-num - 1"/>
-	<xsl:param name="section-count" select="count(content/entry[fields/section='Design' and fields/sort != ''])"/>
 	<div id="section" class="identity">
 		<div id="section_box">
 			<div id="sectionsidebar">
@@ -13,125 +11,83 @@
 					<xsl:apply-templates select="navigation/page[@handle = $root-page]/page"/>
 				</ul>
 			</div><!-- END sectionsidebar -->
-
 			<div id="sectionimage">
-				<xsl:for-each select="content/entry[fields/section='Design']">
-					<xsl:sort select="fields/sort"/>
-					<xsl:choose>
-						<xsl:when test="$entry = '' and fields/title/@handle = $current-page">
-							<img src="{$root}/{fields/image/item/path}" alt="{fields/title}" />
-						</xsl:when>
-					</xsl:choose>
-				</xsl:for-each>
-				<xsl:for-each select="portfolio/entry[fields/title/@handle = $entry]">
-					<img src="{$root}/{fields/image/item/path}" alt="{fields/title}" />
-				</xsl:for-each>
+				<xsl:choose>
+					<xsl:when test="$entry">
+						<xsl:for-each select="portfolio/entry[title/@handle = $entry]">
+							<img src="{$workspace}{image/@path}/{image/filename}" alt="{title}" />
+						</xsl:for-each>
+					</xsl:when>
+					<xsl:otherwise>
+						<xsl:for-each select="section-images/entry">
+							<img src="{$workspace}{image/@path}/{image/filename}" width="540" height="215" alt="{caption}"/>
+						</xsl:for-each>
+					</xsl:otherwise>
+				</xsl:choose>
 			</div><!-- END sectionimage -->
 			<div id="sectionthumbs">
-				<xsl:for-each select="portfolio/entry[fields/media/@handle = $current-page]">
-					<xsl:sort select="fields/created" order="descending"/>
-					<xsl:choose>
-						<xsl:when test="fields/title/@handle = $entry and position() &lt;= 16">
-							<a href="{$root}{$parent-page}/{$current-page}/{@handle}/" class="current" title="{fields/title}"><img class="thumb_off" src="{$root}/{fields/thumbnail-off/item/path}" width="53" height="53" alt="{fields/title}" /><img class="thumb_over" src="{$root}/{fields/thumbnail/item/path}" width="53" height="53" alt="{fields/title}" /><span><strong><em><xsl:value-of select="fields/client"/></em><xsl:text> </xsl:text><xsl:value-of select="fields/project"/></strong></span></a>
-						</xsl:when>
-						<xsl:when test="fields/title/@handle != $entry and position() &lt;= 16">
-							<a href="{$root}{$parent-page}/{$current-page}/{@handle}/" title="{fields/title}"><img class="thumb_off" src="{$root}/{fields/thumbnail-off/item/path}" width="53" height="53" alt="{fields/title}" /><img class="thumb_over" src="{$root}/{fields/thumbnail/item/path}" width="53" height="53" alt="{fields/title}" /><span><strong><em><xsl:value-of select="fields/client"/></em><xsl:text> </xsl:text><xsl:value-of select="fields/project"/></strong></span></a>
-						</xsl:when>
-					</xsl:choose>
+				<xsl:for-each select="portfolio/entry[media/item/@handle = $current-page][position() &lt;= 16]">
+					<xsl:sort select="created" order="descending"/>
+					<a href="{$root}/{$root-page}/{$current-page}/{title/@handle}/" title="{title}">
+						<xsl:if test="title/@handle = $entry"><xsl:attribute name="class">current</xsl:attribute></xsl:if>
+						<img class="thumb_off" src="{$workspace}{thumbnail-off/@path}/{thumbnail-off/filename}" width="53" height="53" alt="{title}" />
+						<img class="thumb_over" src="{$workspace}/{thumbnail/@path}/{thumbnail/filename}" width="53" height="53" alt="{title}" />
+						<span><strong><em><xsl:value-of select="client"/></em><xsl:text> </xsl:text><xsl:value-of select="project"/></strong></span>
+					</a>
 				</xsl:for-each>
 			</div><!-- END sectionthumbs -->
 		</div><!-- END section_box -->
 	</div><!-- END section -->
-	<div id="sectionhead">
-		<h2>
-			<xsl:for-each select="content/entry[fields/title/@handle = $current-page]">
-				<xsl:value-of select="fields/section"/>
-			</xsl:for-each>
-			<xsl:for-each select="content/entry[fields/title/@handle = $current-page]">
-				<xsl:text> : </xsl:text>
-				<xsl:value-of select="fields/title"/>
-			</xsl:for-each>
-		</h2>
-	</div><!-- END sectionhead -->
+	<xsl:call-template name="subsection-head"/>
+	<xsl:choose>
+		<xsl:when test="$entry">
+			<xsl:call-template name="portfolio-content"/>
+		</xsl:when>
+		<xsl:otherwise>
+			<xsl:call-template name="section-content"/>
+		</xsl:otherwise>
+	</xsl:choose>
+</xsl:template>
+
+<xsl:template name="portfolio-content">
 	<div id="middle">
 		<div id="box_content">
 			<div id="content" class="content_1col">
-				<xsl:for-each select="content/entry[fields/section='Design']">
-					<xsl:choose>
-						<xsl:when test="$entry = '' and fields/title/@handle = $current-page">
-							<div class="entry">
-								<p class="entry_data">
-									<xsl:call-template name="get-formatted-date">
-										<xsl:with-param name="date" select="date"/>
-										<xsl:with-param name="format-type" select="'short'"/>
-									</xsl:call-template>
-								</p>
-								<div class="entry_body">
-									<h2><xsl:value-of select="fields/title"/></h2>
-									<xsl:for-each select="fields/body/*"><xsl:copy-of select="."/></xsl:for-each>
-									<xsl:if test="fields/sort &lt; $section-count">
-										<xsl:for-each select="/data/content/entry[fields/section='Design' and fields/sort = $sort-next]">
-											<p class="entry_info">
-												Next Page:
-												<a href="{$root}{$parent-page}/{@handle}/">
-												<xsl:value-of select="fields/title"/>
-												</a>
-											</p>
-										</xsl:for-each>
-									</xsl:if>
-									<xsl:if test="fields/sort = $section-count">
-										<xsl:for-each select="/data/content/entry[fields/section='Build' and @handle = 'build']">
-											<p class="entry_info">
-												Next Section:
-												<a href="{$root}/{@handle}/">
-												<xsl:value-of select="fields/title"/>
-												</a>
-											</p>
-										</xsl:for-each>
-									</xsl:if>
-								</div>
-							</div>
-						</xsl:when>
-					</xsl:choose>
-				</xsl:for-each>
-				<xsl:for-each select="portfolio/entry[@handle = $entry]">
+				<xsl:for-each select="portfolio/entry[title/@handle = $entry]">
 					<div class="entry">
 						<p class="entry_data">Created<xsl:text> </xsl:text>
-							<xsl:call-template name="get-formatted-month">
-								<xsl:with-param name="date" select="fields/created"/>
-							</xsl:call-template>
-							<xsl:text> </xsl:text>
-							<xsl:call-template name="get-formatted-year">
-								<xsl:with-param name="date" select="fields/created"/>
+							<xsl:call-template name="format-date">
+								<xsl:with-param name="date" select="created"/>
+								<xsl:with-param name="format" select="'M Y'"/>
 							</xsl:call-template>
 						</p>
 						<div class="entry_body">
-							<h2><xsl:value-of select="fields/title"/></h2>
-							<xsl:for-each select="fields/description/*"><xsl:copy-of select="."/></xsl:for-each>
-							<xsl:if test="fields/client != ''">
-								<p class="entry_info"><span>Client<xsl:text> </xsl:text></span><xsl:value-of select="fields/client"/></p>
+							<h2><xsl:value-of select="title"/></h2>
+							<xsl:for-each select="description/*"><xsl:copy-of select="."/></xsl:for-each>
+							<xsl:if test="client">
+								<p class="entry_info"><span>Client<xsl:text> </xsl:text></span><xsl:value-of select="client"/></p>
 							</xsl:if>
-							<xsl:if test="fields/project != ''">
-								<p class="entry_info"><span>Project<xsl:text> </xsl:text></span><xsl:value-of select="fields/project"/></p>
+							<xsl:if test="project">
+								<p class="entry_info"><span>Project<xsl:text> </xsl:text></span><xsl:value-of select="project"/></p>
 							</xsl:if>
-								<p class="entry_info"><span>Application<xsl:text> </xsl:text></span><xsl:value-of select="fields/media"/>
+								<p class="entry_info"><span>Application<xsl:text> </xsl:text></span><xsl:value-of select="media"/>
 								<xsl:text> </xsl:text>Design</p>
-							<xsl:if test="fields/firm != ''">
-								<p class="entry_info"><span><xsl:value-of select="fields/type"/><xsl:text> </xsl:text></span><xsl:value-of select="fields/firm"/></p>
+							<xsl:if test="firm">
+								<p class="entry_info"><span><xsl:value-of select="type"/><xsl:text> </xsl:text></span><xsl:value-of select="firm"/></p>
 							</xsl:if>
-							<xsl:if test="fields/creative-direction != ''">
-								<p class="entry_info"><span>Creative Direction<xsl:text> </xsl:text></span><xsl:value-of select="fields/creative-direction"/></p>
+							<xsl:if test="creative-direction">
+								<p class="entry_info"><span>Creative Direction<xsl:text> </xsl:text></span><xsl:value-of select="creative-direction"/></p>
 							</xsl:if>
-							<xsl:if test="fields/art-direction != ''">
-								<p class="entry_info"><span>Art Direction<xsl:text> </xsl:text></span><xsl:value-of select="fields/art-direction"/></p>
+							<xsl:if test="art-direction">
+								<p class="entry_info"><span>Art Direction<xsl:text> </xsl:text></span><xsl:value-of select="art-direction"/></p>
 							</xsl:if>
-							<xsl:if test="fields/design != ''">
-								<p class="entry_info"><span>Design<xsl:text> </xsl:text></span><xsl:value-of select="fields/design"/></p>
+							<xsl:if test="design">
+								<p class="entry_info"><span>Design<xsl:text> </xsl:text></span><xsl:value-of select="design"/></p>
 							</xsl:if>
-							<xsl:if test="fields/printing != ''">
-								<p class="entry_info"><span>Printing<xsl:text> </xsl:text></span><xsl:value-of select="fields/printing"/></p>
+							<xsl:if test="printing">
+								<p class="entry_info"><span>Printing<xsl:text> </xsl:text></span><xsl:value-of select="printing"/></p>
 							</xsl:if>
-							<xsl:if test="fields/link != ''">
+							<xsl:if test="link">
 								<p class="entry_info"><span>Visit Site<xsl:text> </xsl:text></span>
 									<a href="{fields/link}" title="{fields/title}">
 										<xsl:choose>

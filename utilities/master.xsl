@@ -2,6 +2,15 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 <xsl:import href="../utilities/common.xsl"/>
+<xsl:import href="../utilities/navigation.xsl"/>
+
+<xsl:output
+	method="xml" 
+	doctype-public="-//W3C//DTD XHTML 1.0 Strict//EN" 
+	doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"
+	omit-xml-declaration="yes"
+	encoding="UTF-8" 
+	indent="yes" />
 
 <xsl:template match="/">
 	<html>
@@ -11,9 +20,7 @@
 				<xsl:call-template name="top"/>
 				<div id="subheader">
 					<ul id="submenu">
-						<xsl:for-each select="data/navigation/page[@handle = 'contact']">
-							<li class="right"><a href="{$root}/{@handle}/"><xsl:value-of select="name"/></a></li>
-						</xsl:for-each>
+						<xsl:call-template name="previous-next-links" />
 					</ul>
 				</div><!-- END #submenu -->
 

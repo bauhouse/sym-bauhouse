@@ -20,7 +20,7 @@
 				<div id="subheader">
 					<ul id="submenu">
 						<xsl:apply-templates select="data/navigation/page[@handle = $root-page]/page"/>
-						<li class="right"><a href="{$root}/contact/">Contact</a></li>
+						<xsl:call-template name="previous-next-links" />
 					</ul>
 				</div><!-- END #submenu -->
 
