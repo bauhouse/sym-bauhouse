@@ -6,6 +6,7 @@
 <xsl:import href="../utilities/navigation.xsl"/>
 <xsl:import href="../utilities/page-title.xsl"/>
 <xsl:import href="../utilities/list-archive-months.xsl"/>
+<xsl:import href="../utilities/about-link.xsl"/>
 
 <xsl:template match="data">
 	<div id="sectionhead">
@@ -66,8 +67,10 @@
 				</div><!-- END colA -->
 				<div class="colB">
 					<div class="lists">
-						<h3>Bauhouse Design</h3>
-						<p><a href="/about/" title="About the Bauhouse">Bauhouse Visual Communications</a> is a design studio in Abbotsford, British Columbia, Canada, owned by graphic designer, Stephen Bau, MGDC.</p>
+						<xsl:for-each select="about/entry/description">
+							<h3><xsl:value-of select="h4"/></h3>
+							<xsl:apply-templates select="p[1]" mode="about"/>
+						</xsl:for-each>
 						<h3>Archives by Category</h3>
 						<ul class="categories">
 							<xsl:for-each select="category-list/options/option[@entry-count!='0']">

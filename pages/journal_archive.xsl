@@ -7,17 +7,19 @@
 <xsl:import href="../utilities/navigation.xsl"/>
 <xsl:import href="../utilities/page-title.xsl"/>
 <xsl:import href="../utilities/list-archive-months.xsl"/>
+<xsl:import href="../utilities/about-link.xsl"/>
 
 <xsl:template match="data">
 	<div id="sectionhead">
 		<h2>Journal : Archive
-			<xsl:if test="$year != ''">
-			<xsl:text>: </xsl:text>
-			<xsl:call-template name="get-formatted-month">
-				<xsl:with-param name="month" select="$month"/>
-			</xsl:call-template>
-			<xsl:text> </xsl:text>
-			<xsl:value-of select="$year"/>
+			<xsl:if test="$year">
+				<xsl:text>: </xsl:text>
+				<xsl:call-template name="format-month">
+					<xsl:with-param name="month" select="$month"/>
+					<xsl:with-param name="format" select="'M'"/>
+				</xsl:call-template>
+				<xsl:text> </xsl:text>
+				<xsl:value-of select="$year"/>
 			</xsl:if>
 		</h2>
 	</div><!-- END sectionhead -->
@@ -31,8 +33,10 @@
 				</div><!-- End colA -->
 				<div class="colB">
 					<div class="lists">
-						<h3>Bauhouse Design</h3>
-						<p><a href="/about/" title="About the Bauhouse">Bauhouse Visual Communications</a> is a design studio in Abbotsford, British Columbia, Canada, owned by graphic designer, Stephen Bau, MGDC.</p>
+						<xsl:for-each select="about/entry/description">
+							<h3><xsl:value-of select="h4"/></h3>
+							<xsl:apply-templates select="p[1]" mode="about"/>
+						</xsl:for-each>
 						<h3>Archives by Month</h3>
 						<ul class="categories">
 							<xsl:call-template name="list-archive-months"/>

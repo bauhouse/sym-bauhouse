@@ -6,22 +6,17 @@
 <xsl:import href="../utilities/date-time.xsl"/>
 <xsl:import href="../utilities/navigation.xsl"/>
 <xsl:import href="../utilities/page-title.xsl"/>
+<xsl:import href="../utilities/sections.xsl"/>
 <xsl:import href="../utilities/design-portfolio.xsl"/>
 
 <xsl:template match="data">
-	<div id="section" class="journal">
-		<div id="section_box">
-			<div id="sectionimage">
-			<img src="{$root}/workspace/images/section_portfolio_gs.jpg" width="756" height="215" alt="Portfolio" />
-			</div><!-- END sectionimage -->
-		</div><!-- END section_box -->
-	</div><!-- END section -->
-	<div id="sectionhead"><h2>Portfolio</h2></div>
+	<xsl:call-template name="section-image"/>
+	<xsl:call-template name="section-head"/>
 	<div id="contentthumbs">
 		<xsl:for-each select="portfolio/entry">
-			<xsl:sort select="fields/created" order="descending"/>
-			<xsl:if test="fields/preview != '' and position() &lt;= 28">
-				<a href="{$root}/design/{fields/media/@handle}/{@handle}/" title="{fields/title}"><img class="preview_off" src="{$root}/{fields/preview-off/item/path}" width="107" height="107" alt="{fields/title}" /><img class="preview_over" src="{$root}/{fields/preview/item/path}" alt="{fields/title}" /></a>
+			<xsl:sort select="created" order="descending"/>
+			<xsl:if test="preview != '' and position() &lt;= 28">
+				<a href="{$root}/design/{media/item/@handle}/{title/@handle}/" title="{title}"><img class="preview_off" src="{$workspace}/{preview-off/@path}/{preview-off/filename}" width="107" height="107" alt="{title}" /><img class="preview_over" src="{$workspace}/{preview/@path}/{preview/filename}" alt="{fields/title}" /></a>
 			</xsl:if>
 		</xsl:for-each>
 	</div><!-- END contentthumbs -->
@@ -33,9 +28,9 @@
 						<xsl:for-each select="/data/entries/entry">
 							<div class="entry">
 								<p class="entryData">
-									<xsl:call-template name="get-formatted-date">
+									<xsl:call-template name="format-date">
 										<xsl:with-param name="date" select="date"/>
-										<xsl:with-param name="format-type" select="'short'"/>
+										<xsl:with-param name="format" select="'x m Y'"/>
 									</xsl:call-template>
 								</p>
 								<div class="entryBody">
