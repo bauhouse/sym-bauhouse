@@ -39,7 +39,8 @@
 					<a href="http://validator.w3.org/check/referer" title="Check XHTML">XHTML</a> | 
 					<a href="http://jigsaw.w3.org/css-validator/check/referer" title="Check Cascading Style Sheets">CSS</a> | 
 					<a href="http://www.symphony-cms.com/" title="Powered by Symphony CMS">Symphony CMS</a> | 
-					<a href="http://www.joyent.com/" title="Hosted by Joyent">Joyent</a>
+					<a href="http://www.joyent.com/" title="Hosted by Joyent">Joyent</a> |
+					<a href="{$root}/rss/" title="Subscribe to the RSS feed">RSS</a>
 				</p>
 			</div><!-- END footer -->
 		</div><!-- END #box_footer -->
