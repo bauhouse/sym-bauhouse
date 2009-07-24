@@ -1,0 +1,2050 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entries section="entries">
+	<entry id="104" handle="the-book-on-symphony">
+		<date>2007-02-09</date>
+		<time>11:35</time>
+		<author></author>
+		<fields>
+			<title handle="the-book-on-symphony">The Book on Symphony</title>
+			<body word-count="95"><p>I finally discovered that I can have a pretty decent looking <span class="caps">PDF</span> file by printing directly from my website if I don’t specify my stylesheet for screen media only. After turning off all the cruft produced by the web browser for pagination, etc., I can get a layout that turns all my <span class="caps">CSS</span> elements into PostScript objects. The implications for the printing industry could be amazing if <span class="caps">XML</span>, <span class="caps">XSLT</span> and <span class="caps">PDF</span> could be combined into some sort of prepress workflow. I am sure that someone has thought of this before, or has already implemented it.</p></body>
+			<photo></photo>
+			<more word-count="200"><p>At least, that’s where I see potential in Symphony as a design industry workhorse that can accomplish everything that I need to do in my business. I think we just need more people to discover the power and flexibility of this application and its ability to organize your data and allow you to do anything you want with your data, within the confines of current web technologies.</p>
+
+<p>At any rate, this is just a quick blurb to say, if you are looking for the Book on Symphony, I have produced one by printing these tutorials on Building a Symphony Theme to a series of <span class="caps">PDF</span> files from Safari in Mac OS X. I assembled the parts into a single document with Adobe Acrobat, and I am making it available here for download. This is an unfinished work, but for those who like a little light bathroom reading, or want to peruse the volume at their leisure while sipping on a tall mocha latte at their local coffee house, you can start to imagine your digital life orchestrated with Symphonic elegance by a single, finely crafted web application.</p>
+
+<h4>Download the Book on Symphony</h4>
+
+<p><a href="/workspace/files/BuildingASymphonyTheme.pdf">Building a Symphony Theme</a><br />
+A work in progress, <span class="caps">PDF</span> format, 2.1 Mb.</p></more>
+			<categories>
+				<item handle="applications">Applications</item>
+			</categories>
+			<publish>yes</publish>
+		</fields>
+		<comments count="0" spam="0"></comments>
+	</entry>
+	<entry id="103" handle="building-a-symphony-theme-part-5">
+		<date>2007-01-06</date>
+		<time>10:35</time>
+		<author></author>
+		<fields>
+			<title handle="building-a-symphony-theme-part-5">Building a Symphony Theme: Part 5</title>
+			<body word-count="172"><p>Symphony is an application that is built on web standards: <span class="caps">XML</span>, <span class="caps">XSLT</span>, <span class="caps">XHTML</span>, and <span class="caps">CSS</span>. Symphony accomplishes this using open source scripting and database software: <span class="caps">PHP</span> and MySQL, respectively. Up to this point, we haven’t really touched on <span class="caps">CSS</span> or Cascading Style Sheets other than to apply some style to a link with a class of “current”. Primarily we have been concerned with content: using Symphony’s <span class="caps">XSLT</span> templating system to transform <span class="caps">XML</span> data, stored in the MySQL database, to <span class="caps">HTML</span>.</p>
+
+<p>At this point, we should have a better understanding about how <span class="caps">XSLT</span> works and how we can use Symphony to build a basic <span class="caps">HTML</span> page structure. If we know anything about Cascading Style Sheets (<span class="caps">CSS</span>), we understand how easily we can separate the presentation of a web page from the content of the page. We can create <span class="caps">XSLT</span> templates that output <span class="caps">HTML</span> pages that use inline styles, embedded style sheets and/or external <span class="caps">CSS</span> files. Before we try adding any additional functionality to our site, let’s add some style to our pages with <span class="caps">CSS</span>.</p></body>
+			<photo></photo>
+			<more word-count="2317"><h3>Creating the Theme</h3>
+
+<p>Since we are creating a theme for Symphony based on the qwilm theme created by <a href="http://www.huddletogether.com/">Lokesh Dhakar</a>, let’s link our templates to an external <span class="caps">CSS</span> file that contains the styles for the theme, using relative links for the images used by the <span class="caps">CSS</span> stylesheet. All the files that we create in Symphony are stored in the <code>/workspace/</code> folder so that we can easily move the site to a different location on the server, or to an entirely different server. Essentially, the <code>/symphony/</code> directory contains the application, through which you administer your site, and the <code>/workspace/</code> directory contains all the files that are specific to your site and control the page structures, behaviours and styles. Note that Symphony’s File Manager allows us to create files only in the <code>/workspace/</code> directory, but it cannot create additional directories. While it is not necessary to store external <span class="caps">CSS</span> files in the <code>/workspace/</code> directory, it makes sense to do so, especially when developing a theme. In effect, everything that exists in the workspace directory is the theme. Change the <code>/workspace/</code> directory and you can have a completely different site.</p>
+
+<h4>Connect to the <span class="caps">CSS</span> file</h4>
+
+<p>Download the <a href="/workspace/files/qwilm_css.zip"><span class="caps">ZIP</span> file</a> that contains the <span class="caps">CSS</span> and image files for the qwilm theme. The files are all contained within a directory named “css”. Place this directory in the <code>/workspace/</code> directory. The style.css file within the <code>/css/</code> directory contains style declarations with relative URLs for images in the <code>/css/images/</code> directory. The Symphony File Manager allows us to save and view <span class="caps">GIF</span>, <span class="caps">JPEG</span>, <span class="caps">PNG</span>, <span class="caps">CSS</span>,  Javascript, <span class="caps">XSL</span> and <span class="caps">PHP</span> files contained in any directory or subdirectory within the <code>/workspace/</code> directory. Symphony finds all the <span class="caps">CSS</span> and Javascript files in the <code>/workspace/</code> directory and displays a list of links to each of these files in the Blueprints : Components page under the heading “Assets”. To modify the style.css file, you can click on the link to open and edit the file. You can also upload files to any directory or subdirectory in your <code>/workspace/</code> directory by going to Publish : File Manager and clicking on the upload button. View the files in the <code>/workspace/</code> directory by selecting the directory you would like to view from the pull-down menu in the upper right corner of the page.</p>
+
+<p>You can view a list of the image files in the <code>/workspace/css/images/</code> directory and you should see something like this:</p>
+
+<p><img src="/workspace/images/sym_qwilm_file_manager_01.jpg" title="Symphony Admin : Publish : File Manager : CSS Images" alt="Symphony Admin : Publish : File Manager : CSS Images" /></p>
+
+<p>Add the following code to the <code>&lt;head&gt;</code> element of the default.xsl Master template:</p>
+
+<pre>
+<code>&lt;link rel="stylesheet" type="text/css" media="screen" href="{$root}/workspace/css/style.css" /&gt;</code>
+</pre>
+
+<p>You could also use the following without the <code>$root</code> parameter, since you would need some additional <span class="caps">XSLT</span> code to properly add the value for <code>$root</code> to the <span class="caps">URL</span>. </p>
+
+<pre>
+<code>&lt;style type="text/css" media="screen"&gt;
+@import url(/workspace/css/style.css);
+&lt;/style&gt;</code>
+</pre>
+
+<p>If you are interested in dynamically modifying the <span class="caps">URL</span> for the <span class="caps">CSS</span> file, it is possible to use the <span class="caps">XSL</span> concatenate function to create the text string for the @import directive:</p>
+
+<pre>
+<code>&lt;style type="text/css" media="screen"&gt;
+&lt;xsl:value-of select="concat('@import url(',$root,'/workspace/css/style.css);')"/&gt;
+&lt;/style&gt;</code>
+</pre>
+
+<p>We can view the front end of our site and see that the pages are now connected to the <span class="caps">CSS</span> file. </p>
+
+<h4>Duplicate the intended <span class="caps">HTML</span> structure</h4>
+
+<p>Now, we need to duplicate the intended <span class="caps">HTML</span> structure before the pages will display properly. The easiest way to accomplish this would be to copy the <span class="caps">HTML</span> structure into the Master template, then start replacing the static <span class="caps">HTML</span> elements with <span class="caps">XSLT</span> templates. In part two, I provided the basic page structure of the qwilm theme with some sample content that represents most of the <span class="caps">HTML</span> elements that we will need to reproduce with our <span class="caps">XSLT</span> templates.</p>
+
+<p>First, let’s create a new file called qwilm.html by going to Blueprints : Components : Assets : Create New and give the asset the name qwilm.html and paste the <span class="caps">HTML</span> page from Part 2 into the body of this new asset. </p>
+
+<p><img src="/workspace/images/sym_qwilm_components_02.jpg" title="Symphony Admin : Blueprints : Components" alt="Symphony Admin : Blueprints : Components" /></p>
+
+<p>If you would rather, you can also download the <a href="/workspace/files/qwilm.html">qwilm.html</a> file and upload the file to your <code>/workspace/</code> directory by going to Publish : File Manager and clicking on the Upload button. </p>
+
+<p><img src="/workspace/images/sym_qwilm_file_upload.jpg" title="Symphony Admin : Publish : File Manager : Upload" alt="Symphony Admin : Publish : File Manager : Upload" /></p>
+
+<p>Navigate to this test page at the following address:</p>
+
+<pre>
+<code>http://sym.qwilm.site/workspace/qwilm.html</code>
+</pre>
+
+<p>Now, we should be able to see the structure and style displaying as intended. </p>
+
+<h4>Replace static <span class="caps">HTML</span> elements with <span class="caps">XSLT</span> code</h4>
+
+<p>To apply this structure to our templates, let’s copy all the elements inside the <code>&lt;body&gt;</code> element and paste these into the <code>&lt;body&gt;</code> element of the default Master template. For now, replace everything that we have created so far in the <code>&lt;body&gt;</code> element of the default.xsl template. You can copy these elements from the code samples below to place the <span class="caps">XSL</span> code into the appropriate areas of the intended page structure.</p>
+
+<p>The website name should appear in two different places in the qwilm theme. The <code>&lt;h1&gt;</code> element has been hidden by a <span class="caps">CSS</span> rule, but the element is still there. Find the <code>&lt;div id="header"&gt;</code> element and replace it with the following:</p>
+
+<pre>
+<code>&lt;div id="header"&gt;
+&lt;h1&gt;
+&lt;a href="{$root}/" title="Home"&gt;
+	&lt;xsl:value-of select="$website-name"/&gt;
+&lt;/a&gt;
+&lt;/h1&gt;
+&lt;/div&gt;</code>
+</pre>
+
+<p>There is another <code>&lt;div&gt;</code> element at the bottom of the page that contains the home page link. While the <code>&lt;h1&gt;</code> at the top of the page is hidden by a <span class="caps">CSS</span> rule, this <code>&lt;h3&gt;</code> element at the bottom becomes the home page link that displays on the page. Replace this with the following:</p>
+
+<pre>
+<code>&lt;div class="box sidebar" id="sidebar-3"&gt;
+&lt;h3&gt;
+&lt;a href="{$root}/" title="Home"&gt;
+	&lt;xsl:value-of select="$website-name"/&gt;
+&lt;/a&gt;
+&lt;/h3&gt;
+&lt;/div&gt;</code>
+</pre>
+
+<p>The page heading and the content body can go in the “sidebar-2” <code>&lt;div&gt;</code> element. We’ll keep the list of Meta links for now, even though the feed links don’t yet point to anything that exists.</p>
+
+<pre>
+<code>&lt;div class="box sidebar" id="sidebar-2"&gt;
+&lt;ul&gt;
+&lt;li&gt;
+	&lt;h2&gt;Main Menu&lt;/h2&gt;
+	&lt;xsl:call-template name="main-menu"/&gt;
+&lt;/li&gt;
+&lt;li&gt;
+	&lt;h2&gt;&lt;xsl:value-of select="$page-title"/&gt;&lt;/h2&gt;
+	&lt;xsl:copy-of select="data/content/entry[fields/page/@handle=$current-page]/fields/body/*"/&gt;
+&lt;/li&gt;
+&lt;li&gt;
+	&lt;h2&gt;Meta&lt;/h2&gt;
+	&lt;ul&gt;
+		&lt;li&gt;&lt;a href="/feed/" title="Syndicate this site using RSS 2.0"&gt;Entries &lt;abbr title="Really Simple Syndication"&gt;RSS&lt;/abbr&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="/comments/feed/" title="The latest comments to all posts in RSS"&gt;Comments &lt;abbr title="Really Simple Syndication"&gt;RSS&lt;/abbr&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="http://21degrees.com.au/products/symphony/" 
+		title="The Symphony Web Publishing System from Twentyone Degrees"&gt;Symphony&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;</code>
+</pre>
+
+<p>If all goes well, you should see a page that looks like this (depending on the size of your browser window):</p>
+
+<p><a href="/workspace/images/sym_qwilm_home_04.jpg"><img src="/image/540/0/0/fff/images/sym_qwilm_home_04.jpg" title="qwilm theme : Home Page : Click to view a larger image" alt="qwilm theme : Home Page : Click to view a larger image" /></a></p>
+
+<p>To view the full-size image of the theme, click on the image. Use the back button of your browser to return to this page. </p>
+
+<h4>Symphony’s Image Function</h4>
+
+<p>Just as an aside, Symphony has a great built-in image function that uses <span class="caps">PHP</span> to dynamically resize images on the fly before sending the results to the browser. For the above image, I uploaded only the full-size image. Symphony has created the smaller image for me. The <span class="caps">HTML</span> code to accomplish this bit of magic is as follows:</p>
+
+<pre>
+<code>&lt;a href="/workspace/images/sym_qwilm_home_04.jpg"&gt;
+&lt;img src="/image/540/0/0/fff/images/sym_qwilm_home_04.jpg" 
+title="qwilm theme : Home Page : Click to view a larger image" 
+alt="qwilm theme : Home Page : Click to view a larger image" /&gt;
+&lt;/a&gt;</code>
+</pre>
+
+<p>For details on how to utilize this in your templates, refer to the Overture Forum thread regarding <a href="http://overture21.com/forum/comments.php?DiscussionID=191&amp;page=1#Item_0" title="Overture Forum: built in image functions">Symphony’s built-in image functions</a> or view the <a href="http://overture21.com/wiki/templating-system/development-tools/image-manipulation-function" title="Overture Wiki: Image Function">Image Function</a> entry in the Overture Wiki.</p>
+
+<p>For the sake of demonstration, following are some links for different sizes of this same image:</p>
+
+<ul>
+<li><a href="/image/40/0/0/fff/images/sym_qwilm_home_04.jpg">40 pixels wide</a></li>
+<li><a href="/image/100/0/0/fff/images/sym_qwilm_home_04.jpg">100 pixels wide</a></li>
+<li><a href="/image/200/0/0/fff/images/sym_qwilm_home_04.jpg">200 pixels wide</a></li>
+<li><a href="/image/300/0/0/fff/images/sym_qwilm_home_04.jpg">300 pixels wide</a></li>
+<li><a href="/image/0/100/0/fff/images/sym_qwilm_home_04.jpg">100 pixels tall</a></li>
+<li><a href="/image/0/200/0/fff/images/sym_qwilm_home_04.jpg">200 pixels tall</a></li>
+</ul>
+
+<p>This image function opens up some interesting possibilities, such as using Symphony to manage an image library and dynamically serve <span class="caps">XML</span> data and images to Flash for <a href="http://slideshowpro.net/">SlideShowPro</a>, or using Lokesh Dhakar’s very own <a href="http://www.huddletogether.com/projects/lightbox2/">Lightbox</a> to develop a <span class="caps">CSS</span> image gallery. But, I’ll get to that some time later.</p>
+
+<h3>Adding the Blogging Features</h3>
+
+<p>Lokesh Dhakar’s qwilm design, which he describes as “just as simple blog,” was intended to be used as a <a href="http://themes.wordpress.net/columns/3-columns/61/qwilm-03/">WordPress blog theme</a>, so it contains the usual features: Archives, Recent Posts, Categories, Search, Comments and XML/<span class="caps">RSS</span> feeds. All of these items are content related to weblog entries and the different ways you can find entries (archives, recent, categories, search) or interact with them (reading and posting comments, receiving notification of the latest additions through a <span class="caps">RSS</span> news reader). These features go beyond the basic Data Source that we created for the Content Section. We could use the Content Section, but we don’t want the static content being mixed with weblog entries. We could use <span class="caps">XSLT</span> to filter the results so as not to include static content. But why not create another Section to create a clear separation in the <span class="caps">XML</span> data between static content and weblog entries? So, let’s create another Section for weblog entries called “Entries”.</p>
+
+<h4>Determine what Custom Fields are required</h4>
+
+<p>It is possible to create several Custom Fields to associate with a Section, then create a Data Source and later add some additional Custom Fields. However, these new Custom Fields are not automatically added to the Data Source we created before. To include the new Custom Fields, we need to go back to Blueprints : Controllers : Data Sources to modify the Data Source to include the new Custom Fields. The same principle holds true if you rename a Custom Field. The Data Source you created previous to the name change will be looking for the old name for the Custom Field and will not find it. The Data Source needs to be updated to include the Custom Field with its new name.</p>
+
+<p>For this reason, it is good to create all the custom fields that will be associated with a Section before creating the Data Source, or we might find ourselves returning again and again to the Data Sources Editor to update the Data Source. To keep the page load time down, we may want to limit the amount of data we pass to the <span class="caps">XSLT</span> processor. To do this, we may create many different Data Sources which use the same source, but have been optimized to filter entries based on a number of different conditions. If at any time we add another Custom Field to the Section that we want to include in all these Data Sources, we’ll need to update each Data Source individually.</p>
+
+<p>First, then, let’s create a list of the items that we need to display:</p>
+
+<ul>
+<li>Title</li>
+<li>Date and Time</li>
+<li>Excerpt</li>
+<li>Body</li>
+<li>Photo</li>
+<li>Photo Caption</li>
+<li>Categories</li>
+<li>Tags (I just threw this one in)</li>
+</ul>
+
+<h4>Create the Entries Section</h4>
+
+<p>Go to Structure : Sections and create a new Section called “Entries.” This time, keep all the defaults selected, including “Enable comments for this section.”</p>
+
+<p><img src="/workspace/images/sym_qwilm_sections_entries.jpg" title="Symphony Admin : Structure : Sections : New Section" alt="Symphony Admin : Structure : Sections : New Section" /></p>
+
+<p>Save the new Section and we will find ourselves back at the Sections list, which shows that a Primary field has been created with the name “Title”. Click on this link and we can change the name of the Primary field to “Entry Title”.</p>
+
+<h4>Create Custom Fields associated with the Entries Section</h4>
+
+<p>It is possible to have several Custom Fields with the same name but used for different sections. For instance, a Custom Field called “Title” will be common for most sections. It may be necessary to differentiate between these fields in the <span class="caps">XSL</span> code. The simplest way to ensure that the <span class="caps">XSL</span> code can differentiate between these fields is to give them a different name. There may be instances where you might want to apply the same template to Data Sources from multiple Sections, in which case, it makes sense to create Custom Fields with the same name. For the sake of this tutorial, I will allow Custom Fields with identical names, although some have recommended otherwise on the Overture Forum (some <a href="http://overture21.com/forum/comments.php?DiscussionID=547">problems</a> and <a href="http://overture21.com/forum/comments.php?DiscussionID=831">fixes</a> have been noted due to identical names). </p>
+
+<p>Go to Structure : Custom Fields and create Custom Fields with the following names, choosing the settings shown in parentheses with this syntax: (type, attribute; location). We will configure each of these Custom Fields to be associated with the “Entries” Section:</p>
+
+<p><em>Note that you will need to create a new directory in the <code>/workspace/</code> directory for the Entry Photos — unfortunately, Symphony cannot do this (yet). When you create this directory, ensure that it has been assigned the privileges necessary to allow Symphony to read and write files to it.</em></p>
+
+<ul>
+<li>Title (Primary Custom Field, created automatically)</li>
+<li>Publish Date and Time (created automatically)</li>
+<li>Excerpt (text area, 10 rows; main content)</li>
+<li>Body (text area, 25 rows; main content)</li>
+<li>Photo (file attachment, directory: <code>workspace/photos/</code>; drawer)</li>
+<li>Photo Caption (text input; drawer)</li>
+<li>Categories (select box, multiple items: Yes, options: General, Technology, Personal, Work; sidebar)</li>
+<li>Tags (text input, description: “Comma separated tags”, Split by commas: Yes; main content)</li>
+<li>Publish (checkbox with description: Publish this entry, Checked by default: Yes; sidebar)</li>
+</ul>
+
+<p>Now, go to Structure : Sections and click on the Reorder button in the upper right. You can control the order of the menu items in the Publish menu by reordering the Sections. Click on the row for Entries and drag the row to the top position in the list, the click on the Done button.</p>
+
+<p><img src="/workspace/images/sym_qwilm_sections_reorder.jpg" title="Symphony Admin : Structure : Sections : Reorder" alt="Symphony Admin : Structure : Sections : Reorder" /></p>
+
+<p>Click on the name of the Entries Section to edit it and click on the checkbox next to Publish so we can add the Publish field to the columns displayed in the Entries list.</p>
+
+<p>Go to the Publish menu to see the new Entries Section added to the top of the menu. Select Entries and click on the Create New button. (At this point, if your <code>/workspace/photos/</code> directory is not writable, you will see an error until you fix the privileges for the directory. Set permissions to 777 or 755 depending on server requirements.) If all goes well, we should see our new Entries Section, including a couple of additional Custom Fields that can be accessed by clicking on the More Options button. We may not have a photo to associate with every entry, so we can keep the associated Custom Fields from cluttering the page, but they are there when we need them.</p>
+
+<h4>Create the Data Source</h4>
+
+<p>We can go ahead and start creating entries, but we won’t be able to do anything with the data in our templates until we have created a Data Source to associate with our Master and/or Page templates. Let’s go ahead and do this now. Go to Blueprints : Controllers : Data Sources : Create New, give the Data Source the name “Entries” and use the Entries Section as the source. By default, several elements are selected under Format Options : Included Elements. These elements will work fine for what we want to accomplish. As blogs tend to order entries by starting with the most recent entries, choose “Descending Date (latest first)” from the pull-down menu under Format Options : Sort Results by. Save the Data Source and we’ll be ready to start building the rest of the theme.</p>
+
+<p>We have connected to the <span class="caps">CSS</span> stylesheet and we have the Section and Custom Fields created, ready to receive data for the Entries Section. Stay tuned for Part 6, when we will develop the templates that will get the rest of the site working.</p></more>
+			<categories>
+				<item handle="applications">Applications</item>
+			</categories>
+			<publish>yes</publish>
+		</fields>
+		<comments count="0" spam="0"></comments>
+	</entry>
+	<entry id="102" handle="building-a-symphony-theme-part-4">
+		<date>2007-01-04</date>
+		<time>03:01</time>
+		<author></author>
+		<fields>
+			<title handle="building-a-symphony-theme-part-4">Building a Symphony Theme: Part 4</title>
+			<body word-count="163"><p>The series on <a href="/journal/building-a-symphony-theme-part-1/">Building a Symphony Theme</a> has touched briefly on several concepts to make sure we understand the basics before we get into the more complex areas of developing with Symphony. You may realize by now that building a theme in Symphony really means building an entire site from the ground up. But once we have built a theme, the same templates and database structures can be used to easily build other types of sites that may have an entirely different style with very different functionality. </p>
+
+<p>Every site tends to have some basic similarities. There needs to be some way to manage the static content of your site. It may not change much, but it is good to have some way to update these areas, such as the About and Contact pages. Here is where we go beyond the default parameters and data sources to actually creating content. We will start by creating a Section and creating Custom Fields for entering content.</p></body>
+			<photo></photo>
+			<more word-count="2279"><h3>Creating a Section and Custom Fields</h3>
+
+<p>For the areas of your site that contain static content, you may not need anything more than a text field for the Title and a text area for the Body. We will also need some way to associate the content with a particular page. In the interests of keeping things simple, we’ll do just that. Go to the Structure menu and select Sections. </p>
+
+<p><img src="/workspace/images/sym_qwilm_sections.jpg" title="Symphony Admin : Structure : Sections" alt="Symphony Admin : Structure : Sections" /></p>
+
+<h4>Create a New Section</h4>
+
+<p>Click on the Create New button and give the section the name “Content”. It’s not likely that we’ll need comments for this type of content so we can deselect the check box beside “Enable comments for this section”. You can also choose whether you would like to display the Date and Time widget to select the Publish Date for each entry. </p>
+
+<p>There are couple check boxes under the heading “Show the following columns”. This allows you to customize how the entries are listed in the Symphony Admin. </p>
+
+<p><img src="/workspace/images/sym_qwilm_sections_content.jpg" title="Symphony Admin : Structure : Sections : Content" alt="Symphony Admin : Structure : Sections : Content" /></p>
+
+<h4>View the Content Entries</h4>
+
+<p>For each Section that you create, a new Custom Field, named “Title”, will be created. Go to the Publish menu and you will see that a new Section has been added to the menu. Comments and File Manager will always appear at the bottom of the Publish menu. Select the Content Section from the Publish menu and you will see the column headings for the list of entries, but we have yet to create any entries.</p>
+
+<p><img src="/workspace/images/sym_qwilm_content_empty.jpg" title="Symphony Admin : Publish : Content" alt="Symphony Admin : Publish : Content" /></p>
+
+<h4>Create a New Content Entry</h4>
+
+<p>Click on the Create New button and you will see a text input field labeled “Title” and the “Date and Time” widget (a calendar and a list of time values as a pull-down menu) for the Publish Date. If you resize the browser window, you will notice that the “Title” input field has a fluid width, while the “Date and Time” widget maintains a fixed width.</p>
+
+<p><img src="/workspace/images/sym_qwilm_content_entry_01.jpg" title="Symphony Admin : Publish : Content : Create New" alt="Symphony Admin : Publish : Content : Create New" /></p>
+
+<h4>The Primary Custom Field</h4>
+
+<p>As I mentioned above, a Custom Field was created automatically when the new Section was created. Go to the Structure menu and select Custom Fields and you will find a list of Custom Fields. At the moment there is only one Custom Field associated with the Content Section.</p>
+
+<p><img src="/workspace/images/sym_qwilm_fields_list_title.jpg" title="Symphony Admin : Structure : Custom Fields" alt="Symphony Admin : Structure : Custom Fields" /></p>
+
+<p>Click on the title of the Custom Field to edit it. The “Title” Custom Field comes with a warning message because it is a Primary Custom Field:</p>
+
+<blockquote>
+<p><strong>This custom field is linked to the Content section, so you cannot delete or re-associate it, and it must use either a text input or text area field type.</strong> </p>
+</blockquote>
+
+<p>It is possible to add a description that will appear to the right of the label for the Custom Field, but this is optional. It is also possible to apply validation rules for each Custom Field. By default, the Primary Custom Field is a required field.</p>
+
+<p><img src="/workspace/images/sym_qwilm_fields_title.jpg" title="Symphony Admin : Structure : Custom Fields : Title" alt="Symphony Admin : Structure : Custom Fields : Title" /></p>
+
+<h4>Create New Custom Fields</h4>
+
+<p>For the Content section, we will create three new Custom Fields: Body, Page and Photo, just so we can see how it is possible to customize the placement of these fields in the Admin pages. Go to Structure : Custom Fields : Create New and give it the name, “Body”. Select “Text Area” under Field Type and give the text area a depth of 15 rows. Associate the Custom Field with the Content Section (since there is no other Section, it should be selected already), and leave the Location as “Main Content”. Click the Save button.</p>
+
+<p><img src="/workspace/images/sym_qwilm_fields_body.jpg" title="Symphony Admin : Structure : Custom Fields : Create New : Body" alt="Symphony Admin : Structure : Custom Fields : Create New : Body" /></p>
+
+<p>Next, create a new Custom Field called “Page” with a “Select Box” Field Type, with the Options: “Home, About, Contact, Maintenance” and a Location in the “Sidebar”.</p>
+
+<p><img src="/workspace/images/sym_qwilm_fields_page.jpg" title="Symphony Admin : Structure : Custom Fields : Create New : Page" alt="Symphony Admin : Structure : Custom Fields : Create New : Page" /></p>
+
+<p>Finally, create one more Custom Field called “Photo” with a “File Attachment” Field Type with “/workspace/upload/” selected as the Destination Folder and a Location in the “Drawer”.</p>
+
+<p><img src="/workspace/images/sym_qwilm_fields_photo.jpg" title="Symphony Admin : Structure : Custom Fields : Create New : Photo" alt="Symphony Admin : Structure : Custom Fields : Create New : Photo" /></p>
+
+<p>Go to Structure : Sections and click on “Content” to edit the Section. You can select the check box next to “Page” to view this column in the entries list. Now, when you go to Publish : Content, you will see the additional column (still no entries yet). Click on Create New and you will see the new customized interface you just created for the Content Section. </p>
+
+<p><img src="/workspace/images/sym_qwilm_content_entry.jpg" title="Symphony Admin : Publish : Content : Create New" alt="Symphony Admin : Publish : Content : Create New" /></p>
+
+<p>Click on the “More Options” button to view the upload link for the Photo file attachment field.</p>
+
+<p><img src="/workspace/images/sym_qwilm_content_options.jpg" title="Symphony Admin : Publish : Content : Create New : Options" alt="Symphony Admin : Publish : Content : Create New : Options" /></p>
+
+<h4>Create Content</h4>
+
+<p>For the moment, I am going to ignore the Photo field as we start creating some basic content for the site. Now we can create an entry for each page. For my home page, I have given the page a Title: “Welcome” and selected “Home” from the pull-down menu under Page. For the Body, I have the following:</p>
+
+<blockquote>
+<p><em>Welcome to my website. I am currently in the process of developing a theme for the Symphony Web Publishing System. Please stay tuned while I assemble this website.</em></p>
+</blockquote>
+
+<p><img src="/workspace/images/sym_qwilm_content_welcome.jpg" title="Symphony Admin : Publish : Content : Create New : Welcome" alt="Symphony Admin : Publish : Content : Create New : Welcome" /></p>
+
+<p>Create another entry for the About page, selecting “About” from the Page pull-down menu. Then create two more entries, one for the Contact page and the Maintenance page, making sure that you select the appropriate page from the Page pull-down menu for each entry. When you are finished, you should be able to go to Publish : Content to view the list of entries, showing the page that each entry is associated with.</p>
+
+<p><img src="/workspace/images/sym_qwilm_content_list.jpg" title="Symphony Admin : Publish : Content" alt="Symphony Admin : Publish : Content" /></p>
+
+<h3>Transforming Content Data into <span class="caps">HTML</span> Output</h3>
+
+<p>To display our content, we will be retracing our steps in familiar territory, since the same process that we used for creating the navigation template for the main menu will be the same process that we will be using to transform the Content data we have just created into <span class="caps">HTML</span> output that we can display on our pages. The difference will be that the templates we build will be specific to individual pages rather than Master templates that apply to several pages.</p>
+
+<p>The process goes something like this:</p>
+
+<ul>
+<li>Create the Data Source</li>
+<li>Associate the Data Source with a Master or Page Template</li>
+<li>Create the <span class="caps">XSL</span> Template</li>
+<li>Test the front end</li>
+<li>Troubleshoot any problems using the ?debug information</li>
+</ul>
+
+<h4>The Data Source Editor</h4>
+
+<p>To view the Data Source Editor, go to Blueprints : Controllers : Data Sources : Create New. Now that we have a new Section, the New Data Source page will look a little different than when we had created the Navigation Data Source. There are a number of options available to us that were not there before. The Data Source Editor responds to the selection of different sources by dynamically offering different options. The Source pull-down menu has defaulted to the selection of the first available Data Source, which is now the Content Section. </p>
+
+<p><img src="/workspace/images/sym_qwilm_ds_content.jpg" title="Symphony Admin : Blueprints : Controllers : Data Sources : Content" alt="Symphony Admin : Blueprints : Controllers : Data Sources : Content" /></p>
+
+<p>So, what are all these options and why would you use them? Well, the <span class="caps">XML</span> data associated with a particular Section can become quite large and, if the <span class="caps">XSLT</span> template is required to process a very large amount of data, this will increase the amount of time necessary to transform the <span class="caps">XML</span> data into <span class="caps">HTML</span> output, meaning page load times will become longer than necessary. No one wants a slow site, so it is best to select only the data that is necessary to produce the desired output. Symphony makes it possible to customize the <span class="caps">XML</span> Data Source to fit the needs of the page by filtering the data by: </p>
+
+<ul>
+<li><span class="caps">URL</span> Parameters</li>
+<li>Custom Field Values</li>
+<li><span class="caps">XML</span> Elements (as part of the Format Options)</li>
+<li>Maximum Number of Records per Page</li>
+<li>Page Numbers</li>
+</ul>
+
+<p>There are also some formatting options for the <span class="caps">XML</span> data:</p>
+
+<ul>
+<li>Entry List</li>
+<li>Group by Date</li>
+<li>Archive Overview</li>
+</ul>
+
+<p>An Entry List has the following <span class="caps">XML</span> structure:</p>
+
+<pre>
+<code>&lt;entries section="entries"&gt;
+&lt;entry id="102" handle="entry-title"&gt;
+&lt;date&gt;2007-01-03&lt;/date&gt;
+&lt;time&gt;12:07&lt;/time&gt;
+&lt;author /&gt;
+&lt;fields&gt;
+	&lt;title handle="entry-title"&gt;Entry Title&lt;/title&gt;
+	&lt;body word-count="7"&gt;&lt;p&gt;The body of the entry goes here.&lt;/p&gt;&lt;/body&gt;
+&lt;/fields&gt;
+&lt;comments count="0" spam="0" /&gt;
+&lt;/entry&gt;
+&lt;/entries&gt;</code>
+</pre>
+
+<p>A Data Source that has a Group by Date format has the following <span class="caps">XML</span> structure:</p>
+
+<pre>
+<code>&lt;entries-grouped-by-date section="entries"&gt;
+&lt;year value="2007"&gt;
+&lt;month value="01"&gt;
+	&lt;day value="03"&gt;
+		&lt;entry id="102" handle="entry-title"&gt;
+			&lt;date&gt;2007-01-03&lt;/date&gt;
+			&lt;time&gt;12:07&lt;/time&gt;
+			&lt;author /&gt;
+			&lt;fields&gt;
+				&lt;title handle="entry-title"&gt;Entry Title&lt;/title&gt;
+				&lt;body word-count="7"&gt;&lt;p&gt;The body of the entry goes here.&lt;/p&gt;&lt;/body&gt;
+			&lt;/fields&gt;
+			&lt;comments count="0" spam="0" /&gt;
+		&lt;/entry&gt;
+	&lt;/day&gt;
+&lt;/month&gt;
+&lt;/year&gt;
+&lt;/entries-grouped-by-date&gt;</code>
+</pre>
+
+<p>An Archive Overview has the following <span class="caps">XML</span> structure:</p>
+
+<pre>
+<code>&lt;archive-overview section="entries" year-start="2006" year-end="2007"&gt;
+&lt;year value="2007"&gt;
+&lt;month value="01" entry-count="2" /&gt;
+&lt;/year&gt;
+&lt;year value="2006"&gt;
+&lt;month value="12" entry-count="0" /&gt;
+&lt;month value="11" entry-count="1" /&gt;
+&lt;month value="10" entry-count="5" /&gt;
+&lt;month value="09" entry-count="5" /&gt;
+&lt;month value="08" entry-count="0" /&gt;
+&lt;month value="07" entry-count="0" /&gt;
+&lt;month value="06" entry-count="0" /&gt;
+&lt;month value="05" entry-count="0" /&gt;
+&lt;month value="04" entry-count="0" /&gt;
+&lt;month value="03" entry-count="0" /&gt;
+&lt;month value="02" entry-count="0" /&gt;
+&lt;month value="01" entry-count="0" /&gt;
+&lt;/year&gt;
+&lt;/archive-overview&gt;</code>
+</pre>
+
+<p>The Archive Overview and Group by Date formats are intended for features such as a blog archive or listings of news articles which are sorted by date. The Entry List format works well for most applications.</p>
+
+<p>Finally, the entries can be sorted by the Publish Date, either in ascending order (earliest first) or descending order (latest first). [Note to the Symphony Team: it would be amazing if it were possible to add other options for sorting the <span class="caps">XML</span> Data Sources, such as alphabetically, or by custom field to control how entries are listed in each Section.] <span class="caps">XSLT</span> offers the <code>&lt;xsl:sort/&gt;</code> element to be able to sort the data in other ways for the <span class="caps">HTML</span> output.</p>
+
+<h4>Create the Data Source</h4>
+
+<p>For our page content, the Entry List format will work fine. The only fields we really need are the title, body and page elements. (I won’t be displaying photos with the content, so I will not include this element in the Data Source, since I will address image handling in another tutorial.)</p>
+
+<p>So, let’s go ahead and create a new Data Source with the following features:</p>
+
+<ul>
+<li>Name: Content</li>
+<li>Source: Content</li>
+<li>Format Style: Entry List</li>
+<li>Included Elements: title, body, page</li>
+<li>Sort Results by: Ascending Date</li>
+<li>Limit Options: remove limits (leave these fields blank)</li>
+</ul>
+
+<p>(It is not likely that we will have more than 50 records in our Content section, so it doesn’t really matter whether we change the Limit Options or not.)</p>
+
+<h4>Associate the Data Source with a Master or Page Template</h4>
+
+<p>It is possible to associate a Data Source with a Master template and/or a Page template. If we remember back to the Navigation template, we associated the Navigation Data Source with the default Master template. Since all our pages use the default Master template, we can easily include the Content Data Source in the Data Source <span class="caps">XML</span> for all pages by configuring the default Master template to include the Content Data Source. Otherwise, you can modify the Page Settings by configuring each page to include the Content Data Source. Note that when a Data Source is attached to a Master template, any page the uses this Master template will have an asterisk (*) next to the name of this Data Source in the Page Settings in the select box for Data Source <span class="caps">XML</span>. </p>
+
+<p>So, let’s go ahead and attach the Content Data Source to the default Master template by going to Blueprints : Components : Masters : default.xsl. Click on the Configure button and select “Content” in the Master Settings : Data Source <span class="caps">XML</span> select box and click the Save button.</p>
+
+<p>We should now be able to go the home page and view the ?debug information for the page. The <span class="caps">XML</span> data should now contain the <code>&lt;content&gt;</code> node with four <code>&lt;entry&gt;</code> elements. </p>
+
+<h4>Create the <span class="caps">XSL</span> Template</h4>
+
+<p>Now, we can start creating the <span class="caps">XSL</span> templates for our pages. However, before we get there, I need to modify the default Master template.</p>
+
+<p>In Part 3, you may have noticed that I obliterated my page heading <code>&lt;h2&gt;</code> element by turning it into a list item element for the navigation. Rather than add this back into the default Master template, we can add this code to the Page template. At the same time, I also removed the <code>&lt;xsl:apply-templates/&gt;</code> element. This is important to include in the default Master template if we want our Page templates to be included in the <span class="caps">XSL</span> stylesheet for each page. First, however, let’s try something else, because it will be easier than modifying each of our page templates. By adding code to the default Master template, we can affect all our pages. So, go to Blueprints : Components : Masters : default.xsl and add the following code below the <code>&lt;xsl:call-template name="main-menu"/&gt;</code> element:</p>
+
+<pre>
+<code>&lt;h2&gt;&lt;xsl:value-of select="$page-title"/&gt;&lt;/h2&gt;
+&lt;xsl:copy-of select="data/content/entry[fields/page/@handle=$current-page]/fields/body/*"/&gt;</code>
+</pre>
+
+<p>The default Master template should look like this:</p>
+
+<pre>
+<code>&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+&lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;
+&lt;xsl:output
+method="xml" 
+doctype-public="-//W3C//DTD XHTML 1.0 Strict//EN" 
+doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"
+omit-xml-declaration="yes"
+encoding="UTF-8" 
+indent="yes" /&gt;
+&lt;xsl:template match="/"&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;&lt;xsl:value-of select="$page-title"/&gt;&lt;/title&gt;
+	&lt;style type="text/css"&gt;
+		li.current a {color:#f00; text-decoration:none;}
+	&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;h1&gt;
+		&lt;a href="{$root}/" title="Home Page"&gt;
+			&lt;xsl:value-of select="$website-name"/&gt;
+		&lt;/a&gt;
+	&lt;/h1&gt;
+	&lt;xsl:call-template name="main-menu"/&gt;
+	&lt;h2&gt;&lt;xsl:value-of select="$page-title"/&gt;&lt;/h2&gt;
+	&lt;xsl:copy-of select="data/content/entry[fields/page/@handle=$current-page]/fields/body/*"/&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+&lt;/xsl:template&gt;
+&lt;/xsl:stylesheet&gt;</code>
+</pre>
+
+<p>What just happened here? Well, we used a <code>&lt;xsl:copy-of/&gt;</code> element to select data from the <span class="caps">XML</span> Data Source attached to our default Master template and thereby attached to each of our pages. The “select” attribute of the xsl:copy-of element is selecting a node set based on the context node being matched by the default Master template, which is the root of the <span class="caps">XML</span> data, indicated by:</p>
+
+<pre>
+<code>&lt;xsl:template match="/"&gt;</code>
+</pre>
+
+<p>Using XPath to find each entry node in the Content Section, we use the following relative expression:</p>
+
+<pre>
+<code>select="data/content/entry"</code>
+</pre>
+
+<p>But we also want to test for a specific condition: that the handle of the “Page” Custom Field for the entry we want to display matches the current page handle. So, we test each entry by using a predicate, a conditional statement enclosed in square brackets:</p>
+
+<pre>
+<code>[fields/page/@handle=$current-page]</code>
+</pre>
+
+<p>Once we have found the matching entry, we find the Custom Field for the Body of the entry with this expression, relative to the selected entry:</p>
+
+<pre>
+<code>fields/body</code>
+</pre>
+
+<p>And, since the <code>&lt;body&gt;</code> element contains child elements, such as <code>&lt;p&gt;</code> elements, we use the asterisk (*) to copy all the elements contained by the <code>&lt;body&gt;</code> element.</p>
+
+<p>Why use <code>&lt;xsl:copy-of/&gt;</code> instead of <code>&lt;xsl:value-of/&gt;</code>? Symphony defaults to some sort of text formatter to ensure that text gets wrapped in some sort of <span class="caps">HTML</span> element, at the very least some paragraph tags: <code>&lt;p&gt;</code>. Because of this, there are child elements within the <code>&lt;body&gt;</code> element and the value of the <code>&lt;body&gt;</code> element is empty. So, <code>&lt;xsl:value-of/&gt;</code> would return no value. On the other hand, <code>&lt;xsl:copy-of/&gt;</code> will reproduce the child elements that are selected. Using the asterisk (*) will select all child elements.</p>
+
+<h4>We have content, but no style?</h4>
+
+<p>So, there we have it! A fully functioning Symphony theme. Well, it ain’t pretty, but it works. But if our site has no style, who will want to read it? And surely there are some features that are missing. And surely not all of our pages are going to look the same.</p>
+
+<p>Symphony is all about content <strong>and</strong> style. It’s time to add some style to our site. Enter Cascading Style Sheets (<span class="caps">CSS</span>) in the next installment: <a href="/journal/building-a-symphony-theme-part-5/">Building a Symphony Theme: Part 5</a> – Integrating <span class="caps">CSS</span> and Creating the Entries Section.</p></more>
+			<categories>
+				<item handle="applications">Applications</item>
+			</categories>
+			<publish>yes</publish>
+		</fields>
+		<comments count="0" spam="0"></comments>
+	</entry>
+	<entry id="101" handle="building-a-symphony-theme-part-3">
+		<date>2007-01-02</date>
+		<time>09:00</time>
+		<author></author>
+		<fields>
+			<title handle="building-a-symphony-theme-part-3">Building a Symphony Theme: Part 3</title>
+			<body word-count="92"><p>Continuing on in the series on Building a Symphony Theme (see <a href="/journal/building-a-symphony-theme-part-1/">Part 1</a> and <a href="/journal/building-a-symphony-theme-part-2/">Part 2</a>), I will start to introduce some dynamic elements.</p>
+
+<p>Just to review, we have set up a virtual host, installed Symphony, set System Preferences and Author Settings, installed and enabled a Campfire Service, created a Page template and a Master template, and looked around the ?debug interface to view the <span class="caps">XML</span> data, <span class="caps">XSLT</span> templates and <span class="caps">XHTML</span> Output.</p>
+
+<p>Before we start integrating our <span class="caps">XHTML</span> structure and <span class="caps">CSS</span> files, let’s get aquainted with the basics of working with Symphony and <span class="caps">XSLT</span>.</p></body>
+			<photo></photo>
+			<more word-count="3619"><h3><span class="caps">XSLT</span> Parameters</h3>
+
+<p>First, there are several <span class="caps">XSL</span> parameters that can be used to start making our page template dynamic. You can find a list of these parameters by navigating to the home page and adding <code>?debug</code> to the end of the <span class="caps">URL</span> in the address bar.</p>
+
+<pre>
+<code>http://sym.qwilm.site/?debug</code>
+</pre>
+
+<p>Click on the <span class="caps">XSLT</span> link at the top of the ?debug page and you will see a list of <span class="caps">XSL</span> parameters.</p>
+
+<p><img src="/workspace/images/sym_qwilm_home_xslt.jpg" title="?debug XSLT view: XSL Parameters" alt="?debug XSLT view: XSL Parameters" /></p>
+
+<h4>Default Parameters</h4>
+
+<p>We can use these parameters within our page templates. Let’s start by adding the name of the site to the default Master template that we have created. Take a look at the list of parameters:</p>
+
+<pre>
+<code>&lt;xsl:param name="root" select="'http://sym.qwilm.site'" /&gt;
+&lt;xsl:param name="workspace" select="'http://sym.qwilm.site/workspace'" /&gt;
+&lt;xsl:param name="current-page" select="'home'" /&gt;
+&lt;xsl:param name="page-title" select="'Home'" /&gt;
+&lt;xsl:param name="parent-page" select="'/'" /&gt;
+&lt;xsl:param name="today" select="'2006-12-10'" /&gt;
+&lt;xsl:param name="website-name" select="'qwilm'" /&gt;
+&lt;xsl:param name="symphony-build" select="'1506'" /&gt;
+&lt;xsl:param name="url-mode" select="'full'" /&gt;
+&lt;xsl:param name="url-type" select="'page'" /&gt;
+&lt;xsl:param name="url-handle" select="''" /&gt;</code>
+</pre>
+
+<p>For the moment, let me just state that the last three parameters that refer to url are not available for inclusion in your templates (for <a href="http://overture21.com/forum/comments.php?DiscussionID=641">reasons</a> I won’t get into here). The rest act as default parameters, generated by Symphony for every page, that can be called from within your template.</p>
+
+<p>For example, the <code>$website-name</code> parameter uses the System Preference for Website Name. If you change this preference, this will change the value of <code>$website-name</code> wherever you have it in your templates.</p>
+
+<p>The <code>$root</code> parameter refers to the domain that is used when installing Symphony. This value is stored in the <code>/conf/config.php</code>, which stores the information that is required for Symphony to access your database and to access the Symphony support server for updates.</p>
+
+<p>We can use these two parameters to create a website name that links to the home page. Go to Blueprints : Components and click on default.xsl under Masters to edit the template. Symphony creates a default stylesheet that looks like this:</p>
+
+<pre>
+<code>&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+&lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;
+&lt;xsl:output
+method="xml" 
+doctype-public="-//W3C//DTD XHTML 1.0 Strict//EN" 
+doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"
+omit-xml-declaration="yes"
+encoding="UTF-8" 
+indent="yes" /&gt;
+&lt;xsl:template match="/"&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;&lt;xsl:value-of select="$page-title"/&gt;&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;xsl:apply-templates/&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+&lt;/xsl:template&gt;
+&lt;/xsl:stylesheet&gt;</code>
+</pre>
+
+<p>We will want to change it to look like this:</p>
+
+<pre>
+<code>&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+&lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;
+&lt;xsl:output
+method="xml" 
+doctype-public="-//W3C//DTD XHTML 1.0 Strict//EN" 
+doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"
+omit-xml-declaration="yes"
+encoding="UTF-8" 
+indent="yes" /&gt;
+&lt;xsl:template match="/"&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;&lt;xsl:value-of select="$page-title"/&gt;&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;h1&gt;
+		&lt;a href="{$root}/" title="Home Page"&gt;
+			&lt;xsl:value-of select="$website-name"/&gt;
+		&lt;/a&gt;
+	&lt;/h1&gt;
+	&lt;xsl:apply-templates/&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+&lt;/xsl:template&gt;
+&lt;/xsl:stylesheet&gt;</code>
+</pre>
+
+<p>You should now be able to navigate to your home page and view a page that has a link to the home page. So, what just happened here? Well, there is a different syntax for finding values using <span class="caps">XSLT</span> depending on whether the value must be output within an element attribute or as the value of an element. For the anchor value <code>&lt;a&gt;Value&lt;/a&gt;</code> we need to use a <code>&lt;xsl:value-of select="$param"/&gt;</code>, but for the attribute value <code>&lt;a href="value"&gt;&lt;/a&gt;</code> we need to use <code>{$param}</code>.</p>
+
+<p>You might have noticed that the default Master template includes the <code>$page-title</code> parameter in the <code>title</code> element of the <code>head</code> element. It might also be a good idea to include this value as a page title in the body. Let’s add this value as an <code>h2</code> to the xsl:template.</p>
+
+<p>Add this after the <code>h1</code> element:</p>
+
+<pre>
+<code>&lt;h2&gt;&lt;xsl:value-of select="$page-title"/&gt;&lt;/h2&gt;</code>
+</pre>
+
+<p>So the xsl:template element looks like this:</p>
+
+<pre>
+<code>&lt;xsl:template match="/"&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;&lt;xsl:value-of select="$page-title"/&gt;&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;h1&gt;
+		&lt;a href="{$root}/" title="Home Page"&gt;
+			&lt;xsl:value-of select="$website-name"/&gt;
+		&lt;/a&gt;
+	&lt;/h1&gt;
+	&lt;h2&gt;&lt;xsl:value-of select="$page-title"/&gt;&lt;/h2&gt;
+	&lt;xsl:apply-templates/&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+&lt;/xsl:template&gt;</code>
+</pre>
+
+<h3>Default Data Sources</h3>
+
+<p>In addition to the default parameters, there are also default data sources available even before the creation of new sections and custom fields. While it is necessary to create new Data Sources to add the default data to the <span class="caps">XML</span> data for a page, the following are a list of the available sources:</p>
+
+<ul>
+<li>Authors</li>
+<li>Comments</li>
+<li>Navigation</li>
+</ul>
+
+<p>The Authors data is extracted from the Settings : Authors section.</p>
+
+<p>The Comments data is extracted from the Publish : Comments section.</p>
+
+<p>The Navigation data is extracted from the Blueprints : Pages section.</p>
+
+<p>There is also a Static <span class="caps">XML</span> source for adding another child node to the <span class="caps">XML</span> data apart from the data stored in the database. So, for instance, you could create a node for the months of the year without having to create a section and custom fields for storing this data in the database.</p>
+
+<h3>Custom Data Sources</h3>
+
+<p>When you create a Data Source, you are actually creating a <span class="caps">PHP</span> file that is stored in the /workspace/data-sources/ directory. This <span class="caps">PHP</span> file extracts data from the MySQL database and outputs the data as <span class="caps">XML</span> so Symphony can use <span class="caps">XSL</span> templates to transform that <span class="caps">XML</span> data into <span class="caps">HTML</span> Output. To view the <span class="caps">XML</span> data associated with a page, view the ?debug information for the page.</p>
+
+<p>Under the Publish menu, there are two menu items by default: Comments and File Manager. Every section that you create has an option to include comments, so that you can enable commenting for blog entries or for photo gallery entries, for instance. Implementing Comments will require attaching an Event, so I will tackle the basics before venturing into the more advanced features of Symphony. </p>
+
+<h4>Create a New Data Source: Navigation</h4>
+
+<p>The Navigation Data Source is the most basic to implement and one of the most useful. So let’s try this first. Go to Blueprints : Controllers. </p>
+
+<p><img src="/workspace/images/sym_qwilm_controllers_empty.jpg" title="Symphony Admin : Blueprints : Controllers" alt="Symphony Admin : Blueprints : Controllers" /></p>
+
+<p>Click on the Create New button beside the Data Sources heading. On the New Data Source page, under Essentials, give the Data Source a Name: Navigation, and choose Navigation under the Source pull-down menu and click on the Save button.</p>
+
+<p><img src="/workspace/images/sym_qwilm_ds_navigation.jpg" title="Symphony Admin : Blueprints : Controllers : Data Sources : Create New : Navigation" alt="Symphony Admin : Blueprints : Controllers : Data Sources : Create New : Navigation" /></p>
+
+<h4>Associate a Data Source with a Master template</h4>
+
+<p>To use this new Data Source, it must be associated with a page template or master template. Go to Blueprints : Components and choose the default template under Masters. Click on the configure button to view the Master Settings, and click on Navigation in the select box under Data Source <span class="caps">XML</span> in the Master Environment. (You can select multiple Data Sources by using the command button on the Mac and the control button in Windows.)</p>
+
+<p><img src="/workspace/images/sym_qwilm_master_config_ds.jpg" title="Symphony Admin : Blueprints : Components : Masters : default : Configure" alt="Symphony Admin : Blueprints : Components : Masters : default : Configure" /></p>
+
+<p>To see the effect of this change, let’s create a couple pages first. Go to Blueprints : Pages and click on the Create New button. Add two pages: one with the name, About, and the other with the name, Contact. You won’t need to configure these pages as we did with the home page, since Symphony will automatically create these pages with a type of “default” and a handle that corresponds with the name of the page. Now, view the Home page by clicking on the front page link, the name of the site beside the Symphony logo in the top of the Symphony Admin. View the ?debug information for the page to see the <span class="caps">XML</span> data created by the Navigation Data Source.</p>
+
+<p><img src="/workspace/images/sym_qwilm_debug_home_nav.jpg" title="Navigation XML Data" alt="Navigation XML Data" /></p>
+
+<h3>Using <span class="caps">XSLT</span> to transform <span class="caps">XML</span> data into <span class="caps">HTML</span> output</h3>
+
+<p>The <span class="caps">XML</span> data now contains a node element called “navigation”.</p>
+
+<pre>
+<code>&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+&lt;data&gt;
+&lt;events /&gt;
+&lt;navigation&gt;
+&lt;page handle="home" type="index"&gt;
+	&lt;title&gt;Home&lt;/title&gt;
+&lt;/page&gt;
+&lt;page handle="about" type="default"&gt;
+	&lt;title&gt;About&lt;/title&gt;
+&lt;/page&gt;
+&lt;page handle="contact" type="default"&gt;
+	&lt;title&gt;Contact&lt;/title&gt;
+&lt;/page&gt;
+&lt;/navigation&gt;
+&lt;/data&gt;</code>
+</pre>
+
+<p>Now that we have some data to work with, it is possible to tranform this <span class="caps">XML</span> data with our default <span class="caps">XSL</span> template into <span class="caps">HTML</span> output that will be displayed on pages that use the default template. Next, let’s discover how the transformation happens. It makes sense to start with some sort of navigation to be able to move from one page to another on our site. </p>
+
+<h4>The XPath Language</h4>
+
+<p>The <span class="caps">XML</span> data contains values that we will want to display on our page. The XPath language is the means by which <span class="caps">XSL</span> extracts values from <span class="caps">XML</span> data. An <span class="caps">XSLT</span> template establishes patterns for generating <span class="caps">HTML</span> output that uses the values extracted from the <span class="caps">XML</span> data. Mark Lewis provides a good overview of Symphony’s role in the <span class="caps">XSLT</span> process in his Overture article, <a href="http://overture21.com/articles/a-symphony-walkabout/">A Symphony Walkabout</a>. To help you get started with <span class="caps">XML</span>, XPath and <span class="caps">XSLT</span>, you can find other <a href="http://overture21.com/wiki/getting-started/xslt-resources">resources</a> in the Overture Wiki.</p>
+
+<p>In Symphony, the root element of the <span class="caps">XML</span> data is always the <code>&lt;data/&gt;</code> element. For each data source that you associate with a page, a child node will be added to the data element. The name of the node will correspond to the name you created for the Data Source except that the name will consist only of lowercase letters with spaces replaced by hyphens.</p>
+
+<h4>Create the Navigation Menu</h4>
+
+<p>To create the main navigation for the site, we can start by creating an unordered list of links for each of the main sections. So far, we have three pages: Home, About and Contact. It would be fairly easy to create the list without relying on <span class="caps">XSLT</span> to do the job. The menu might look something like this:</p>
+
+<pre>
+<code>&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://sym.qwilm.site/home/"&gt;Home&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://sym.qwilm.site/about/"&gt;About&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://sym.qwilm.site/contact/"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code>
+</pre>
+
+<p>This would be fine if we only had three pages to deal with, but if we had several sections, each with multiple pages per section, the reasons for having a means of dynamically creating the menu become clearer. For now, we’ll keep things simple.</p>
+
+<p>It helps to have our intended output figured out before generating the <span class="caps">XSL</span> template. So, let’s use the structure above for dynamically generating the menu, starting with the Home page. When we take a closer look at the <span class="caps">XML</span> data, we find that the root node “data” contains a node for “navigation” which contains three child “page” elements. Each of the “page” nodes has two attributes: “handle” and “type”. Each page node has a single child element: “title”. To output the value of an element or attribute, we will use XPath to select the value and the <code>&lt;xsl:value-of/&gt;</code> element to output the value of the <span class="caps">HTML</span> element or the <code>{...}</code> to output the <span class="caps">HTML</span> element attribute.</p>
+
+<p>The context node is defined by the match value in the <code>&lt;xsl:template/&gt;</code> element for the default template. </p>
+
+<pre>
+<code>&lt;xsl:template match="/"&gt;</code>
+</pre>
+
+<p>In this case, it is the root of the <span class="caps">XML</span> data, as indicated by <code>"/"</code>. An absolute path expression would begin with <code>"/"</code> to indicate the location of the node relative to the root of the <span class="caps">XML</span> data. A relative path expression would begin with something other than <code>"/"</code> to indicate a location relative to the context node. For our default Master template, to find the value of the page node, we can use a relative path expression:</p>
+
+<pre>
+<code>data/navigation/page</code>
+</pre>
+
+<p>For example, to display the value of the first page in the navigation, we could use the following expression:</p>
+
+<pre>
+<code>&lt;h2&gt;&lt;xsl:value-of select="data/navigation/page/title"/&gt;&lt;/h2&gt;</code>
+</pre>
+
+<p>Add this to the default template and see what happens by viewing the home page (and the ?debug information, if you are curious):</p>
+
+<pre>
+<code>&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+&lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;
+&lt;xsl:output
+method="xml" 
+doctype-public="-//W3C//DTD XHTML 1.0 Strict//EN" 
+doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"
+omit-xml-declaration="yes"
+encoding="UTF-8" 
+indent="yes" /&gt;
+&lt;xsl:template match="/"&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;&lt;xsl:value-of select="$page-title"/&gt;&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;h1&gt;
+		&lt;a href="{$root}/" title="Home Page"&gt;
+			&lt;xsl:value-of select="$website-name"/&gt;
+		&lt;/a&gt;
+	&lt;/h1&gt;
+	&lt;h2&gt;&lt;xsl:value-of select="data/navigation/page/title"/&gt;&lt;/h2&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+&lt;/xsl:template&gt;
+&lt;/xsl:stylesheet&gt;</code>
+</pre>
+
+<p>Notice how this outputs only the first page. In fact, the expression we are using could apply to any of the three pages in the <span class="caps">XML</span> data, but the <code>&lt;xsl:value-of/&gt;</code> element can output only a single value, so it defaults to the first element that it finds. How can we output the second page? We can use a predicate to evaluate and filter the node-set based on various criteria, including position in the document order. The second page element can be selected with the following code:</p>
+
+<pre>
+<code>&lt;h2&gt;&lt;xsl:value-of select="data/navigation/page[position()=2]/title"/&gt;&lt;/h2&gt;</code>
+</pre>
+
+<p>This can also be expressed in shorthand syntax:</p>
+
+<pre>
+<code>&lt;h2&gt;&lt;xsl:value-of select="data/navigation/page[2]/title"/&gt;&lt;/h2&gt;</code>
+</pre>
+
+<p>Or try the following to output the title of the third page:</p>
+
+<pre>
+<code>&lt;h2&gt;&lt;xsl:value-of select="data/navigation/page[3]/title"/&gt;&lt;/h2&gt;</code>
+</pre>
+
+<p>If we wanted to output all three at once, we need to use <code>&lt;xsl:for-each/&gt;</code> to apply the same template for each of the elements that matches the selection criteria.</p>
+
+<pre>
+<code>&lt;xsl:for-each select="data/navigation/page"&gt;
+&lt;h2&gt;&lt;xsl:value-of select="title"/&gt;&lt;/h2&gt;
+&lt;/xsl:for-each&gt;</code>
+</pre>
+
+<p>This template is saying, effectively, “for each page in the navigation, output the title as a second-level heading.” Notice how the “page” element is selected by the for-each “select” attribute and how the <code>&lt;h2&gt;</code> element contains the “title” value.</p>
+
+<p>What we really want is an unordered list, so we need a template that looks more like this:</p>
+
+<pre>
+<code>&lt;ul&gt;
+&lt;xsl:for-each select="data/navigation/page"&gt;
+&lt;li&gt;&lt;xsl:value-of select="title"/&gt;&lt;/li&gt;
+&lt;/xsl:for-each&gt;
+&lt;/ul&gt;</code>
+</pre>
+
+<p>Notice how the <code>&lt;ul&gt;</code> element is outside the <code>&lt;xsl:for-each&gt;</code> element, since we don’t need a separate unordered list for each page. Rather, we need three pages to be listed in a single unordered list.</p>
+
+<p>This menu will not be very useful until we have included a link to each page. That is where the “handle” attribute comes in. Each page has a “handle” attribute that represents the title of the page converted to a <span class="caps">URL</span> handle by rendering the title in lowercase letters and replacing spaces with hyphens. With XPath, attributes are selected with the “@” symbol as in the following expression:</p>
+
+<pre>
+<code>&lt;xsl:value-of select="data/navigation/page/@handle"/&gt;</code>
+</pre>
+
+<p>However, when the value is output within an attribute of a <span class="caps">HTML</span> element, a different <span class="caps">XSL</span> syntax is required, called an Attribute Value Template (<span class="caps">AVT</span>), using curly braces:</p>
+
+<pre>
+<code>&lt;a href="{data/navigation/page/@handle}"&gt;Page Title goes here&lt;/a&gt;</code>
+</pre>
+
+<p>Within the context of our navigation list, the template should look like this:</p>
+
+<pre>
+<code>&lt;ul&gt;
+&lt;xsl:for-each select="data/navigation/page"&gt;
+&lt;li&gt;&lt;a href="{@handle}"&gt;&lt;xsl:value-of select="title"/&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/xsl:for-each&gt;
+&lt;/ul&gt;</code>
+</pre>
+
+<p>This will work fine if we want relative URLs, but we might want absolute URLs, especially if Symphony has been installed somewhere other than the root web directory. In this case, default parameter for the site root will be very useful: <code>$root</code>. As mentioned before, the value of the <code>$root</code> parameter is determined during the installation of Symphony and is stored in the <code>conf/config.php</code> file. It determines the <span class="caps">URL</span> for the front page of your site. You can include this parameter in a link as an attribute value:</p>
+
+<pre>
+<code>&lt;ul&gt;
+&lt;xsl:for-each select="data/navigation/page"&gt;
+&lt;li&gt;&lt;a href="{$root}/{@handle}/"&gt;&lt;xsl:value-of select="title"/&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/xsl:for-each&gt;
+&lt;/ul&gt;</code>
+</pre>
+
+<p>You should now be able to navigate from page to page.</p>
+
+<h4>Using conditionals to display the current page</h4>
+
+<p>Now, the power of Symphony and <span class="caps">XSLT</span> shines in being able to dynamically determine the current state of a web page. Going back to our list of default parameters, we will find another tremendously useful parameter: <code>$current-page</code>. This is the value of the handle of the current page. As you navigate from one page to another, add ?debug to the end of the address bar and click on the <span class="caps">XSLT</span> link to view the changes to the <code>$current-page</code> parameter. With <span class="caps">CSS</span>, it is possible to apply a class attribute to a list item to display a different style for a current link. Add the following <code>&lt;style&gt;</code> element to the <code>&lt;head&gt;</code> element of the default template:</p>
+
+<pre>
+<code>&lt;style type="text/css"&gt;
+li.current a {color:#f00; text-decoration:none;}
+&lt;/style&gt;</code>
+</pre>
+
+<p>Add a class attribute to the list item for the navigation menu:</p>
+
+<pre>
+<code>&lt;li class="current"&gt;</code>
+</pre>
+
+<p>The default template should now look like this:</p>
+
+<pre>
+<code>&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+&lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;
+&lt;xsl:output
+method="xml" 
+doctype-public="-//W3C//DTD XHTML 1.0 Strict//EN" 
+doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"
+omit-xml-declaration="yes"
+encoding="UTF-8" 
+indent="yes" /&gt;
+&lt;xsl:template match="/"&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;&lt;xsl:value-of select="$page-title"/&gt;&lt;/title&gt;
+	&lt;style type="text/css"&gt;
+		li.current a {color:#f00; text-decoration:none;}
+	&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;h1&gt;
+		&lt;a href="{$root}/" title="Home Page"&gt;
+			&lt;xsl:value-of select="$website-name"/&gt;
+		&lt;/a&gt;
+	&lt;/h1&gt;
+	&lt;ul&gt;
+		&lt;xsl:for-each select="data/navigation/page"&gt;
+			&lt;li class="current"&gt;&lt;a href="{$root}/{@handle}/"&gt;&lt;xsl:value-of select="title"/&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;/xsl:for-each&gt;
+	&lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+&lt;/xsl:template&gt;
+&lt;/xsl:stylesheet&gt;</code>
+</pre>
+
+<p>All of the items in the menu list should now be colored red with no underline. This is not quite what we are after, since we want to apply this style only to the link that represents the current page. We can do this by using a conditional <span class="caps">XSL</span> element. <span class="caps">XSLT</span> allows for the ability to choose elements based on certain conditions. There are a couple different conditional elements: <code>&lt;xsl:if&gt;</code> and <code>&lt;xsl:when&gt;</code>. Each of these elements tests for a certain condition, and, if the test is successful, will output whatever is contained within the element.</p>
+
+<p>If we want to test whether a link matches the current page, we can use the <code>&lt;xsl:if&gt;</code> element like this:</p>
+
+<pre>
+<code>&lt;ul&gt;
+&lt;xsl:for-each select="data/navigation/page"&gt;
+&lt;xsl:if test="@handle = $current-page"&gt;
+	&lt;li class="current"&gt;
+		&lt;a href="{$root}/{@handle}/"&gt;
+			&lt;xsl:value-of select="title"/&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+&lt;/xsl:if&gt;
+&lt;/xsl:for-each&gt;
+&lt;/ul&gt;</code>
+</pre>
+
+<p>The <code>&lt;xsl:if&gt;</code> element tests whether the value of the handle of the <code>&lt;page&gt;</code> element in the <span class="caps">XML</span> data matches the <span class="caps">URL</span> handle of the current page indicated by the value of the default page parameter <code>$current-page</code>.</p>
+
+<p>We can also test whether a page handle does not match the current page handle with another <code>&lt;xsl:if&gt;</code> element by using the operand “@!=@”, which means “does not equal”:</p>
+
+<pre>
+<code>&lt;xsl:if test="@handle != $current-page"&gt;</code>
+</pre>
+
+<p>We simply remove the “current” class attribute from the list item when the page handle does not match the <code>$current-page</code> parameter:</p>
+
+<pre>
+<code>&lt;ul&gt;
+&lt;xsl:for-each select="data/navigation/page"&gt;
+&lt;xsl:if test="@handle != $current-page"&gt;
+	&lt;li&gt;
+		&lt;a href="{$root}/{@handle}/"&gt;
+			&lt;xsl:value-of select="title"/&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+&lt;/xsl:if&gt;
+&lt;/xsl:for-each&gt;
+&lt;/ul&gt;</code>
+</pre>
+
+<p>Try navigating from page to page and you’ll see the effect. Using the <code>&lt;xsl:if&gt;</code> twice is not very efficient, since each element has to be tested twice. The <code>&lt;xsl:when&gt;</code> element allows us to perform an “if, then” sort of statement. The <code>&lt;xsl:when&gt;</code> element must always be contained by a <code>&lt;xsl:choose&gt;</code> element, and can sometimes be accompanied by a sibling <code>&lt;xsl:otherwise&gt;</code> element. So we can accomplish the same result as the two <code>&lt;xsl:if&gt;</code> elements with the following <span class="caps">XSL</span> code:</p>
+
+<pre>
+<code>&lt;ul&gt;
+&lt;xsl:for-each select="data/navigation/page"&gt;
+&lt;xsl:choose&gt;
+	&lt;xsl:when test="@handle = $current-page"&gt;
+		&lt;li class="current"&gt;
+			&lt;a href="{$root}/{@handle}/"&gt;
+				&lt;xsl:value-of select="title"/&gt;
+			&lt;/a&gt;
+		&lt;/li&gt;
+	&lt;/xsl:when&gt;
+	&lt;xsl:otherwise&gt;
+		&lt;li&gt;
+			&lt;a href="{$root}/{@handle}/"&gt;
+				&lt;xsl:value-of select="title"/&gt;
+			&lt;/a&gt;
+		&lt;/li&gt;
+	&lt;/xsl:otherwise&gt;
+&lt;/xsl:choose&gt;
+&lt;/xsl:for-each&gt;
+&lt;/ul&gt;</code>
+</pre>
+
+<p>This code is saying, when the page handle matches the current page handle, output the title of the page as a list item with a class attribute of “current” and with a link to the associated page; otherwise, output the linked page title as a list item with no class attribute. Now, each <code>&lt;page&gt;</code> node is tested only once.</p>
+
+<h4>Create a Navigation Template</h4>
+
+<p>We can reuse this code in other template by creating a named template that can be called from other <span class="caps">XSL</span> templates. In Symphony, these templates can exist as Utilities, Page templates or Master templates. We can also add another template to the default Master template.</p>
+
+<pre>
+<code>&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+&lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;
+&lt;xsl:output
+method="xml" 
+doctype-public="-//W3C//DTD XHTML 1.0 Strict//EN" 
+doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"
+omit-xml-declaration="yes"
+encoding="UTF-8" 
+indent="yes" /&gt;
+&lt;xsl:template match="/"&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;&lt;xsl:value-of select="$page-title"/&gt;&lt;/title&gt;
+	&lt;style type="text/css"&gt;
+		li.current a {color:#f00; text-decoration:none;}
+	&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;h1&gt;
+		&lt;a href="{$root}/" title="Home Page"&gt;
+			&lt;xsl:value-of select="$website-name"/&gt;
+		&lt;/a&gt;
+	&lt;/h1&gt;
+	&lt;xsl:call-template name="navigation"/&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+&lt;/xsl:template&gt;
+&lt;xsl:template name="navigation"&gt;
+&lt;ul&gt;
+&lt;xsl:for-each select="data/navigation/page"&gt;
+	&lt;xsl:choose&gt;
+		&lt;xsl:when test="@handle = $current-page"&gt;
+			&lt;li class="current"&gt;
+				&lt;a href="{$root}/{@handle}/"&gt;
+					&lt;xsl:value-of select="title"/&gt;
+				&lt;/a&gt;
+			&lt;/li&gt;
+		&lt;/xsl:when&gt;
+		&lt;xsl:otherwise&gt;
+			&lt;li&gt;
+				&lt;a href="{$root}/{@handle}/"&gt;
+					&lt;xsl:value-of select="title"/&gt;
+				&lt;/a&gt;
+			&lt;/li&gt;
+		&lt;/xsl:otherwise&gt;
+	&lt;/xsl:choose&gt;
+&lt;/xsl:for-each&gt;
+&lt;/ul&gt;
+&lt;/xsl:template&gt;
+&lt;/xsl:stylesheet&gt;</code>
+</pre>
+
+<p>The named template can be called within another <span class="caps">XSL</span> template within the same stylesheet by using this code: </p>
+
+<pre>
+<code>&lt;xsl:call-template name="navigation"/&gt;</code>
+</pre>
+
+<h4>Create a Utility</h4>
+
+<p>In Symphony, a Utility can be created to include a template or a group of templates within the <span class="caps">XSL</span> stylesheet. Go to Blueprints : Components and click on the “Create New” button next to Utilities. A new Utility contains the <code>&lt;xsl:template&gt;</code> element to get you started. Give the Utility the name “Main Menu” and paste the following into the Body of the Utility: </p>
+
+<pre>
+<code>&lt;xsl:template name="main-menu"&gt;
+&lt;ul&gt;
+&lt;xsl:for-each select="data/navigation/page"&gt;
+	&lt;xsl:choose&gt;
+		&lt;xsl:when test="@handle = $current-page"&gt;
+			&lt;li class="current"&gt;
+				&lt;a href="{$root}/{@handle}/"&gt;
+					&lt;xsl:value-of select="title"/&gt;
+				&lt;/a&gt;
+			&lt;/li&gt;
+		&lt;/xsl:when&gt;
+		&lt;xsl:otherwise&gt;
+			&lt;li&gt;
+				&lt;a href="{$root}/{@handle}/"&gt;
+					&lt;xsl:value-of select="title"/&gt;
+				&lt;/a&gt;
+			&lt;/li&gt;
+		&lt;/xsl:otherwise&gt;
+	&lt;/xsl:choose&gt;
+&lt;/xsl:for-each&gt;
+&lt;/ul&gt;
+&lt;/xsl:template&gt;</code>
+</pre>
+
+<p>This is the same template we have in our default Master template, except that the name of the template is “main-menu”. Click on “Navigation” in the Associate with Data Source select box and click on the Save button. (Note that the image below doesn’t show the same template that we have above.)</p>
+
+<p><img src="/workspace/images/sym_qwilm_util_main-menu.jpg" title="Symphony Admin : Blueprints : Components : Utilities : Main Menu" alt="Symphony Admin : Blueprints : Components : Utilities : Main Menu" /></p>
+
+<p>We have already associated the Navigation Data Source with the default Master template, so we can go to the default Master template (Blueprints : Components : Masters : default) and change the <code>&lt;xsl:call-template&gt;</code> element:</p>
+
+<pre>
+<code>&lt;xsl:call-template name="main-menu"/&gt;</code>
+</pre>
+
+<p>View the front page of your site and you will see the same thing we had before, except that the template is being read from the template named “main-menu” stored in the “Main Menu” Utility. You can change the name of the Utility to “Navigation” and because the Utility is associated with the Navigation Data Source, the “main-menu” template will still be included in the stylesheet for the pages associated with the default template. At this point, it is possible to delete the “navigation” template from default Master template. We can do this without using the Symphony Admin. Find the location of the default.xsl file where you installed Symphony. My file is located here on my hard drive:</p>
+
+<pre>
+<code>/Library/WebServer/Documents/sym/qwilm/public/workspace/masters/default.xsl</code>
+</pre>
+
+<p>Now you can open the default.xsl file and delete the “navigation” template. You can also find the navigation.xsl file (if you have changed the name of the “Main Menu” utility to “Navigation”, otherwise, the file name will be main-menu.xsl. You can find this file in the <code>/workspace/utilities/</code> directory. On my Mac, the file is here:</p>
+
+<pre>
+<code>/Library/WebServer/Documents/sym/qwilm/public/workspace/utilities/navigation.xsl</code>
+</pre>
+
+<h4>Adjusting the home page link</h4>
+
+<p>One thing that you might consider a problem is that the Home page link is also given a handle of “home” so that the <span class="caps">URL</span> is:</p>
+
+<pre>
+<code>http://sym.qwilm.site/home/</code>
+</pre>
+
+<p>If you would rather that the link to the home page be the root of your site, you will need to test for another condition. For this, we can use the page “type” attribute to filter out the Home page and apply a different template for the output of this page link. As with any <span class="caps">XML</span> document, though, it is important to write well-formed code to keep all elements closed, either with opening and closing tags or with self-closing tags. This prevents us from being able to wrap the conditional elements only around the opening <code>&lt;li&gt;</code> tag and adding the “current” class attribute only when the conditions are right. The conditional element must contain the entire list item element from opening tag <code>&lt;li&gt;</code> to closing tag <code>&lt;/li&gt;</code>. While it is rather verbose, it does afford us the functionality of dynamically assigning the “current” class to the current page menu item. Two additional conditions must be tested which apply a different template, omitting the handle from the link <span class="caps">URL</span>, when the type attribute is also equal to the string value of ‘index’:</p>
+
+<pre>
+<code>&lt;xsl:template name="main-menu"&gt;
+&lt;ul&gt;
+&lt;xsl:for-each select="data/navigation/page"&gt;
+	&lt;xsl:choose&gt;
+		&lt;xsl:when test="@handle=$current-page and @type='index'"&gt;
+			&lt;li class="current"&gt;
+				&lt;a href="{$root}/"&gt;
+					&lt;xsl:value-of select="title"/&gt;
+				&lt;/a&gt;
+			&lt;/li&gt;
+		&lt;/xsl:when&gt;
+		&lt;xsl:when test="@handle!=$current-page and @type='index'"&gt;
+			&lt;li&gt;
+				&lt;a href="{$root}/"&gt;
+					&lt;xsl:value-of select="title"/&gt;
+				&lt;/a&gt;
+			&lt;/li&gt;
+		&lt;/xsl:when&gt;
+		&lt;xsl:when test="@handle=$current-page"&gt;
+			&lt;li class="current"&gt;
+				&lt;a href="{$root}/{@handle}/"&gt;
+					&lt;xsl:value-of select="title"/&gt;
+				&lt;/a&gt;
+			&lt;/li&gt;
+		&lt;/xsl:when&gt;
+		&lt;xsl:otherwise&gt;
+			&lt;li&gt;
+				&lt;a href="{$root}/{@handle}/"&gt;
+					&lt;xsl:value-of select="title"/&gt;
+				&lt;/a&gt;
+			&lt;/li&gt;
+		&lt;/xsl:otherwise&gt;
+	&lt;/xsl:choose&gt;
+&lt;/xsl:for-each&gt;
+&lt;/ul&gt;
+&lt;/xsl:template&gt;</code>
+</pre>
+
+<h4>Modifying files with a text editor</h4>
+
+<p>While each file must be created in Symphony so that metadata can be stored in the database relating to the Data Sources and/or Events that have been associated with a Master template, it is possible to modify the <span class="caps">XSL</span> file in a text editor. This can speed up development as you can have multiple <span class="caps">XSL</span> files open in your text editor while you quickly test the effect of modifications to your templates on the front end of your site in your web browser. Using an <span class="caps">FTP</span> application that can open files from a remote server to modify them locally in a text editor can be much quicker than navigating back and forth between pages in Symphony and you may benefit from the ability to undo and redo changes to your <span class="caps">XSL</span> templates. The same is true for Masters, Pages and Utilities, which all exist as <span class="caps">XSL</span> files on the server. </p>
+
+<p>Since all the files you create in Symphony are stored in the workspace directory, it is possible to swap out the workspace with another workspace and completely change the behaviour and style of the site. However, to do this with an existing install of Symphony, it is necessary to have exactly the same database structure as before. Otherwise, it would be best to start with a fresh Symphony install to switch to a new theme. Since the latest version of Symphony allows for an amazing degree of back-end customization, differences in database structures prevent the ability to switch to different themes on the fly. For this reason, it would make sense for the Symphony community to develop some standard frameworks for various types of websites to facilitate this sort of theme switching, without worrying that swapping out the workspace might break the site.</p>
+
+<h3>Next: Sections and Custom Fields</h3>
+
+<p>Now that we are starting to become familiar with creating Masters, Pages, Utilities and Data Sources, we should start to develop some content. Next, in <a href="/journal/building-a-symphony-theme-part-4/">Building a Symphony Theme: Part 4</a> we will create Sections and Custom Fields to manage our content. This is where things start to become really exciting: the degree to which you can customize the Symphony Admin pages as well as the structure and functionality of your data.</p></more>
+			<categories>
+				<item handle="applications">Applications</item>
+			</categories>
+			<publish>no</publish>
+		</fields>
+		<comments count="0" spam="0"></comments>
+	</entry>
+	<entry id="100" handle="building-a-symphony-theme-qwilm">
+		<date>2006-11-30</date>
+		<time>01:09</time>
+		<author></author>
+		<fields>
+			<title handle="building-a-symphony-theme-qwilm">Building a Symphony Theme: qwilm</title>
+			<body word-count="118"><p>Now, that we are developing the qwilm theme, I have created another virtual host, database and Symphony install for a local test site. I have a virtual host called <code>sym.qwilm.site</code> that uses a database called <code>sym_qwilm</code> and I installed a fresh version of Symphony.</p>
+
+<p>Just to make sure we are on the same page, now that I have switched to developing qwilm instead of Pink for October, Here are the steps that you can take before jumping back into the tutorial on Building a Symphony Theme to add a virtual host specifically for this theme: <code>sym.qwilm.site</code>. If you would rather jump right into learning Symphony, head to the entries:</p>
+
+<ul>
+<li><a href="/journal/building-a-symphony-theme-part-1/">Building a Symphony Theme: Part 1</a></li>
+<li><a href="/journal/building-a-symphony-theme-part-2/">Building a Symphony Theme: Part 2</a></li>
+</ul></body>
+			<photo></photo>
+			<more word-count="620"><h4>Set up the Virtual Host</h4>
+
+<p>As I am working on a Mac, I will head over to Terminal and type the following to update my local hosts file (which I have set up to automatically open these files for editing in TextWrangler. For those who have not done this, replace <code>edit</code> with <code>pico</code> or <code>nano</code> or whatever you prefer as your text editor):</p>
+
+<pre>
+<code>sudo edit /etc/hosts</code>
+</pre>
+
+<p>To my hosts file, I will add another virtual host so that I can install a fresh install of Symphony. I will use a particular syntax that allows me to view sites locally and avoid interfering with my ability to reach real domains. For this particular Symphony theme, my virtual domain will be located at <code>http://sym.qwilm.site/</code>. So, I need to add this host to my hosts file:</p>
+
+<pre>
+<code>127.0.0.1       sym.qwilm.site</code>
+</pre>
+
+<p>I also need to add the virtual domain to my Apache configuration file. So, I locate my file at:</p>
+
+<pre>
+<code>sudo edit /etc/httpd/httpd.conf</code>
+</pre>
+
+<p>Then, I add the following at the bottom of the file:</p>
+
+<pre>
+<code>NameVirtualHost 127.0.0.1
+&lt;VirtualHost 127.0.0.1&gt;
+ServerName sym.qwilm.site
+DocumentRoot /Library/WebServer/Documents/sym/qwilm/public
+&lt;/VirtualHost&gt;</code>
+</pre>
+
+<p>While, you’re at it, you can make sure that the rewrite module is active. Do a search for <code>#LoadModule rewritemodule modules/modrewrite.so</code>. Remove the hash mark <code>#</code> at the beginning of the line. So now it should look like <code>LoadModule rewritemodule modules/modrewrite.so</code>. Now the rewriting engine is turned on.</p>
+
+<p>Since these configuration settings are initialized when the server is started up, I will need to restart the apache server. I like to do this by running a command in Terminal:</p>
+
+<pre>
+<code>sudo apachectl graceful</code>
+</pre>
+
+<h4>Creating the Directories</h4>
+
+<p>Now, I can go ahead and create the directory for the Symphony installation on my local Apache server according to the path I have set as the document root in the configuration setting above. My path looks like this:</p>
+
+<pre>
+<code>/Library/WebServer/Documents/sym/qwilm/public</code>
+</pre>
+
+<h4>Creating the Database</h4>
+
+<p>The next step would be to open up phpMyAdmin and create a MySQL database for the Symphony installation. I will name the database:</p>
+
+<pre>
+<code>sym_qwilm</code>
+</pre>
+
+<h4>Installing Symphony</h4>
+
+<p>Now, everything is ready to install Symphony on the server. (As stated previously, it will be necessary to have the proper settings for the local hosting environment, similar to the setup explained by carlos on the Overture Forum Article: <a href="http://overture21.com/articles/developing-locally-with-xampp-lite-154-for-windows/">Developing locally with <span class="caps">XAMPP</span> Lite 1.5.4 for Windows</a>.)</p>
+
+<p>Head over to the <a href="http://21degrees.com.au/products/symphony/">Twentyone Degrees</a> website and download the latest Symphony installer by <a href="http://accounts.symphony21.com/">setting up and account</a> or logging in if you already registered for an account. Your username and password will be used for the primary administrative user of your Symphony account. For each site that you create with this account, you will login with this user and password. You will then be able to create additional Authors and Administrators.</p>
+
+<p>Once you have downloaded the <code>install.php</code> file, place the file in the root directory of your virtual host. On my server, I will place the file in the following directory:</p>
+
+<pre>
+<code>/Library/WebServer/Documents/sym/qwilm/public/install.php</code>
+</pre>
+
+<p>In my web browser, I can navigate to the installer on my server at my virtual host: </p>
+
+<pre>
+<code>http://sym.qwilm.site/install.php</code>
+</pre>
+
+<p>Make sure that the permissions for your root directory are set to 777. Then, simply follow the instructions for the one-step installation procedure and, if all goes well, you should have the application installed in a matter of seconds. When I installed, I chose to “Start with an empty workspace – Best for other themes or building your own workspace.” There will be no front page to navigate to, so I’ll start by logging into Symphony’s administrative interface. Login with your Symphony account username and password.</p>
+
+<h4>A journey of a thousand miles begins with one step</h4>
+
+<p>If you have made it this far, congratulations! You have installed Symphony and logged in. This is the first step in using Symphony to create websites that take advantage of the power of standards in web design and development.</p>
+
+<p>With Symphony installed, we can now start at the beginning: <a href="/journal/building-a-symphony-theme-part-1/">Building a Symphony Theme: Part 1</a>.</p></more>
+			<categories>
+				<item handle="applications">Applications</item>
+			</categories>
+			<publish>yes</publish>
+		</fields>
+		<comments count="0" spam="0"></comments>
+	</entry>
+	<entry id="99" handle="building-a-symphony-theme-part-2">
+		<date>2006-10-29</date>
+		<time>23:08</time>
+		<author></author>
+		<fields>
+			<title handle="building-a-symphony-theme-part-2">Building a Symphony Theme: Part 2</title>
+			<body word-count="106"><p>As we discovered in <a href="/journal/building-a-symphony-theme-part-1/">Part 1</a> of this series, a valid <span class="caps">XSLT</span> template and stylesheet must be available to transform <span class="caps">XML</span> data into <span class="caps">HTML</span> Output. (Note that I will be using the <a href="/journal/updating-symphony/">latest update</a>, Symphony 1.5.06, for this tutorial.) At this point, though, we have no data to transform. Next, we need to create an <span class="caps">XML</span> Data Source. But, before we get there, let’s discover what is possible in Symphony even without a Data Source. The power of Symphony comes in the ability to build <span class="caps">HTML</span> pages by assembling pieces of reusable <span class="caps">HTML</span> code and <span class="caps">XSLT</span> templates into modular page structures through Masters, Pages and Utilities.</p></body>
+			<photo></photo>
+			<more word-count="1123"><h3>Masters, Pages and Utilities</h3>
+
+<p>In Symphony, there are three methods available to reuse <span class="caps">HTML</span> code and templates: Masters, Pages and Utilities. Master templates are generally used as containers for structural elements of your site which will be used across several pages. Pages contain the main content for each page. Utilities contain the various blocks of content, lists or menus that are used to make up a page.</p>
+
+<p><img src="/workspace/images/sym_masters_pages_utilities.jpg" title="Masters, Pages and Templates" alt="Masters, Pages and Templates" /></p>
+
+<h4>Masters</h4>
+
+<p>If the site has one basic template, it is likely that you may need a single Master template that contains a header and a footer that will be used throughout the site.</p>
+
+<h4>Pages</h4>
+
+<p>The content will change from one page to another, so the templates for the content structure for each page will be contained in Page templates. </p>
+
+<h4>Utilities</h4>
+
+<p>Utilities are reusable templates that can be applied within a Master template, a Page template, or even within another Utility, as shown in the diagram above. For example, a Utility could dynamically generate the main navigation, or a section menu, or a sideblog, or a list of categories, or a list of archive months, or a list of recent entries, or a format for entries and comments. Probably one of the most useful Utilities will be used to generate different formats for displaying dates and times.</p>
+
+<h3>Creating the Page Structure</h3>
+
+<p>Getting back to the task at hand, building the <del>Pink for October</del> qwilm Theme in Symphony, the first step will be to create the page structure using Masters, Pages and Utilities. We’ll use the diagram above as a model for building our templates.</p>
+
+<p>Start with the basic <span class="caps">XHTML</span> page structure, and I do mean <span class="caps">XHTML</span>. The page structure has to be valid or <span class="caps">XSLT</span> will reject it. <span class="caps">XSLT</span> cannot transform <span class="caps">XML</span> that is not well-formed and that refers not only to the <span class="caps">XML</span> data, but also the <span class="caps">XHTML</span> structure. Every element needs to be properly closed, whether it is a self-closing element or an element with opening and closing tags.</p>
+
+<p><del>Since we have permission from <a href="http://5thirtyone.com/">Derek Punsalan</a> to use the <a href="http://5thirtyone.com/archives/684">Pink for October Theme</a> he created for WordPress, we can grab his <span class="caps">HTML</span> source code and download the <span class="caps">CSS</span> and image files that control the structure and presentation of the pages.</del> (Always be sure that you have permission before duplicating the design of an existing site so that you stay well within the law and within the limits of ethical behaviour in regard to the intellectual property rights of others.) </p>
+
+<h4>Plan B: qwilm!</h4>
+
+<p><em>On closer inspection, I discovered that Derek Punsalan is limiting distribution of the theme to downloads only from his own site, which means I will not be able to continue porting this theme. Time to go to Plan B.</em></p>
+
+<p>There have been requests in the forum for the <a href="http://www.bartelme.at/journal/archive/fresh_theme_for_ee/">Fresh Theme</a> from <a href="http://www.bartelme.at/">Bartelme Design</a> or the <a href="http://themes.wordpress.net/columns/3-columns/61/qwilm-03/">qwilm! Theme</a> by Lokesh Dhakar of <a href="http://www.huddletogether.com/">HuddleTogether</a>. I think I will opt for the latter, unless someone has strong objections otherwise.</p>
+
+<p>James Steel (<a href="http://overture21.com/forum/account.php?u=784">lostbear</a>) has kindly posted to the Overture Forum a <a href="http://overture21.com/forum/comments.php?DiscussionID=609&amp;amp;page=1#Item_0"><span class="caps">ZIP</span> package</a> containing the stripped-down <span class="caps">HTML</span> file and the <span class="caps">CSS</span> and image files that we can use as a starting point. Thank you, James.</p>
+
+<p>I have recreated the <span class="caps">HTML</span> code to include examples of the items that we will need to code in Symphony. I also offer the the <span class="caps">CSS</span>, <span class="caps">HTML</span> and image files for download from this link. Here is the raw <span class="caps">HTML</span> code that I will be working with:</p>
+
+<pre>
+<code>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+&lt;head&gt;
+&lt;title&gt;Lokesh Dhakar | qwilm Theme &lt;/title&gt; 
+&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;
+&lt;meta name="generator" content="Symphony 1.5.06" /&gt;
+&lt;meta name="copyright" content="Copyright Lokesh Dhakar" /&gt;
+&lt;style type="text/css" media="screen"&gt;
+@import url( /workspace/css/style.css );
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id="quick-nav"&gt;
+&lt;a href="/"&gt;&lt;img src="/workspace/css/images/home_icon.gif" alt="goto homepage" width="16" height="14" /&gt;&lt;/a&gt;
+&lt;a href="mailto:name@example.com"&gt;&lt;img src="/workspace/css/images/email_icon.gif" alt="mail me!" /&gt;&lt;/a&gt;
+&lt;a href="/feed/"&gt;&lt;img src="/workspace/css/images/rss_icon.gif" alt="grab RSS 2.0 feed" width="16" height="16" /&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div id="header"&gt;
+&lt;h1&gt;&lt;a href="/"&gt;Lokesh Dhakar | qwilm Theme &lt;/a&gt;&lt;/h1&gt;
+&lt;/div&gt;
+&lt;div id="wrapper"&gt;
+&lt;div id="content" class="box"&gt;
+&lt;div class="post"&gt;
+&lt;h2 class="posttitle" id="post-67"&gt;
+&lt;a href="#" rel="bookmark" title="Permanent link"&gt;Finding some time for a Symphony Theme&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p class="postmeta"&gt;December 8, 2006 | 4:07 am&lt;/p&gt;
+&lt;div class="postentry"&gt;
+&lt;p&gt;Will it ever happen?&lt;/p&gt;
+&lt;p&gt;I've been waiting forever for a new theme to try out.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p class="postfeedback"&gt;
+&lt;a href="#" class="commentslink" title="Add your comments"&gt;Comments&lt;/a&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="post"&gt;
+&lt;h2 class="posttitle" id="post-65"&gt;&lt;a href="/2006/09/26/long-time-no-updates/" rel="bookmark" title="Permanent link to Long time, no updates."&gt;Long time, no updates.&lt;/a&gt;&lt;/h2&gt;
+&lt;p class="postmeta"&gt;September 26, 2006 | 7:04 pm&lt;/p&gt;
+&lt;div class="postentry"&gt;
+&lt;p&gt;I've been busy busy, but things are starting to settle down a wee bit. 
+Expect updates, new things, email replies, and more.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p class="postfeedback"&gt;
+&lt;a href="#" class="commentslink" title="Add your comments"&gt;Comments (20)&lt;/a&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="post"&gt;
+&lt;h2 class="posttitle" id="post-63"&gt;
+&lt;a href="#" rel="bookmark" title="Permanent link to New job and Adobe Flex"&gt;Quiet and happening&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p class="postmeta"&gt;June 11, 2006 | 3:44 pm&lt;/p&gt;
+&lt;div class="postentry"&gt;
+&lt;p&gt;Things have been quiet on the blog front but lots has been happening on other fronts. 
+I can catch you up in about three paragraphs. Here goes.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p class="postfeedback"&gt;
+&lt;a href="#" class="commentslink" title="Add your comments"&gt;Comments (22)&lt;/a&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 id="comments"&gt;20 Comments&lt;/h2&gt;
+&lt;p&gt;&lt;a href="#postcomment" class="commentslink" title="Jump to the comments form"&gt;Jump to Comment Form&lt;/a&gt;&lt;/p&gt;
+&lt;ol id="commentlist"&gt;
+&lt;li class="alt" id="comment-10358"&gt;
+&lt;h3 class="commenttitle"&gt;&lt;a href="#comment-10358" title="Permanent link to this comment"&gt;#1&lt;/a&gt; bauhouse&lt;/h3&gt;
+&lt;p class="commentmeta"&gt;December 9, 2006 @ 7:49 pm&lt;/p&gt;
+&lt;p&gt;What a lovely site design, Lokesh. Do you mind if I use it for a Symphony theme?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class="alt" id="comment-10358"&gt;
+&lt;h3 class="commenttitle"&gt;&lt;a href="#comment-10358" title="Permanent link to this comment"&gt;#2&lt;/a&gt; Stephen&lt;/h3&gt;
+&lt;p class="commentmeta"&gt;November 6, 2006 @ 8:30 am&lt;/p&gt;
+&lt;p&gt;@Lokesh, you've really done a great job with this simple design.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class="alt" id="comment-10358"&gt;
+&lt;h3 class="commenttitle"&gt;&lt;a href="#comment-10358" title="Permanent link to this comment"&gt;#3&lt;/a&gt; Bau&lt;/h3&gt;
+&lt;p class="commentmeta"&gt;September 26, 2006 @ 6:32 pm&lt;/p&gt;
+&lt;p&gt;I think this would be perfect as a Symphony theme. That would be awesome.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="postcomment"&gt;Leave a Comment&lt;/h2&gt;
+&lt;form action="http://www.huddletogether.com/wp-comments-post.php" method="post" id="commentform"&gt;
+&lt;p&gt;
+&lt;input type="text" name="author" id="author" value="" size="30" tabindex="1" /&gt;
+&lt;label for="author"&gt;Name &lt;/label&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;input type="text" name="email" id="email" value="" size="30" tabindex="2" /&gt;
+&lt;label for="email"&gt;E-mail &lt;/label&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;textarea name="comment" id="comment" cols="70" rows="10" tabindex="4"&gt;&lt;/textarea&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" /&gt;
+&lt;input type="hidden" name="comment_post_ID" value="67" /&gt;
+&lt;/p&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+&lt;div class="box sidebar" id="sidebar-1"&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;h2&gt;Archives&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href='/archives/2006/12/' title='December 2006'&gt;December 2006&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='/archives/2006/09/' title='September 2006'&gt;September 2006&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='/archives/2006/06/' title='June 2006'&gt;June 2006&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='/archives/2006/05/' title='May 2006'&gt;May 2006&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='/archives/2006/04/' title='April 2006'&gt;April 2006&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='/archives/2006/03/' title='March 2006'&gt;March 2006&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='/archives/2006/02/' title='February 2006'&gt;February 2006&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='/archives/2006/01/' title='January 2006'&gt;January 2006&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;h2&gt;Recent Posts&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href='/archives/2006/12/08/finding-some-time/' title='Messageboard registration'&gt;Finding some time&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='/archives/2006/09/26/long-time-no-updates/' title='Long time, no updates.'&gt;Long time, no updates.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='/archives/2006/06/11/quiet-and-happening/' title='New job and Adobe Flex'&gt;Quiet and happening&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;h2&gt;Projects&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.huddletogether.com/projects/lightbox/"&gt;Lightbox JS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.huddletogether.com/projects/lightbox2/"&gt;Lightbox JS v2.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://themes.wordpress.net/columns/3-columns/61/qwilm-03/"&gt;Wordpress Theme&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;h2&gt;Photos&lt;/h2&gt;
+&lt;ul id="photo-galleries"&gt;
+&lt;li&gt;&lt;a href="/gallery/europe/"&gt;My Trip to Europe&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/gallery/roadtrip/"&gt;My Roadtrip&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;h2&gt;Categories&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="/category/general/" title="View all posts filed under General"&gt;General&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/category/technology/" title="View all posts filed under Technology"&gt;Technology&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/category/personal/" title="View all posts filed under Personal"&gt;Personal&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/category/work/" title="View all posts filed under Work"&gt;Work&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;		
+&lt;/li&gt;
+&lt;li&gt;
+&lt;h2&gt;Search&lt;/h2&gt;
+&lt;div id="search-wrapper"&gt;
+&lt;form method="get" id="searchform" action="#"&gt;
+&lt;div&gt;
+&lt;input type="text" value="" name="" id="" /&gt;
+&lt;input type="submit" id="searchsubmit" value="Search" /&gt;
+&lt;/div&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="box sidebar" id="sidebar-2"&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;h2&gt;About&lt;/h2&gt;
+&lt;p&gt;My name is Stephen Bau. I'm 38 and I live in Abbotsford, BC where I work as a graphic designer.&lt;/p&gt;
+&lt;p&gt;This is just a &lt;a href="http://21degrees.com.au/products/symphony/" 
+title="The Symphony Web Publishing System from Twentyone Degrees"&gt;Symphony&lt;/a&gt; 
+blog theme based on the WordPress theme created by Lokesh Dhakar of 
+&lt;a href="http://www.huddletogether.com/"&gt;Huddle Together&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;h2&gt;Contact&lt;/h2&gt;
+&lt;p&gt;&lt;a href="/contact/" title="Contact Form"&gt;Send me an email&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;h2&gt;Meta&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="/feed/" title="Syndicate this site using RSS 2.0"&gt;Entries &lt;abbr title="Really Simple Syndication"&gt;RSS&lt;/abbr&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/comments/feed/" title="The latest comments to all posts in RSS"&gt;Comments &lt;abbr title="Really Simple Syndication"&gt;RSS&lt;/abbr&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://21degrees.com.au/products/symphony/" 
+title="The Symphony Web Publishing System from Twentyone Degrees"&gt;Symphony&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="box sidebar" id="sidebar-3"&gt;
+&lt;h3&gt;&lt;a href="/" title="Home"&gt;qwilm&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code>
+</pre>
+
+<p>Now, it’s time to see what Symphony can do. Let’s start with the default parameters and data sources in <a href="/journal/building-a-symphony-theme-part-3/">Building a Symphony Theme: Part 3</a>.</p></more>
+			<categories>
+				<item handle="applications">Applications</item>
+			</categories>
+			<publish>no</publish>
+		</fields>
+		<comments count="0" spam="0"></comments>
+	</entry>
+	<entry id="98" handle="updating-symphony">
+		<date>2006-10-29</date>
+		<time>21:06</time>
+		<author></author>
+		<fields>
+			<title handle="updating-symphony">Updating Symphony</title>
+			<body word-count="93"><p>This weekend, the Symphony Team has released an update to the official <a href="http://overture21.com/forum/comments.php?DiscussionID=457">Symphony 1.5 Public Release</a> (version 1.5.05) that was released on September 21, 2006. <a href="http://overture21.com/forum/comments.php?DiscussionID=668">Symphony 1.5.06</a> provides several user requested improvements and bug fixes. Much credit must be given to the Symphony development team for their responsiveness and their fast-paced development.</p>
+
+<p>The 1.5.06 update provides many additional possibilities for the development of a Symphony theme, so you may enjoy a short intermission in our series on <a href="/journal/building-a-symphony-theme-part-1/">Building a Symphony Theme</a> as we update the application. It should take merely a moment to update.</p></body>
+			<photo></photo>
+			<more word-count="504"><h4>First, A Little History</h4>
+
+<p>The Symphony 1.5 Public Release was to be named <a href="http://overture21.com/forum/comments.php?DiscussionID=299">Symphony 1.2</a> and was to be the introduction of a new distribution model: rather than providing a separate serial number and installer for each purchased license to allow installation of a single site, the Symphony Team released the application to the public for free. The application remains the intellectual property of Twentyone Degrees, so Symphony has <a href="http://overture21.com/forum/comments.php?DiscussionID=556">not been released as open source software</a>. However, for each registered Symphony account, multiple sites can be installed. The changes and improvements made to Symphony 1.1 were significant, so the public release was called Symphony 1.5 rather than Symphony 1.2. Extensive changes and improvements were made to the database structure and interface which allowed for greater levels of application customization. Unfortunately, the changes were extensive enough to make updating existing sites unfeasible. A means for migrating sites from Symphony 1.1 to Symphony 1.5 has not yet materialized, although it is said to be on the to do list.</p>
+
+<h4>Symphony Status Widget</h4>
+
+<p><img class="right" src="/workspace/images/sym_widgets_update_avail.jpg" alt="Symphony Updates Available" /> When an update is available for the Symphony application or for any installed Campfire Services, a Status Widget located in the upper right of the Symphony Admin will be highlighted green. Click on the Status Widget icon to view Recent Entries, Recent Comments and System Updates. Under System Updates, you will find any available updates for Symphony and for Campfire Services as well as information about the version currently installed.</p>
+
+<p><img src="/workspace/images/sym_status_open_cubic.jpg" title="Symphony Admin : System Updates Available" alt="Symphony Admin : System Updates Available" /></p>
+
+<p>To update Symphony to the latest version, click on the update link: Get Symphony 1.5.06. You will be greeted with an Install button with instructions and details about the update. It is highly recommended that you backup your database and workspace folder before performing the update. For our Symphony theme building exercise, this may be a worthwhile exercise as well, though not necessary, since it might be just as easy to reinstall by dropping all the tables from your database, deleting all the Symphony files from the server and running the installer again.</p>
+
+<p><img src="/workspace/images/sym_update_install.jpg" title="Symphony Admin : Update Symphony" alt="Symphony Admin : Update Symphony" /></p>
+
+<p>Once you are satisfied that you have the means to return to the way things were, should anything go wrong during the update process, feel free to click on the shiny green Install button. If all goes well, you should be greeted by the Publish page. (My update worked quite well, but I was greeted by a blank page. I clicked on my back button to get back to the Symphony Admin, then clicked on the Status Widget to find that my site had indeed been updated to Symphony 1.5.06. We’ll see if the Symphony Team is able to clean up this minor behaviour glitch in short order.)</p>
+
+<h4>Other Widgets</h4>
+
+<p>While we are on the subject of widgets, you might like to take a look at the Search and Calendar Widgets as well. The Symphony Admin has some lovely <span class="caps">AJAX</span> drawers that reveal other means of finding and creating entries.</p>
+
+<h5>Search Widget</h5>
+
+<p>Find the entry you are looking for by key word.</p>
+
+<p><img src="/workspace/images/sym_search_widget_cubic.jpg" title="Symphony Admin : Search Widget" alt="Symphony Admin : Search Widget" /></p>
+
+<h5>Calendar Widget</h5>
+
+<p>Find an entry by date.</p>
+
+<p><img src="/workspace/images/sym_calendar_widget_cubic.jpg" title="Symphony Admin : Calendar Widget" alt="Symphony Admin : Calendar Widget" /></p>
+
+<p>Now, back to our regularly scheduled programming: <a href="/journal/building-a-symphony-theme-part-2/">Building a Symphony Theme: Part 2</a></p></more>
+			<categories>
+				<item handle="applications">Applications</item>
+			</categories>
+			<publish>no</publish>
+		</fields>
+		<comments count="0" spam="0"></comments>
+	</entry>
+	<entry id="97" handle="building-a-symphony-theme-part-1">
+		<date>2006-10-28</date>
+		<time>01:51</time>
+		<author></author>
+		<fields>
+			<title handle="building-a-symphony-theme-part-1">Building a Symphony Theme: Part 1</title>
+			<body word-count="119"><p>This is part one in a series of articles on <a href="/journal/creating-a-theme-for-symphony/">Creating a Theme for Symphony</a>. Building a site in Symphony will require some knowledge about <span class="caps">XML</span>, XPath and <span class="caps">XSLT</span>, as well as <span class="caps">HTML</span> and <span class="caps">CSS</span>. All of these technologies are standards developed by the World Wide Web Consortium as the basic building blocks that make the web work. Many of us have come around to the idea of developing standards compliant sites using <span class="caps">XHTML</span> and <span class="caps">CSS</span>. <span class="caps">XML</span> is a standard means of storing and retrieving data and media. However, XPath and <span class="caps">XSLT</span> are neglected siblings that could use some attention, and Symphony can help us out in this area. They are, in fact, the heart and soul of Symphony.</p></body>
+			<photo></photo>
+			<more word-count="1540"><p><strong>Note: I changed horses in mid-stream. The theme being ported to Symphony will be Qwilm instead of Pink for October because of the differences in usage rights.</strong></p>
+
+<p>For a good introduction to <span class="caps">XML</span>, XPath and <span class="caps">XSLT</span> templating in Symphony, refer to Mark Lewis’s article in the Overture library: <a href="http://overture21.com/articles/a-symphony-walkabout/">A Symphony Walkabout</a>. Also, the Wiki contains some helpful <a href="http://overture21.com/wiki/getting-started/tutorials-and-screencasts">screencasts</a> that demonstrate how to navigate the Symphony admin and build specific functionality into your site.</p>
+
+<h3>The Symphony Admin</h3>
+
+<p>The first thing you will notice when you login to Symphony is the clean, uncluttered design of the interface.</p>
+
+<p><img src="/workspace/images/sym_comments.jpg" title="Symphony Admin : Publish : Comments" alt="Symphony Admin : Publish : Comments" /></p>
+
+<p>Beside the Symphony logo, at the top of the page is the site name, which links to the front page of your website. By default, the name of the site is “Website Name.” This will be one of the first things that you should change.</p>
+
+<h3>Settings</h3>
+
+<p>First, though, let’s take a look at the Settings menu. It contains two submenus: Authors and System Preferences. Choose Authors, and you’ll see a list of the Authors and Administrators of the site. When you first install Symphony, there is one user. </p>
+
+<p><img src="/workspace/images/sym_settings_menu.jpg" title="Symphony Admin : Settings : Authors" alt="Symphony Admin : Settings : Authors" /></p>
+
+<h4>Author Settings</h4>
+
+<p>Click on the name and you will see the details of the primary administrative user, containing the information provided when you first registered your Symphony account. One thing to notice is the Miscellaneous section, which contains a setting for Formatting Preference. This preference is set for each Author or Administrator. By default, there is only one option: “None.” In actuality, Symphony ships with a default text formatter called SimpleHTML. This formatter does one thing: it wraps lines of text separated by two returns with paragraph tags <code>&lt;p&gt;</code>. If you would like to add text formatters, such as Textile or Markdown, install the corresponding Campfire Service.</p>
+
+<p><img src="/workspace/images/sym_author_edit.jpg" title="Symphony Admin : Settings : Authors : Author Details" alt="Symphony Admin : Settings : Authors : Author Details" /></p>
+
+<h4>System Preferences</h4>
+
+<p>Now, select Settings System Preferences and you will find settings for Website Name, Online Status, and Regional Timezone and Date and Time formatting options. The Date and Time settings will be reflected in the Symphony admin for listings of entries where the publish date column is available. Make the appropriate changes to the Website Status and Regional Settings and click on the Save Changes button. A blue bar will appear at the top of the page to indicate that your settings have been saved and the Website Name will change to the name saved. Note that at this time, since I have started with an empty workspace, changes to website status will not affect the front end of the website until the Home and Maintenance pages have been created. Once these page templates are available, the site can be switched to a maintenance mode that gives full access to the front end for administrative users when logged in, but authors and the public will be able to view only the Maintenance page and all links to the site will be redirected to this page.</p>
+
+<p><img src="/workspace/images/sym_qwilm_prefsaved.jpg" title="Symphony Admin : Settings : System Preferences Saved" alt="Symphony Admin : Settings : System Preferences Saved" /></p>
+
+<h3>Campfire Services</h3>
+
+<p>If you plan to use text formatters other than the default, SimpleHTML, it would be best to install the Campfire Services you need to make these text formatters available before creating any entries. It is currently not possible to change text formatter preferences on a per entry basis, unless you make the change to the Author Settings each time you need to create an entry that uses a different text formatter. An alternative possibility is to make changes directly to the MySQL database through a database administration tool such as phpMyAdmin. It is assumed that a site administrator will choose one text formatter and use it consistently throughout the site. However, provision has been made to notify a user when the text formatter in use for a particular entry differs from the Author’s formatting preference.</p>
+
+<p><img src="/workspace/images/sym_qwilm_campfire_empty.jpg" title="Symphony Admin : Campfire : Your Services" alt="Symphony Admin : Campfire : Your Services" /></p>
+
+<p>Click on the Get More button and you will find a list of available Campfire Services that can be filtered by Category and Recent Additions to the library. Use the arrows at the bottom of the list to navigate between pages. </p>
+
+<p><img src="/workspace/images/sym_qwilm_get_cs.jpg" title="Symphony Admin : Campfire : Get Campfire Services : Get More" alt="Symphony Admin : Campfire : Get Campfire Services : Get More" /></p>
+
+<p>Markdown and Textile are popular text formatters that are available as Campfire Services for Symphony. Install the Campfire Service for the text formatter, choose the installed Campfire Service from the list of installed services and enable it by selecting Enable from the pull-down menu at the bottom of the page. </p>
+
+<p><img src="/workspace/images/sym_qwilm_cs_enable.jpg" title="Symphony Admin : Campfire : Your Campfire Services : Enable" alt="Symphony Admin : Campfire : Your Campfire Services : Enable" /></p>
+
+<p>Navigate to Settings : Authors to edit the Author Settings, select your Text Formatting preference, and save the text formatting preference that will apply to all entries created by this Author after setting this preference.</p>
+
+<p><img src="/workspace/images/sym_qwilm_authors_format_menu.jpg" title="Symphony Admin : Authors : Textile Formatter" alt="Symphony Admin : Authors : Textile Formatter" /></p>
+
+<p>Campfire Services are not included in Symphony Themes, but I find Textile to be very helpful in quickly entering content into entries without worrying too much about <span class="caps">HTML</span> coding.</p>
+
+<h3>Blueprints</h3>
+
+<p>In the Blueprints section, there are three menu items: Pages, Components and Controllers. You may notice that we are working backwards through the main menu items. The Symphony Team has built the interface with the most used section, Publish, featured first. The rest of the items are Administration menus arranged in order of the frequency of use. The Blueprints section contains the <span class="caps">HTML</span>, <span class="caps">CSS</span>, Javascript, <span class="caps">XSLT</span> Templates, <span class="caps">XML</span> Data Sources and <span class="caps">PHP</span> Events that control the site structure, presentation and behaviours.</p>
+
+<h4>Pages</h4>
+
+<p>Pages are the templates that control the content for different areas of your site. In the example of a weblog, the standard pages tend to be Home, About, Blog, Archive, and Contact. Each of these pages has a different function and this difference will generally be reflected in the structure and presentation of the content. The Page templates control the structure of individual pages, allowing the template to respond to specific <span class="caps">URL</span> schemas. </p>
+
+<p>A blog page might have a very simple <span class="caps">URL</span> schema:</p>
+
+<pre>
+<code>/entry/</code>
+</pre>
+
+<p>Alternatively, a journal may be arranged with a much more complex <span class="caps">URL</span> schema to allow for navigation by categories or tags:</p>
+
+<pre>
+<code>/journal/tag/entry/</code>
+</pre>
+
+<p>An archive may have an even more complex <span class="caps">URL</span> schema:</p>
+
+<pre>
+<code>/archive/year/month/day/entry/</code>
+</pre>
+
+<p>With an empty workspace, there are no pages. </p>
+
+<p><img src="/workspace/images/sym_qwilm_pages.jpg" title="Symphony Admin : Pages" alt="Symphony Admin : Pages" /></p>
+
+<p>So, we will need to create each page. Click on the Create New button to create a new page template. Each page requires a Title and a Body containing the <span class="caps">XSLT</span> template.</p>
+
+<p><img src="/workspace/images/sym_qwilm_page_new.jpg" title="Symphony Admin : New Page" alt="Symphony Admin : New Page" /></p>
+
+<p>Symphony starts off the template with the opening and closing <code>xsl:template</code> elements. We could try a simple experiment, knowing that it will fail, but let’s give it a try and see what happens. Give the new page a Title of “Home”. In the Body of the new page template, create the following template:</p>
+
+<pre>
+<code>&lt;xsl:template match="data"&gt;
+&lt;h1&gt;Hello World!&lt;/h1&gt;
+&lt;/xsl:template&gt;</code>
+</pre>
+
+<p>Click on the Configure button and you will greeted with several additional options. The <span class="caps">URL</span> Handle is automatically generated if you leave this field blank, so we can ignore this field for now. The important thing to note is the Page Type. A home page is a special type of page that must be configured with an “Index” Page Type. Select “Index”, click on the Configure button to close the drawer and click on the Save button to save the New Page. Now try navigating to the Home page by clicking on the <span class="caps">URL</span> link. You will discover an error page:</p>
+
+<p><img src="/workspace/images/sym_xslt_error.jpg" title="Symphony Admin : XSLT Error Page" alt="Symphony Admin : XSLT Error Page" /></p>
+
+<p>At the bottom of the page will be a link that provides a link to “Check the page debug information.” Click on this link and you will be presented with the debug information for this specific page, the Home page. There are three links along the top of the page: <span class="caps">XML</span>, <span class="caps">XSLT</span> and Output.</p>
+
+<p>The <span class="caps">XML</span> data associated with the home page is empty:</p>
+
+<p><img src="/workspace/images/sym_debug_home_xml.jpg" title="Symphony Admin : Home Page - Debug Information - XML" alt="Symphony Admin : Home Page - Debug Information - XML" /></p>
+
+<p>The <span class="caps">XSLT</span> template contains our code, but the <span class="caps">XSLT</span> stylesheet is empty:</p>
+
+<p><img src="/workspace/images/sym_debug_home_xslt.jpg" title="Symphony Admin : Home Page - Debug Information - XSLT" alt="Symphony Admin : Home Page - Debug Information - XSLT" /></p>
+
+<p>Because the <span class="caps">XSLT</span> stylesheet is empty, no output has been parsed:</p>
+
+<p><img src="/workspace/images/sym_debug_home_output.jpg" title="Symphony Admin : Home Page - Debug Information - Output" alt="Symphony Admin : Home Page - Debug Information - Output" /></p>
+
+<p>This is a problem, but it is easily remedied. We could do a couple things, but let’s try the most basic solution first. We need to define a stylesheet by creating a Master template. Navigate to Blueprints : Components and you will find an area to create Utilities, Masters and Assets.</p>
+
+<p><img src="/workspace/images/sym_qwilm_components.jpg" title="Symphony Admin : Components" alt="Symphony Admin : Components" /></p>
+
+<p>Create a new Master template by clicking on the Create New button beside “Masters”. This brings up a New Master page with a layout similar to the page for creating new Pages. However, the default stylesheet has been automatically generated for you. Click on the Configure button and you’ll find that the options are different. As with the Pages configuration settings, you can associate a Data Source with a master page and you can also attach Events that allow you to combine the power of <span class="caps">PHP</span> with <span class="caps">XSLT</span> to do many more things with your site.</p>
+
+<p><img src="/workspace/images/sym_qwilm_master_default.jpg" title="Symphony Admin : Components : Masters : default" alt="Symphony Admin : Components : Masters : default" /></p>
+
+<p>Give this master page the name “default” and click the Save button. Navigate to Blueprints : Pages and click on the name of the Home page to edit the page template. In the Master pull-down menu, choose <code>default.xsl</code> and click on the Save button. Click on the <span class="caps">URL</span> link for the Home page template to view the Home page in the front end of the site. You should see the heading “Hello World!” rendering properly now. In the browser address bar, type <code>?debug</code> at the end of the home page <span class="caps">URL</span> to view the debug information for the page:</p>
+
+<pre>
+<code>http://sym.qwilm.site/home/?debug</code>
+</pre>
+
+<p>You will find that the <span class="caps">XML</span> data has not changed, since we still have not added any data or data sources. But you will find that the <span class="caps">XSLT</span> contains the stylesheet and template, and Output displays the <span class="caps">HTML</span> source that was produced by the <span class="caps">XSLT</span> template. Congratulations! You have created a working <span class="caps">XSLT</span> template.</p>
+
+<p>This, of course, is just the beginning. There is no data, there is no dynamic content. So that is next: <a href="/journal/building-a-symphony-theme-part-2/">Building a Symphony Theme: Part 2</a>.</p></more>
+			<categories>
+				<item handle="applications">Applications</item>
+			</categories>
+			<publish>no</publish>
+		</fields>
+		<comments count="0" spam="0"></comments>
+	</entry>
+	<entry id="96" handle="creating-a-theme-for-symphony">
+		<date>2006-10-27</date>
+		<time>22:53</time>
+		<author></author>
+		<fields>
+			<title handle="creating-a-theme-for-symphony">Creating a Theme for Symphony</title>
+			<body word-count="89"><p>I have decided to build a theme for <a href="http://21degrees.com.au/products/symphony/">Symphony</a> using the <a href="http://bauhouse.ca/journal/pink-for-october/">Pink for October</a> WordPress theme. I will be describing the process step by step to help others who are wondering about the lack of documentation for developing sites using Symphony. I have found the best way to learn is by playing with the application to see what it can do. Learning about <span class="caps">XML</span>, <span class="caps">XSLT</span> and XPath are part of the process. Symphony provides a wonderful tool for learning the ins and outs of <span class="caps">XSLT</span> templating. So, here goes…</p></body>
+			<photo></photo>
+			<more word-count="707"><p>(You’ll notice that changes will be made to this journal entry as I go, so please bear with me as I go through the process.)</p>
+
+<p>I could develop locally, or I could develop live. This depends on which I believe will be faster: my Mac G5 or my <a href="http://textdrive.com/">TextDrive</a> account. I think I will start locally.</p>
+
+<h3>Local Hosting on the Mac</h3>
+
+<p>If you want to install Symphony locally, you need Apache installed with MySQL and <span class="caps">PHP</span> with the <span class="caps">XSLT</span> extension turned on, and the Apache rewrite module active (see <a href="http://21degrees.com.au/products/symphony/requirements/">Symphony requirements</a>).</p>
+
+<h4>Setting up the Virtual Host</h4>
+
+<p>As I am working on a Mac, I will head over to Terminal and type the following to update my local hosts file (which I have set up to automatically open these files for editing in TextWrangler. For those who have not done this, replace <code>edit</code> with <code>pico</code> or <code>nano</code> or whatever you prefer as your text editor):</p>
+
+<pre>
+<code>sudo edit /etc/hosts</code>
+</pre>
+
+<p>To my hosts file, I will add another virtual host so that I can install a fresh install of Symphony. I will use a particular syntax that allows me to view sites locally and avoid interfering with my ability to reach real domains. For this particular Symphony theme, my virtual domain will be located at <code>http://sym.pinkforoctober.site/</code>. So, I need to add this host to my hosts file:</p>
+
+<pre>
+<code>127.0.0.1       sym.pinkforoctober.site</code>
+</pre>
+
+<p>I also need to add the virtual domain to my Apache configuration file. So, I locate my file at:</p>
+
+<pre>
+<code>sudo edit /etc/httpd/httpd.conf</code>
+</pre>
+
+<p>Then, I add the following at the bottom of the file:</p>
+
+<pre>
+<code>NameVirtualHost 127.0.0.1
+&lt;VirtualHost 127.0.0.1&gt;
+ServerName sym.pinkforoctober.site
+DocumentRoot /Library/WebServer/Documents/sym/pinkforoctober/public
+&lt;/VirtualHost&gt;</code>
+</pre>
+
+<p>While, you’re at it, you can make sure that the rewrite module is active. Do a search for <code>#LoadModule rewritemodule modules/modrewrite.so</code>. Remove the hash mark <code>#</code> at the beginning of the line. So now it should look like <code>LoadModule rewritemodule modules/modrewrite.so</code>. Now the rewriting engine is turned on.</p>
+
+<p>Since these configuration settings are initialized when the server is started up, I will need to restart the apache server. I like to do this by running a command in Terminal:</p>
+
+<pre>
+<code>sudo apachectl graceful</code>
+</pre>
+
+<h4>Creating the Directories</h4>
+
+<p>Now, I can go ahead and create the directory for the Symphony installation on my local Apache server according to the path I have set as the document root in the configuration setting above. My path looks like this:</p>
+
+<pre>
+<code>/Library/WebServer/Documents/sym/pinkforoctober/public</code>
+</pre>
+
+<h4>Creating the Database</h4>
+
+<p>The next step would be to open up phpMyAdmin and create a MySQL database for the Symphony installation. I will name the database:</p>
+
+<pre>
+<code>sym_pinkforoctober</code>
+</pre>
+
+<h4>Installing Symphony</h4>
+
+<p>Now, everything is ready to install Symphony on the server. (As stated previously, it will be necessary to have the proper settings for the local hosting environment, similar to the setup explained by carlos on the Overture Forum Article: <a href="http://overture21.com/articles/developing-locally-with-xampp-lite-154-for-windows/">Developing locally with <span class="caps">XAMPP</span> Lite 1.5.4 for Windows</a>.)</p>
+
+<p>Head over to the <a href="http://21degrees.com.au/products/symphony/">Twentyone Degrees</a> website and download the latest Symphony installer by <a href="http://accounts.symphony21.com/">setting up and account</a> or logging in if you already registered for an account. Your username and password will be used for the primary administrative user of your Symphony account. For each site that you create with this account, you will login with this user and password. You will then be able to create additional Authors and Administrators.</p>
+
+<p>Once you have downloaded the <code>install.php</code> file, place the file in the root directory of your virtual host. On my server, I will place the file in the following directory:</p>
+
+<pre>
+<code>/Library/WebServer/Documents/sym/pinkforoctober/public/install.php</code>
+</pre>
+
+<p>In my web browser, I can navigate to the installer on my server at my virtual host: </p>
+
+<pre>
+<code>http://sym.pinkforoctober.site/install.php</code>
+</pre>
+
+<p>Make sure that the permissions for your root directory are set to 777. Then, simply follow the instructions for the one-step installation procedure and, if all goes well, you should have the application installed in a matter of seconds. When I installed, I chose to “Start with an empty workspace – Best for other themes or building your own workspace.” There will be no front page to navigate to, so I’ll start by logging into Symphony’s administrative interface. Login with your Symphony account username and password.</p>
+
+<h4>A journey of a thousand miles begins with one step</h4>
+
+<p>If you have made it this far, congratulations! You have installed Symphony and logged in. This is the first step in using Symphony to create websites that take advantage of the power of standards in web design and development.</p>
+
+<p>With Symphony installed, we can now start at the beginning: <a href="/journal/building-a-symphony-theme-part-1/">Building a Symphony Theme: Part 1</a>.</p></more>
+			<categories>
+				<item handle="applications">Applications</item>
+			</categories>
+			<publish>no</publish>
+		</fields>
+		<comments count="0" spam="0"></comments>
+	</entry>
+	<entry id="95" handle="pink-for-october">
+		<date>2006-10-27</date>
+		<time>22:42</time>
+		<author></author>
+		<fields>
+			<title handle="pink-for-october">Pink for October</title>
+			<body word-count="59"><p>Yes, October is running out. But while it is still October, and seeing as I haven't made any entries for the month of October, there is still time to act. I wanted to find a theme that would be worthy of inclusion in the list of themes available for <a href="http://21degrees.com.au/products/symphony/">Symphony</a>, as theme development seems to be a little slow.</p></body>
+			<photo></photo>
+			<more word-count="101"><p>There is much to learn as one becomes accustomed to all the features available in Symphony, so it is understandable that things have been slow. I have been busy porting over client sites to Symphony, so I understand that work does need to be a priority. However, this theme is for a good cause: <a href="http://5thirtyone.com/archives/684">Pink for October</a> is a WordPress theme donated by Derek Punsalan of <a href="http://5thirtyone.com">5thirtyone.com</a>. For more information about the <a href="http://en.wikipedia.org/wiki/Breast_cancer#Breast_cancer_awareness">Pink for October</a> Breast Cancer Awareness project, visit <a href="http://www.changethestatistic.com/">Change The Statistic</a>.</p>
+
+<p>This weekend, I will attempt to port the theme to Symphony. Stay tuned as I go through <a href="http://bauhouse.ca/journal/creating-a-theme-for-symphony/">the process</a>.</p></more>
+			<categories>
+				<item handle="life">Life</item>
+				<item handle="applications">Applications</item>
+			</categories>
+			<publish>no</publish>
+		</fields>
+		<comments count="0" spam="0"></comments>
+	</entry>
+	<entry id="72" handle="textile-in-symphony">
+		<date>2006-09-30</date>
+		<time>09:30</time>
+		<author></author>
+		<fields>
+			<title handle="textile-in-symphony">Textile in Symphony</title>
+			<body word-count="51"><p>Testing Symphony's Textile Text Formatter Campfire Service. If all is working as it should, the body of this article will contain <span class="caps">XSLT </span>code from one of my page templates. According to Allen, the text input fields should be validated so as not to break the front end of a Symphony site.</p></body>
+			<photo></photo>
+			<more word-count="49"><p>My home page template looks something like this:</p>
+
+
+
+<pre><code>
+&lt;xsl:template match="data"&gt;
+
+&lt;div id="section"&gt;
+&lt;div id="sectionimg"&gt;&lt;p&gt;The elementary forms: sphere, cone and cube.&lt;/p&gt;
+&lt;/div&gt;<!-- END sectionimg -->
+&lt;/div&gt;<!-- END section -->
+
+&lt;div id="sectionhead"&gt;&lt;h2&gt;Recent Projects&lt;/h2&gt;&lt;/div&gt;
+
+&lt;div id="contentthumbs"&gt;
+
+&lt;xsl:for-each select="portfolio/entry"&gt;
+&lt;xsl:sort select="fields/created" order="descending"/&gt;
+&lt;xsl:if test="fields/preview != '' and position() &amp;lt;=7"&gt;
+&lt;a href="{$root}/design/{fields/media/@handle}/{@handle}/" title="{fields/title}"&gt;&lt;img class="preview_off" src="{$root}/{fields/preview-off/item/path}" width="107" height="107" alt="{fields/title}" /&gt;&lt;img class="preview_over" src="{$root}/{fields/preview/item/path}" alt="{fields/title}" /&gt;&lt;/a&gt;
+&lt;/xsl:if&gt;
+&lt;/xsl:for-each&gt;
+
+&lt;/div&gt;<!-- END contentthumbs -->
+
+&lt;/xsl:template&gt;</code></pre>
+
+
+
+<p>And, in fact, everything is working as it should, so far.</p></more>
+			<categories>
+				<item handle="applications">Applications</item>
+			</categories>
+			<publish>no</publish>
+		</fields>
+		<comments count="0" spam="0"></comments>
+	</entry>
+	<entry id="19" handle="symphony-setting-a-new-standard">
+		<date>2006-09-22</date>
+		<time>08:00</time>
+		<author></author>
+		<fields>
+			<title handle="symphony-setting-a-new-standard">Symphony: Setting a New Standard</title>
+			<body word-count="70"><p><a href="http://21degrees.com.au/products/symphony/" title="http://21degrees.com.au/products/symphony/">Symphony</a> is a web publishing system based on web standards. By using standards, you are investing in technologies that work now and will be sure to work in the future. Web development has often relied on proprietary technologies that work only with particular applications. There was a time when websites recommended that the website was best viewed with the latest version of Internet Explorer. Many more browsers are being used.</p></body>
+			<photo></photo>
+			<more word-count="527"><p>Over the last number of years, many have been discovering the benefits of working with <a href="/journal/web-standards/">web standards</a> as recommended by the <span class="caps">W3C </span>(<a href="http://www.w3.org/">World Wide Web Consortium</a>) who have developed standards and technologies that make the web work: <span class="caps">XHTML, CSS, XML </span>and <span class="caps">XSLT. </span></p>
+
+<p>Others have built open source scripting languages, such as <span class="caps">PHP, </span>and relational databases, such as MySQL, that help to make websites dynamic. A database-driven website design allows a web site to use a page design template to generate pages dynamically by retrieving content from information stored in a database. The benefit is the ability to separate the structure of the information from the presentation of that information. The information can then be presented in many different ways, and pages can be generated efficiently with far less effort. Using a content management system means that the owners of a website, those who are generating the content, are able to manage their own site without needing to have a lot of technical knowledge about how it all works.</p>
+
+<h4>The Symphony Publishing System</h4>
+
+<p><a href="http://21degrees.com.au/products/symphony/" title="http://21degrees.com.au/products/symphony/">Symphony</a> is a web publishing system that is built on using standards: <span class="caps">XHTML, CSS, XML </span>and <span class="caps">XSLT </span>using open source technologies to access information stored in a database through <span class="caps">PHP </span>and MySQL. What is unique about Symphony as a content management system is its ability to transform the information of the web, <span class="caps">XML, </span>into many different document structures, <span class="caps">XHTML.</span> So, it is possible to take information from any site that contains information stored in <span class="caps">XML </span>and transform this information into content that can be presented in unique ways on your site. If a site complies with web standards and contains well-formed <span class="caps">XHTML </span>pages, this information can be gleaned and provided as links from your site.</p>
+
+<p>More and more sites are offering information in <span class="caps">RSS </span>or <span class="caps">XML.</span> Popular sites, such as flickr support <span class="caps">RSS, </span>allowing you to take this <span class="caps">XML </span>information and display it in news readers or even on your own site. Photos uploaded to flickr can instantly appear on your home page, for instance. There are many more untapped possibilities.</p>
+
+<p>Also, Symphony allows customization of the administrative system as well as the publicly viewable areas of your site. The system features the ability to create an almost unlimited number of sections, categories and custom fields for various types of information input, including the uploading of photographs and files, all stored on the server, efficiently accessible through a database and seamlessly presented on your public site as <span class="caps">RSS, XML </span>and <span class="caps">XHTML.</span> The flexibility of the templating system is beyond anything else I have encountered.</p>
+
+<p>The Symphony development team at <a href="http://21degrees.com.au/">Twentyone Degrees</a>, in Brisbane, Australia, are also a very knowledgable and helpful group of individuals who have a vision to add another standard to the web designers repertoire, <span class="caps">XSLT, </span>further extending the ability of designers and developers to make the World Wide Web a better place. The support I have received from them has been well worth my investment.</p>
+
+<h4>Symphony free for all!</h4>
+
+<p>As of tomorrow, though, no one need complain that the application is not worth the investment of time and money (which, in my opinion, was very inexpensive). September 21, 2006, Symphony 1.5 will be offered to the world for free.</p></more>
+			<categories>
+				<item handle="design">Design</item>
+				<item handle="applications">Applications</item>
+			</categories>
+			<publish>no</publish>
+		</fields>
+		<comments count="0" spam="0"></comments>
+	</entry>
+	<entry id="17" handle="symphony-then-and-now">
+		<date>2006-09-15</date>
+		<time>08:00</time>
+		<author></author>
+		<fields>
+			<title handle="symphony-then-and-now">Symphony: Then and Now</title>
+			<body word-count="121"><p>This following excerpt regarding the default templates came with the default template for the Symphony 1.5 beta, but I saw no reason to dispense with it. It helps me remember the process that the Symphony Team has gone through to arrive at this state of Symphony's development. I consider it to be a privilege to be able to work with such a powerful and flexible application. I also owe a debt of gratitude to the Symphony Team and the Overture forum contributors for their work, tutorials, tips and suggestions, as well as for introducing me to another web standard: <span class="caps">XSLT.</span> For myself, it did not take very long to learn the basics.</p>
+
+<p>Let's look back at the progression of Symphony's default templates...</p></body>
+			<photo>
+				<item>
+					<path>workspace/images/sym_more-than-words.png</path>
+					<type>image/png</type>
+					<size>51 kb</size>
+				</item>
+				<item>
+					<path>workspace/images/sym_behold-the-power.png</path>
+					<type>image/png</type>
+					<size>40 kb</size>
+				</item>
+				<item>
+					<path>workspace/images/sym_share-the-love-v1.png</path>
+					<type>image/png</type>
+					<size>29 kb</size>
+				</item>
+				<item>
+					<path>workspace/images/sym_share-the-love-v2.png</path>
+					<type>image/png</type>
+					<size>29 kb</size>
+				</item>
+				<item>
+					<path>workspace/images/sym_cubic.png</path>
+					<type>image/png</type>
+					<size>23 kb</size>
+				</item>
+			</photo>
+			<more word-count="515"><blockquote>
+
+<p>Back when Symphony was still called TypeWorks, the default template—designed by <a href="http://www.chaoticpattern.com">Allen Chang</a>—dubbed <em>More than Words</em> marked the first ever default template for the team's debut application. This template was desgined almost two years ago and its age is starting to show.</p>
+
+<p>When Symphony underwent a name-change, it signified a new identity and also a new version release, <em>Symphony 0.9 Revision 2</em>. A new identity needed a new default template. <em>Behold the Power</em>, an aptly named template was designed by the talented <a href="http://e-lusion.com/">Ian Main</a>. The design was all about showcasing the flexibility and power of Symphony, represented by loud and unique colour combinations.</p>
+
+<p>When Symphony finally grew out of beta, the team knew they needed to represent the application with its original philosophy: simplicity with flexibility. However at the same time they realised that the default template needs to serve a fundamental role: allow developers to examine it and learn by example. As such, the template needed to showcase some of the different aspects of the system but have minimal layout related code. <em>Share the Love</em> was consequently born; designed by Scott Hughes, with the intention of making something entirely imageless. This change in design philosophy set the trend for future default template designs.</p>
+
+<p>Symphony moved from its first public release to <em>1.1</em> and again, a design refresh was in order. <em>Share the Love V2</em> only had small cosmetic changes, notably the background colour was changed to white. The team felt the markup and <span class="caps">CSS </span>was minimal and clean and a complete redesign was unnecessary. Clean and minimal markup meant developers can easily browse through the template code and learn the underlying <span class="caps">XSLT </span>without having to concern itself with messy layout code.</p>
+
+<p>The latest default template, <em>Cubic</em>, was once again designed by <a href="http://www.chaoticpattern.com">Allen Chang</a>. The template marks the <em>version 1.5</em> milestone that Symphony has finally reached. The focus of <em>Cubic</em> is to exemplify the major update in Symphony with the inclusion of the "sections" feature. The template still follows the philosophy of simplicity and subtlety. </p>
+
+</blockquote>
+
+<p>Symphony has come a long way over the past year and a half, and I find it is well worth the $49 because of the first-rate support that I get from the Symphony Team. If something is not working, they'll take a look under the hood and tune things up for me. However, by the end of September 2006, the application will be offered for free by the Twentyone Degrees development team. The default templates have offered a great variety in terms of design and functionality, and it's interesting to look back at them. The reality is that these templates are mere starting points that hide the power behind the system, which now involves not only multiple categories, but also multiple sections, custom fields and an easily customizable administrative interface.</p>
+
+<p>As the Symphony Team continues to develop the documentation and makes the application freely available for developers to test drive, I would be surprised if <span class="caps">XSLT </span>did not become one of the standards that we rely on just as much as on <span class="caps">CSS </span>and <span class="caps">XHTML </span>as a result of the flexibility of the Symphony application.</p></more>
+			<categories>
+				<item handle="applications">Applications</item>
+			</categories>
+			<publish>no</publish>
+		</fields>
+		<comments count="0" spam="0"></comments>
+	</entry>
+	<entry id="18" handle="font-licensing">
+		<date>2006-09-03</date>
+		<time>08:00</time>
+		<author></author>
+		<fields>
+			<title handle="font-licensing">Font Licensing</title>
+			<body word-count="42"><p>Stop stealing sheep, as Erik Spiekermann put it. Fonts represent a significant investment of time to create them and money to license them. Yet, because they are everywhere, few recognize their value and inadvertently break the law by distributing them to others.</p></body>
+			<photo></photo>
+			<more word-count="144"><p>Keep in mind that, in most cases, fonts are not purchased, but they are licensed. That means that the licensee has been licensed the font software to be used on one or a limited number of computers. Fonts cannot be passed from one computer to another without breaking the license agreement with the owner of the software copyright. Any request to do so is a request to perform an illegal act, punishable by law. So, please show some respect to the creators of font software by refraining from the illegal distribution of fonts, and use only the ones you have purchased a license to use. If you do not want to purchase fonts, there are many available for free on the internet. But do not assume that all fonts are free to use as you like. High quality type libraries represent a significant investment.</p></more>
+			<categories>
+				<item handle="design">Design</item>
+			</categories>
+			<publish>no</publish>
+		</fields>
+		<comments count="0" spam="0"></comments>
+	</entry>
+	<entry id="16" handle="web-standards">
+		<date>2006-09-01</date>
+		<time>08:00</time>
+		<author></author>
+		<fields>
+			<title handle="web-standards">Web Standards</title>
+			<body word-count="52"><p>To what does the term web standards refer? Since the publication of the <a href="http://www.w3.org/History/19921103-hypertext/hypertext/WWW/TheProject.html">first website</a> in 1991, the World Wide Web has grown from a means of sharing information among the scientific community to become the primary means for operating businesses in the information age and for social interaction around the world.</p></body>
+			<photo></photo>
+			<more word-count="352"><p>The World Wide Web Consortium has been developing the technologies and the standards that make the web work. As businesses discovered the value of establishing a presence on the Internet, websites proliferated and technologies were invented to find ways of presenting information that were closer to what people were used to seeing in print and television media. In an effort to to increase the visual appeal of their sites, web designers took the technology that was available and pushed the limits of what could be accomplished, replacing text with images or using technologies such as Flash, that relied on proprietary browser features and plug-ins for browsers to view the content. This became a problem when search engines tried to archive the information available on a site to help people find what they were looking for on the web. It was also a problem for those who accessed the information in text-only browsers or with screen readers. Information presented as images or in Flash could not be accessed easily or at all.</p>
+
+<h4>The Web Standards Project</h4>
+
+<p>It became apparent that there was a need for standards of accessibility and usability. The <a href="http://www.webstandards.org/">Web Standards Project</a> became evangelists of an idea that the standards recommended by the <a href="http://www.w3.org/">World Wide Web Consortium</a> should be followed so as to make the web accessible and usable for as many as possible. Technologies had already existed for a number of years to make this possible, but for lack of browser and developer support, these technologies had not been widely adopted. The technologies are the Extensible HyperText Markup Language (XHTML) and Cascading Style Sheets (CSS).</p>
+
+<p>Over the last few years, web standards have become widely adopted as the best means for developing sites that work, in terms of accessibility, usability and visual style. This has been the result of the work of several groups, sites and individuals, a small sampling of which are list here:</p>
+
+
+<ul>
+<li><a href="http://www.w3.org/">World Wide Web Consortium</a></li>
+<li><a href="http://www.webstandards.org/">Web Standards Project</a></li>
+<li><a href="http://www.zeldman.com/">Jefferey Zeldman</a>, creator of <a href="http://www.alistapart.com/">A List Apart</a></li>
+<li>Dave Shea, of <a href="http://www.mezzoblue.com/">Mezzoblue</a>, creator of <a href="http://www.csszengarden.com/"><span class="caps">CSS</span> Zen Garden</a></li>
+<li>Douglas Bowman, of <a href="http://www.stopdesign.com/">StopDesign</a></li>
+</ul>
+
+
+
+<p>I owe a debt of gratitude to these and many more for their influence on my work.</p></more>
+			<categories>
+				<item handle="design">Design</item>
+			</categories>
+			<publish>no</publish>
+		</fields>
+		<comments count="0" spam="0"></comments>
+	</entry>
+</entries>

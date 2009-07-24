@@ -1,0 +1,1546 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<portfolio section="portfolio">
+	<entry id="39" handle="hilfsaktion-maertyrerkirche-website">
+		<date>2007-01-07</date>
+		<time>08:06</time>
+		<author></author>
+		<fields>
+			<title handle="hilfsaktion-maertyrerkirche-website">Hilfsaktion Maertyrerkirche Website</title>
+			<link handle="http-wwwhmk-aemch">http://www.hmk-aem.ch/</link>
+			<created handle="2004-11-03">2004-11-03</created>
+			<client handle="international-christian-response">International Christian Response</client>
+			<project handle="hilfsaktion-maertyrerkirche-website-redesign">Hilfsaktion Maertyrerkirche Website Redesign</project>
+			<media handle="web">Web</media>
+			<description word-count="52"><p>Hilfsaktion MÃ¤rtyrerkirche, in Switzerland, needed a redesigned website developed using <span class="caps">XHTML</span>, <span class="caps">CSS</span> and TYPO3. It needed to be multi-lingual (German and French) to be able to serve the same content for their French counterpart, Aide aux Eglises Martyres. This solution also incorporated Flash to feature testimonies of persecuted Christians in various countries.</p></description>
+			<image>
+				<item>
+					<path>workspace/portfolio/hmk-web_home.jpg</path>
+					<type>image/jpeg</type>
+					<size>21 kb</size>
+				</item>
+			</image>
+			<preview>
+				<item>
+					<path>workspace/portfolio/hmk-web_med.jpg</path>
+					<type>image/jpeg</type>
+					<size>5 kb</size>
+				</item>
+			</preview>
+			<preview-off>
+				<item>
+					<path>workspace/portfolio/hmk-web_med_off.jpg</path>
+					<type>image/jpeg</type>
+					<size>2 kb</size>
+				</item>
+			</preview-off>
+			<thumbnail>
+				<item>
+					<path>workspace/portfolio/hmk-web_thb.jpg</path>
+					<type>image/jpeg</type>
+					<size>1 kb</size>
+				</item>
+			</thumbnail>
+			<thumbnail-off>
+				<item>
+					<path>workspace/portfolio/hmk-web_thb_off.jpg</path>
+					<type>image/jpeg</type>
+					<size>1 kb</size>
+				</item>
+			</thumbnail-off>
+			<firm handle="international-christian-response">International Christian Response</firm>
+			<type handle="organization">Organization</type>
+			<design handle="stephen-bau">Stephen Bau</design>
+		</fields>
+	</entry>
+	<entry id="41" handle="bpa-group-website">
+		<date>2007-01-07</date>
+		<time>08:05</time>
+		<author></author>
+		<fields>
+			<title handle="bpa-group-website"><span class="caps">BPA</span> Group Website</title>
+			<link handle="http-wwwbpa-groupcom">http://www.bpa-group.com/</link>
+			<created handle="2004-03-01">2004-03-01</created>
+			<client handle="bpa-group"><span class="caps">BPA</span> Group</client>
+			<project handle="website-design">Website Design</project>
+			<media handle="web">Web</media>
+			<description word-count="38"><p>An architecture/engineering group with offices in Vancouver, Seattle, Los Angeles and Shanghai needed a website to position themselves as an international entity. Partnering with Tom AbbÃ¼hl of <a href="http://www.grafus.com/">Grafus</a>, we developed this site in Flash for the <span class="caps">BPA</span> Group.</p></description>
+			<image>
+				<item>
+					<path>workspace/portfolio/bpa-web_bridges.jpg</path>
+					<type>image/jpeg</type>
+					<size>23 kb</size>
+				</item>
+			</image>
+			<preview>
+				<item>
+					<path>workspace/portfolio/bpa-web_med.jpg</path>
+					<type>image/jpeg</type>
+					<size>5 kb</size>
+				</item>
+			</preview>
+			<preview-off>
+				<item>
+					<path>workspace/portfolio/bpa-web_med_off.jpg</path>
+					<type>image/jpeg</type>
+					<size>2 kb</size>
+				</item>
+			</preview-off>
+			<thumbnail>
+				<item>
+					<path>workspace/portfolio/bpa-web_thb.jpg</path>
+					<type>image/jpeg</type>
+					<size>1 kb</size>
+				</item>
+			</thumbnail>
+			<thumbnail-off>
+				<item>
+					<path>workspace/portfolio/bpa-web_thb_off.jpg</path>
+					<type>image/jpeg</type>
+					<size>966 bytes</size>
+				</item>
+			</thumbnail-off>
+			<firm handle="grafus">Grafus</firm>
+			<type handle="web-design-firm">Web Design Firm</type>
+			<creative-direction handle="tom-abbuhl">Tom AbbÃ¼hl</creative-direction>
+			<design handle="stephen-bau">Stephen Bau</design>
+		</fields>
+	</entry>
+	<entry id="52" handle="renter-registry-logo">
+		<date>2006-09-24</date>
+		<time>22:30</time>
+		<author></author>
+		<fields>
+			<title handle="renter-registry-logo">Renter Registry Logo</title>
+			<created handle="2003-09-05">2003-09-05</created>
+			<client handle="renterregistrycom">RenterRegistry.com</client>
+			<project handle="renter-registry-website">Renter Registry Website</project>
+			<media handle="identity">Identity</media>
+			<description word-count="111"><p>The idea itself had some merit: a website that helped landlords qualify renters based on past renting history and helped renters find good landlords. So I came up with the idea of building a dwelling out of the letter R and building a street that had houses for landlords and tenants. Since the site would have three parts to it for landlords, renters and administrators, the lights would turn on when you moused over the icon that represented the entrance to each portion of the site.</p>
+
+<p>You can view the results of my <a href="http://www.designprojectx.com/renterreg/">experiments for the website layout</a> on my test site. Unfortunately, the project did not progress past the conceptual stage.</p></description>
+			<image>
+				<item>
+					<path>workspace/portfolio/rentreg-logo.jpg</path>
+					<type>image/jpeg</type>
+					<size>10 kb</size>
+				</item>
+			</image>
+			<preview>
+				<item>
+					<path>workspace/portfolio/rentreg-logo_med.jpg</path>
+					<type>image/jpeg</type>
+					<size>5 kb</size>
+				</item>
+			</preview>
+			<preview-off>
+				<item>
+					<path>workspace/portfolio/rentreg-logo_med_off.jpg</path>
+					<type>image/jpeg</type>
+					<size>2 kb</size>
+				</item>
+			</preview-off>
+			<thumbnail>
+				<item>
+					<path>workspace/portfolio/rentreg-logo_thb.jpg</path>
+					<type>image/jpeg</type>
+					<size>2 kb</size>
+				</item>
+			</thumbnail>
+			<thumbnail-off>
+				<item>
+					<path>workspace/portfolio/rentreg-logo_thb_off.jpg</path>
+					<type>image/jpeg</type>
+					<size>1 kb</size>
+				</item>
+			</thumbnail-off>
+			<firm handle="bauhouse-visual-communications">Bauhouse Visual Communications</firm>
+			<type handle="design-studio">Design Studio</type>
+			<design handle="stephen-bau">Stephen Bau</design>
+		</fields>
+	</entry>
+	<entry id="51" handle="bpa-group-presentation-cover">
+		<date>2006-09-24</date>
+		<time>22:28</time>
+		<author></author>
+		<fields>
+			<title handle="bpa-group-presentation-cover"><span class="caps">BPA</span> Group Presentation Cover</title>
+			<created handle="2006-03-27">2006-03-27</created>
+			<client handle="bpa-group"><span class="caps">BPA</span> Group</client>
+			<project handle="presentation-cover">Presentation Cover</project>
+			<media handle="print">Print</media>
+			<description word-count="66"><p>As the work of Bogdanov Pao and Associates extended from Vancouver to Seattle, Los Angeles and Shanghai, the visual identity required strengthening. Proposals were wrapped in covers that consisted of a logo and address. To establish a much more international feel and continue enhancing the <span class="caps">BPA</span> Group brand, the presentation covers were redesigned, but in a way that maintained the ability to bind the presentations inhouse.</p></description>
+			<image>
+				<item>
+					<path>workspace/portfolio/bpa-prescover.jpg</path>
+					<type>image/jpeg</type>
+					<size>31 kb</size>
+				</item>
+			</image>
+			<preview>
+				<item>
+					<path>workspace/portfolio/bpa-prescover_med.jpg</path>
+					<type>image/jpeg</type>
+					<size>8 kb</size>
+				</item>
+			</preview>
+			<preview-off>
+				<item>
+					<path>workspace/portfolio/bpa-prescover_med_off.jpg</path>
+					<type>image/jpeg</type>
+					<size>3 kb</size>
+				</item>
+			</preview-off>
+			<thumbnail>
+				<item>
+					<path>workspace/portfolio/bpa-prescover_thb.jpg</path>
+					<type>image/jpeg</type>
+					<size>2 kb</size>
+				</item>
+			</thumbnail>
+			<thumbnail-off>
+				<item>
+					<path>workspace/portfolio/bpa-prescover_thb_off.jpg</path>
+					<type>image/jpeg</type>
+					<size>1 kb</size>
+				</item>
+			</thumbnail-off>
+			<firm handle="bauhouse-visual-communications">Bauhouse Visual Communications</firm>
+			<type handle="design-studio">Design Studio</type>
+			<design handle="stephen-bau">Stephen Bau</design>
+		</fields>
+	</entry>
+	<entry id="50" handle="rcabc-invitation">
+		<date>2006-09-24</date>
+		<time>22:26</time>
+		<author></author>
+		<fields>
+			<title handle="rcabc-invitation"><span class="caps">RCABC</span> Invitation</title>
+			<created handle="2002-06-15">2002-06-15</created>
+			<client handle="roofing-contractors-association-of-bc">Roofing Contractors Association of BC</client>
+			<project handle="grand-opening-invitation">Grand Opening Invitation</project>
+			<media handle="print">Print</media>
+			<description word-count="52"><p>I love this piece because it was finally a chance to do something out of the ordinary and play around with an architectural design style, drawing some inspiration from the unique roof design that is the main feature of the building for which this invitation announced the Phase II Grand Opening Gala.</p></description>
+			<image>
+				<item>
+					<path>workspace/portfolio/d1-rcabc_invite.jpg</path>
+					<type>image/jpeg</type>
+					<size>15 kb</size>
+				</item>
+			</image>
+			<preview>
+				<item>
+					<path>workspace/portfolio/d1-rcabc_invite_med.jpg</path>
+					<type>image/jpeg</type>
+					<size>4 kb</size>
+				</item>
+			</preview>
+			<preview-off>
+				<item>
+					<path>workspace/portfolio/d1-rcabc_invite_med_off.jpg</path>
+					<type>image/jpeg</type>
+					<size>2 kb</size>
+				</item>
+			</preview-off>
+			<thumbnail>
+				<item>
+					<path>workspace/portfolio/d1-rcabc_invite_thb.jpg</path>
+					<type>image/jpeg</type>
+					<size>2 kb</size>
+				</item>
+			</thumbnail>
+			<thumbnail-off>
+				<item>
+					<path>workspace/portfolio/d1-rcabc_invite_thb_off.jpg</path>
+					<type>image/jpeg</type>
+					<size>1 kb</size>
+				</item>
+			</thumbnail-off>
+			<firm handle="design-one-graphics-group">Design One Graphics Group</firm>
+			<type handle="design-studio">Design Studio</type>
+			<creative-direction handle="craig-davies">Craig Davies</creative-direction>
+			<design handle="stephen-bau">Stephen Bau</design>
+		</fields>
+	</entry>
+	<entry id="49" handle="bristol-gardens-logo">
+		<date>2006-09-24</date>
+		<time>22:24</time>
+		<author></author>
+		<fields>
+			<title handle="bristol-gardens-logo">Bristol Gardens Logo</title>
+			<created handle="1989-12-01">1989-12-01</created>
+			<client handle="bristol-gardens">Bristol Gardens</client>
+			<project handle="logo-design">Logo Design</project>
+			<media handle="identity">Identity</media>
+			<description word-count="103"><p>A logo I designed for a residential development while employed at Doug Fleming Graphics, again before the age of Adobe Illustrator. This was hand drawn and inked with a rapidograph and brush. The part I liked best were the fiddly bits and the swash of the letter R that completes the circle. However, the Senior Designer took issue with the fiddly bits, convinced that they wouldn't reproduce well. I came back the next day to find that my work had been replaced with the leaves redrawn in reverse. I liked my original so much better, I redrew it in Illustrator for my portfolio.</p></description>
+			<image>
+				<item>
+					<path>workspace/portfolio/dfg-bristol_gardens.gif</path>
+					<type>image/gif</type>
+					<size>6 kb</size>
+				</item>
+			</image>
+			<preview>
+				<item>
+					<path>workspace/portfolio/dfg-bristol_gardens_med.gif</path>
+					<type>image/gif</type>
+					<size>4 kb</size>
+				</item>
+			</preview>
+			<preview-off>
+				<item>
+					<path>workspace/portfolio/dfg-bristol_gardens_med_off.gif</path>
+					<type>image/gif</type>
+					<size>4 kb</size>
+				</item>
+			</preview-off>
+			<thumbnail>
+				<item>
+					<path>workspace/portfolio/dfg-bristol_gardens_thb.gif</path>
+					<type>image/gif</type>
+					<size>1 kb</size>
+				</item>
+			</thumbnail>
+			<thumbnail-off>
+				<item>
+					<path>workspace/portfolio/dfg-bristol_gardens_thb_off.gif</path>
+					<type>image/gif</type>
+					<size>1 kb</size>
+				</item>
+			</thumbnail-off>
+			<firm handle="doug-fleming-graphics-now-fleming-design">Doug Fleming Graphics (now Fleming Design)</firm>
+			<type handle="design-studio">Design Studio</type>
+			<creative-direction handle="doug-fleming">Doug Fleming</creative-direction>
+			<design handle="stephen-bau">Stephen Bau</design>
+		</fields>
+	</entry>
+	<entry id="48" handle="st-johns-logo">
+		<date>2006-09-24</date>
+		<time>22:21</time>
+		<author></author>
+		<fields>
+			<title handle="st-johns-logo">St John's Logo</title>
+			<created handle="1989-07-01">1989-07-01</created>
+			<client handle="st-johns-school">St John's School</client>
+			<project handle="logo-design">Logo Design</project>
+			<media handle="identity">Identity</media>
+			<description word-count="102"><p>This is one of the first logos I had the opportunity to design while working for Doug Fleming back in my first year out of design school and working in a downtown Vancouver design studio. Yaletown was definitely not what it is now. I can remember drawing this logo by hand with french curves and set squares, cutting the rubylith, taking the camera ready artwork to the process camera and developing <span class="caps">PMT</span>s in the darkroom for the various sizes required for the brochure I helped to paste up. Doug ended up designing the cover of the brochure with a blind embossed logo.</p></description>
+			<image>
+				<item>
+					<path>workspace/portfolio/dfg-stjohns_logo.gif</path>
+					<type>image/gif</type>
+					<size>7 kb</size>
+				</item>
+			</image>
+			<preview>
+				<item>
+					<path>workspace/portfolio/dfg-stjohns_logo_med.gif</path>
+					<type>image/gif</type>
+					<size>3 kb</size>
+				</item>
+			</preview>
+			<preview-off>
+				<item>
+					<path>workspace/portfolio/dfg-stjohns_logo_med_off.gif</path>
+					<type>image/gif</type>
+					<size>3 kb</size>
+				</item>
+			</preview-off>
+			<thumbnail>
+				<item>
+					<path>workspace/portfolio/dfg-stjohns_logo_thb.gif</path>
+					<type>image/gif</type>
+					<size>1 kb</size>
+				</item>
+			</thumbnail>
+			<thumbnail-off>
+				<item>
+					<path>workspace/portfolio/dfg-stjohns_logo_thb_off.gif</path>
+					<type>image/gif</type>
+					<size>1 kb</size>
+				</item>
+			</thumbnail-off>
+			<firm handle="doug-fleming-graphics-now-fleming-design">Doug Fleming Graphics (now Fleming Design)</firm>
+			<type handle="employer">Employer</type>
+			<creative-direction handle="doug-fleming">Doug Fleming</creative-direction>
+			<design handle="stephen-bau">Stephen Bau</design>
+		</fields>
+	</entry>
+	<entry id="47" handle="u-turn-logo">
+		<date>2006-09-24</date>
+		<time>22:18</time>
+		<author></author>
+		<fields>
+			<title handle="u-turn-logo">U-Turn Logo</title>
+			<created handle="1994-04-14">1994-04-14</created>
+			<client handle="south-delta-baptist-church">South Delta Baptist Church</client>
+			<project handle="u-turn-t-shirt-design">U-Turn T-shirt Design</project>
+			<media handle="identity">Identity</media>
+			<description word-count="34"><p>What does it take to turn a life around? Signposts provide warnings that can be heeded or not. This T-shirt design for a church youth group presentation was silkscreened white on a black shirt.</p></description>
+			<image>
+				<item>
+					<path>workspace/portfolio/sdbc-uturn_logo.jpg</path>
+					<type>image/jpeg</type>
+					<size>15 kb</size>
+				</item>
+			</image>
+			<preview>
+				<item>
+					<path>workspace/portfolio/sdbc-uturn_logo_med.jpg</path>
+					<type>image/jpeg</type>
+					<size>6 kb</size>
+				</item>
+			</preview>
+			<preview-off>
+				<item>
+					<path>workspace/portfolio/sdbc-uturn_logo_med_off.jpg</path>
+					<type>image/jpeg</type>
+					<size>2 kb</size>
+				</item>
+			</preview-off>
+			<thumbnail>
+				<item>
+					<path>workspace/portfolio/sdbc-uturn_logo_thb.jpg</path>
+					<type>image/jpeg</type>
+					<size>2 kb</size>
+				</item>
+			</thumbnail>
+			<thumbnail-off>
+				<item>
+					<path>workspace/portfolio/sdbc-uturn_logo_thb_off.jpg</path>
+					<type>image/jpeg</type>
+					<size>844 bytes</size>
+				</item>
+			</thumbnail-off>
+			<firm handle="bauhouse-visual-communications">Bauhouse Visual Communications</firm>
+			<type handle="design-studio">Design Studio</type>
+			<design handle="stephen-bau">Stephen Bau</design>
+		</fields>
+	</entry>
+	<entry id="46" handle="the-wild-orange-spa-calendar-2006">
+		<date>2006-09-24</date>
+		<time>22:14</time>
+		<author></author>
+		<fields>
+			<title handle="the-wild-orange-spa-calendar-2006">The Wild Orange Spa Calendar 2006</title>
+			<created handle="2005-12-01">2005-12-01</created>
+			<client handle="the-wild-orange-spa">The Wild Orange Spa</client>
+			<project handle="calendar-2006">Calendar 2006</project>
+			<media handle="print">Print</media>
+			<description word-count="24"><p>The calendar was a great idea that came too soon. You may have to wait until 2007 to see this calendar on your desk.</p></description>
+			<image>
+				<item>
+					<path>workspace/portfolio/wos-calendar_oct2006.jpg</path>
+					<type>image/jpeg</type>
+					<size>13 kb</size>
+				</item>
+			</image>
+			<preview>
+				<item>
+					<path>workspace/portfolio/wos-calendar_med.jpg</path>
+					<type>image/jpeg</type>
+					<size>5 kb</size>
+				</item>
+			</preview>
+			<preview-off>
+				<item>
+					<path>workspace/portfolio/wos-calendar_med_off.jpg</path>
+					<type>image/jpeg</type>
+					<size>2 kb</size>
+				</item>
+			</preview-off>
+			<thumbnail>
+				<item>
+					<path>workspace/portfolio/wos-calendar_thb.jpg</path>
+					<type>image/jpeg</type>
+					<size>1 kb</size>
+				</item>
+			</thumbnail>
+			<thumbnail-off>
+				<item>
+					<path>workspace/portfolio/wos-calendar_thb_off.jpg</path>
+					<type>image/jpeg</type>
+					<size>886 bytes</size>
+				</item>
+			</thumbnail-off>
+			<firm handle="bauhouse-visual-communications">Bauhouse Visual Communications</firm>
+			<type handle="design-studio">Design Studio</type>
+			<design handle="stephen-bau">Stephen Bau</design>
+		</fields>
+	</entry>
+	<entry id="45" handle="columbia-national-investments-logo">
+		<date>2006-09-24</date>
+		<time>22:01</time>
+		<author></author>
+		<fields>
+			<title handle="columbia-national-investments-logo">Columbia National Investments Logo</title>
+			<created handle="2005-09-01">2005-09-01</created>
+			<client handle="columbia-national-investments">Columbia National Investments</client>
+			<project handle="corporate-identity">Corporate Identity</project>
+			<media handle="identity">Identity</media>
+			<description word-count="63"><p>After operating without a logo for over a decade, it was time to start branding their company as they put forward ideas and proposals for discussions with federal and provincial governments. Because their business encompassed many activities: land development, project management, building construction and financial investments, the challenge was to produce an identity that would encompass these facets and allow for future growth.</p></description>
+			<image>
+				<item>
+					<path>workspace/portfolio/cni-logo.gif</path>
+					<type>image/gif</type>
+					<size>4 kb</size>
+				</item>
+			</image>
+			<preview>
+				<item>
+					<path>workspace/portfolio/cni-logo_med.gif</path>
+					<type>image/gif</type>
+					<size>1 kb</size>
+				</item>
+			</preview>
+			<preview-off>
+				<item>
+					<path>workspace/portfolio/cni-logo_med_off.gif</path>
+					<type>image/gif</type>
+					<size>1 kb</size>
+				</item>
+			</preview-off>
+			<thumbnail>
+				<item>
+					<path>workspace/portfolio/cni-logo_thb.gif</path>
+					<type>image/gif</type>
+					<size>860 bytes</size>
+				</item>
+			</thumbnail>
+			<thumbnail-off>
+				<item>
+					<path>workspace/portfolio/cni-logo_thb_off.gif</path>
+					<type>image/gif</type>
+					<size>846 bytes</size>
+				</item>
+			</thumbnail-off>
+			<firm handle="bauhouse-visual-communications">Bauhouse Visual Communications</firm>
+			<type handle="design-studio">Design Studio</type>
+			<design handle="stephen-bau">Stephen Bau</design>
+		</fields>
+	</entry>
+	<entry id="44" handle="idop-2004-website">
+		<date>2006-09-24</date>
+		<time>21:59</time>
+		<author></author>
+		<fields>
+			<title handle="idop-2004-website"><span class="caps">IDOP</span> 2004 Website</title>
+			<link handle="http-wwwdesignprojectxcom-idop">http://www.designprojectx.com/idop/</link>
+			<created handle="2004-07-22">2004-07-22</created>
+			<client handle="international-day-of-prayer">International Day of Prayer</client>
+			<project handle="idop-2004-faith-on-the-frontline"><span class="caps">IDOP</span> 2004: Faith on the Frontline</project>
+			<media handle="web">Web</media>
+			<description word-count="191"><p>The International Day of Prayer is an event the reminds us to pray for Christians who are being persecuted for believing that God so loved the world that he gave his only son. The inexplicable happened when God gave his son to the world in the form of baby born in an insignificant town, a mere outpost of the cruel Roman Empire, as a member of one of the most hated races in history, as a child who had nowhere but a feeding trough to begin his days on earth. Somehow, by Jesus' suffering and death, God ripped a whole in the fabric of time, entered his creation, and changed it forever. He has ushered in an upside down kingdom by proclaiming, "Blessed are the persecuted."</p>
+
+<p>The <span class="caps">IDOP </span>website was redesigned for the International Day of Prayer Canada, held in November 2004. The project involved creating the logo, developing the website and authoring a CD with resources for participating churches and groups. The site was built with <span class="caps">XHTML </span>and <span class="caps">CSS, </span>but also featured a Flash movie to be used as an introduction to the theme for that year: Faith on the Frontline.</p></description>
+			<image>
+				<item>
+					<path>workspace/portfolio/idop-web_home.jpg</path>
+					<type>image/jpeg</type>
+					<size>24 kb</size>
+				</item>
+			</image>
+			<preview>
+				<item>
+					<path>workspace/portfolio/idop-web_med.jpg</path>
+					<type>image/jpeg</type>
+					<size>4 kb</size>
+				</item>
+			</preview>
+			<preview-off>
+				<item>
+					<path>workspace/portfolio/idop-web_med_off.jpg</path>
+					<type>image/jpeg</type>
+					<size>1 kb</size>
+				</item>
+			</preview-off>
+			<thumbnail>
+				<item>
+					<path>workspace/portfolio/idop-web_thb.jpg</path>
+					<type>image/jpeg</type>
+					<size>2 kb</size>
+				</item>
+			</thumbnail>
+			<thumbnail-off>
+				<item>
+					<path>workspace/portfolio/idop-web_thb_off.jpg</path>
+					<type>image/jpeg</type>
+					<size>1 kb</size>
+				</item>
+			</thumbnail-off>
+			<firm handle="evangelical-fellowship-of-canada">Evangelical Fellowship of Canada</firm>
+			<type handle="organization">Organization</type>
+			<design handle="stephen-bau">Stephen Bau</design>
+		</fields>
+	</entry>
+	<entry id="43" handle="columbia-national-website">
+		<date>2006-09-24</date>
+		<time>21:55</time>
+		<author></author>
+		<fields>
+			<title handle="columbia-national-website">Columbia National Website</title>
+			<link handle="http-wwwdesignprojectxcom-cni">http://www.designprojectx.com/cni/</link>
+			<created handle="2005-08-16">2005-08-16</created>
+			<client handle="columbia-national-investments">Columbia National Investments</client>
+			<project handle="website-design">Website Design</project>
+			<media handle="web">Web</media>
+			<description word-count="110"><p>A land development, project management and building construction company approached me to create a logo design for them. The partners had been operating without a logo for over a decade, but it was time to start branding their company as they put forward ideas and proposals for discussions with federal and provincial governments. A website would be one more step toward establishing credibility. This design was my proposal.</p>
+
+<p>This is one of those projects that I wish I had been able to finish, but because of a change in personnel (my contact left the company), that never happened. You can still view the <span class="caps">CSS </span>layout I developed on my test site.</p></description>
+			<image>
+				<item>
+					<path>workspace/portfolio/cni-web_home.jpg</path>
+					<type>image/jpeg</type>
+					<size>27 kb</size>
+				</item>
+			</image>
+			<preview>
+				<item>
+					<path>workspace/portfolio/cni-web_med.jpg</path>
+					<type>image/jpeg</type>
+					<size>6 kb</size>
+				</item>
+			</preview>
+			<preview-off>
+				<item>
+					<path>workspace/portfolio/cni-web_med_off.jpg</path>
+					<type>image/jpeg</type>
+					<size>3 kb</size>
+				</item>
+			</preview-off>
+			<thumbnail>
+				<item>
+					<path>workspace/portfolio/cni-web_thb.jpg</path>
+					<type>image/jpeg</type>
+					<size>2 kb</size>
+				</item>
+			</thumbnail>
+			<thumbnail-off>
+				<item>
+					<path>workspace/portfolio/cni-web_thb_off.jpg</path>
+					<type>image/jpeg</type>
+					<size>1 kb</size>
+				</item>
+			</thumbnail-off>
+			<firm handle="bauhouse-visual-communications">Bauhouse Visual Communications</firm>
+			<type handle="design-studio">Design Studio</type>
+			<design handle="stephen-bau">Stephen Bau</design>
+		</fields>
+	</entry>
+	<entry id="42" handle="life-above-the-rim-logo-design">
+		<date>2006-09-24</date>
+		<time>21:04</time>
+		<author></author>
+		<fields>
+			<title handle="life-above-the-rim-logo-design">Life Above the Rim Logo Design</title>
+			<created handle="1993-07-12">1993-07-12</created>
+			<client handle="south-delta-baptist-church">South Delta Baptist Church</client>
+			<project handle="life-above-the-rim-logo-design">Life Above the Rim Logo Design</project>
+			<media handle="identity">Identity</media>
+			<description word-count="27"><p>South Delta Baptist Church was running a basketball camp for kids in the neighbourhood. Colourful T-shirts were one of the benefits of taking part in the game.</p></description>
+			<image>
+				<item>
+					<path>workspace/portfolio/sdbc-abovetherim.gif</path>
+					<type>image/gif</type>
+					<size>11 kb</size>
+				</item>
+			</image>
+			<preview>
+				<item>
+					<path>workspace/portfolio/sdbc-abovetherim_med.gif</path>
+					<type>image/gif</type>
+					<size>4 kb</size>
+				</item>
+			</preview>
+			<preview-off>
+				<item>
+					<path>workspace/portfolio/sdbc-abovetherim_med_off.gif</path>
+					<type>image/gif</type>
+					<size>3 kb</size>
+				</item>
+			</preview-off>
+			<thumbnail>
+				<item>
+					<path>workspace/portfolio/sdbc-abovetherim_thb.gif</path>
+					<type>image/gif</type>
+					<size>2 kb</size>
+				</item>
+			</thumbnail>
+			<thumbnail-off>
+				<item>
+					<path>workspace/portfolio/sdbc-abovetherim_thb_off.gif</path>
+					<type>image/gif</type>
+					<size>2 kb</size>
+				</item>
+			</thumbnail-off>
+			<firm handle="bauhouse-visual-communications">Bauhouse Visual Communications</firm>
+			<type handle="design-studio">Design Studio</type>
+			<design handle="stephen-bau">Stephen Bau</design>
+		</fields>
+	</entry>
+	<entry id="40" handle="300ccom-website">
+		<date>2006-09-24</date>
+		<time>20:47</time>
+		<author></author>
+		<fields>
+			<title handle="300ccom-website">300C.com Website</title>
+			<link handle="http-www300ccom">http://www.300c.com/</link>
+			<created handle="2005-12-17">2005-12-17</created>
+			<client handle="manfred-leiser">Manfred Leiser</client>
+			<project handle="300ccom-website">300C.com Website</project>
+			<media handle="web">Web</media>
+			<description word-count="60"><p>Some like it hot. For those who do, they can find Hot Deals on Hotels, Cruises and Travel Packages at 300C.com. Building this site in Textpattern allowed for an easily maintained site, with a content management system that manages associations between cities, regions and countries. The <span class="caps">XHTML </span>and <span class="caps">CSS </span>based layout seamlessly integrates with affiliate marketing systems and booking engines.</p></description>
+			<image>
+				<item>
+					<path>workspace/portfolio/300c-web_home.jpg</path>
+					<type>image/jpeg</type>
+					<size>35 kb</size>
+				</item>
+			</image>
+			<preview>
+				<item>
+					<path>workspace/portfolio/300c-web_med.jpg</path>
+					<type>image/jpeg</type>
+					<size>9 kb</size>
+				</item>
+			</preview>
+			<preview-off>
+				<item>
+					<path>workspace/portfolio/300c-web_med_off.jpg</path>
+					<type>image/jpeg</type>
+					<size>3 kb</size>
+				</item>
+			</preview-off>
+			<thumbnail>
+				<item>
+					<path>workspace/portfolio/300c-web_thb.jpg</path>
+					<type>image/jpeg</type>
+					<size>3 kb</size>
+				</item>
+			</thumbnail>
+			<thumbnail-off>
+				<item>
+					<path>workspace/portfolio/300c-web_thb_off.jpg</path>
+					<type>image/jpeg</type>
+					<size>1 kb</size>
+				</item>
+			</thumbnail-off>
+			<firm handle="bauhouse-visual-communications">Bauhouse Visual Communications</firm>
+			<type handle="design-studio">Design Studio</type>
+			<design handle="stephen-bau">Stephen Bau</design>
+		</fields>
+	</entry>
+	<entry id="38" handle="design-one-website">
+		<date>2006-09-24</date>
+		<time>13:29</time>
+		<author></author>
+		<fields>
+			<title handle="design-one-website">Design One Website</title>
+			<link handle="http-wwwdesignoneca">http://www.designone.ca/</link>
+			<created handle="2002-12-01">2002-12-01</created>
+			<client handle="design-one-graphics-group">Design One Graphics Group</client>
+			<project handle="website-design">Website Design</project>
+			<media handle="web">Web</media>
+			<description word-count="352"><p>While I was working at Design One and before I knew how to use Flash, I had an idea to build a website for our design firm that had a splash of Flash. In an effort to convince ourselves and our clients that adherence to a process would ensure the best design solutions, I came up with a rather esoteric means of describing our design process. It went something like this:</p>
+
+<h3>The Conceptual Process in Four Dimensions</h3>
+
+<p>The four dimensions of time and space provide a visual metaphor for the design process at work. An idea is an abstract concept that has no concrete reality beyond the imagination. Design is the process of <em>realizing</em> an idea: bringing an idea to reality, making imagination tangible.</p>
+
+<h4>Idea</h4>
+
+<p>It starts with an idea. A point of origin. A single pixel of light. The nucleus of an idea. A spark of creativity. From a vast ocean of ideas emerges a singular vision of the future. Design starts with helping you <strong>define your needs, goals and desired results</strong>.</p>
+
+<h4>Direction</h4>
+
+<p>The first dimension: <strong>width</strong></p>
+
+<p>An idea starts to become real as it gains momentum in a particular direction. It enters the first dimension of the conceptual process, moving one step closer to reality from the world of pure abstraction. <strong>Research and information gathering</strong> add dimension to the initial idea.</p>
+
+<h4>Shape</h4>
+
+<p>The second dimension: <strong>height</strong></p>
+
+<p>Once a direction has been established for the idea, a number of different concepts can start to take shape. Through <strong>exploration and experimentation</strong>, an idea takes on added dimension. At this stage, rough concepts are developed based on the research gathered previously.</p>
+
+<h4>Structure</h4>
+
+<p>The third dimension: <strong>depth</strong></p>
+
+<p>The shape becomes the basis for a fully three-dimensional structure. Throughout <strong>production of the finished project</strong>, the different sides of a design problem and the various possible points of view are considered to ensure impact and consistency across all media and applications.</p>
+
+<h4>Reality</h4>
+
+<p>The fourth dimension: <strong>time</strong></p>
+
+<p>The idea becomes reality when it enters real time. It becomes a tangible entity that can be tested based on its ability to produce real world results: increased sales, a more cohesive corporate identity, greater brand presence, by <strong>building relationships</strong> between your business and the marketplace.</p></description>
+			<image>
+				<item>
+					<path>workspace/portfolio/d1-web_process.jpg</path>
+					<type>image/jpeg</type>
+					<size>15 kb</size>
+				</item>
+			</image>
+			<preview>
+				<item>
+					<path>workspace/portfolio/d1-web_med.jpg</path>
+					<type>image/jpeg</type>
+					<size>3 kb</size>
+				</item>
+			</preview>
+			<preview-off>
+				<item>
+					<path>workspace/portfolio/d1-web_med_off.jpg</path>
+					<type>image/jpeg</type>
+					<size>1 kb</size>
+				</item>
+			</preview-off>
+			<thumbnail>
+				<item>
+					<path>workspace/portfolio/d1-web_thb.jpg</path>
+					<type>image/jpeg</type>
+					<size>1 kb</size>
+				</item>
+			</thumbnail>
+			<thumbnail-off>
+				<item>
+					<path>workspace/portfolio/d1-web_thb_off.jpg</path>
+					<type>image/jpeg</type>
+					<size>766 bytes</size>
+				</item>
+			</thumbnail-off>
+			<firm handle="design-one-graphics-group">Design One Graphics Group</firm>
+			<type handle="employer">Employer</type>
+			<creative-direction handle="craig-davies">Craig Davies</creative-direction>
+			<design handle="stephen-bau">Stephen Bau</design>
+		</fields>
+	</entry>
+	<entry id="37" handle="international-christian-response-website">
+		<date>2006-09-24</date>
+		<time>13:26</time>
+		<author></author>
+		<fields>
+			<title handle="international-christian-response-website">International Christian Response Website</title>
+			<link handle="http-wwwchristianresponseorg">http://www.christianresponse.org/</link>
+			<created handle="2005-03-02">2005-03-02</created>
+			<client handle="international-christian-response">International Christian Response</client>
+			<project handle="website-design">Website Design</project>
+			<media handle="web">Web</media>
+			<description word-count="60"><p>Trying to develop an information rich site without endangering the very people we are trying to help is quite a challenge. Christians face terrible suffering and persecution around the world, but this news seldom rates very high in the priorities of the mainstream press. International Christian Response exists to provide a means of responding to the needs of persecuted Christians.</p></description>
+			<image>
+				<item>
+					<path>workspace/portfolio/icr-web_home.jpg</path>
+					<type>image/jpeg</type>
+					<size>27 kb</size>
+				</item>
+			</image>
+			<preview>
+				<item>
+					<path>workspace/portfolio/icr-website_med.jpg</path>
+					<type>image/jpeg</type>
+					<size>6 kb</size>
+				</item>
+			</preview>
+			<preview-off>
+				<item>
+					<path>workspace/portfolio/icr-website_med_off.jpg</path>
+					<type>image/jpeg</type>
+					<size>3 kb</size>
+				</item>
+			</preview-off>
+			<thumbnail>
+				<item>
+					<path>workspace/portfolio/icr-website_thb.jpg</path>
+					<type>image/jpeg</type>
+					<size>1 kb</size>
+				</item>
+			</thumbnail>
+			<thumbnail-off>
+				<item>
+					<path>workspace/portfolio/icr-website_thb_off.jpg</path>
+					<type>image/jpeg</type>
+					<size>944 bytes</size>
+				</item>
+			</thumbnail-off>
+			<firm handle="international-christian-response">International Christian Response</firm>
+			<type handle="organization">Organization</type>
+			<design handle="stephen-bau">Stephen Bau</design>
+		</fields>
+	</entry>
+	<entry id="36" handle="the-rice-raiser-website">
+		<date>2006-09-24</date>
+		<time>12:51</time>
+		<author></author>
+		<fields>
+			<title handle="the-rice-raiser-website">The Rice Raiser Website</title>
+			<link handle="http-wwwriceraiserorg">http://www.riceraiser.org/</link>
+			<created handle="2005-05-05">2005-05-05</created>
+			<client handle="hunger-response-international">Hunger Response International</client>
+			<project handle="the-rice-raiser-website">The Rice Raiser Website</project>
+			<media handle="web">Web</media>
+			<description word-count="72"><p>Students, teachers and community leaders are the intended audience for a site that is promoting a novel idea for raising food and raising funds: The Rice Raiser. The project informs young people about hunger, both locally and globally, and provides a means by which students can get involved in feeding people in their own neighbourhoods and in communities around the world.</p>
+
+<p>We were delighted to find <a href="http://www.riceraiser.org">The Rice Raiser</a> featured on <a href="http://www.cssbeauty.com/archives/2006/January/rice_raiser/"><span class="caps">CSS</span> Beauty</a>.</p></description>
+			<image>
+				<item>
+					<path>workspace/portfolio/hri-riceraiser_web.jpg</path>
+					<type>image/jpeg</type>
+					<size>30 kb</size>
+				</item>
+			</image>
+			<preview>
+				<item>
+					<path>workspace/portfolio/hri-riceraiser_site_med.jpg</path>
+					<type>image/jpeg</type>
+					<size>6 kb</size>
+				</item>
+			</preview>
+			<preview-off>
+				<item>
+					<path>workspace/portfolio/hri-riceraiser_site_med_off.jpg</path>
+					<type>image/jpeg</type>
+					<size>2 kb</size>
+				</item>
+			</preview-off>
+			<thumbnail>
+				<item>
+					<path>workspace/portfolio/hri-riceraiser_site_thb.jpg</path>
+					<type>image/jpeg</type>
+					<size>1 kb</size>
+				</item>
+			</thumbnail>
+			<thumbnail-off>
+				<item>
+					<path>workspace/portfolio/hri-riceraiser_site_thb_off.jpg</path>
+					<type>image/jpeg</type>
+					<size>1018 bytes</size>
+				</item>
+			</thumbnail-off>
+			<firm handle="bauhouse-visual-communications">Bauhouse Visual Communications</firm>
+			<type handle="design-studio">Design Studio</type>
+			<design handle="stephen-bau">Stephen Bau</design>
+		</fields>
+	</entry>
+	<entry id="35" handle="the-rice-raiser-logo-design">
+		<date>2006-09-24</date>
+		<time>12:36</time>
+		<author></author>
+		<fields>
+			<title handle="the-rice-raiser-logo-design">The Rice Raiser Logo Design</title>
+			<created handle="2005-01-18">2005-01-18</created>
+			<client handle="the-rice-raiser">The Rice Raiser</client>
+			<project handle="logo-design">Logo Design</project>
+			<media handle="identity">Identity</media>
+			<description word-count="69"><p>The mission of Hunger Response International is to educate and mobilize people to respond to the needs of the hungry both locally and globally. The organization grew out of the success of The Rice Raiser, a food drive / fund raiser designed to feed the poor both locally and internationally at the same time. The Rice Raiser provides inclusive opportunity for Canadians to learn about and actively address global hunger.</p></description>
+			<image>
+				<item>
+					<path>workspace/portfolio/hri-riceraiser_logo.jpg</path>
+					<type>image/jpeg</type>
+					<size>12 kb</size>
+				</item>
+			</image>
+			<preview>
+				<item>
+					<path>workspace/portfolio/hri-riceraiser_med.jpg</path>
+					<type>image/jpeg</type>
+					<size>3 kb</size>
+				</item>
+			</preview>
+			<preview-off>
+				<item>
+					<path>workspace/portfolio/hri-riceraiser_med_off.jpg</path>
+					<type>image/jpeg</type>
+					<size>1 kb</size>
+				</item>
+			</preview-off>
+			<thumbnail>
+				<item>
+					<path>workspace/portfolio/hri-riceraiser_thb.jpg</path>
+					<type>image/jpeg</type>
+					<size>2 kb</size>
+				</item>
+			</thumbnail>
+			<thumbnail-off>
+				<item>
+					<path>workspace/portfolio/hri-riceraiser_thb_off.jpg</path>
+					<type>image/jpeg</type>
+					<size>1 kb</size>
+				</item>
+			</thumbnail-off>
+			<firm handle="hunger-response-international">Hunger Response International</firm>
+			<type handle="organization">Organization</type>
+			<design handle="stephen-bau">Stephen Bau</design>
+		</fields>
+	</entry>
+	<entry id="34" handle="pacific-coastal-airlines-website">
+		<date>2006-09-24</date>
+		<time>12:27</time>
+		<author></author>
+		<fields>
+			<title handle="pacific-coastal-airlines-website">Pacific Coastal Airlines Website</title>
+			<link handle="http-wwwpacificcoastalcom">http://www.pacificcoastal.com/</link>
+			<created handle="2004-05-24">2004-05-24</created>
+			<client handle="design-one-graphics-group">Design One Graphics Group</client>
+			<project handle="pacific-coastal-airlines-website">Pacific Coastal Airlines Website</project>
+			<media handle="web">Web</media>
+			<description word-count="32"><p>This website design for Pacific Coastal Airlines was developed in partnership with Design One using web standards. The flight booking system was set up by InteliSys with additional backend coding by PhenixFilms.</p></description>
+			<image>
+				<item>
+					<path>workspace/portfolio/d1-pca_web_home.jpg</path>
+					<type>image/jpeg</type>
+					<size>34 kb</size>
+				</item>
+			</image>
+			<preview>
+				<item>
+					<path>workspace/portfolio/d1-pca_website_med.jpg</path>
+					<type>image/jpeg</type>
+					<size>6 kb</size>
+				</item>
+			</preview>
+			<preview-off>
+				<item>
+					<path>workspace/portfolio/d1-pca_website_med_off.jpg</path>
+					<type>image/jpeg</type>
+					<size>2 kb</size>
+				</item>
+			</preview-off>
+			<thumbnail>
+				<item>
+					<path>workspace/portfolio/d1-pca_website_thb.jpg</path>
+					<type>image/jpeg</type>
+					<size>1 kb</size>
+				</item>
+			</thumbnail>
+			<thumbnail-off>
+				<item>
+					<path>workspace/portfolio/d1-pca_website_thb_off.jpg</path>
+					<type>image/jpeg</type>
+					<size>998 bytes</size>
+				</item>
+			</thumbnail-off>
+			<firm handle="bauhouse-visual-communications">Bauhouse Visual Communications</firm>
+			<type handle="design-studio">Design Studio</type>
+			<creative-direction handle="craig-davies">Craig Davies</creative-direction>
+			<design handle="stephen-bau">Stephen Bau</design>
+		</fields>
+	</entry>
+	<entry id="33" handle="camp-qwanoes-classic-crest">
+		<date>2006-09-24</date>
+		<time>08:15</time>
+		<author></author>
+		<fields>
+			<title handle="camp-qwanoes-classic-crest">Camp Qwanoes Classic Crest</title>
+			<created handle="1994-06-14">1994-06-14</created>
+			<client handle="camp-qwanoes">Camp Qwanoes</client>
+			<project handle="tshirt-design">Tshirt Design</project>
+			<media handle="identity">Identity</media>
+			<description word-count="18"><p>Camp Qwanoes is a camp for all ages, and this design was meant to appeal to mature campers.</p></description>
+			<image>
+				<item>
+					<path>workspace/portfolio/qwa-crest_logo.gif</path>
+					<type>image/gif</type>
+					<size>10 kb</size>
+				</item>
+			</image>
+			<preview>
+				<item>
+					<path>workspace/portfolio/qwa-crest_logo_med.gif</path>
+					<type>image/gif</type>
+					<size>6 kb</size>
+				</item>
+			</preview>
+			<preview-off>
+				<item>
+					<path>workspace/portfolio/qwa-crest_logo_med_off.gif</path>
+					<type>image/gif</type>
+					<size>4 kb</size>
+				</item>
+			</preview-off>
+			<thumbnail>
+				<item>
+					<path>workspace/portfolio/qwa-crest_logo_thb.gif</path>
+					<type>image/gif</type>
+					<size>1 kb</size>
+				</item>
+			</thumbnail>
+			<thumbnail-off>
+				<item>
+					<path>workspace/portfolio/qwa-crest_logo_thb_off.gif</path>
+					<type>image/gif</type>
+					<size>1 kb</size>
+				</item>
+			</thumbnail-off>
+			<firm handle="bauhouse-visual-communications">Bauhouse Visual Communications</firm>
+			<type handle="design-studio">Design Studio</type>
+			<design handle="stephen-bau">Stephen Bau</design>
+		</fields>
+	</entry>
+	<entry id="32" handle="sahara-furniture-catalog">
+		<date>2006-09-24</date>
+		<time>08:12</time>
+		<author></author>
+		<fields>
+			<title handle="sahara-furniture-catalog">Sahara Furniture Catalog</title>
+			<created handle="2004-04-14">2004-04-14</created>
+			<client handle="sahara-furniture-manufacturing">Sahara Furniture Manufacturing</client>
+			<project handle="catalog-design">Catalog Design</project>
+			<media handle="print">Print</media>
+			<description word-count="22"><p>In reaching a North American retail market, Sahara Furniture Manufacturing needed a means to present their furniture in the best possible light.</p></description>
+			<image>
+				<item>
+					<path>workspace/portfolio/sfm-catalog.jpg</path>
+					<type>image/jpeg</type>
+					<size>21 kb</size>
+				</item>
+			</image>
+			<preview>
+				<item>
+					<path>workspace/portfolio/sfm-catalog_med.jpg</path>
+					<type>image/jpeg</type>
+					<size>5 kb</size>
+				</item>
+			</preview>
+			<preview-off>
+				<item>
+					<path>workspace/portfolio/sfm-catalog_med_off.jpg</path>
+					<type>image/jpeg</type>
+					<size>2 kb</size>
+				</item>
+			</preview-off>
+			<thumbnail>
+				<item>
+					<path>workspace/portfolio/sfm-catalog_thb.jpg</path>
+					<type>image/jpeg</type>
+					<size>1 kb</size>
+				</item>
+			</thumbnail>
+			<thumbnail-off>
+				<item>
+					<path>workspace/portfolio/sfm-catalog_thb_off.jpg</path>
+					<type>image/jpeg</type>
+					<size>972 bytes</size>
+				</item>
+			</thumbnail-off>
+			<firm handle="bauhouse-visual-communications">Bauhouse Visual Communications</firm>
+			<type handle="design-studio">Design Studio</type>
+			<design handle="stephen-bau">Stephen Bau</design>
+			<photography handle="bob-fugger">Bob Fugger</photography>
+			<printing handle="globe-printers">Globe Printers</printing>
+		</fields>
+	</entry>
+	<entry id="31" handle="quantex-capital-corporation-logo-design">
+		<date>2006-09-24</date>
+		<time>08:10</time>
+		<author></author>
+		<fields>
+			<title handle="quantex-capital-corporation-logo-design">Quantex Capital Corporation Logo Design</title>
+			<created handle="2005-04-21">2005-04-21</created>
+			<client handle="quantex-capital-corporation">Quantex Capital Corporation</client>
+			<project handle="logo-design">Logo Design</project>
+			<media handle="identity">Identity</media>
+			<description word-count="25"><p>The challenge was to design a logo with a solid corporate look for Quantex, a merchant bank which raises capital to buy and grow businesses.</p></description>
+			<image>
+				<item>
+					<path>workspace/portfolio/vlc-quantex_logo.gif</path>
+					<type>image/gif</type>
+					<size>6 kb</size>
+				</item>
+			</image>
+			<preview>
+				<item>
+					<path>workspace/portfolio/vlc-quantex_logo_med.gif</path>
+					<type>image/gif</type>
+					<size>3 kb</size>
+				</item>
+			</preview>
+			<preview-off>
+				<item>
+					<path>workspace/portfolio/vlc-quantex_logo_med_off.gif</path>
+					<type>image/gif</type>
+					<size>2 kb</size>
+				</item>
+			</preview-off>
+			<thumbnail>
+				<item>
+					<path>workspace/portfolio/vlc-quantex_logo_thb.gif</path>
+					<type>image/gif</type>
+					<size>1 kb</size>
+				</item>
+			</thumbnail>
+			<thumbnail-off>
+				<item>
+					<path>workspace/portfolio/vlc-quantex_logo_thb_off.gif</path>
+					<type>image/gif</type>
+					<size>1 kb</size>
+				</item>
+			</thumbnail-off>
+			<firm handle="viperlink-communications">Viperlink Communications</firm>
+			<type handle="advertising-agency">Advertising Agency</type>
+			<creative-direction handle="sabrina-draper">Sabrina Draper</creative-direction>
+			<design handle="stephen-bau">Stephen Bau</design>
+			<printing handle="globe-printers">Globe Printers</printing>
+		</fields>
+	</entry>
+	<entry id="30" handle="the-total-package-logo-design">
+		<date>2006-09-24</date>
+		<time>07:41</time>
+		<author></author>
+		<fields>
+			<title handle="the-total-package-logo-design">The Total Package Logo Design</title>
+			<created handle="1994-06-17">1994-06-17</created>
+			<client handle="campus-crusade-for-christ-canada">Campus Crusade for Christ Canada</client>
+			<project handle="the-total-package">The Total Package</project>
+			<media handle="identity">Identity</media>
+			<description word-count="63"><p>Campus Crusade for Christ wanted to produce a package of materials, including a magazine, video and a Bible to provide to those who attended their youth events. The Total Package was produced as something tangible to take away from an experience that may have represented a first step toward a changed life. This logo tied all the pieces of The Total Package together.</p></description>
+			<image>
+				<item>
+					<path>workspace/portfolio/ccc-totalpackage_logo.jpg</path>
+					<type>image/jpeg</type>
+					<size>18 kb</size>
+				</item>
+			</image>
+			<preview>
+				<item>
+					<path>workspace/portfolio/ccc-totalpackage_med.gif</path>
+					<type>image/gif</type>
+					<size>5 kb</size>
+				</item>
+			</preview>
+			<preview-off>
+				<item>
+					<path>workspace/portfolio/ccc-totalpackage_med_off.gif</path>
+					<type>image/gif</type>
+					<size>4 kb</size>
+				</item>
+			</preview-off>
+			<thumbnail>
+				<item>
+					<path>workspace/portfolio/ccc-totalpackage_thb.gif</path>
+					<type>image/gif</type>
+					<size>2 kb</size>
+				</item>
+			</thumbnail>
+			<thumbnail-off>
+				<item>
+					<path>workspace/portfolio/ccc-totalpackage_thb_off.gif</path>
+					<type>image/gif</type>
+					<size>1 kb</size>
+				</item>
+			</thumbnail-off>
+			<firm handle="bauhouse-visual-communications">Bauhouse Visual Communications</firm>
+			<type handle="design-studio">Design Studio</type>
+			<creative-direction handle="george-pytlik-campus-crusade-for-christ">George Pytlik, Campus Crusade for Christ</creative-direction>
+			<design handle="stephen-bau">Stephen Bau</design>
+		</fields>
+	</entry>
+	<entry id="29" handle="sahara-furniture">
+		<date>2006-09-24</date>
+		<time>07:37</time>
+		<author></author>
+		<fields>
+			<title handle="sahara-furniture">Sahara Furniture</title>
+			<created handle="2004-02-12">2004-02-12</created>
+			<client handle="sahara-furniture-manufacturing">Sahara Furniture Manufacturing</client>
+			<project handle="logo-design">Logo Design</project>
+			<media handle="identity">Identity</media>
+			<description word-count="41"><p>A new furniture catalog designed to position Sahara Furniture as a world-class manufacturer of high quality furniture required a logo design that worked well with the design. The design alludes to both the sand dunes of the Sahara and wood grain.</p></description>
+			<image>
+				<item>
+					<path>workspace/portfolio/sfm-logo.gif</path>
+					<type>image/gif</type>
+					<size>8 kb</size>
+				</item>
+			</image>
+			<preview>
+				<item>
+					<path>workspace/portfolio/sfm-logo_med.gif</path>
+					<type>image/gif</type>
+					<size>2 kb</size>
+				</item>
+			</preview>
+			<preview-off>
+				<item>
+					<path>workspace/portfolio/sfm-logo_med_off.gif</path>
+					<type>image/gif</type>
+					<size>1 kb</size>
+				</item>
+			</preview-off>
+			<thumbnail>
+				<item>
+					<path>workspace/portfolio/sfm-logo_thb.gif</path>
+					<type>image/gif</type>
+					<size>1 kb</size>
+				</item>
+			</thumbnail>
+			<thumbnail-off>
+				<item>
+					<path>workspace/portfolio/sfm-logo_thb_off.gif</path>
+					<type>image/gif</type>
+					<size>1 kb</size>
+				</item>
+			</thumbnail-off>
+			<firm handle="bauhouse-visual-communications">Bauhouse Visual Communications</firm>
+			<type handle="design-studio">Design Studio</type>
+			<design handle="stephen-bau">Stephen Bau</design>
+		</fields>
+	</entry>
+	<entry id="28" handle="bc-boys-a-provincial-championships">
+		<date>2006-09-24</date>
+		<time>07:25</time>
+		<author></author>
+		<fields>
+			<title handle="bc-boys-a-provincial-championships">BC Boys A Provincial Championships</title>
+			<created handle="2004-02-04">2004-02-04</created>
+			<client handle="st-john-brebeuf-secondary-school">St John Brebeuf Secondary School</client>
+			<project handle="logo-design">Logo Design</project>
+			<media handle="identity">Identity</media>
+			<description word-count="25"><p>St John Brebeuf School hosted the 2004 BC Boys "A" Provincial Basketball Championships. This logo was created for the program, T-shirts and other promotional materials.</p></description>
+			<image>
+				<item>
+					<path>workspace/portfolio/sjb-boysbasketball_logo.gif</path>
+					<type>image/gif</type>
+					<size>20 kb</size>
+				</item>
+			</image>
+			<preview>
+				<item>
+					<path>workspace/portfolio/sjb-boysbask_logo_med.gif</path>
+					<type>image/gif</type>
+					<size>7 kb</size>
+				</item>
+			</preview>
+			<preview-off>
+				<item>
+					<path>workspace/portfolio/sjb-boysbask_logo_med_off.gif</path>
+					<type>image/gif</type>
+					<size>5 kb</size>
+				</item>
+			</preview-off>
+			<thumbnail>
+				<item>
+					<path>workspace/portfolio/sjb-boysbask_logo_thb.gif</path>
+					<type>image/gif</type>
+					<size>3 kb</size>
+				</item>
+			</thumbnail>
+			<thumbnail-off>
+				<item>
+					<path>workspace/portfolio/sjb-boysbask_logo_thb_off.gif</path>
+					<type>image/gif</type>
+					<size>2 kb</size>
+				</item>
+			</thumbnail-off>
+			<firm handle="bauhouse-visual-communications">Bauhouse Visual Communications</firm>
+			<type handle="design-studio">Design Studio</type>
+			<design handle="stephen-bau">Stephen Bau</design>
+		</fields>
+	</entry>
+	<entry id="23" handle="moonrattles-logo-design">
+		<date>2006-09-24</date>
+		<time>00:41</time>
+		<author></author>
+		<fields>
+			<title handle="moonrattles-logo-design">MoonRattles Logo Design</title>
+			<created handle="2006-09-08">2006-09-08</created>
+			<client handle="moonrattles">MoonRattles</client>
+			<project handle="corporate-identity">Corporate Identity</project>
+			<media handle="identity">Identity</media>
+			<description word-count="59"><p>MoonRattles is developing a business to provide tools to ethnically diverse families to enable parents to help connect their children with their cultural heritage and historical roots. These tools will be offered as individual kits or on a subscription basis to provide educational materials and suggestions for activities related to music, literature, history, language, food and other heritage topics.</p></description>
+			<image>
+				<item>
+					<path>workspace/portfolio/d7-moonrattles_logo.gif</path>
+					<type>image/gif</type>
+					<size>9 kb</size>
+				</item>
+			</image>
+			<preview>
+				<item>
+					<path>workspace/portfolio/d7-moonrattles_logo_med.gif</path>
+					<type>image/gif</type>
+					<size>5 kb</size>
+				</item>
+			</preview>
+			<preview-off>
+				<item>
+					<path>workspace/portfolio/d7-moonrattles_logo_med_off.gif</path>
+					<type>image/gif</type>
+					<size>4 kb</size>
+				</item>
+			</preview-off>
+			<thumbnail>
+				<item>
+					<path>workspace/portfolio/d7-moonrattles_logo_thb.gif</path>
+					<type>image/gif</type>
+					<size>2 kb</size>
+				</item>
+			</thumbnail>
+			<thumbnail-off>
+				<item>
+					<path>workspace/portfolio/d7-moonrattles_logo_thb_off.gif</path>
+					<type>image/gif</type>
+					<size>1 kb</size>
+				</item>
+			</thumbnail-off>
+			<firm handle="domain7">Domain7</firm>
+			<type handle="web-design-firm">Web Design Firm</type>
+			<creative-direction handle="shawn-neumann">Shawn Neumann</creative-direction>
+			<art-direction handle="tracey-falk">Tracey Falk</art-direction>
+			<design handle="stephen-bau">Stephen Bau</design>
+		</fields>
+	</entry>
+	<entry id="22" handle="arbutus-meadows-logo-design">
+		<date>2006-09-24</date>
+		<time>00:39</time>
+		<author></author>
+		<fields>
+			<title handle="arbutus-meadows-logo-design">Arbutus Meadows Logo Design</title>
+			<created handle="2005-11-07">2005-11-07</created>
+			<client handle="arbutus-meadows">Arbutus Meadows</client>
+			<project handle="corporate-identity">Corporate Identity</project>
+			<media handle="identity">Identity</media>
+			<description word-count="45"><p>Arbutus Meadows Equestrian Centre in Nanoose Bay is home to a large indoor arena and over 140 acres of land, suitable for trail rides, show jumping, and even indoor motorcross racing. A new visual identity is helping to raise the profile of this multi-use facility.</p></description>
+			<image>
+				<item>
+					<path>workspace/portfolio/amec-logo.gif</path>
+					<type>image/gif</type>
+					<size>7 kb</size>
+				</item>
+			</image>
+			<preview>
+				<item>
+					<path>workspace/portfolio/amec-logo_med.gif</path>
+					<type>image/gif</type>
+					<size>2 kb</size>
+				</item>
+			</preview>
+			<preview-off>
+				<item>
+					<path>workspace/portfolio/amec-logo_med_off.gif</path>
+					<type>image/gif</type>
+					<size>1 kb</size>
+				</item>
+			</preview-off>
+			<thumbnail>
+				<item>
+					<path>workspace/portfolio/amec-logo_thb.gif</path>
+					<type>image/gif</type>
+					<size>1 kb</size>
+				</item>
+			</thumbnail>
+			<thumbnail-off>
+				<item>
+					<path>workspace/portfolio/amec-logo_thb_off.gif</path>
+					<type>image/gif</type>
+					<size>939 bytes</size>
+				</item>
+			</thumbnail-off>
+			<firm handle="bauhouse-visual-communications">Bauhouse Visual Communications</firm>
+			<type handle="design-studio">Design Studio</type>
+			<design handle="stephen-bau">Stephen Bau</design>
+		</fields>
+	</entry>
+	<entry id="21" handle="big-bear-classic">
+		<date>2006-09-24</date>
+		<time>00:12</time>
+		<author></author>
+		<fields>
+			<title handle="big-bear-classic">Big Bear Classic</title>
+			<created handle="2005-12-09">2005-12-09</created>
+			<client handle="st-john-brebeuf-secondary-school">St John Brebeuf Secondary School</client>
+			<project handle="logo-design">Logo Design</project>
+			<media handle="identity">Identity</media>
+			<description word-count="24"><p>The St John Brebeuf Secondary School Basketball Team logo, featuring a fierce bear equal to the skills represented by this top ranking highschool team.</p></description>
+			<image>
+				<item>
+					<path>workspace/portfolio/sjb-big_bear_classic_logo.gif</path>
+					<type>image/gif</type>
+					<size>16 kb</size>
+				</item>
+			</image>
+			<preview>
+				<item>
+					<path>workspace/portfolio/sjb-big_bear_logo_med.jpg</path>
+					<type>image/jpeg</type>
+					<size>8 kb</size>
+				</item>
+			</preview>
+			<preview-off>
+				<item>
+					<path>workspace/portfolio/sjb-big_bear_logo_med_off.jpg</path>
+					<type>image/jpeg</type>
+					<size>4 kb</size>
+				</item>
+			</preview-off>
+			<thumbnail>
+				<item>
+					<path>workspace/portfolio/sjb-bears_logo_thb.gif</path>
+					<type>image/gif</type>
+					<size>2 kb</size>
+				</item>
+			</thumbnail>
+			<thumbnail-off>
+				<item>
+					<path>workspace/portfolio/sjb-bears_logo_thb_off.gif</path>
+					<type>image/gif</type>
+					<size>1 kb</size>
+				</item>
+			</thumbnail-off>
+			<firm handle="bauhouse-visual-communications">Bauhouse Visual Communications</firm>
+			<type handle="design-studio">Design Studio</type>
+			<design handle="stephen-bau">Stephen Bau</design>
+		</fields>
+	</entry>
+	<entry id="20" handle="the-wild-orange-spa-logo-design">
+		<date>2006-09-24</date>
+		<time>00:08</time>
+		<author></author>
+		<fields>
+			<title handle="the-wild-orange-spa-logo-design">the Wild Orange spa Logo Design</title>
+			<created handle="2003-09-09">2003-09-09</created>
+			<client handle="the-wild-orange-spa">the Wild Orange spa</client>
+			<project handle="corporate-identity">Corporate Identity</project>
+			<media handle="identity">Identity</media>
+			<description word-count="36"><p>Building a brand from a napkin sketch to a first class spa in Abbotsford has been a process of adding one thing to another, maintaining a high level of visual style with a minimalist design aesthetic.</p></description>
+			<image>
+				<item>
+					<path>workspace/portfolio/wos-logo.gif</path>
+					<type>image/gif</type>
+					<size>6 kb</size>
+				</item>
+			</image>
+			<preview>
+				<item>
+					<path>workspace/portfolio/wos-logo_med.gif</path>
+					<type>image/gif</type>
+					<size>3 kb</size>
+				</item>
+			</preview>
+			<preview-off>
+				<item>
+					<path>workspace/portfolio/wos-logo_med_off.gif</path>
+					<type>image/gif</type>
+					<size>2 kb</size>
+				</item>
+			</preview-off>
+			<thumbnail>
+				<item>
+					<path>workspace/portfolio/wos-logo_thb.gif</path>
+					<type>image/gif</type>
+					<size>1 kb</size>
+				</item>
+			</thumbnail>
+			<thumbnail-off>
+				<item>
+					<path>workspace/portfolio/wos-logo_thb_off.gif</path>
+					<type>image/gif</type>
+					<size>798 bytes</size>
+				</item>
+			</thumbnail-off>
+			<firm handle="bauhouse-visual-communications">Bauhouse Visual Communications</firm>
+			<type handle="design-studio">Design Studio</type>
+			<design handle="stephen-bau">Stephen Bau</design>
+			<photography handle="getty-images">Getty Images</photography>
+			<printing handle="globe-printers">Globe Printers</printing>
+		</fields>
+	</entry>
+</portfolio>
