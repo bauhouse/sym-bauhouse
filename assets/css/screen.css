@@ -59,7 +59,7 @@ em.ir, strong.ir {
 
 /* blocks
 ----------------------------------------------- */
-.top, .middle, .bottom {
+#top, .middle, .bottom {
 	display:block;
 	}
 .middle {
@@ -723,13 +723,10 @@ img.right {
 
 /* entry 1 column
 ----------------------------------------------- */
-.content_1col .entry .entry_body { 
+.content_1col .entry_body { 
 	margin-left:216px;
 	}
-.content_1col .entry .entry_data { 
-	width:216px;
-	}
-.content_1col .entry .entry_data { 
+.content_1col .entry_data { 
 	float:left;
 	width:215px;
 	padding-top: .9em;
@@ -809,6 +806,7 @@ img.right {
 .lists li a:hover {
 	color: #f00;
 }
+.lists li.current a,
 .lists li a:active {
 	color: #f00;
 }
@@ -855,7 +853,7 @@ img.right {
 hr {display:none;}
 
 .clear {clear: both;}
-#top {
+.top {
 	float:right;
 	text-transform: uppercase;
 	letter-spacing: .1em;

@@ -24,7 +24,7 @@
 				</xsl:choose>
 			</div><!-- END sectionimage -->
 			<div class="section_thumbs">
-				<xsl:for-each select="portfolio/entry[media/item/@handle = $current-page][position() &lt;= 16]">
+				<xsl:for-each select="portfolio/entry[thumbnail/filename != ''][media/item/@handle = $current-page][position() &lt;= 16]">
 					<xsl:sort select="created" order="descending"/>
 					<a href="{$root}/{$root-page}/{$current-page}/{title/@handle}/" title="{title}">
 						<xsl:if test="title/@handle = $entry"><xsl:attribute name="class">current</xsl:attribute></xsl:if>
@@ -87,14 +87,14 @@
 							</xsl:if>
 							<xsl:if test="link">
 								<p class="entry_info"><span>Visit Site<xsl:text> </xsl:text></span>
-									<a href="{fields/link}" title="{fields/title}">
+									<a href="{link}" title="{title}">
 										<xsl:choose>
-											<xsl:when test="substring(fields/link,string-length(fields/link))='/'">
-												<xsl:value-of select="substring-after(substring(fields/link,1,
-													string-length(fields/link)-1),'http://')"/>
+											<xsl:when test="substring(link,string-length(link))='/'">
+												<xsl:value-of select="substring-after(substring(link,1,
+													string-length(link)-1),'http://')"/>
 											</xsl:when>
 											<xsl:otherwise>
-												<xsl:value-of select="substring-after(fields/link,'http://')"/>
+												<xsl:value-of select="substring-after(link,'http://')"/>
 											</xsl:otherwise>
 										</xsl:choose>
 									</a>

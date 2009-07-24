@@ -43,7 +43,10 @@
 					<div class="articles">
 						<div class="entry">
 							<h2>Import</h2>
-							<xsl:apply-templates select="section-schema[@handle='portfolio']" mode="form"/>
+							<xsl:apply-templates select="section-schema[@handle='portfolio']" mode="form">
+								<xsl:with-param name="event-name" select="'save-portfolio'"/>
+								<xsl:with-param name="submit" select="'Save Portfolio Entry'"/>
+							</xsl:apply-templates>
 						</div>
 					</div><!-- End articles -->
 				</div><!-- End colA -->
@@ -99,6 +102,8 @@
 </xsl:template>
 
 <xsl:template match="section-schema" mode="form">
+	<xsl:param name="event-name"/>
+	<xsl:param name="submit" select="'Submit'"/>
 
 	<form action="" method="post">
 		
@@ -122,7 +127,7 @@
 			</div>
 		</xsl:if>
 
-		<input type="submit" name="action[publish-article]" value="Submit" class="submit-button" />
+		<input type="submit" name="action[{$event-name}]" value="{$submit}" class="submit-button" />
 
 	</form>
 	

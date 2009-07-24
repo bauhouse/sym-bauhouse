@@ -12,7 +12,7 @@
 </xsl:template>
 
 <xsl:template name="top">
-	<div class="top">
+	<div id="top">
 		<div class="box_header">
 			<div class="box_mainhead">
 				<h1><a href="{$root}/" title="Bauhouse Design"><strong>Bauhouse</strong> Design</a></h1>

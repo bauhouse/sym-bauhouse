@@ -11,7 +11,6 @@ CREATE TABLE `tbl_fields_author` (
 ) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA: `tbl_fields_author` ***
-INSERT INTO `tbl_fields_author` (`id`, `field_id`, `allow_author_change`, `allow_multiple_selection`) VALUES (6, 21, 'yes', 'no');
 
 -- *** STRUCTURE: `tbl_fields_checkbox` ***
 DROP TABLE IF EXISTS `tbl_fields_checkbox`;
@@ -22,14 +21,14 @@ CREATE TABLE `tbl_fields_checkbox` (
   `description` varchar(255) collate utf8_unicode_ci default NULL,
   PRIMARY KEY  (`id`),
   KEY `field_id` (`field_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=30 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=34 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA: `tbl_fields_checkbox` ***
 INSERT INTO `tbl_fields_checkbox` (`id`, `field_id`, `default_state`, `description`) VALUES (27, 10, 'on', NULL);
-INSERT INTO `tbl_fields_checkbox` (`id`, `field_id`, `default_state`, `description`) VALUES (14, 22, 'on', NULL);
-INSERT INTO `tbl_fields_checkbox` (`id`, `field_id`, `default_state`, `description`) VALUES (15, 23, 'off', NULL);
-INSERT INTO `tbl_fields_checkbox` (`id`, `field_id`, `default_state`, `description`) VALUES (28, 33, 'on', NULL);
-INSERT INTO `tbl_fields_checkbox` (`id`, `field_id`, `default_state`, `description`) VALUES (29, 34, 'off', NULL);
+INSERT INTO `tbl_fields_checkbox` (`id`, `field_id`, `default_state`, `description`) VALUES (32, 22, 'on', NULL);
+INSERT INTO `tbl_fields_checkbox` (`id`, `field_id`, `default_state`, `description`) VALUES (33, 23, 'off', NULL);
+INSERT INTO `tbl_fields_checkbox` (`id`, `field_id`, `default_state`, `description`) VALUES (30, 33, 'on', NULL);
+INSERT INTO `tbl_fields_checkbox` (`id`, `field_id`, `default_state`, `description`) VALUES (31, 34, 'off', NULL);
 INSERT INTO `tbl_fields_checkbox` (`id`, `field_id`, `default_state`, `description`) VALUES (18, 49, 'off', NULL);
 
 -- *** STRUCTURE: `tbl_fields_date` ***
@@ -41,11 +40,11 @@ CREATE TABLE `tbl_fields_date` (
   `calendar` enum('yes','no') collate utf8_unicode_ci NOT NULL default 'no',
   PRIMARY KEY  (`id`),
   KEY `field_id` (`field_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=19 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=21 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA: `tbl_fields_date` ***
-INSERT INTO `tbl_fields_date` (`id`, `field_id`, `pre_populate`, `calendar`) VALUES (6, 20, 'yes', 'no');
-INSERT INTO `tbl_fields_date` (`id`, `field_id`, `pre_populate`, `calendar`) VALUES (18, 29, 'yes', 'no');
+INSERT INTO `tbl_fields_date` (`id`, `field_id`, `pre_populate`, `calendar`) VALUES (20, 20, 'yes', 'no');
+INSERT INTO `tbl_fields_date` (`id`, `field_id`, `pre_populate`, `calendar`) VALUES (19, 29, 'yes', 'no');
 INSERT INTO `tbl_fields_date` (`id`, `field_id`, `pre_populate`, `calendar`) VALUES (8, 45, 'yes', 'no');
 INSERT INTO `tbl_fields_date` (`id`, `field_id`, `pre_populate`, `calendar`) VALUES (9, 54, 'yes', 'no');
 INSERT INTO `tbl_fields_date` (`id`, `field_id`, `pre_populate`, `calendar`) VALUES (17, 65, 'yes', 'no');
@@ -64,11 +63,11 @@ CREATE TABLE `tbl_fields_enhancedtaglist` (
   `delimiter` varchar(5) NOT NULL default ',',
   PRIMARY KEY  (`id`),
   KEY `field_id` (`field_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=21 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_fields_enhancedtaglist` ***
-INSERT INTO `tbl_fields_enhancedtaglist` (`id`, `field_id`, `validator`, `pre_populate_source`, `pre_populate_min`, `external_source_url`, `external_source_path`, `ordered`, `delimiter`) VALUES (12, 19, NULL, 'existing', 0, NULL, NULL, 'no', ',');
-INSERT INTO `tbl_fields_enhancedtaglist` (`id`, `field_id`, `validator`, `pre_populate_source`, `pre_populate_min`, `external_source_url`, `external_source_path`, `ordered`, `delimiter`) VALUES (16, 32, NULL, 'existing', 0, NULL, NULL, 'no', ',');
+INSERT INTO `tbl_fields_enhancedtaglist` (`id`, `field_id`, `validator`, `pre_populate_source`, `pre_populate_min`, `external_source_url`, `external_source_path`, `ordered`, `delimiter`) VALUES (20, 19, NULL, 'existing', 0, NULL, NULL, 'no', ',');
+INSERT INTO `tbl_fields_enhancedtaglist` (`id`, `field_id`, `validator`, `pre_populate_source`, `pre_populate_min`, `external_source_url`, `external_source_path`, `ordered`, `delimiter`) VALUES (18, 32, NULL, 'existing', 0, NULL, NULL, 'no', ',');
 
 -- *** STRUCTURE: `tbl_fields_input` ***
 DROP TABLE IF EXISTS `tbl_fields_input`;
@@ -78,16 +77,16 @@ CREATE TABLE `tbl_fields_input` (
   `validator` varchar(100) collate utf8_unicode_ci default NULL,
   PRIMARY KEY  (`id`),
   KEY `field_id` (`field_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=154 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=158 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA: `tbl_fields_input` ***
 INSERT INTO `tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (65, 1, NULL);
 INSERT INTO `tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (79, 3, NULL);
 INSERT INTO `tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (80, 5, NULL);
-INSERT INTO `tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (23, 11, NULL);
-INSERT INTO `tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (24, 12, NULL);
-INSERT INTO `tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (152, 24, NULL);
-INSERT INTO `tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (153, 26, NULL);
+INSERT INTO `tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (156, 11, NULL);
+INSERT INTO `tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (157, 12, NULL);
+INSERT INTO `tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (154, 24, NULL);
+INSERT INTO `tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (155, 26, NULL);
 INSERT INTO `tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (17, 37, NULL);
 INSERT INTO `tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (85, 39, NULL);
 INSERT INTO `tbl_fields_input` (`id`, `field_id`, `validator`) VALUES (28, 42, NULL);
@@ -158,11 +157,11 @@ CREATE TABLE `tbl_fields_referencelink` (
   `allow_multiple_selection` enum('yes','no') NOT NULL default 'no',
   PRIMARY KEY  (`id`),
   KEY `field_id` (`field_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=18 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=20 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_fields_referencelink` ***
-INSERT INTO `tbl_fields_referencelink` (`id`, `field_id`, `related_field_id`, `limit`, `field_type`, `allow_multiple_selection`) VALUES (7, 15, 24, 20, 'autocomplete', 'yes');
-INSERT INTO `tbl_fields_referencelink` (`id`, `field_id`, `related_field_id`, `limit`, `field_type`, `allow_multiple_selection`) VALUES (8, 16, 24, 20, 'autocomplete', 'yes');
+INSERT INTO `tbl_fields_referencelink` (`id`, `field_id`, `related_field_id`, `limit`, `field_type`, `allow_multiple_selection`) VALUES (18, 15, 24, 20, 'autocomplete', 'yes');
+INSERT INTO `tbl_fields_referencelink` (`id`, `field_id`, `related_field_id`, `limit`, `field_type`, `allow_multiple_selection`) VALUES (19, 16, 24, 20, 'autocomplete', 'yes');
 INSERT INTO `tbl_fields_referencelink` (`id`, `field_id`, `related_field_id`, `limit`, `field_type`, `allow_multiple_selection`) VALUES (17, 84, 59, 100, 'autocomplete', 'no');
 
 -- *** STRUCTURE: `tbl_fields_reflection` ***
@@ -205,13 +204,13 @@ CREATE TABLE `tbl_fields_selectbox_link` (
   `limit` int(4) unsigned NOT NULL default '20',
   PRIMARY KEY  (`id`),
   KEY `field_id` (`field_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=41 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=45 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_fields_selectbox_link` ***
-INSERT INTO `tbl_fields_selectbox_link` (`id`, `field_id`, `allow_multiple_selection`, `related_field_id`, `limit`) VALUES (11, 17, 'no', 3, 20);
-INSERT INTO `tbl_fields_selectbox_link` (`id`, `field_id`, `allow_multiple_selection`, `related_field_id`, `limit`) VALUES (39, 25, 'no', 37, 20);
-INSERT INTO `tbl_fields_selectbox_link` (`id`, `field_id`, `allow_multiple_selection`, `related_field_id`, `limit`) VALUES (40, 31, 'no', 39, 20);
-INSERT INTO `tbl_fields_selectbox_link` (`id`, `field_id`, `allow_multiple_selection`, `related_field_id`, `limit`) VALUES (12, 18, 'no', 39, 20);
+INSERT INTO `tbl_fields_selectbox_link` (`id`, `field_id`, `allow_multiple_selection`, `related_field_id`, `limit`) VALUES (43, 17, 'no', 3, 20);
+INSERT INTO `tbl_fields_selectbox_link` (`id`, `field_id`, `allow_multiple_selection`, `related_field_id`, `limit`) VALUES (41, 25, 'no', 37, 20);
+INSERT INTO `tbl_fields_selectbox_link` (`id`, `field_id`, `allow_multiple_selection`, `related_field_id`, `limit`) VALUES (42, 31, 'no', 39, 20);
+INSERT INTO `tbl_fields_selectbox_link` (`id`, `field_id`, `allow_multiple_selection`, `related_field_id`, `limit`) VALUES (44, 18, 'no', 39, 20);
 INSERT INTO `tbl_fields_selectbox_link` (`id`, `field_id`, `allow_multiple_selection`, `related_field_id`, `limit`) VALUES (15, 46, 'no', 11, 20);
 INSERT INTO `tbl_fields_selectbox_link` (`id`, `field_id`, `allow_multiple_selection`, `related_field_id`, `limit`) VALUES (16, 47, 'no', 24, 20);
 INSERT INTO `tbl_fields_selectbox_link` (`id`, `field_id`, `allow_multiple_selection`, `related_field_id`, `limit`) VALUES (38, 68, 'no', 39, 20);
@@ -241,16 +240,16 @@ CREATE TABLE `tbl_fields_textarea` (
   `size` int(3) unsigned NOT NULL,
   PRIMARY KEY  (`id`),
   KEY `field_id` (`field_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=90 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=94 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA: `tbl_fields_textarea` ***
 INSERT INTO `tbl_fields_textarea` (`id`, `field_id`, `formatter`, `size`) VALUES (49, 2, 'pb_markdownextrasmartypants', 15);
 INSERT INTO `tbl_fields_textarea` (`id`, `field_id`, `formatter`, `size`) VALUES (64, 6, 'pb_markdownextrasmartypants', 5);
 INSERT INTO `tbl_fields_textarea` (`id`, `field_id`, `formatter`, `size`) VALUES (65, 7, 'pb_markdownextrasmartypants', 8);
-INSERT INTO `tbl_fields_textarea` (`id`, `field_id`, `formatter`, `size`) VALUES (25, 13, 'pb_markdownextrasmartypants', 6);
-INSERT INTO `tbl_fields_textarea` (`id`, `field_id`, `formatter`, `size`) VALUES (26, 14, 'pb_markdownextrasmartypants', 18);
-INSERT INTO `tbl_fields_textarea` (`id`, `field_id`, `formatter`, `size`) VALUES (88, 27, 'pb_markdownextrasmartypants', 6);
-INSERT INTO `tbl_fields_textarea` (`id`, `field_id`, `formatter`, `size`) VALUES (89, 28, 'pb_markdownextrasmartypants', 18);
+INSERT INTO `tbl_fields_textarea` (`id`, `field_id`, `formatter`, `size`) VALUES (92, 13, 'pb_markdownextrasmartypants', 6);
+INSERT INTO `tbl_fields_textarea` (`id`, `field_id`, `formatter`, `size`) VALUES (93, 14, 'pb_markdownextrasmartypants', 18);
+INSERT INTO `tbl_fields_textarea` (`id`, `field_id`, `formatter`, `size`) VALUES (90, 27, 'pb_markdownextrasmartypants', 6);
+INSERT INTO `tbl_fields_textarea` (`id`, `field_id`, `formatter`, `size`) VALUES (91, 28, 'pb_markdownextrasmartypants', 18);
 INSERT INTO `tbl_fields_textarea` (`id`, `field_id`, `formatter`, `size`) VALUES (19, 38, 'pb_markdownextrasmartypants', 15);
 INSERT INTO `tbl_fields_textarea` (`id`, `field_id`, `formatter`, `size`) VALUES (74, 40, 'pb_markdownextrasmartypants', 6);
 INSERT INTO `tbl_fields_textarea` (`id`, `field_id`, `formatter`, `size`) VALUES (75, 41, 'pb_markdownextrasmartypants', 14);
@@ -272,11 +271,9 @@ CREATE TABLE `tbl_fields_upload` (
   `validator` varchar(50) collate utf8_unicode_ci default NULL,
   PRIMARY KEY  (`id`),
   KEY `field_id` (`field_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=55 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=57 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** DATA: `tbl_fields_upload` ***
-INSERT INTO `tbl_fields_upload` (`id`, `field_id`, `destination`, `validator`) VALUES (53, 35, '/workspace/assets/items/images', NULL);
-INSERT INTO `tbl_fields_upload` (`id`, `field_id`, `destination`, `validator`) VALUES (54, 36, '/workspace/assets/items/files', NULL);
 INSERT INTO `tbl_fields_upload` (`id`, `field_id`, `destination`, `validator`) VALUES (21, 58, '/workspace/assets/files', '/\\.(?:doc|pdf|rtf|txt)$/i');
 INSERT INTO `tbl_fields_upload` (`id`, `field_id`, `destination`, `validator`) VALUES (22, 62, '/workspace/assets/images', NULL);
 INSERT INTO `tbl_fields_upload` (`id`, `field_id`, `destination`, `validator`) VALUES (48, 79, '/workspace/assets/portfolio', '/\\.(?:bmp|gif|jpe?g|png)$/i');
@@ -284,6 +281,8 @@ INSERT INTO `tbl_fields_upload` (`id`, `field_id`, `destination`, `validator`) V
 INSERT INTO `tbl_fields_upload` (`id`, `field_id`, `destination`, `validator`) VALUES (50, 81, '/workspace/assets/portfolio', '/\\.(?:bmp|gif|jpe?g|png)$/i');
 INSERT INTO `tbl_fields_upload` (`id`, `field_id`, `destination`, `validator`) VALUES (51, 82, '/workspace/assets/portfolio', '/\\.(?:bmp|gif|jpe?g|png)$/i');
 INSERT INTO `tbl_fields_upload` (`id`, `field_id`, `destination`, `validator`) VALUES (52, 83, '/workspace/assets/portfolio', NULL);
+INSERT INTO `tbl_fields_upload` (`id`, `field_id`, `destination`, `validator`) VALUES (55, 35, '/workspace/assets/items/images', NULL);
+INSERT INTO `tbl_fields_upload` (`id`, `field_id`, `destination`, `validator`) VALUES (56, 36, '/workspace/assets/items/files', NULL);
 
 -- *** STRUCTURE: `tbl_entries_data_1` ***
 DROP TABLE IF EXISTS `tbl_entries_data_1`;
@@ -346,10 +345,10 @@ CREATE TABLE `tbl_entries_data_11` (
   KEY `entry_id` (`entry_id`),
   KEY `handle` (`handle`),
   KEY `value` (`value`)
-) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_11` ***
-INSERT INTO `tbl_entries_data_11` (`id`, `entry_id`, `handle`, `value`) VALUES (4, 12, 'entry', 'Entry');
+INSERT INTO `tbl_entries_data_11` (`id`, `entry_id`, `handle`, `value`) VALUES (6, 12, 'entry', 'Entry');
 INSERT INTO `tbl_entries_data_11` (`id`, `entry_id`, `handle`, `value`) VALUES (5, 13, 'entry-2', 'Entry 2');
 
 -- *** STRUCTURE: `tbl_entries_data_12` ***
@@ -363,10 +362,10 @@ CREATE TABLE `tbl_entries_data_12` (
   KEY `entry_id` (`entry_id`),
   KEY `handle` (`handle`),
   KEY `value` (`value`)
-) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_12` ***
-INSERT INTO `tbl_entries_data_12` (`id`, `entry_id`, `handle`, `value`) VALUES (4, 12, 'my-first-entry', 'My First Entry');
+INSERT INTO `tbl_entries_data_12` (`id`, `entry_id`, `handle`, `value`) VALUES (6, 12, 'my-first-entry', 'My First Entry');
 INSERT INTO `tbl_entries_data_12` (`id`, `entry_id`, `handle`, `value`) VALUES (5, 13, 'my-second-entry', 'My Second Entry');
 
 -- *** STRUCTURE: `tbl_entries_data_13` ***
@@ -379,11 +378,11 @@ CREATE TABLE `tbl_entries_data_13` (
   PRIMARY KEY  (`id`),
   KEY `entry_id` (`entry_id`),
   FULLTEXT KEY `value` (`value`)
-) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_13` ***
-INSERT INTO `tbl_entries_data_13` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (4, 12, 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.\r\n', '<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>\n');
 INSERT INTO `tbl_entries_data_13` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (5, 13, 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.\r\n', '<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>\n');
+INSERT INTO `tbl_entries_data_13` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (6, 12, 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.\r\n', '<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>\n');
 
 -- *** STRUCTURE: `tbl_entries_data_14` ***
 DROP TABLE IF EXISTS `tbl_entries_data_14`;
@@ -395,10 +394,10 @@ CREATE TABLE `tbl_entries_data_14` (
   PRIMARY KEY  (`id`),
   KEY `entry_id` (`entry_id`),
   FULLTEXT KEY `value` (`value`)
-) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_14` ***
-INSERT INTO `tbl_entries_data_14` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (4, 12, 'Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unum. Defacto lingo est igpay atinlay. Marquee selectus non provisio incongruous feline nolo contendre. Gratuitous octopus niacin, sodium glutimate. Quote meon an estimate et non interruptus stadium. Sic tempus fugit esperanto hiccup estrogen. Glorious baklava ex librus hup hey ad infinitum. Non sequitur condominium facile et geranium incognito. Epsum factorial non deposit quid pro quo hic escorol. Marquee selectus non provisio incongruous feline nolo contendre Olypian quarrels et gorilla congolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unum.\r\n\r\nLi Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, li tot Europa usa li sam vocabularium. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilita; de un nov lingua franca: on refusa continuar payar custosi traductores. It solmen va esser necessi far uniform grammatica, pronunciation e plu sommun paroles.\r\n\r\nMa quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del coalescent lingues. Li nov lingua franca va esser plu simplic e regulari quam li existent Europan lingues. It va esser tam simplic quam Occidental: in fact, it va esser Occidental. A un Angleso it va semblar un simplificat Angles, quam un skeptic Cambridge amico dit me que Occidental es.\r\n\r\nLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.\r\n\r\nEpsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unum. Defacto lingo est igpay atinlay. Marquee selectus non provisio incongruous feline nolo contendre. Gratuitous octopus niacin, sodium glutimate. Quote meon an estimate et non interruptus stadium. Sic tempus fugit esperanto hiccup estrogen. Glorious baklava ex librus hup hey ad infinitum. Non sequitur condominium facile et geranium incognito. Epsum factorial non deposit quid pro quo hic escorol. Marquee selectus non provisio incongruous feline nolo contendre Olypian quarrels et gorilla congolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unum.\r\n\r\nLi Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, li tot Europa usa li sam vocabularium. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilita; de un nov lingua franca: on refusa continuar payar custosi traductores. It solmen va esser necessi far uniform grammatica, pronunciation e plu sommun paroles.', '<p>Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unum. Defacto lingo est igpay atinlay. Marquee selectus non provisio incongruous feline nolo contendre. Gratuitous octopus niacin, sodium glutimate. Quote meon an estimate et non interruptus stadium. Sic tempus fugit esperanto hiccup estrogen. Glorious baklava ex librus hup hey ad infinitum. Non sequitur condominium facile et geranium incognito. Epsum factorial non deposit quid pro quo hic escorol. Marquee selectus non provisio incongruous feline nolo contendre Olypian quarrels et gorilla congolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unum.</p>\n\n<p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, li tot Europa usa li sam vocabularium. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilita; de un nov lingua franca: on refusa continuar payar custosi traductores. It solmen va esser necessi far uniform grammatica, pronunciation e plu sommun paroles.</p>\n\n<p>Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del coalescent lingues. Li nov lingua franca va esser plu simplic e regulari quam li existent Europan lingues. It va esser tam simplic quam Occidental: in fact, it va esser Occidental. A un Angleso it va semblar un simplificat Angles, quam un skeptic Cambridge amico dit me que Occidental es.</p>\n\n<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>\n\n<p>Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unum. Defacto lingo est igpay atinlay. Marquee selectus non provisio incongruous feline nolo contendre. Gratuitous octopus niacin, sodium glutimate. Quote meon an estimate et non interruptus stadium. Sic tempus fugit esperanto hiccup estrogen. Glorious baklava ex librus hup hey ad infinitum. Non sequitur condominium facile et geranium incognito. Epsum factorial non deposit quid pro quo hic escorol. Marquee selectus non provisio incongruous feline nolo contendre Olypian quarrels et gorilla congolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unum.</p>\n\n<p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, li tot Europa usa li sam vocabularium. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilita; de un nov lingua franca: on refusa continuar payar custosi traductores. It solmen va esser necessi far uniform grammatica, pronunciation e plu sommun paroles.</p>\n');
+INSERT INTO `tbl_entries_data_14` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (6, 12, 'Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unum. Defacto lingo est igpay atinlay. Marquee selectus non provisio incongruous feline nolo contendre. Gratuitous octopus niacin, sodium glutimate. Quote meon an estimate et non interruptus stadium. Sic tempus fugit esperanto hiccup estrogen. Glorious baklava ex librus hup hey ad infinitum. Non sequitur condominium facile et geranium incognito. Epsum factorial non deposit quid pro quo hic escorol. Marquee selectus non provisio incongruous feline nolo contendre Olypian quarrels et gorilla congolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unum.\r\n\r\nLi Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, li tot Europa usa li sam vocabularium. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilita; de un nov lingua franca: on refusa continuar payar custosi traductores. It solmen va esser necessi far uniform grammatica, pronunciation e plu sommun paroles.\r\n\r\nMa quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del coalescent lingues. Li nov lingua franca va esser plu simplic e regulari quam li existent Europan lingues. It va esser tam simplic quam Occidental: in fact, it va esser Occidental. A un Angleso it va semblar un simplificat Angles, quam un skeptic Cambridge amico dit me que Occidental es.\r\n\r\nLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.\r\n\r\nEpsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unum. Defacto lingo est igpay atinlay. Marquee selectus non provisio incongruous feline nolo contendre. Gratuitous octopus niacin, sodium glutimate. Quote meon an estimate et non interruptus stadium. Sic tempus fugit esperanto hiccup estrogen. Glorious baklava ex librus hup hey ad infinitum. Non sequitur condominium facile et geranium incognito. Epsum factorial non deposit quid pro quo hic escorol. Marquee selectus non provisio incongruous feline nolo contendre Olypian quarrels et gorilla congolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unum.\r\n\r\nLi Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, li tot Europa usa li sam vocabularium. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilita; de un nov lingua franca: on refusa continuar payar custosi traductores. It solmen va esser necessi far uniform grammatica, pronunciation e plu sommun paroles.', '<p>Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unum. Defacto lingo est igpay atinlay. Marquee selectus non provisio incongruous feline nolo contendre. Gratuitous octopus niacin, sodium glutimate. Quote meon an estimate et non interruptus stadium. Sic tempus fugit esperanto hiccup estrogen. Glorious baklava ex librus hup hey ad infinitum. Non sequitur condominium facile et geranium incognito. Epsum factorial non deposit quid pro quo hic escorol. Marquee selectus non provisio incongruous feline nolo contendre Olypian quarrels et gorilla congolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unum.</p>\n\n<p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, li tot Europa usa li sam vocabularium. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilita; de un nov lingua franca: on refusa continuar payar custosi traductores. It solmen va esser necessi far uniform grammatica, pronunciation e plu sommun paroles.</p>\n\n<p>Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del coalescent lingues. Li nov lingua franca va esser plu simplic e regulari quam li existent Europan lingues. It va esser tam simplic quam Occidental: in fact, it va esser Occidental. A un Angleso it va semblar un simplificat Angles, quam un skeptic Cambridge amico dit me que Occidental es.</p>\n\n<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>\n\n<p>Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unum. Defacto lingo est igpay atinlay. Marquee selectus non provisio incongruous feline nolo contendre. Gratuitous octopus niacin, sodium glutimate. Quote meon an estimate et non interruptus stadium. Sic tempus fugit esperanto hiccup estrogen. Glorious baklava ex librus hup hey ad infinitum. Non sequitur condominium facile et geranium incognito. Epsum factorial non deposit quid pro quo hic escorol. Marquee selectus non provisio incongruous feline nolo contendre Olypian quarrels et gorilla congolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unum.</p>\n\n<p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, li tot Europa usa li sam vocabularium. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilita; de un nov lingua franca: on refusa continuar payar custosi traductores. It solmen va esser necessi far uniform grammatica, pronunciation e plu sommun paroles.</p>\n');
 INSERT INTO `tbl_entries_data_14` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (5, 13, 'Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unum. Defacto lingo est igpay atinlay. Marquee selectus non provisio incongruous feline nolo contendre. Gratuitous octopus niacin, sodium glutimate. Quote meon an estimate et non interruptus stadium. Sic tempus fugit esperanto hiccup estrogen. Glorious baklava ex librus hup hey ad infinitum. Non sequitur condominium facile et geranium incognito. Epsum factorial non deposit quid pro quo hic escorol. Marquee selectus non provisio incongruous feline nolo contendre Olypian quarrels et gorilla congolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unum.\r\n\r\nLi Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, li tot Europa usa li sam vocabularium. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilita; de un nov lingua franca: on refusa continuar payar custosi traductores. It solmen va esser necessi far uniform grammatica, pronunciation e plu sommun paroles.\r\n\r\nMa quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del coalescent lingues. Li nov lingua franca va esser plu simplic e regulari quam li existent Europan lingues. It va esser tam simplic quam Occidental: in fact, it va esser Occidental. A un Angleso it va semblar un simplificat Angles, quam un skeptic Cambridge amico dit me que Occidental es.\r\n\r\nLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.\r\n\r\nEpsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unum. Defacto lingo est igpay atinlay. Marquee selectus non provisio incongruous feline nolo contendre. Gratuitous octopus niacin, sodium glutimate. Quote meon an estimate et non interruptus stadium. Sic tempus fugit esperanto hiccup estrogen. Glorious baklava ex librus hup hey ad infinitum. Non sequitur condominium facile et geranium incognito. Epsum factorial non deposit quid pro quo hic escorol. Marquee selectus non provisio incongruous feline nolo contendre Olypian quarrels et gorilla congolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unum.\r\n\r\nLi Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, li tot Europa usa li sam vocabularium. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilita; de un nov lingua franca: on refusa continuar payar custosi traductores. It solmen va esser necessi far uniform grammatica, pronunciation e plu sommun paroles.', '<p>Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unum. Defacto lingo est igpay atinlay. Marquee selectus non provisio incongruous feline nolo contendre. Gratuitous octopus niacin, sodium glutimate. Quote meon an estimate et non interruptus stadium. Sic tempus fugit esperanto hiccup estrogen. Glorious baklava ex librus hup hey ad infinitum. Non sequitur condominium facile et geranium incognito. Epsum factorial non deposit quid pro quo hic escorol. Marquee selectus non provisio incongruous feline nolo contendre Olypian quarrels et gorilla congolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unum.</p>\n\n<p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, li tot Europa usa li sam vocabularium. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilita; de un nov lingua franca: on refusa continuar payar custosi traductores. It solmen va esser necessi far uniform grammatica, pronunciation e plu sommun paroles.</p>\n\n<p>Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del coalescent lingues. Li nov lingua franca va esser plu simplic e regulari quam li existent Europan lingues. It va esser tam simplic quam Occidental: in fact, it va esser Occidental. A un Angleso it va semblar un simplificat Angles, quam un skeptic Cambridge amico dit me que Occidental es.</p>\n\n<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>\n\n<p>Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unum. Defacto lingo est igpay atinlay. Marquee selectus non provisio incongruous feline nolo contendre. Gratuitous octopus niacin, sodium glutimate. Quote meon an estimate et non interruptus stadium. Sic tempus fugit esperanto hiccup estrogen. Glorious baklava ex librus hup hey ad infinitum. Non sequitur condominium facile et geranium incognito. Epsum factorial non deposit quid pro quo hic escorol. Marquee selectus non provisio incongruous feline nolo contendre Olypian quarrels et gorilla congolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unum.</p>\n\n<p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, li tot Europa usa li sam vocabularium. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilita; de un nov lingua franca: on refusa continuar payar custosi traductores. It solmen va esser necessi far uniform grammatica, pronunciation e plu sommun paroles.</p>\n');
 
 -- *** STRUCTURE: `tbl_entries_data_15` ***
@@ -436,10 +435,10 @@ CREATE TABLE `tbl_entries_data_17` (
   PRIMARY KEY  (`id`),
   KEY `entry_id` (`entry_id`),
   KEY `relation_id` (`relation_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_17` ***
-INSERT INTO `tbl_entries_data_17` (`id`, `entry_id`, `relation_id`) VALUES (4, 12, 11);
+INSERT INTO `tbl_entries_data_17` (`id`, `entry_id`, `relation_id`) VALUES (6, 12, 11);
 INSERT INTO `tbl_entries_data_17` (`id`, `entry_id`, `relation_id`) VALUES (5, 13, 11);
 
 -- *** STRUCTURE: `tbl_entries_data_18` ***
@@ -451,10 +450,10 @@ CREATE TABLE `tbl_entries_data_18` (
   PRIMARY KEY  (`id`),
   KEY `entry_id` (`entry_id`),
   KEY `relation_id` (`relation_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_18` ***
-INSERT INTO `tbl_entries_data_18` (`id`, `entry_id`, `relation_id`) VALUES (4, 12, 8);
+INSERT INTO `tbl_entries_data_18` (`id`, `entry_id`, `relation_id`) VALUES (6, 12, 8);
 INSERT INTO `tbl_entries_data_18` (`id`, `entry_id`, `relation_id`) VALUES (5, 13, 8);
 
 -- *** STRUCTURE: `tbl_entries_data_19` ***
@@ -468,10 +467,10 @@ CREATE TABLE `tbl_entries_data_19` (
   KEY `entry_id` (`entry_id`),
   KEY `handle` (`handle`),
   KEY `value` (`value`)
-) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_19` ***
-INSERT INTO `tbl_entries_data_19` (`id`, `entry_id`, `handle`, `value`) VALUES (4, 12, 'symphony-cms', 'Symphony CMS');
+INSERT INTO `tbl_entries_data_19` (`id`, `entry_id`, `handle`, `value`) VALUES (6, 12, 'symphony-cms', 'Symphony CMS');
 INSERT INTO `tbl_entries_data_19` (`id`, `entry_id`, `handle`, `value`) VALUES (5, 13, 'symphony-cms', 'Symphony CMS');
 
 -- *** STRUCTURE: `tbl_entries_data_2` ***
@@ -501,10 +500,10 @@ CREATE TABLE `tbl_entries_data_20` (
   PRIMARY KEY  (`id`),
   KEY `entry_id` (`entry_id`),
   KEY `value` (`value`)
-) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_20` ***
-INSERT INTO `tbl_entries_data_20` (`id`, `entry_id`, `value`, `local`, `gmt`) VALUES (4, 12, '2009-07-06T06:31:00-07:00', 1246887060, 1246887060);
+INSERT INTO `tbl_entries_data_20` (`id`, `entry_id`, `value`, `local`, `gmt`) VALUES (6, 12, '2009-07-23T07:46:00-07:00', 1248360360, 1248360360);
 INSERT INTO `tbl_entries_data_20` (`id`, `entry_id`, `value`, `local`, `gmt`) VALUES (5, 13, '2009-07-06T06:31:00-07:00', 1246887060, 1246887060);
 
 -- *** STRUCTURE: `tbl_entries_data_21` ***
@@ -516,10 +515,10 @@ CREATE TABLE `tbl_entries_data_21` (
   PRIMARY KEY  (`id`),
   KEY `entry_id` (`entry_id`),
   KEY `author_id` (`author_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_21` ***
-INSERT INTO `tbl_entries_data_21` (`id`, `entry_id`, `author_id`) VALUES (4, 12, 1);
+INSERT INTO `tbl_entries_data_21` (`id`, `entry_id`, `author_id`) VALUES (6, 12, 1);
 INSERT INTO `tbl_entries_data_21` (`id`, `entry_id`, `author_id`) VALUES (5, 13, 1);
 
 -- *** STRUCTURE: `tbl_entries_data_22` ***
@@ -531,10 +530,10 @@ CREATE TABLE `tbl_entries_data_22` (
   PRIMARY KEY  (`id`),
   KEY `entry_id` (`entry_id`),
   KEY `value` (`value`)
-) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_22` ***
-INSERT INTO `tbl_entries_data_22` (`id`, `entry_id`, `value`) VALUES (4, 12, 'yes');
+INSERT INTO `tbl_entries_data_22` (`id`, `entry_id`, `value`) VALUES (6, 12, 'yes');
 INSERT INTO `tbl_entries_data_22` (`id`, `entry_id`, `value`) VALUES (5, 13, 'yes');
 
 -- *** STRUCTURE: `tbl_entries_data_23` ***
@@ -546,10 +545,10 @@ CREATE TABLE `tbl_entries_data_23` (
   PRIMARY KEY  (`id`),
   KEY `entry_id` (`entry_id`),
   KEY `value` (`value`)
-) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_23` ***
-INSERT INTO `tbl_entries_data_23` (`id`, `entry_id`, `value`) VALUES (4, 12, 'yes');
+INSERT INTO `tbl_entries_data_23` (`id`, `entry_id`, `value`) VALUES (6, 12, 'yes');
 INSERT INTO `tbl_entries_data_23` (`id`, `entry_id`, `value`) VALUES (5, 13, 'yes');
 
 -- *** STRUCTURE: `tbl_entries_data_24` ***
@@ -2004,7 +2003,7 @@ INSERT INTO `tbl_extensions` (`id`, `name`, `status`, `version`) VALUES (15, 'ma
 INSERT INTO `tbl_extensions` (`id`, `name`, `status`, `version`) VALUES (16, 'markdown', 'enabled', 1.8);
 INSERT INTO `tbl_extensions` (`id`, `name`, `status`, `version`) VALUES (17, 'order_entries', 'enabled', 1.6);
 INSERT INTO `tbl_extensions` (`id`, `name`, `status`, `version`) VALUES (18, 'profiledevkit', 'enabled', 1);
-INSERT INTO `tbl_extensions` (`id`, `name`, `status`, `version`) VALUES (20, 'section_schemas', 'enabled', 1.2);
+INSERT INTO `tbl_extensions` (`id`, `name`, `status`, `version`) VALUES (27, 'section_schemas', 'enabled', 1.2);
 INSERT INTO `tbl_extensions` (`id`, `name`, `status`, `version`) VALUES (23, 'logsdevkit', 'enabled', 1);
 INSERT INTO `tbl_extensions` (`id`, `name`, `status`, `version`) VALUES (25, 'export_install_file', 'enabled', 1.1);
 INSERT INTO `tbl_extensions` (`id`, `name`, `status`, `version`) VALUES (26, 'browsedevkit', 'enabled', 1);
@@ -2153,14 +2152,14 @@ INSERT INTO `tbl_pages` (`id`, `parent`, `title`, `handle`, `path`, `params`, `d
 INSERT INTO `tbl_pages` (`id`, `parent`, `title`, `handle`, `path`, `params`, `data_sources`, `events`, `sortorder`) VALUES (23, 10, 'People', 'people', 'build', 'entry', 'navigation,section,section_image,section_images', 'login', 19);
 INSERT INTO `tbl_pages` (`id`, `parent`, `title`, `handle`, `path`, `params`, `data_sources`, `events`, `sortorder`) VALUES (24, 10, 'Relationships', 'relationships', 'build', 'entry', 'navigation,section,section_image,section_images', 'login', 20);
 INSERT INTO `tbl_pages` (`id`, `parent`, `title`, `handle`, `path`, `params`, `data_sources`, `events`, `sortorder`) VALUES (25, 10, 'Community', 'community', 'build', 'entry', 'navigation,section,section_image,section_images', 'login', 21);
-INSERT INTO `tbl_pages` (`id`, `parent`, `title`, `handle`, `path`, `params`, `data_sources`, `events`, `sortorder`) VALUES (26, NULL, 'Import', 'import', NULL, 'a', 'section_schema_portfolio', 'login,save_portfolio', 25);
+INSERT INTO `tbl_pages` (`id`, `parent`, `title`, `handle`, `path`, `params`, `data_sources`, `events`, `sortorder`) VALUES (26, NULL, 'Import', 'import', NULL, 'a', 'section_schema_portfolio', 'login,save_entries,save_portfolio,save_resources', 25);
 
 -- *** DATA: `tbl_pages_types` ***
 INSERT INTO `tbl_pages_types` (`id`, `page_id`, `type`) VALUES (84, 1, 'main');
 INSERT INTO `tbl_pages_types` (`id`, `page_id`, `type`) VALUES (118, 3, 'nav');
 INSERT INTO `tbl_pages_types` (`id`, `page_id`, `type`) VALUES (50, 2, 'main');
 INSERT INTO `tbl_pages_types` (`id`, `page_id`, `type`) VALUES (85, 1, 'nav');
-INSERT INTO `tbl_pages_types` (`id`, `page_id`, `type`) VALUES (87, 5, 'nav');
+INSERT INTO `tbl_pages_types` (`id`, `page_id`, `type`) VALUES (123, 5, 'nav');
 INSERT INTO `tbl_pages_types` (`id`, `page_id`, `type`) VALUES (110, 6, 'nav');
 INSERT INTO `tbl_pages_types` (`id`, `page_id`, `type`) VALUES (60, 8, 'tabs');
 INSERT INTO `tbl_pages_types` (`id`, `page_id`, `type`) VALUES (66, 9, 'tabs');
@@ -2173,7 +2172,7 @@ INSERT INTO `tbl_pages_types` (`id`, `page_id`, `type`) VALUES (46, 18, 'hidden'
 INSERT INTO `tbl_pages_types` (`id`, `page_id`, `type`) VALUES (83, 1, 'index');
 INSERT INTO `tbl_pages_types` (`id`, `page_id`, `type`) VALUES (51, 2, 'nav');
 INSERT INTO `tbl_pages_types` (`id`, `page_id`, `type`) VALUES (117, 3, 'main');
-INSERT INTO `tbl_pages_types` (`id`, `page_id`, `type`) VALUES (86, 5, 'main');
+INSERT INTO `tbl_pages_types` (`id`, `page_id`, `type`) VALUES (122, 5, 'main');
 INSERT INTO `tbl_pages_types` (`id`, `page_id`, `type`) VALUES (109, 6, 'main');
 INSERT INTO `tbl_pages_types` (`id`, `page_id`, `type`) VALUES (58, 7, 'main');
 INSERT INTO `tbl_pages_types` (`id`, `page_id`, `type`) VALUES (59, 7, 'nav');
@@ -2197,8 +2196,8 @@ INSERT INTO `tbl_pages_types` (`id`, `page_id`, `type`) VALUES (116, 15, 'nav');
 -- *** DATA: `tbl_sections` ***
 INSERT INTO `tbl_sections` (`id`, `name`, `handle`, `sortorder`, `entry_order`, `entry_order_direction`, `hidden`, `navigation_group`) VALUES (1, 'Menus', 'menus', 3, NULL, 'asc', 'no', 'Meta');
 INSERT INTO `tbl_sections` (`id`, `name`, `handle`, `sortorder`, `entry_order`, `entry_order_direction`, `hidden`, `navigation_group`) VALUES (2, 'Sections', 'sections', 0, NULL, 'asc', 'no', 'Content');
-INSERT INTO `tbl_sections` (`id`, `name`, `handle`, `sortorder`, `entry_order`, `entry_order_direction`, `hidden`, `navigation_group`) VALUES (3, 'Entries', 'entries', 1, NULL, 'asc', 'no', 'Content');
-INSERT INTO `tbl_sections` (`id`, `name`, `handle`, `sortorder`, `entry_order`, `entry_order_direction`, `hidden`, `navigation_group`) VALUES (4, 'Items', 'items', 2, NULL, 'asc', 'no', 'Content');
+INSERT INTO `tbl_sections` (`id`, `name`, `handle`, `sortorder`, `entry_order`, `entry_order_direction`, `hidden`, `navigation_group`) VALUES (3, 'Journal', 'journal', 1, NULL, 'asc', 'no', 'Content');
+INSERT INTO `tbl_sections` (`id`, `name`, `handle`, `sortorder`, `entry_order`, `entry_order_direction`, `hidden`, `navigation_group`) VALUES (4, 'Resources', 'resources', 2, NULL, 'asc', 'no', 'Content');
 INSERT INTO `tbl_sections` (`id`, `name`, `handle`, `sortorder`, `entry_order`, `entry_order_direction`, `hidden`, `navigation_group`) VALUES (5, 'Types', 'types', 4, NULL, 'asc', 'no', 'Meta');
 INSERT INTO `tbl_sections` (`id`, `name`, `handle`, `sortorder`, `entry_order`, `entry_order_direction`, `hidden`, `navigation_group`) VALUES (6, 'Categories', 'categories', 5, NULL, 'asc', 'no', 'Meta');
 INSERT INTO `tbl_sections` (`id`, `name`, `handle`, `sortorder`, `entry_order`, `entry_order_direction`, `hidden`, `navigation_group`) VALUES (7, 'Comments', 'comments', 6, NULL, 'asc', 'no', 'Social');
@@ -2210,12 +2209,12 @@ INSERT INTO `tbl_sections` (`id`, `name`, `handle`, `sortorder`, `entry_order`, 
 
 -- *** DATA: `tbl_sections_association` ***
 INSERT INTO `tbl_sections_association` (`id`, `parent_section_id`, `parent_section_field_id`, `child_section_id`, `child_section_field_id`, `cascading_deletion`) VALUES (49, 2, 3, 2, 8, 'no');
-INSERT INTO `tbl_sections_association` (`id`, `parent_section_id`, `parent_section_field_id`, `child_section_id`, `child_section_field_id`, `cascading_deletion`) VALUES (17, 4, 24, 3, 15, 'no');
-INSERT INTO `tbl_sections_association` (`id`, `parent_section_id`, `parent_section_field_id`, `child_section_id`, `child_section_field_id`, `cascading_deletion`) VALUES (18, 4, 24, 3, 16, 'no');
-INSERT INTO `tbl_sections_association` (`id`, `parent_section_id`, `parent_section_field_id`, `child_section_id`, `child_section_field_id`, `cascading_deletion`) VALUES (19, 2, 3, 3, 17, 'no');
-INSERT INTO `tbl_sections_association` (`id`, `parent_section_id`, `parent_section_field_id`, `child_section_id`, `child_section_field_id`, `cascading_deletion`) VALUES (62, 5, 37, 4, 25, 'no');
-INSERT INTO `tbl_sections_association` (`id`, `parent_section_id`, `parent_section_field_id`, `child_section_id`, `child_section_field_id`, `cascading_deletion`) VALUES (63, 6, 39, 4, 31, 'no');
-INSERT INTO `tbl_sections_association` (`id`, `parent_section_id`, `parent_section_field_id`, `child_section_id`, `child_section_field_id`, `cascading_deletion`) VALUES (20, 6, 39, 3, 18, 'no');
+INSERT INTO `tbl_sections_association` (`id`, `parent_section_id`, `parent_section_field_id`, `child_section_id`, `child_section_field_id`, `cascading_deletion`) VALUES (66, 4, 24, 3, 15, 'no');
+INSERT INTO `tbl_sections_association` (`id`, `parent_section_id`, `parent_section_field_id`, `child_section_id`, `child_section_field_id`, `cascading_deletion`) VALUES (67, 4, 24, 3, 16, 'no');
+INSERT INTO `tbl_sections_association` (`id`, `parent_section_id`, `parent_section_field_id`, `child_section_id`, `child_section_field_id`, `cascading_deletion`) VALUES (68, 2, 3, 3, 17, 'no');
+INSERT INTO `tbl_sections_association` (`id`, `parent_section_id`, `parent_section_field_id`, `child_section_id`, `child_section_field_id`, `cascading_deletion`) VALUES (64, 5, 37, 4, 25, 'no');
+INSERT INTO `tbl_sections_association` (`id`, `parent_section_id`, `parent_section_field_id`, `child_section_id`, `child_section_field_id`, `cascading_deletion`) VALUES (65, 6, 39, 4, 31, 'no');
+INSERT INTO `tbl_sections_association` (`id`, `parent_section_id`, `parent_section_field_id`, `child_section_id`, `child_section_field_id`, `cascading_deletion`) VALUES (69, 6, 39, 3, 18, 'no');
 INSERT INTO `tbl_sections_association` (`id`, `parent_section_id`, `parent_section_field_id`, `child_section_id`, `child_section_field_id`, `cascading_deletion`) VALUES (23, 3, 11, 7, 46, 'no');
 INSERT INTO `tbl_sections_association` (`id`, `parent_section_id`, `parent_section_field_id`, `child_section_id`, `child_section_field_id`, `cascading_deletion`) VALUES (24, 4, 24, 7, 47, 'no');
 INSERT INTO `tbl_sections_association` (`id`, `parent_section_id`, `parent_section_field_id`, `child_section_id`, `child_section_field_id`, `cascading_deletion`) VALUES (61, 6, 39, 12, 68, 'no');

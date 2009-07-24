@@ -8,7 +8,7 @@
 	<xsl:call-template name="section-image"/>
 	<div class="sectionhead"><h2>Recent Projects</h2></div>
 	<div class="content_thumbs">
-		<xsl:for-each select="portfolio/entry">
+		<xsl:for-each select="portfolio/entry[preview/filename != '']">
 			<xsl:sort select="created" order="descending"/>
 			<xsl:if test="preview != '' and position() &lt;=7">
 				<a href="{$root}/design/{media/@handle}/{title/@handle}/" title="{title}"><img class="preview_off" src="{$workspace}/{preview-off/@path}/{preview-off/filename}" width="107" height="107" alt="{title}" /><img class="preview_over" src="{$workspace}/{preview/@path}/{preview/filename}" alt="{title}" /></a>
