@@ -1,6 +1,8 @@
-﻿*.DS_Store
-*Thumbs.db
-assets/files/
-assets/images/
-assets/items/
-assets/portfolio/
+.Apple*
+*.DS_Store
+*config.php
+.htaccess
+symphony/.htaccess
+manifest/
+workspace/assets/images
+workspace/assets/portfolio
