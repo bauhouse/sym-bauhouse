@@ -1,11 +1,27 @@
-# Symphony 2 #
+# Bauhouse - A Symphony Ensemble
+
+- Author: Stephen Bau
+- Version: 0.1
+- Date: 23 July 2009
+- Github Repository: <http://github.com/bauhouse/sym-bauhouse>
+
+## Overview
+
+### My old portfolio site, updated from Symphony 1.5.06 to 2.0.4
+
+It's about time I updated my site. It might need a design refresh, but I still like the old site. With the freelance business a thing of the past, it might be nice to share the old site design, but brought back to life with a brand new version of Symphony 2.0.4.
+
+Visit the old site at <http://bauhouse.ca/>
+
+
+## Built with Symphony CMS
 
 - Version: 2.0.4
 - Date: 9th July 2009
 - Github Repository: <http://github.com/symphony/symphony-2/tree/master>
 
 
-## Synopsis
+### Synopsis
 
 Symphony is a `PHP` & `MySQL` based CMS that utilises `XML` and `XSLT` as its core 
 technologies. This repository represents version 2.0.3 and is considered stable.

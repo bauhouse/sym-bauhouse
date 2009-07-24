@@ -1,0 +1,21 @@
+Reference Link Field
+------------------------------------
+
+Version: 1.1 beta
+Author: craig zheng (cz@mongrl.com)
+Build Date: 11th Feb 2009
+Requirements: Symphony 2.0.1, Select Box Link 1.7
+
+An extension of Symphony's Select Box Link Field which adds the option to display the field as an autocomplete input field.
+
+[INSTALLATION]
+
+1. Upload the 'referencelink' folder in this archive to your Symphony 'extensions' folder.
+
+2. Enable it by selecting the "Field: Reference Link ", choose Enable from the with-selected menu, then click Apply.
+
+3. You can now add the "Reference Link" field to your sections.
+
+[USAGE]
+
+- Works in a near identical way to the Select Box Link field, except you can choose whether to display the field as a select box or an autocomplete input.

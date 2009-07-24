@@ -1,0 +1,232 @@
+/*---------------------------------------------------------------------------------
+	Jump
+---------------------------------------------------------------------------------*/
+	
+	#header #jump a.edit {
+		background: transparent;
+		display: inline-block;
+		float: right;
+		margin-left: 0;
+		padding-left: 10px;
+	}
+	
+/*---------------------------------------------------------------------------------
+	Content
+---------------------------------------------------------------------------------*/
+	
+	#content {
+		color: hsl(0, 0%, 50%);
+	}
+	
+	#content .breadcrumb {
+		background: hsl(210, 5%, 15%);
+		border-bottom: 1px solid hsl(210, 5%, 20%);
+		color: hsl(0, 0%, 80%);
+		font-size: 120%;
+		font-weight: normal;
+		margin: 0 0 20px 0;
+		padding: 20px;
+	}
+	#content .breadcrumb a {
+		color: hsl(0, 0%, 100%);
+		margin: 0 -0.45ex 0 0;
+	}
+	
+	#content img.result {
+		max-width: 100%;
+		margin: 20px;
+	}
+	
+	#content table.result {
+		border-spacing: 0;
+		font: 115% monospace;
+		margin: 0;
+		width: 100%;
+	}
+	#content table.result th {
+		color: hsl(0, 0%, 80%);
+		padding: 0 20px 10px 0;
+		text-align: left;
+	}
+	#content table.result th.size {
+		width: 10em;
+	}
+	#content table.result th.date {
+		width: 18em;
+	}
+	#content table.result th.type {
+		width: 18em;
+	}
+	#content table.result th.perms {
+		width: 18em;
+	}
+	#content table.result td.date,
+	#content table.result td.perms {
+		color: hsl(0, 0%, 70%);
+	}
+	#content table.result td {
+		padding: 0 20px 0 0;
+	}
+	#content table.result td a {
+		display: inline-block;
+		width: 100%;
+	}
+	#content table.result tr th:first-child,
+	#content table.result tr td:first-child {
+		padding-left: 20px
+	}
+	#content table.result tbody tr:hover,
+	#content table.result tbody tr:target {
+		background: hsl(210, 5%, 15%);
+	}
+	
+/*---------------------------------------------------------------------------------
+	Source
+---------------------------------------------------------------------------------*/
+	
+	#source table {
+		border-spacing: 0;
+		font: 115% monospace;
+		padding: 0 0 20px 0;
+		table-layout: fixed;
+		white-space: pre-wrap;
+	}
+	#source table th {
+		vertical-align: top;
+	}
+	#source table td {
+		padding: 0 20px 0 0;
+		vertical-align: top;
+	}
+	#source table th {
+		text-align: right;
+		width: 1%;
+		vertical-align: top;
+	}
+	#source table th a {
+		color: hsl(210, 5%, 20%);
+		display: block;
+		padding: 0 10px 0 20px;
+		text-shadow: none;
+	}
+	#source table th a:hover,
+	#source table tr:hover th a,
+	#source table tr:target th a {
+		color: hsl(210, 5%, 40%);
+	}
+	#source table th,
+	#source table th * {
+		-moz-user-select: none;
+		-webkit-user-select: none;
+	}
+	
+	#source table tr:hover,
+	#source table tr:target {
+		background: hsl(210, 5%, 15%);
+	}
+	
+	/*-----------------------------------------------------------------------------
+		Markup
+	-----------------------------------------------------------------------------*/
+		
+		#source .context-markup .declaration {
+			color: hsl(0, 0%, 80%);
+		}
+		
+		#source .context-markup .tag {
+			color: hsl(0, 0%, 80%);
+		}
+		
+		#source .context-markup .attribute {
+			color: hsl(0, 0%, 80%);
+		}
+		
+		#source .context-markup .entity {
+			color: hsl(80, 50%, 80%);
+		}
+		
+		#source .context-markup .value {
+			color: hsl(210, 50%, 80%);
+		}
+		
+		/*-------------------------------------------------------------------------
+			XSL
+		-------------------------------------------------------------------------*/
+			
+			#source .context-markup.xsl .xpath {
+				color: hsl(300, 50%, 80%);
+			}
+			
+	/*------------------------------------------------------------------------------
+		Source
+	------------------------------------------------------------------------------*/
+		
+		#source .context-source .keyword {
+			color: hsl(0, 0%, 80%);
+		}
+		
+		#source .context-source .string {
+			color: hsl(210, 50%, 80%);
+		}
+		#source .context-source .string .escape {
+			color: hsl(80, 50%, 80%);
+		}
+		
+		#source .context-source .number {
+			color: hsl(40, 50%, 80%);
+		}
+		
+		#source .context-source .variable {
+			color: hsl(300, 50%, 80%);
+		}
+		
+		#source .context-source .class,
+		#source .context-source .function {
+			color: hsl(40, 50%, 80%);
+		}
+		
+		/*--------------------------------------------------------------------------
+			CSS
+		--------------------------------------------------------------------------*/
+			
+			#source .context-source.css .selector {
+				color: hsl(300, 50%, 80%);
+			}
+			
+			#source .context-source.css .property {
+				color: hsl(0, 0%, 80%);
+			}
+			
+			#source .context-source.css .color {
+				color: hsl(40, 50%, 80%);
+			}
+			
+		/*--------------------------------------------------------------------------
+			JS
+		--------------------------------------------------------------------------*/
+			
+			#source .context-source.js .object-key {
+				color: hsl(0, 0%, 80%);
+			}
+			
+			#source .context-source.js .regexp {
+				color: hsl(210, 50%, 80%);
+			}
+			#source .context-source.js .regexp .escape {
+				color: hsl(80, 50%, 80%);
+			}
+			
+		/*--------------------------------------------------------------------------
+			PHP
+		--------------------------------------------------------------------------*/
+			
+			#source .context-source.php > .start,
+			#source .context-source.php > .stop {
+				color: hsl(0, 0%, 80%);
+			}
+			
+			#source .context-source.php .comment.doc .docword {
+				color: hsl(0, 0%, 40%);
+			}
+			
+/*-------------------------------------------------------------------------------*/
