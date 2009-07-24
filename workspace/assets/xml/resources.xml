@@ -1,0 +1,936 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources section="resources">
+	<entry id="94" handle="windows-internet-explorer-7">
+		<date>2006-10-20</date>
+		<time>19:55</time>
+		<author></author>
+		<fields>
+			<title handle="windows-internet-explorer-7">Windows Internet Explorer 7</title>
+			<type handle="application">Application</type>
+			<description word-count="41"><p>Windows Internet Explorer 7 was released by Microsoft on October 18, 2006. This announcement is good step forward for standards compliant web design as many, though not all, of the issues that have plagued the aging web browser have been resolved.</p></description>
+			<site-title handle="windows-internet-explorer-7">Windows Internet Explorer 7</site-title>
+			<site-url handle="http-wwwmicrosoftcom-windows-ie-defaultmspx-mg-i">http://www.microsoft.com/windows/ie/default.mspx?mg_ID=10010</site-url>
+			<image></image>
+			<body word-count="233"><p>Those who have desired to closely follow the World Wide Web Consortium's recommendations for properly structured (XHTML) and styled (CSS) web documents have found rendering inconsistencies between several browsers on various platforms to be a major source of frustration in their work. Internet Explorer 6 has been the subject of much of that frustration, because it has not been updated since it was released 5 years ago. Much has changed in that time, but because Explorer has been the most used browser for several years by virtue of its widespread distribution as the default browser on the Windows operating system, much of the web design community has been either waiting for the update or recommending other browsers, such as <a href="http://www.mozilla.com/firefox/">FireFox</a>.</p>
+
+<p>It remains to be seen how quickly the new browser will be adopted. However, Microsoft is strongly recommending that all Windows XP users upgrade their browsers. It is widely known that there are serious security problems related to using Explorer. Understandably, Microsoft is calling Explorer 7 a <a href="http://fupeg.blogspot.com/2006/10/ie7-released-to-masses.html">critical update</a>.</p>
+
+<p>The interface has been cleaned up and sites that have been designed for standards compliant browsers are rendering very well in the updated browser. While Explorer has been able to catch up, many prefer other browsers. For Mac users, Explorer is no longer supported, so it is highly recommended that anyone using Explorer on the Mac use other standards compliant browsers, such as <a href="http://www.apple.com/macosx/features/safari/">Safari</a> or <a href="http://www.mozilla.com/firefox/">Firefox</a>.</p></body>
+			<link-title handle="wikipedia-internet-explorer">Wikipedia: Internet Explorer</link-title>
+			<link-url handle="http-enwikipediaorg-wiki-internet-explorer">http://en.wikipedia.org/wiki/Internet_Explorer</link-url>
+			<categories>
+				<item handle="web">Web</item>
+				<item handle="technology">Technology</item>
+			</categories>
+			<partner>no</partner>
+		</fields>
+		<comments count="0" spam="0"></comments>
+	</entry>
+	<entry id="93" handle="textile">
+		<date>2006-10-17</date>
+		<time>23:26</time>
+		<author></author>
+		<fields>
+			<title handle="textile">Textile</title>
+			<type handle="script">Script</type>
+			<description word-count="36"><h4>Textile: A Humane Web Text Generator.</h4>
+
+<p>Textile has been one of the many benefits of working with Textpattern as a content management system. It is a way of formatting text in <span class="caps">HTML </span>without knowing anything about <span class="caps">HTML.</span></p></description>
+			<site-title handle="textile-20-announcement">Textile 2.0 Announcement</site-title>
+			<site-url handle="http-wwwthresholdstatecom-threshold-4210-textile">http://www.thresholdstate.com/threshold/4210/textile-two-point-oh</site-url>
+			<image></image>
+			<body word-count="114"><p>It does require learning another syntax, but for the most part, it is a simpler way of doing things than using <span class="caps">HTML </span>code. The most common syntax has become part of the text messaging vocabulary: <code>*bold*</code> to display <strong>bold text</strong> and <code>_italic_</code> to display <em>italic text</em> for instance.</p>
+
+<p>Alex Shiels (zem), a member of <a href="http://textpattern.com/contributors">Textpattern's Core Development Team</a> has announced the release of Textile 2.0. Also, Threshold State, Shiel's consulting business, is offering commercial support, maintenance and regression testing services for developers who use Textile in their web applications.</p>
+
+<p>Textile can be used with <a href="/resources/application/symphony/">Symphony</a> by installing the Textile Text Formatter Campfire Service. In fact, I am using Textile to format my text throughout this site.</p></body>
+			<link-title handle="textile-a-humane-web-text-generator">Textile: A Humane Web Text Generator</link-title>
+			<link-url handle="http-textismcom-tools-textile">http://textism.com/tools/textile/</link-url>
+			<categories>
+				<item handle="web">Web</item>
+				<item handle="technology">Technology</item>
+			</categories>
+			<partner>no</partner>
+		</fields>
+		<comments count="0" spam="0"></comments>
+	</entry>
+	<entry id="92" handle="textpattern">
+		<date>2006-10-17</date>
+		<time>22:24</time>
+		<author></author>
+		<fields>
+			<title handle="textpattern">Textpattern</title>
+			<type handle="application">Application</type>
+			<description word-count="87"><p>Textpattern is a free, flexible, elegant, easy-to-use content management system for all kinds of websites, even weblogs. Many of the sites that I have developed were built with Textpattern, and it has served me and my clients very well. However, now that I have discovered <a href="http://21degrees.com.au/products/symphony/">Symphony</a>, I am finding the flexibility of Symphony to be far superior.</p>
+
+<p>Textpattern 4.04 has just been released, so it may be worth revisiting. One of the main improvements would include the release of <a href="http://thresholdstate.com/threshold/4210/textile-two-point-oh">Textile 2.0</a> as part of the core Textpattern code.</p></description>
+			<site-title handle="textpattern-open-source-cms">Textpattern: Open Source <span class="caps">CMS</span></site-title>
+			<site-url handle="http-textpatterncom">http://textpattern.com/</site-url>
+			<image></image>
+			<link-title handle="download-textpattern-404">Download Textpattern 4.04</link-title>
+			<link-url handle="http-textpatterncom-download">http://textpattern.com/download</link-url>
+			<categories>
+				<item handle="web">Web</item>
+				<item handle="technology">Technology</item>
+			</categories>
+			<partner>no</partner>
+		</fields>
+		<comments count="0" spam="0"></comments>
+	</entry>
+	<entry id="91" handle="logo-lounge">
+		<date>2006-10-13</date>
+		<time>18:36</time>
+		<author></author>
+		<fields>
+			<title handle="logo-lounge">Logo Lounge</title>
+			<type handle="website">Website</type>
+			<description word-count="43"><p>LogoLounge allows designers to share their ideas and concepts with peers and clients. As a member of LogoLounge ($100.00 annual fee), you can search through thousands of logos created by designers and firms known and unknown, as well as upload your own logos.</p></description>
+			<site-title handle="logo-lounge">Logo Lounge</site-title>
+			<site-url handle="https-wwwlogoloungecom">https://www.logolounge.com/</site-url>
+			<image></image>
+			<categories>
+				<item handle="design">Design</item>
+			</categories>
+			<partner>no</partner>
+		</fields>
+		<comments count="0" spam="0"></comments>
+	</entry>
+	<entry id="90" handle="stockxchng">
+		<date>2006-10-13</date>
+		<time>08:44</time>
+		<author></author>
+		<fields>
+			<title handle="stockxchng">stock.xchng</title>
+			<type handle="photography">Photography</type>
+			<description word-count="43"><p>The leading free stock photo site. Share your photos with fellow designers. <span class="caps">SXC </span>is a friendly community of photography addicts who generously offer their works to the public free of charge. The gallery contains over 200,000 stock photos by more than 15,000 photographers.</p></description>
+			<site-title handle="wwwsxchu">www.sxc.hu</site-title>
+			<site-url handle="http-wwwsxchu">http://www.sxc.hu/</site-url>
+			<image></image>
+			<categories>
+				<item handle="design">Design</item>
+			</categories>
+			<partner>no</partner>
+		</fields>
+		<comments count="0" spam="0"></comments>
+	</entry>
+	<entry id="89" handle="typoasis">
+		<date>2006-10-12</date>
+		<time>13:33</time>
+		<author></author>
+		<fields>
+			<title handle="typoasis">Typoasis</title>
+			<type handle="foundry">Foundry</type>
+			<description word-count="15"><p>A collection of digital revivals and original typeface designs, featuring primarily scripts of various origins.</p></description>
+			<site-title handle="moorstation-typoasis">Moorstation: Typoasis</site-title>
+			<site-url handle="http-moorstationorg-typoasis">http://moorstation.org/typoasis/</site-url>
+			<image></image>
+			<categories>
+				<item handle="design">Design</item>
+			</categories>
+			<partner>no</partner>
+		</fields>
+		<comments count="0" spam="0"></comments>
+	</entry>
+	<entry id="88" handle="design-agency-international">
+		<date>2006-10-05</date>
+		<time>10:15</time>
+		<author></author>
+		<fields>
+			<title handle="design-agency-international">Design Agency International</title>
+			<type handle="website">Website</type>
+			<description word-count="39"><p>If you are looking for someone to hire for your next design project, there is a directory of selected design companies and professionals available here. It would be interesting to know what their criteria are for making their selections.</p></description>
+			<site-title handle="design-agency-international-world-wide-design-dir">Design Agency International: World Wide Design Directory</site-title>
+			<site-url handle="http-wwwdesign-agencycom">http://www.design-agency.com/</site-url>
+			<image></image>
+			<categories>
+				<item handle="design">Design</item>
+				<item handle="web">Web</item>
+			</categories>
+			<partner>no</partner>
+		</fields>
+		<comments count="0" spam="0"></comments>
+	</entry>
+	<entry id="87" handle="quicksilver">
+		<date>2006-10-05</date>
+		<time>09:32</time>
+		<author></author>
+		<fields>
+			<title handle="quicksilver">QuickSilver</title>
+			<type handle="application">Application</type>
+			<description word-count="105"><p>Search. Command. Act without Doing.</p>
+
+<p>Quicksilver’s greatest strength, however, is not search. Any item you are able to find, drag, or otherwise pull into its universe is endowed with many potential uses. Hitting tab takes you to the action field, where you can use the same adaptive search to select what you would like to do. Among other things, files can be emailed, copied, compressed. Text can be modified, transmitted between programs, or searched for on the web. Some actions even support an indirect object, so you can send an item to a person, move files to another folder, or open files with a specific application.</p></description>
+			<site-title handle="blacktree-quicksilver">BlackTree: Quicksilver</site-title>
+			<site-url handle="http-quicksilverblacktreecom">http://quicksilver.blacktree.com/</site-url>
+			<image></image>
+			<categories></categories>
+			<partner>no</partner>
+		</fields>
+		<comments count="0" spam="0"></comments>
+	</entry>
+	<entry id="86" handle="ibiz">
+		<date>2006-10-05</date>
+		<time>09:26</time>
+		<author></author>
+		<fields>
+			<title handle="ibiz">iBiz</title>
+			<type handle="application">Application</type>
+			<description word-count="34"><p>iBiz is an easy to use time-billing and invoicing application. It integrates with iCal and Address Book, offers tax support, easily generates custom invoices and does all data saving behind the scenes for you.</p></description>
+			<site-title handle="ibiz-mac-os-x-time-tracking-and-invoicing">iBiz: Mac OS X time-tracking and invoicing</site-title>
+			<site-url handle="http-wwwiggsoftwarecom-ibiz-indexhtml">http://www.iggsoftware.com/ibiz/index.html</site-url>
+			<image></image>
+			<categories>
+				<item handle="technology">Technology</item>
+				<item handle="mac">Mac</item>
+			</categories>
+			<partner>no</partner>
+		</fields>
+		<comments count="0" spam="0"></comments>
+	</entry>
+	<entry id="85" handle="cha-ching">
+		<date>2006-10-05</date>
+		<time>09:23</time>
+		<author></author>
+		<fields>
+			<title handle="cha-ching">Cha-Ching</title>
+			<type handle="application">Application</type>
+			<description word-count="104"><p>Cha-Ching is a fun and easy to use money manager, done Mac OS X style. A tag based database lets you organize and search for your incoming and outgoing transactions your way. With Cha-Ching, you can also organize pending transactions, so you can keep track of the the cash you owe the electric company as well as the cash others might owe you — and with iCal integration, you’ll never forget a payment. Cha-Ching also offers fun little doodads you may have not expected — you can keep a photo inventory of your purchased items for insurance and tax purposes, or just for fun.</p></description>
+			<site-title handle="cha-ching">Cha-Ching</site-title>
+			<site-url handle="http-wwwchachingappcom">http://www.chachingapp.com/</site-url>
+			<image></image>
+			<categories>
+				<item handle="technology">Technology</item>
+				<item handle="mac">Mac</item>
+			</categories>
+			<partner>no</partner>
+		</fields>
+		<comments count="0" spam="0"></comments>
+	</entry>
+	<entry id="84" handle="iratchet">
+		<date>2006-10-05</date>
+		<time>09:22</time>
+		<author></author>
+		<fields>
+			<title handle="iratchet">iRatchet</title>
+			<type handle="application">Application</type>
+			<description word-count="48"><p>Ratchet is a new Tiger-only Invoicing and Billing application written in Objective-C/Cocoa. iRatchet provides the features and functionality common to billing and invoicing apps, (tracking hourly and fixed entries, multiple clients/projects, timers, pdf output, emailing of invoices, etc.), it excells in workflow, mileage tracking, web integration and ease-of-use.</p></description>
+			<site-title handle="iratchet">iRatchet</site-title>
+			<site-url handle="http-wwwprettygoodsoftwareorg-iratchet">http://www.prettygoodsoftware.org/iratchet/</site-url>
+			<image></image>
+			<categories>
+				<item handle="technology">Technology</item>
+				<item handle="mac">Mac</item>
+			</categories>
+			<partner>no</partner>
+		</fields>
+		<comments count="0" spam="0"></comments>
+	</entry>
+	<entry id="83" handle="on-the-job">
+		<date>2006-10-05</date>
+		<time>09:17</time>
+		<author></author>
+		<fields>
+			<title handle="on-the-job">On The Job</title>
+			<type handle="application">Application</type>
+			<description word-count="42"><p>On The Job is an unobtrusive, easy to use time tracker. It's not bloated with features you'll never use, yet it's powerful enough to handle all of your time tracking needs. On The Job is perfect for anyone billing by the hour.</p></description>
+			<site-title handle="on-the-job-time-tracking-with-style">On The Job: Time Tracking with Style</site-title>
+			<site-url handle="http-wwwstuntsoftwarecom-onthejob">http://www.stuntsoftware.com/OnTheJob/</site-url>
+			<image></image>
+			<link-title handle="glenn-wolsey-on-the-job-time-tracking-made-easy">Glenn Wolsey: On The Job - Time Tracking Made Easy</link-title>
+			<link-url handle="http-wwwglennwolseycom-p%3d33">http://www.glennwolsey.com/?p=33</link-url>
+			<categories>
+				<item handle="technology">Technology</item>
+				<item handle="mac">Mac</item>
+			</categories>
+			<partner>no</partner>
+		</fields>
+		<comments count="0" spam="0"></comments>
+	</entry>
+	<entry id="82" handle="cyberduck">
+		<date>2006-10-04</date>
+		<time>09:59</time>
+		<author></author>
+		<fields>
+			<title handle="cyberduck">Cyberduck</title>
+			<type handle="application">Application</type>
+			<description word-count="44"><p>Cyberduck is an open source <span class="caps">FTP </span>and <span class="caps">SFTP </span>(SSH Secure File Transfer) browser licenced under the <span class="caps">GPL </span>with an easy to use interface, integration with external editors and support for many Mac OS X system technologies such as Spotlight, Bonjour, the Keychain and AppleScript.</p></description>
+			<site-title handle="cyberduck">Cyberduck</site-title>
+			<site-url handle="http-cyberduckch">http://cyberduck.ch/</site-url>
+			<image></image>
+			<categories>
+				<item handle="web">Web</item>
+				<item handle="technology">Technology</item>
+				<item handle="mac">Mac</item>
+			</categories>
+			<partner>no</partner>
+		</fields>
+		<comments count="0" spam="0"></comments>
+	</entry>
+	<entry id="81" handle="skedit">
+		<date>2006-10-04</date>
+		<time>09:58</time>
+		<author></author>
+		<fields>
+			<title handle="skedit">skEdit</title>
+			<type handle="application">Application</type>
+			<description word-count="20"><p>skEdit is a text editor for Mac OS X (10.3 or later), with a focus on web design and development.</p></description>
+			<site-url handle="http-sktiorg">http://skti.org/</site-url>
+			<image></image>
+			<categories>
+				<item handle="web">Web</item>
+				<item handle="technology">Technology</item>
+				<item handle="mac">Mac</item>
+			</categories>
+			<partner>no</partner>
+		</fields>
+		<comments count="0" spam="0"></comments>
+	</entry>
+	<entry id="80" handle="mamp">
+		<date>2006-10-04</date>
+		<time>09:56</time>
+		<author></author>
+		<fields>
+			<title handle="mamp"><span class="caps">MAMP</span></title>
+			<type handle="application">Application</type>
+			<description word-count="48"><p>The abbreviation <span class="caps">MAMP </span>stands for: Macintosh, Apache, Mysql and <span class="caps">PHP.</span> With just a few mouse-clicks, you can install Apache, <span class="caps">PHP </span>and MySQL for Mac OS X! <span class="caps">MAMP </span>installs a local server enviroment in a matter of seconds on your Mac OS X computer, be it PowerBook or iMac.</p></description>
+			<site-title handle="mamp-macintosh-apache-mysql-and-php"><span class="caps">MAMP</span>: Macintosh Apache MySQL and <span class="caps">PHP</span></site-title>
+			<site-url handle="http-mampinfo-en-home">http://mamp.info/en/home/</site-url>
+			<image></image>
+			<categories>
+				<item handle="technology">Technology</item>
+				<item handle="mac">Mac</item>
+			</categories>
+			<partner>no</partner>
+		</fields>
+		<comments count="0" spam="0"></comments>
+	</entry>
+	<entry id="79" handle="joyent-connector">
+		<date>2006-10-04</date>
+		<time>09:51</time>
+		<author></author>
+		<fields>
+			<title handle="joyent-connector">Joyent Connector</title>
+			<type handle="application">Application</type>
+			<description word-count="35"><p>Joyent offers simple, powerful, web-based software that provides small teams with email, calendars, contacts, and shared applications.</p>
+
+<p>Joyent is also responsible for <a href="http://www.textdrive.com/">TextDrive</a> (started by <a href="http://www.textpattern.com/">Textpattern</a>'s very own <a href="http://www.textism.com/">Dean Allen</a>), <a href="http://www.strongspace.com/">Strongspace</a> and their newest offering <a href="http://www.bingodisk.com/">Bingo!</a></p></description>
+			<site-title handle="joyent">Joyent</site-title>
+			<site-url handle="http-joyentcom">http://joyent.com/</site-url>
+			<image></image>
+			<categories>
+				<item handle="web">Web</item>
+				<item handle="technology">Technology</item>
+			</categories>
+			<partner>no</partner>
+		</fields>
+		<comments count="0" spam="0"></comments>
+	</entry>
+	<entry id="78" handle="testxslt">
+		<date>2006-10-04</date>
+		<time>09:46</time>
+		<author></author>
+		<fields>
+			<title handle="testxslt">TestXSLT</title>
+			<type handle="application">Application</type>
+			<description word-count="62"><p>Marc Liyanage's free Mac OS X application for testing <span class="caps">XSLT. </span></p>
+
+<blockquote>
+TestXSLT is a small, AppleScript-able Cocoa application for experimenting with the <span class="caps">XSLT </span>and <span class="caps">XSL</span>-FO languages on Mac OS X.
+
+It uses the Sablotron, Gnome Libxslt, Saxon and Xalan-J <span class="caps">XSLT </span>processors, the <span class="caps">FOP XSL</span>-FO rendering engine, has lots of new features and a friendly user interface that makes playing around and learning <span class="caps">XSLT </span>fun.<br />
+</blockquote></description>
+			<site-title handle="entropy-textxslt">Entropy: TextXSLT</site-title>
+			<site-url handle="http-wwwentropych-software-macosx-testxslt">http://www.entropy.ch/software/macosx/#testxslt</site-url>
+			<image></image>
+			<categories>
+				<item handle="technology">Technology</item>
+				<item handle="mac">Mac</item>
+			</categories>
+			<partner>no</partner>
+		</fields>
+		<comments count="0" spam="0"></comments>
+	</entry>
+	<entry id="77" handle="inquisitor">
+		<date>2006-10-04</date>
+		<time>09:41</time>
+		<author></author>
+		<fields>
+			<title handle="inquisitor">Inquisitor</title>
+			<type handle="application">Application</type>
+			<description word-count="12"><p>A Mac OS X instant search plugin for Safari from David Watanabe.</p></description>
+			<site-title handle="inquisitor-instant-search-for-safari">Inquisitor: Instant Search for Safari</site-title>
+			<site-url handle="http-wwwinquisitorxcom-safari">http://www.inquisitorx.com/safari/</site-url>
+			<image></image>
+			<categories>
+				<item handle="technology">Technology</item>
+				<item handle="mac">Mac</item>
+			</categories>
+			<partner>no</partner>
+		</fields>
+		<comments count="0" spam="0"></comments>
+	</entry>
+	<entry id="76" handle="bitrocket">
+		<date>2006-10-04</date>
+		<time>09:34</time>
+		<author></author>
+		<fields>
+			<title handle="bitrocket">BitRocket</title>
+			<type handle="application">Application</type>
+			<description word-count="75"><p>According to Wikipedia, "BitTorrent is the name of a peer-to-peer (P2P) file distribution protocol, and is the name of a free software implementation of that protocol. The protocol was originally designed and created by programmer Bram Cohen, and is now maintained by BitTorrent Inc. BitTorrent is designed to distribute large amounts of data widely without incurring the corresponding consumption in costly server and bandwidth resources."</p>
+
+<p>BitRocket is a Mac OS X client using the BitTorrent protocol.</p></description>
+			<site-title handle="bitrocket-bittorrent-client">BitRocket: BitTorrent Client</site-title>
+			<site-url handle="http-wwwbitrocketorg">http://www.bitrocket.org/</site-url>
+			<image></image>
+			<link-title handle="bittorrent">BitTorrent</link-title>
+			<link-url handle="http-wwwbittorrentcom">http://www.bittorrent.com/</link-url>
+			<categories>
+				<item handle="technology">Technology</item>
+				<item handle="mac">Mac</item>
+			</categories>
+			<partner>no</partner>
+		</fields>
+		<comments count="0" spam="0"></comments>
+	</entry>
+	<entry id="75" handle="transmit">
+		<date>2006-10-04</date>
+		<time>09:30</time>
+		<author></author>
+		<fields>
+			<title handle="transmit">Transmit</title>
+			<type handle="application">Application</type>
+			<description word-count="69"><p><span class="caps">FTP, </span>or File Transfer Protocol, is the universal way to send, receive, and manage your files and folders using the internet. If you manage a web site, need to send a file to a friend running an <span class="caps">FTP </span>server, need to post eBay images to a image host, or download a lot of software updates, then Transmit is the perfect program for you: it makes <span class="caps">FTP </span>easy and fun!</p></description>
+			<site-title handle="panic-transmit">Panic: Transmit</site-title>
+			<site-url handle="http-wwwpaniccom-transmit">http://www.panic.com/transmit/</site-url>
+			<image></image>
+			<categories>
+				<item handle="technology">Technology</item>
+				<item handle="mac">Mac</item>
+			</categories>
+			<partner>no</partner>
+		</fields>
+		<comments count="0" spam="0"></comments>
+	</entry>
+	<entry id="74" handle="yojimbo">
+		<date>2006-10-04</date>
+		<time>09:22</time>
+		<author></author>
+		<fields>
+			<title handle="yojimbo">Yojimbo</title>
+			<type handle="application">Application</type>
+			<description word-count="63"><p><strong>Yojimbo-Your effortless, reliable information organizer for Mac OS X.</strong> Yojimbo makes keeping all the small (or even large) bits of information that pour in every day organized and accessible. It is so simple, there is no learning curve. Yojimbo’s mechanism for collecting, storing and finding information is so natural and effortless, it will change your life — without changing the way you work.</p></description>
+			<site-title handle="yojimbo-information-organizer">Yojimbo Information Organizer</site-title>
+			<site-url handle="http-wwwbarebonescom-products-yojimbo">http://www.barebones.com/products/yojimbo/</site-url>
+			<image></image>
+			<categories>
+				<item handle="technology">Technology</item>
+				<item handle="mac">Mac</item>
+			</categories>
+			<partner>no</partner>
+		</fields>
+		<comments count="0" spam="0"></comments>
+	</entry>
+	<entry id="73" handle="textmate">
+		<date>2006-10-02</date>
+		<time>08:54</time>
+		<author></author>
+		<fields>
+			<title handle="textmate">TextMate</title>
+			<type handle="application">Application</type>
+			<description word-count="36"><p>TextMate brings Apple's approach to operating systems into the world of text editors. By bridging <span class="caps">UNIX </span>underpinnings and <span class="caps">GUI,</span> TextMate cherry-picks the best of both worlds to the benefit of expert scripters and novice users alike.</p></description>
+			<site-title handle="macromates-textmate">Macromates: TextMate</site-title>
+			<site-url handle="http-macromatescom">http://macromates.com/</site-url>
+			<image></image>
+			<categories>
+				<item handle="technology">Technology</item>
+				<item handle="mac">Mac</item>
+			</categories>
+			<partner>no</partner>
+		</fields>
+		<comments count="0" spam="0"></comments>
+	</entry>
+	<entry id="71" handle="marketcircle">
+		<date>2006-09-30</date>
+		<time>08:50</time>
+		<author></author>
+		<fields>
+			<title handle="marketcircle">Marketcircle</title>
+			<type handle="website">Website</type>
+			<description word-count="43"><p>Marketcircle Inc. develops award-winning business applications for Mac OS X, including Daylite business productivity management software, and Billings, a practical time-billing and invoicing application. Incorporated in 1999, Marketcircle Inc. is located in Toronto, Canada, with offices in London, United Kingdom, and partners worldwide.</p></description>
+			<site-title handle="marketcircle">Marketcircle</site-title>
+			<site-url handle="http-marketcirclecom">http://marketcircle.com/</site-url>
+			<image></image>
+			<categories>
+				<item handle="technology">Technology</item>
+			</categories>
+			<partner>no</partner>
+		</fields>
+		<comments count="0" spam="0"></comments>
+	</entry>
+	<entry id="70" handle="edward-eliot">
+		<date>2006-09-29</date>
+		<time>14:09</time>
+		<author></author>
+		<fields>
+			<title handle="edward-eliot">Edward Eliot</title>
+			<type handle="weblog">Weblog</type>
+			<description word-count="60"><p>Web Standards, <span class="caps">PHP, HTML, CSS,</span> JavaScript and other related technologies. Ed Eliot is a web development manager for Yahoo! based in London. He is particularly interested in developing sites which adhere to modern web standards. Since working at Yahoo! He has also discovered a whole new meaning to cross browser testing. Note the recently published <a href="http://developer.yahoo.com/yui/articles/gbs/gbs.html">Yahoo! Graded Browser Support</a> document.</p></description>
+			<site-title handle="ed-eliot">Ed Eliot</site-title>
+			<site-url handle="http-wwwejeliotcom">http://www.ejeliot.com/</site-url>
+			<image></image>
+			<categories>
+				<item handle="design">Design</item>
+				<item handle="web">Web</item>
+				<item handle="technology">Technology</item>
+			</categories>
+			<partner>no</partner>
+		</fields>
+		<comments count="0" spam="0"></comments>
+	</entry>
+	<entry id="69" handle="symphony">
+		<date>2006-09-29</date>
+		<time>13:59</time>
+		<author></author>
+		<fields>
+			<title handle="symphony">Symphony</title>
+			<type handle="application">Application</type>
+			<description word-count="48"><p>Symphony is a web publishing application built in <span class="caps">PHP </span>and MySQL for building sites using web standards: <span class="caps">CSS, XHTML, XML </span>and <span class="caps">XSLT.</span> Symphony has been developed by Twentyone Degree in Brisbane, Australia. It fills a niche between open source blogging applications and enterprise content management systems and frameworks.</p></description>
+			<site-title handle="symphony-from-twentyone-degrees">Symphony from Twentyone Degrees</site-title>
+			<site-url handle="http-21degreescomau-products-symphony">http://21degrees.com.au/products/symphony/</site-url>
+			<image></image>
+			<categories>
+				<item handle="design">Design</item>
+				<item handle="web">Web</item>
+				<item handle="technology">Technology</item>
+			</categories>
+			<partner>no</partner>
+		</fields>
+		<comments count="0" spam="0"></comments>
+	</entry>
+	<entry id="68" handle="overture">
+		<date>2006-09-29</date>
+		<time>13:57</time>
+		<author></author>
+		<fields>
+			<title handle="overture">Overture</title>
+			<type handle="website">Website</type>
+			<description word-count="29"><p>The online forum for <a href="http://bauhouse.ca/resources/application/symphony/">Symphony</a> users. Learn how to use Symphony and get involved with a growing community of developers who are using web standards to build their sites.</p></description>
+			<site-title handle="overture-the-complete-resource-center-for-symphon">Overture: The Complete Resource Center for Symphony</site-title>
+			<site-url handle="http-wwwoverture21com">http://www.overture21.com/</site-url>
+			<image></image>
+			<categories>
+				<item handle="design">Design</item>
+				<item handle="web">Web</item>
+				<item handle="technology">Technology</item>
+			</categories>
+			<partner>no</partner>
+		</fields>
+		<comments count="0" spam="0"></comments>
+	</entry>
+	<entry id="67" handle="a-list-apart">
+		<date>2006-09-29</date>
+		<time>13:51</time>
+		<author></author>
+		<fields>
+			<title handle="a-list-apart">A List Apart</title>
+			<type handle="website">Website</type>
+			<description word-count="32"><p>Jefferey Zeldman's online publication "For people who make websites"?: A List Apart Magazine explores the design, development, and meaning of web content, with a special focus on web standards and best practices.</p></description>
+			<site-title handle="a-list-apart">A List Apart</site-title>
+			<site-url handle="http-wwwalistapartcom">http://www.alistapart.com/</site-url>
+			<image></image>
+			<categories>
+				<item handle="design">Design</item>
+				<item handle="web">Web</item>
+				<item handle="technology">Technology</item>
+			</categories>
+			<partner>no</partner>
+		</fields>
+		<comments count="0" spam="0"></comments>
+	</entry>
+	<entry id="66" handle="cody-lindley">
+		<date>2006-09-29</date>
+		<time>13:44</time>
+		<author></author>
+		<fields>
+			<title handle="cody-lindley">Cody Lindley</title>
+			<type handle="weblog">Weblog</type>
+			<description word-count="43"><p>Cody Lindley reflects on Web development, Web standards, <span class="caps">CSS</span>, <span class="caps">XHTML</span>, <span class="caps">CMS</span>, site optimization, <span class="caps">PHP</span>, MySQL, Macromedia Flash, accessibility, information architecture, visual design, interaction design, and information design. This core content is augmented with insights from his personal life, miscellaneous topics and professional work.</p></description>
+			<site-title handle="cody-lindley">Cody Lindley</site-title>
+			<site-url handle="http-wwwcodylindleycom">http://www.codylindley.com/</site-url>
+			<image></image>
+			<categories>
+				<item handle="design">Design</item>
+				<item handle="web">Web</item>
+				<item handle="technology">Technology</item>
+			</categories>
+			<partner>no</partner>
+		</fields>
+		<comments count="0" spam="0"></comments>
+	</entry>
+	<entry id="65" handle="thickbox">
+		<date>2006-09-29</date>
+		<time>13:38</time>
+		<author></author>
+		<fields>
+			<title handle="thickbox">ThickBox</title>
+			<type handle="script">Script</type>
+			<description word-count="39"><p>ThickBox is a webpage UI dialog widget written in JavaScript on top of the <a href="http://www.jquery.com/">jQuery</a> library. Its function is to show a single image, multiple images, inline content, iframed content, or content served through <span class="caps">AJAX </span>in a hybrid modal.</p></description>
+			<site-title handle="thickbox">ThickBox</site-title>
+			<site-url handle="http-jquerycom-demo-thickbox">http://jquery.com/demo/thickbox/</site-url>
+			<image></image>
+			<categories>
+				<item handle="web">Web</item>
+				<item handle="technology">Technology</item>
+			</categories>
+			<partner>no</partner>
+		</fields>
+		<comments count="0" spam="0"></comments>
+	</entry>
+	<entry id="64" handle="relay">
+		<date>2006-09-29</date>
+		<time>13:34</time>
+		<author></author>
+		<fields>
+			<title handle="relay">Relay</title>
+			<type handle="application">Application</type>
+			<description word-count="31"><p>Work with files on your web server as you would on your desktop. Relay allows you to:</p>
+
+
+<ul>
+<li>drag-n-drop files and folders</li>
+<li>dynamic loading file structure</li>
+<li>upload progress bar</li>
+<li>thumbnail view, including pdf</li>
+<li>multiple users &amp; accounts</li>
+</ul></description>
+			<site-title handle="relay-ajax-directory-manager">Relay: Ajax Directory Manager</site-title>
+			<site-url handle="http-ecosmearcom-relay">http://ecosmear.com/relay/</site-url>
+			<image></image>
+			<categories>
+				<item handle="web">Web</item>
+				<item handle="technology">Technology</item>
+			</categories>
+			<partner>no</partner>
+		</fields>
+		<comments count="0" spam="0"></comments>
+	</entry>
+	<entry id="63" handle="web-20-logos">
+		<date>2006-09-25</date>
+		<time>08:59</time>
+		<author></author>
+		<fields>
+			<title handle="web-20-logos">Web 2.0 Logos</title>
+			<type handle="article">Article</type>
+			<description word-count="27"><p>Jonas Therkildsen has collected a full page of Web 2.0 logos, and assembled them into a collage representing the latest trend in web design and application development.</p></description>
+			<site-title handle="a-collection-of-web-20-logos">A collection of Web 2.0 Logos</site-title>
+			<site-url handle="http-wwwflickrcom-photos-jonastherkildsen-122881">http://www.flickr.com/photos/jonastherkildsen/122881874/</site-url>
+			<image></image>
+			<categories>
+				<item handle="design">Design</item>
+				<item handle="web">Web</item>
+				<item handle="technology">Technology</item>
+			</categories>
+			<partner>no</partner>
+		</fields>
+		<comments count="0" spam="0"></comments>
+	</entry>
+	<entry id="62" handle="freecsscart">
+		<date>2006-09-24</date>
+		<time>23:04</time>
+		<author></author>
+		<fields>
+			<title handle="freecsscart">freeCSScart</title>
+			<type handle="application">Application</type>
+			<description word-count="26"><p>The e-commerce side of the web 2.0 experience has been severely lacking, so a team has been put together to address this problem. What is freeCSScart?</p></description>
+			<site-title handle="freecsscart">freeCSScart</site-title>
+			<site-url handle="http-wwwfreecsscartcom-indexphp-about-freecsscar">http://www.freecsscart.com/index.php/about-freecsscart/</site-url>
+			<image></image>
+			<body word-count="86"><blockquote><p>Imagine the ability to make a shopping-cart look the way you want. No, not just be able change the background color of a table, but completely change the form and function of a shopping cart with a switch of your css file. Now imagine that it is utilizing 100% <span class="caps">CSS2 </span>and xhtml standards. Then, imagine that you could set-up and fully customize this shopping cart in a matter of hours. Finally, imagine that it was Free! This will no longer be just an object of imagination.</p></blockquote></body>
+			<categories>
+				<item handle="web">Web</item>
+				<item handle="technology">Technology</item>
+			</categories>
+			<partner>no</partner>
+		</fields>
+		<comments count="0" spam="0"></comments>
+	</entry>
+	<entry id="61" handle="flow">
+		<date>2006-09-24</date>
+		<time>23:02</time>
+		<author></author>
+		<fields>
+			<title handle="flow">Flow</title>
+			<type handle="application">Application</type>
+			<description word-count="24"><p>Mark Boulton has been writing about <a href="http://www.markboulton.co.uk/journal/comments/sorting_my_workflow_out/">managing work flow</a>, and thinking about cash flow, and a <a href="http://www.markboulton.co.uk/journal/comments/flow_a_money_manager_for_freelancers_and_small_businesses/">new application</a> that he has been working on.</p></description>
+			<site-title handle="flow">Flow</site-title>
+			<site-url handle="http-wwwgetflowingcom">http://www.getflowing.com/</site-url>
+			<image></image>
+			<body word-count="68"><p>I have been in search of an application such as this, and I began to wonder whether something like this might be possible with Symphony from Twentyone Degrees. Mark had built an application using Expression Engine, but decided to develop the application further. It appears that <a href="http://www.keeran.com/2006/08/25/simple-money-management-for-freelancers-and-small-businesses/">Keeran</a> has joined in this endeavour and is very likely building this application in Ruby on Rails. News should be appearing soon.</p></body>
+			<categories>
+				<item handle="design">Design</item>
+				<item handle="technology">Technology</item>
+			</categories>
+			<partner>no</partner>
+		</fields>
+		<comments count="0" spam="0"></comments>
+	</entry>
+	<entry id="60" handle="shorty">
+		<date>2006-09-24</date>
+		<time>23:01</time>
+		<author></author>
+		<fields>
+			<title handle="shorty">Shorty</title>
+			<type handle="application">Application</type>
+			<description word-count="19"><p>Khoi Vinh has been working on a project called <a href="http://www.get-shorty.com/">Shorty</a> that takes ridiculously long URLs and creates short aliases.</p></description>
+			<site-title handle="get-shorty">Get Shorty</site-title>
+			<site-url handle="http-wwwget-shortycom">http://www.get-shorty.com/</site-url>
+			<image></image>
+			<body word-count="54"><p>According to Khoi:</p>
+
+<blockquote>
+<p>The critical difference between Shorty and TinyURL is that Shorty resides on your server. You install it (all you need is a MySQL database and <span class="caps">PHP</span>) and you then have the power of TinyURL and its ilk, but rather than being tied to a third party, it’s a part of your brand.</p>
+</blockquote></body>
+			<link-title handle="subtraction-announcing-shorty">Subtraction: Announcing Shorty</link-title>
+			<link-url handle="http-wwwsubtractioncom-archives-2006-0824-announ">http://www.subtraction.com/archives/2006/0824_announcing_s.php</link-url>
+			<categories>
+				<item handle="web">Web</item>
+				<item handle="technology">Technology</item>
+			</categories>
+			<partner>no</partner>
+		</fields>
+		<comments count="0" spam="0"></comments>
+	</entry>
+	<entry id="58" handle="css-zen-garden">
+		<date>2006-09-24</date>
+		<time>22:50</time>
+		<author></author>
+		<fields>
+			<title handle="css-zen-garden"><span class="caps">CSS</span> Zen Garden</title>
+			<type handle="website">Website</type>
+			<description word-count="54"><p>The site that started it all for me: <span class="caps">XHTML, CSS,</span> Web Standards and the beauty of the separation of structure and presentation. The site was created by a good Canadian kid, Dave Shea of <a href="http://www.mezzoblue.com/">mezzoblue</a>. The site has been such a phenomenon that it also has a companion book: The Zen of <span class="caps">CSS</span> Design.</p></description>
+			<site-title handle="css-zen-garden"><span class="caps">CSS</span> Zen Garden</site-title>
+			<site-url handle="http-wwwcsszengardencom">http://www.csszengarden.com/</site-url>
+			<image></image>
+			<categories>
+				<item handle="web">Web</item>
+				<item handle="technology">Technology</item>
+			</categories>
+			<partner>no</partner>
+		</fields>
+		<comments count="0" spam="0"></comments>
+	</entry>
+	<entry id="57" handle="mark-boulton">
+		<date>2006-09-24</date>
+		<time>22:48</time>
+		<author></author>
+		<fields>
+			<title handle="mark-boulton">Mark Boulton</title>
+			<type handle="weblog">Weblog</type>
+			<description word-count="33"><p>This is primarily designed to be a portfolio presence for Mark Boulton, who lives near and works in the capital of Wales, Cardiff. He publishes articles related to typography, design, and information architecture.</p></description>
+			<site-title handle="mark-boulton">Mark Boulton</site-title>
+			<site-url handle="http-wwwmarkboultoncouk">http://www.markboulton.co.uk/</site-url>
+			<image></image>
+			<categories>
+				<item handle="design">Design</item>
+				<item handle="web">Web</item>
+				<item handle="technology">Technology</item>
+			</categories>
+			<partner>no</partner>
+		</fields>
+		<comments count="0" spam="0"></comments>
+	</entry>
+	<entry id="56" handle="getting-real-with-jason-fried">
+		<date>2006-09-24</date>
+		<time>22:47</time>
+		<author></author>
+		<fields>
+			<title handle="getting-real-with-jason-fried">Getting Real with Jason Fried</title>
+			<type handle="article">Article</type>
+			<description word-count="60"><p>Khoi Vinh, Design Director for <span class="caps">NYT</span>imes.com, and author of Subtraction, his personal weblog, has contributed to the Adobe Designer Center Think Tank, writing about the approach of Jason Fried, president of 37 signals. 37 signals has carved out a place on the web as a creator of paradigm shifting applications developed in Ruby on Rails including Basecamp, Backpack, and Campfire.</p></description>
+			<site-title handle="getting-real-an-interview-with-jason-fried">Getting Real: An interview with Jason Fried</site-title>
+			<site-url handle="http-wwwadobecom-designcenter-thinktank-gettingr">http://www.adobe.com/designcenter/thinktank/gettingreal/</site-url>
+			<image></image>
+			<link-title handle="khoi-vinh-subtraction">Khoi Vinh: Subtraction</link-title>
+			<link-url handle="http-wwwsubtractioncom">http://www.subtraction.com/</link-url>
+			<categories>
+				<item handle="web">Web</item>
+				<item handle="technology">Technology</item>
+			</categories>
+			<partner>no</partner>
+		</fields>
+		<comments count="0" spam="0"></comments>
+	</entry>
+	<entry id="55" handle="crazy-egg">
+		<date>2006-09-24</date>
+		<time>22:43</time>
+		<author></author>
+		<fields>
+			<title handle="crazy-egg">Crazy Egg</title>
+			<type handle="application">Application</type>
+			<description word-count="70"><p><strong>Visualize your visitors.</strong> Track, Evaluate and Improve your site: Get a clear picture of where your visitors are clicking and enhance your site's results. This tool offers a few ways to see what people are interested in: </p>
+
+
+<ul>
+<li>Overlay: Get the details on each individual element - how many times a link is clicked.</li>
+<li>List: View a full summary of raw click data</li>
+<li>Heat Map: See what's hot and what's not on your site</li>
+</ul></description>
+			<site-title handle="crazy-egg">Crazy Egg</site-title>
+			<site-url handle="http-wwwcrazyeggcom">http://www.crazyegg.com/</site-url>
+			<image></image>
+			<categories>
+				<item handle="web">Web</item>
+				<item handle="technology">Technology</item>
+			</categories>
+			<partner>no</partner>
+		</fields>
+		<comments count="0" spam="0"></comments>
+	</entry>
+	<entry id="54" handle="domain7">
+		<date>2006-09-24</date>
+		<time>22:41</time>
+		<author></author>
+		<fields>
+			<title handle="domain7">Domain7</title>
+			<type handle="web-solutions">Web Solutions</type>
+			<description word-count="80"><p>Domain7 provides a complete range of web solutions &amp; services, from site design to site hosting, large online system development to pre-built web management tools.</p>
+
+<p>RouteOne is a technology infrastructure built to help companies and organizations with their web initiatives. RouteOne tools provide a broad array of "snap together" modules for managing just about any web need - from web store-fronts to large corporate Intranets and everything in between. Based on this design, you can enjoy rapid deployments of custom web solutions.</p></description>
+			<site-title handle="domain7">Domain7</site-title>
+			<site-url handle="http-wwwdomain7com">http://www.domain7.com/</site-url>
+			<image></image>
+			<link-title handle="routeone">RouteOne</link-title>
+			<link-url handle="http-wwwdomain7com-action%3dview-catalog-group-na">http://www.domain7.com/?action=view_catalog&amp;Group_Name=Products</link-url>
+			<categories>
+				<item handle="design">Design</item>
+				<item handle="web">Web</item>
+				<item handle="technology">Technology</item>
+			</categories>
+			<partner>yes</partner>
+		</fields>
+		<comments count="0" spam="0"></comments>
+	</entry>
+	<entry id="53" handle="globe-printers">
+		<date>2006-09-24</date>
+		<time>22:36</time>
+		<author></author>
+		<fields>
+			<title handle="globe-printers">Globe Printers</title>
+			<type handle="printer">Printer</type>
+			<description word-count="67"><p>With a total of 12 printing machines at their disposal, they are capable of handling almost any project, small or large. Their pressroom is made up of 95% quality Heidelberg printing machines. If they cannot accommodate a project in-house, they will outsource the project for you, take care of all the details and deliver on time quality printed project. I trust Globe Printers with all my printing.</p></description>
+			<site-title handle="globe-printers">Globe Printers</site-title>
+			<site-url handle="http-wwwglobeprinterscom">http://www.globeprinters.com/</site-url>
+			<image></image>
+			<categories></categories>
+			<partner>yes</partner>
+		</fields>
+		<comments count="0" spam="0"></comments>
+	</entry>
+	<entry id="26" handle="veer">
+		<date>2006-09-24</date>
+		<time>01:08</time>
+		<author></author>
+		<fields>
+			<title handle="veer">Veer</title>
+			<type handle="photography">Photography</type>
+			<description word-count="41"><p><strong>Visual Elements for Creatives.</strong> A website dedicated to the needs of designers, and they are many and expensive. Veer makes them look beautiful, affordable and desirable: photography, illustration, type, motion graphics and clips, and other merchandise and ideas for creative types.</p></description>
+			<site-title handle="veer">Veer</site-title>
+			<site-url handle="http-wwwveercom">http://www.veer.com/</site-url>
+			<image></image>
+			<categories>
+				<item handle="design">Design</item>
+			</categories>
+			<partner>no</partner>
+		</fields>
+		<comments count="0" spam="0"></comments>
+	</entry>
+	<entry id="25" handle="istockphoto">
+		<date>2006-09-24</date>
+		<time>01:06</time>
+		<author></author>
+		<fields>
+			<title handle="istockphoto">iStockphoto</title>
+			<type handle="photography">Photography</type>
+			<description word-count="53"><p>For inexpensive stock photography and illustration, there is no better source on the web. Getty Images now owns them, but things appear to be the same as before, and all is still well. For highly specific subject matter, iStockphoto may not be the best source, but for sheer affordability, it's hard to beat.</p></description>
+			<site-title handle="istockphoto">iStockphoto</site-title>
+			<site-url handle="http-wwwistockphotocom">http://www.istockphoto.com/</site-url>
+			<image></image>
+			<categories>
+				<item handle="design">Design</item>
+			</categories>
+			<partner>no</partner>
+		</fields>
+		<comments count="0" spam="0"></comments>
+	</entry>
+	<entry id="27" handle="release-core-fonts">
+		<date>2006-09-20</date>
+		<time>08:00</time>
+		<author></author>
+		<fields>
+			<title handle="release-core-fonts">Release Core Fonts</title>
+			<type handle="article">Article</type>
+			<description word-count="30"><p>On Khoi Vinh's site, <a href="http://www.subtraction.com/">Subtraction</a>, one post ranked high on his list of things Elsewhere: an open letter to John Warnock written by Andrei Michael Herasimchuk at <a href="http://www.designbyfire.com/">Design by Fire</a>.</p></description>
+			<site-title handle="design-by-fire">Design by Fire</site-title>
+			<site-url handle="http-wwwdesignbyfirecom-p%3d30">http://www.designbyfire.com/?p=30</site-url>
+			<image></image>
+			<body word-count="368"><p>Andrei, with all due respect, invites Mr. Warnock of <a href="http://www.adobe.com/aboutadobe/pressroom/executivebios/johnwarnock.html">Adobe Systems</a> to release a number of core fonts to the public domain to rescue the web from "the likes of Arial". I would certainly welcome this possibility, as the limits of publishing on the web have moved some designers to adopt proprietary technologies, such as Flash, to overcome the dearth of high quality typefaces that are universally available for use on the web.</p>
+
+<h4>Arial Under Fire</h4>
+
+<p>Poor Arial gets little respect, even though the intention of the designers, <a href="http://www.monotypefonts.com/Foundry/DesignerProfiles.asp?show=nicholas">Robin Nicholas</a> and Patricia Saunders, was never to replace Helvetica, but to provide a contemporary sans serif design for Apple Computer's, at the time (1990), new <a href="http://en.wikipedia.org/wiki/TrueType">TrueType</a> font format.</p>
+
+<p>While every PostScript printer generally ships with support for a core set of fonts, not every printer is a PostScript printer. Operating systems also ship with their own core set of fonts. Microsoft chose to bypass higher type licensing costs by commissioning their own fonts to ship with their Windows operating system, Arial being one of those fonts. <a href="http://en.wikipedia.org/wiki/Arial">Arial</a> has since been the topic of much controversy because of the lack of copyright protection on type designs and what is considered the indiscriminate theft of designs through the proliferation of fonts that mimick or duplicate the original designs. Arial has come under fire for being one of these fonts.</p>
+
+<p>MacUser published an article, Twenty/20 in their July 2005 edition, (<a href="http://www.fontwise.com/PDFs/Twenty20_080705.pdf">available as a <span class="caps">PDF </span>file</a> from www.fontwise.com)regarding the poor reputation of Arial, in effect coming to its defense as a legitimate and unique type design. The similarity in the widths of the glyphs does, however, raise suspicion as to Microsoft's intention to replace Helvetica. More than likely, it is Microsoft's mere involvement that raises the most suspicion.</p>
+
+<h4>A Presumption of Generosity</h4>
+
+<p>If we cannot presume upon the generosity of John Warnock I have wondered whether there may be a groundswell of support for the development of an opensource typeface design. Yet, I can't imagine how designers would be able to agree on what might be the best design direction for such a project. Also, the likelyhood that designers would scramble to work on a project for which there would be no possibility for remuneration is slim to none.</p></body>
+			<link-title handle="open-letter-to-john-warnock">Open Letter to John Warnock</link-title>
+			<link-url handle="http-wwwdesignbyfirecom-p%3d30">http://www.designbyfire.com/?p=30</link-url>
+			<categories>
+				<item handle="design">Design</item>
+				<item handle="web">Web</item>
+				<item handle="technology">Technology</item>
+			</categories>
+			<partner>no</partner>
+		</fields>
+		<comments count="0" spam="0"></comments>
+	</entry>
+	<entry id="24" handle="getty-images">
+		<date>2006-09-20</date>
+		<time>00:47</time>
+		<author></author>
+		<fields>
+			<title handle="getty-images">Getty Images</title>
+			<type handle="photography">Photography</type>
+			<description word-count="49"><p>First there was PhotoDisc, then there was Getty Images. The two became one and bought up as much as they could. They are still considered the premier resource for stock photography, both royalty-free and rights-managed. Expect to pay a premium for these images, especially if you choose rights-managed imagery.</p></description>
+			<site-title handle="getty-images">Getty Images</site-title>
+			<site-url handle="http-wwwgettyimagescom">http://www.gettyimages.com/</site-url>
+			<image></image>
+			<categories>
+				<item handle="design">Design</item>
+			</categories>
+			<partner>no</partner>
+		</fields>
+		<comments count="0" spam="0"></comments>
+	</entry>
+	<entry id="59" handle="subtraction">
+		<date>2006-09-19</date>
+		<time>22:59</time>
+		<author></author>
+		<fields>
+			<title handle="subtraction">Subtraction</title>
+			<type handle="weblog">Weblog</type>
+			<description word-count="58"><p>Subtraction is the personal website of Khoi Vinh, a co-founder and, as of 31 Dec 2005, a former employee of <a href="http://www.behaviordesign.com/">Behavior</a>, a leading interaction design studio in New York City. He now works as the Design Director of <a href="http://www.nytimes.com/"><span class="caps">NYT</span>imes.com</a>. He has also been working on a project called <a href="http://www.get-shorty.com/">Shorty</a> that takes ridiculously long <span class="caps">URL</span>s and creates short aliases.</p></description>
+			<site-title handle="subtraction">Subtraction</site-title>
+			<site-url handle="http-wwwsubtractioncom">http://www.subtraction.com/</site-url>
+			<image></image>
+			<categories>
+				<item handle="design">Design</item>
+			</categories>
+			<partner>no</partner>
+		</fields>
+		<comments count="0" spam="0"></comments>
+	</entry>
+</resources>
