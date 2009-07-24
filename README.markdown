@@ -2,7 +2,7 @@
 
 - Author: Stephen Bau
 - Version: 0.1
-- Date: 14 July 2009
+- Date: 23 July 2009
 - Github Repository: <http://github.com/bauhouse/sym-bauhouse>
 
 ## Overview
@@ -13,66 +13,64 @@ It's about time I updated my site. It might need a design refresh, but I still l
 
 Visit the old site at <http://bauhouse.ca/>
 
-## Installation
+## Built with Symphony CMS
 
-### Note: This is a work in progress
+- Version: GitHub integration branch
+- Date: 23 July 2009
+- Github Repository: <http://github.com/symphony/symphony-2/tree/60abb8552a59e018e9dd7d1dc0a3f01ffe109e81>
 
-It is best to install this ensemble with Git, but you can also install this ensemble by downloading a copy of Symphony 2.0.4 and each of the required extensions and this workspace. 
 
-### Installing with Git
+### Synopsis
 
-1. Clone a copy of Symphony 2.0.4 and rename the directory:
+Symphony is a `PHP` & `MySQL` based CMS that utilises `XML` and `XSLT` as its core 
+technologies. This repository represents version 2.0.4 and is considered stable.
 
-		git clone git://github.com/symphony/symphony-2.git
+Visit the forum at <http://symphony-cms.com/forum/>
 
-2. Rename the `symphony-2` directory:
 
-		mv symphony-2 bauhouse
-		cd bauhouse
-		
-3. Initialize the submodules for the default extensions:
+## INSTALLING
 
-		git submodule init
-		git submodule update
+### Via GitHub: Clone or Download
 
-4. Clone the required extensions as submodules:
+1. Clone the git repository to the location you desire using:
 
-		cd extensions
-		git clone git://github.com/carsten/collapse_sectionfields.git
-		git clone git://github.com/pointybeard/content_type_mappings.git
-		git clone git://github.com/czheng/enhancedtaglist.git
-		git clone git://github.com/bauhouse/export_install_file.git
-		git clone git://github.com/carsten/globalparamloader.git
-		git clone git://github.com/rowan-lewis/globalresourceloader.git
-		git clone git://github.com/ahwayakchih/markitup.git
-		git clone git://github.com/pointybeard/numberfield.git
-		git clone git://github.com/nickdunn/order_entries.git
-		git clone git://github.com/pointybeard/pagesfield.git
-		git clone git://github.com/nickdunn/publishfiltering.git
-		git clone git://github.com/rowan-lewis/logsdevkit.git
-		git clone git://github.com/nickdunn/entity_diagram.git
-		git clone git://github.com/czheng/referencelink.git
-		git clone git://github.com/rowan-lewis/reflectionfield.git
-		git clone git://github.com/nickdunn/section_schemas.git
-
-5. Clone the Symphony workspace for Bauhouse:
-
-		cd ..
 		git clone git://github.com/bauhouse/sym-bauhouse.git
+		
+	No need for submodules. This is a complete ensemble with all extensions included.
+	
+	Or download the file from this link: 
+		
+2. This step assumes you downloaded a zip archive from the [Symphony website](http://symphony21.com). 
+Upload the following files and directories to the root directory of your website:
 
-6. Rename the `sym-bauhouse` directory as `workspace`:
+	- index.php
+	- install.php
+	- /symphony
+	- /workspace
+	- /extensions
 
-		mv sym-bauhouse workspace
+3. Point your web browser at <http://yourwebsite.com/install.php> and provide
+details for establishing a database connection and about your server environment.
 
-7. Set permissions to allow Symphony to write files to the server:
+4. Jump with both arms up like you're in a car commercial!
 
+
+## SECURITY
+
+**Secure Production Sites: Change permissions and remove installer files.**
+
+1. For a smooth install process, change permissions for the `root`, `symphony` and `workspace` directories.
+
+		cd /your/site/root
 		chmod 777 symphony .
 		chmod -R 777 workspace
 
-8. Be sure to have an empty database ready for Symphony (or use a different table prefix). Navigate to the root of the install and provide your preferences, server configuration details and primary user information and click the "Install" button to install Symphony 2 and the Bauhouse ensemble.
-
-9. Secure the site by changing permissions for the root and symphony directories.
+2. Once successfully installed, change permissions as per your server preferences:
 
 		chmod 755 symphony .
 
-10. Enjoy seeing the world in black, white, grey and a touch of red!
+3. Remove installer files (unless you're fine with revealing all your trade secrets):
+
+		rm install.php install.sql workspace/install.sql update.php
+
+4. Dance like it's 1999!
