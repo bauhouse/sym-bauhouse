@@ -12,7 +12,7 @@
 			<div class="sectionimage">
 				<xsl:choose>
 					<xsl:when test="$entry">
-						<xsl:for-each select="portfolio/entry[title/@handle = $entry]">
+						<xsl:for-each select="portfolio-by-media/entry[title/@handle = $entry]">
 							<img src="{$workspace}{image/@path}/{image/filename}" alt="{title}" />
 						</xsl:for-each>
 					</xsl:when>
@@ -24,8 +24,7 @@
 				</xsl:choose>
 			</div><!-- END sectionimage -->
 			<div class="section_thumbs">
-				<xsl:for-each select="portfolio/entry[thumbnail/filename != ''][media/item/@handle = $current-page][position() &lt;= 16]">
-					<xsl:sort select="created" order="descending"/>
+				<xsl:for-each select="portfolio-by-media/entry[thumbnail/filename != '']">
 					<a href="{$root}/{$root-page}/{$current-page}/{title/@handle}/" title="{title}">
 						<xsl:if test="title/@handle = $entry"><xsl:attribute name="class">current</xsl:attribute></xsl:if>
 						<img class="thumb_off" src="{$workspace}{thumbnail-off/@path}/{thumbnail-off/filename}" width="53" height="53" alt="{title}" />
@@ -51,7 +50,7 @@
 	<div class="middle">
 		<div class="box_content">
 			<div class="content content_1col">
-				<xsl:for-each select="portfolio/entry[title/@handle = $entry]">
+				<xsl:for-each select="portfolio-by-media/entry[title/@handle = $entry]">
 					<div class="entry">
 						<p class="entry_data">Created<xsl:text> </xsl:text>
 							<xsl:call-template name="format-date">
@@ -106,6 +105,46 @@
 			</div><!-- END content -->
 		</div><!-- END box_content -->
 	</div><!-- END middle -->
+</xsl:template>
+
+<xsl:template name="design-previous-next-links">
+	<xsl:choose>
+		<xsl:when test="$entry">
+			<xsl:for-each select="/data/portfolio-by-media/entry[title/@handle = $entry]">
+				<xsl:choose>
+					<xsl:when test="./following-sibling::entry[1]">
+						<li class="right"><a href="{$root}/{$root-page}/{$current-page}/{./following-sibling::entry[1]/title/@handle}/">Next</a></li>
+					</xsl:when>
+					<xsl:otherwise>
+						<li class="right"><a href="{$root}/{$root-page}/{/data/next-section/entry/title/@handle}/">Next</a></li>
+					</xsl:otherwise>
+				</xsl:choose>
+				<xsl:choose>
+					<xsl:when test="./preceding-sibling::entry[1]">
+						<li class="right"><a href="{$root}/{$root-page}/{$current-page}/{./preceding-sibling::entry[1]/title/@handle}/">Previous</a></li>
+					</xsl:when>
+					<xsl:otherwise>
+						<li class="right"><a href="{$root}/{$root-page}/{$current-page}/">Previous</a></li>
+					</xsl:otherwise>
+				</xsl:choose>
+			</xsl:for-each>
+		</xsl:when>
+		<xsl:when test="/data/portfolio-by-media/entry">
+			<xsl:for-each select="/data/portfolio-by-media/entry[thumbnail/filename != ''][1]">
+				<li class="right"><a href="{$root}/{$root-page}/{$current-page}/{title/@handle}/" title="{title}">Next</a></li>
+				<xsl:if test="/data/previous-section/entry">
+					<li class="right">
+						<xsl:call-template name="previous-link">
+							<xsl:with-param name="title" select="'Previous'"/>
+						</xsl:call-template>
+					</li>
+				</xsl:if>
+			</xsl:for-each>
+		</xsl:when>
+		<xsl:otherwise>
+			<xsl:call-template name="section-previous-next-links" />
+		</xsl:otherwise>
+	</xsl:choose>
 </xsl:template>
 
 </xsl:stylesheet>

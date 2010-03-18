@@ -10,16 +10,19 @@
 		public $dsParamREDIRECTONEMPTY = 'no';
 		public $dsParamSORT = 'system:id';
 		public $dsParamSTARTPAGE = '1';
+		public $dsParamASSOCIATEDENTRYCOUNTS = 'yes';
 		
 		public $dsParamFILTERS = array(
 				'33' => 'yes',
+				'31' => '{$category}',
 		);
 		
 		public $dsParamINCLUDEDELEMENTS = array(
 				'title',
 				'type',
 				'url',
-				'description'
+				'description: formatted',
+				'category'
 		);
 
 		public function __construct(&$parent, $env=NULL, $process_params=true){
@@ -32,10 +35,10 @@
 					 'name' => 'Resources',
 					 'author' => array(
 							'name' => 'Stephen Bau',
-							'website' => 'http://home/bauhouse/www',
+							'website' => 'http://home/bauhouse-207',
 							'email' => 'bauhouse@gmail.com'),
 					 'version' => '1.0',
-					 'release-date' => '2009-07-23T13:37:11+00:00');	
+					 'release-date' => '2010-02-27T20:09:11+00:00');	
 		}
 		
 		public function getSource(){
@@ -46,12 +49,17 @@
 			return true;
 		}
 		
-		public function grab(&$param_pool){
+		public function grab(&$param_pool=NULL){
 			$result = new XMLElement($this->dsParamROOTELEMENT);
 				
 			try{
 				include(TOOLKIT . '/data-sources/datasource.section.php');
 			}
+			catch(FrontendPageNotFoundException $e){
+				// Work around. This ensures the 404 page is displayed and
+				// is not picked up by the default catch() statement below
+				FrontendPageNotFoundExceptionHandler::render($e);
+			}			
 			catch(Exception $e){
 				$result->appendChild(new XMLElement('error', $e->getMessage()));
 				return $result;

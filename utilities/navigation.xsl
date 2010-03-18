@@ -42,6 +42,18 @@
 </xsl:template>
 
 <xsl:template name="previous-next-links">
+	<xsl:choose>
+		<xsl:when test="$current-page = 'category' or $current-page = 'archive'"></xsl:when>
+		<xsl:when test="$parent-path = '/design'">
+			<xsl:call-template name="design-previous-next-links" />
+		</xsl:when>
+		<xsl:otherwise>
+			<xsl:call-template name="section-previous-next-links" />
+		</xsl:otherwise>
+	</xsl:choose>
+</xsl:template>
+
+<xsl:template name="section-previous-next-links">
 	<li class="right">
 		<xsl:choose>
 			<xsl:when test="/data/next-section/entry">

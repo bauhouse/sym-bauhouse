@@ -9,6 +9,7 @@
 <xsl:import href="../utilities/sections.xsl"/>
 <xsl:import href="../utilities/list-archive-months.xsl"/>
 <xsl:import href="../utilities/about-link.xsl"/>
+<xsl:import href="../utilities/format-relative-urls.xsl"/>
 
 <xsl:template match="data">
 	<xsl:call-template name="section-image"/>
@@ -28,28 +29,16 @@
 								</p>
 								<div class="entry_body">
 									<h2><a href="{$root}/journal/{title/@handle}/"><xsl:value-of select="title"/></a></h2>
-									<xsl:copy-of select="body/*"/>
-									<xsl:if test="@handle = $entry">
-										<xsl:if test="photo/item">
+									<xsl:apply-templates select="description/*" mode="html"/>
+									<xsl:if test="title/@handle = $entry">
+										<xsl:if test="images/item">
 											<div class="image-block">
-												<xsl:apply-templates select="photo/item"/>
+												<xsl:apply-templates select="images/item"/>
 											</div>
 										</xsl:if>
-										<xsl:copy-of select="description/*"/>
-										<xsl:copy-of select="body/*"/>
+										<xsl:apply-templates select="body/*" mode="html"/>
 									</xsl:if>
-									<p class="entry_info">Filed Under: <xsl:apply-templates select="categories/item"/></p>
-									<p class="entry_info">Total Number of Words: 
-										<xsl:choose>
-											<xsl:when test="(more/@word-count)">
-												<xsl:value-of select="number(body/@word-count) + 
-											number(more/@word-count)"/>
-											</xsl:when>
-											<xsl:otherwise>
-												<xsl:value-of select="number(body/@word-count)"/>
-											</xsl:otherwise>
-										</xsl:choose>
-									</p>
+									<p class="entry_info">Filed Under: <xsl:apply-templates select="category/item"/></p>
 								</div><!-- END entry_body -->
 							</div><!-- END entry -->
 						</xsl:for-each>
@@ -64,27 +53,16 @@
 										<p class="entry_data">
 											<xsl:call-template name="format-date">
 												<xsl:with-param name="date" select="date"/>
-												<xsl:with-param name="format" select="'x M Y'"/>
+												<xsl:with-param name="format" select="'x m Y'"/>
 											</xsl:call-template>
 										</p>
 										<div class="entry_body">
 											<h2><a href="{$root}/journal/{title/@handle}/"><xsl:value-of select="title"/></a></h2>
-											<xsl:copy-of select="description/*"/>
+											<xsl:apply-templates select="description/*" mode="html"/>
 											<p class="entry_info">
 												<a href="{$root}/journal/{title/@handle}/">Read More</a>
 											</p>
-											<p class="entry_info">Filed Under: <xsl:apply-templates select="categories/item"/></p>
-											<p class="entry_info">Total Number of Words: 
-												<xsl:choose>
-													<xsl:when test="(more/@word-count)">
-														<xsl:value-of select="number(body/@word-count) + 
-														number(more/@word-count)"/>
-													</xsl:when>
-													<xsl:otherwise>
-														<xsl:value-of select="number(body/@word-count)"/>
-													</xsl:otherwise>
-												</xsl:choose>
-											</p>
+											<p class="entry_info">Filed Under: <xsl:apply-templates select="category/item"/></p>
 										</div><!-- END entry_body -->
 									</div><!-- END entry -->
 								</xsl:for-each>
@@ -107,6 +85,22 @@
 			</xsl:choose>
 		</div><!-- END #box_content -->
 	</div><!-- END #middle -->
+</xsl:template>
+
+<xsl:template match="images/item">
+	<xsl:param name="image-id" select="@id"/>
+	<xsl:for-each select="/data/entry-images/entry[@id = $image-id]">
+		<a href="{$workspace}{image/@path}/{image/filename}"><img src="{$root}/image/1/85/0{image/@path}/{image/filename}" alt="{title}"/></a>
+	</xsl:for-each>
+</xsl:template>
+
+<xsl:template match="category/item">
+	<a href="{$root}/{$root-page}/category/{@handle}/"><xsl:value-of select="."/></a>
+</xsl:template>
+
+<xsl:template match="categories/item">
+	<xsl:value-of select="."/>
+	<xsl:if test="position() != last()">, </xsl:if>
 </xsl:template>
 
 </xsl:stylesheet>

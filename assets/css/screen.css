@@ -46,6 +46,18 @@ a, img {
 	border:none;
 }
 
+
+/* code
+----------------------------------------------- */
+pre {
+	white-space:normal;
+}
+pre code {
+	display:block;
+	white-space:pre;
+}
+
+
 /* image replacement
 ----------------------------------------------- */
 em.ir, strong.ir {
@@ -502,12 +514,12 @@ em.ir, strong.ir {
 	height:107px;
 	}
 .content_thumbs a img {
-	display: block;
+	display: none;
 	}
 .content_thumbs a:hover {
 	background: #fff;
 	}
-.content_thumbs a:link img.preview_over {display:none;}
+.content_thumbs a:link img.view_over {display:none;}
 .content_thumbs a:visited img.preview_over {display:none;}
 .content_thumbs a:hover img.preview_over {display:block;}
 .content_thumbs a:active img.preview_over {display:block;}
@@ -619,8 +631,9 @@ em.ir, strong.ir {
 	}
 .content .entry .entry_data { 
 	float:left;
-	width:216px;
+	width:198px;
 	padding-top:1.5em;
+	padding-right: 18px;
 	border-top:4px solid #000;
 	}
 .content .entry .entry_body { 
@@ -630,7 +643,7 @@ em.ir, strong.ir {
 	}
 .content.content_2col .entry .entry_data { 
 	float:left;
-	width:108px;
+	width:90px;
 	padding-top:1em;
 	border-top:4px solid #000;
 	}
@@ -680,6 +693,7 @@ em.ir, strong.ir {
 	}
 .section_contact .content .entry ul { 
 	padding-left:0;
+	margin-left: 1em;
 	}
 .content .entry ul li { 
 	list-style-type:square;
@@ -920,12 +934,8 @@ td {
 ----------------------------------------------- */
 
 .entry ul li {
-	margin-left:2em;
-	margin-right:48px;
 	list-style-type:square;
 	margin-bottom:1em;
-	font-size: .8em;
-	line-height:1.5em;
 	}
 
 form {

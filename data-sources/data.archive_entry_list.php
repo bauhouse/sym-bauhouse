@@ -2,31 +2,27 @@
 
 	require_once(TOOLKIT . '/class.datasource.php');
 	
-	Class datasourcesection extends Datasource{
+	Class datasourcearchive_entry_list extends Datasource{
 		
-		public $dsParamROOTELEMENT = 'section';
+		public $dsParamROOTELEMENT = 'archive-entry-list';
 		public $dsParamORDER = 'desc';
+		public $dsParamGROUP = '20';
 		public $dsParamLIMIT = '20';
 		public $dsParamREDIRECTONEMPTY = 'no';
-		public $dsParamPARAMOUTPUT = 'sort';
-		public $dsParamSORT = 'system:id';
+		public $dsParamSORT = 'date';
 		public $dsParamSTARTPAGE = '1';
 		public $dsParamASSOCIATEDENTRYCOUNTS = 'no';
 		
 		public $dsParamFILTERS = array(
-				'4' => '{$current-page-id}',
-				'10' => 'yes',
+				'20' => '{$year}-{$month}',
+				'22' => 'yes',
 		);
 		
 		public $dsParamINCLUDEDELEMENTS = array(
 				'title',
-				'navigation',
-				'page',
-				'heading',
 				'description: formatted',
-				'body: formatted',
-				'image',
-				'sort'
+				'categories',
+				'date'
 		);
 
 		public function __construct(&$parent, $env=NULL, $process_params=true){
@@ -36,17 +32,17 @@
 		
 		public function about(){
 			return array(
-					 'name' => 'Section',
+					 'name' => 'Archive Entry List',
 					 'author' => array(
 							'name' => 'Stephen Bau',
 							'website' => 'http://home/bauhouse-207',
 							'email' => 'bauhouse@gmail.com'),
 					 'version' => '1.0',
-					 'release-date' => '2010-02-14T16:46:37+00:00');	
+					 'release-date' => '2010-02-22T16:00:26+00:00');	
 		}
 		
 		public function getSource(){
-			return '2';
+			return '3';
 		}
 		
 		public function allowEditorToParse(){

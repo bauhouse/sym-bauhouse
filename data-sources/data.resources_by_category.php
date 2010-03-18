@@ -2,31 +2,24 @@
 
 	require_once(TOOLKIT . '/class.datasource.php');
 	
-	Class datasourcesection extends Datasource{
+	Class datasourceresources_by_category extends Datasource{
 		
-		public $dsParamROOTELEMENT = 'section';
-		public $dsParamORDER = 'desc';
-		public $dsParamLIMIT = '20';
+		public $dsParamROOTELEMENT = 'resources-by-category';
+		public $dsParamORDER = 'asc';
+		public $dsParamLIMIT = '50';
 		public $dsParamREDIRECTONEMPTY = 'no';
-		public $dsParamPARAMOUTPUT = 'sort';
-		public $dsParamSORT = 'system:id';
+		public $dsParamSORT = 'title';
 		public $dsParamSTARTPAGE = '1';
 		public $dsParamASSOCIATEDENTRYCOUNTS = 'no';
 		
 		public $dsParamFILTERS = array(
-				'4' => '{$current-page-id}',
-				'10' => 'yes',
+				'33' => 'yes',
 		);
 		
 		public $dsParamINCLUDEDELEMENTS = array(
 				'title',
-				'navigation',
-				'page',
-				'heading',
-				'description: formatted',
-				'body: formatted',
-				'image',
-				'sort'
+				'category',
+				'date'
 		);
 
 		public function __construct(&$parent, $env=NULL, $process_params=true){
@@ -36,17 +29,17 @@
 		
 		public function about(){
 			return array(
-					 'name' => 'Section',
+					 'name' => 'Resources by Category',
 					 'author' => array(
 							'name' => 'Stephen Bau',
 							'website' => 'http://home/bauhouse-207',
 							'email' => 'bauhouse@gmail.com'),
 					 'version' => '1.0',
-					 'release-date' => '2010-02-14T16:46:37+00:00');	
+					 'release-date' => '2010-02-27T19:16:15+00:00');	
 		}
 		
 		public function getSource(){
-			return '2';
+			return '4';
 		}
 		
 		public function allowEditorToParse(){

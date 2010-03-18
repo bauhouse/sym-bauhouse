@@ -28,7 +28,17 @@
 			<div class="content content_2col">
 				<div class="colA">
 					<div class="articles">
-						<xsl:apply-templates select="archive-entry-list/year/month/day/entry"/>
+						<xsl:choose>
+							<xsl:when test="archive-entry-list/year/month/entry">
+								<xsl:apply-templates select="archive-entry-list/year/month/entry"/>
+							</xsl:when>
+							<xsl:when test="$year">
+								<xsl:call-template name="no-archive-entries"/>
+							</xsl:when>
+							<xsl:otherwise>
+								<xsl:call-template name="archive-overview"/>
+							</xsl:otherwise>
+						</xsl:choose>
 					</div><!-- End articles -->
 				</div><!-- End colA -->
 				<div class="colB">
@@ -89,22 +99,83 @@
 	</li>
 </xsl:template>
 
-<xsl:template match="archive-entry-list/year/month/day/entry">
+<xsl:template match="archive-entry-list/year/month/entry">
 	<div class="entry">
 		<p class="entry_data">
-			<xsl:call-template name="get-formatted-date">
+			<xsl:call-template name="format-date">
 				<xsl:with-param name="date" select="date"/>
-				<xsl:with-param name="format-type" select="'short'"/>
+				<xsl:with-param name="format" select="'x m Y'"/>
 			</xsl:call-template>
 		</p>
 		<div class="entry_body">
-			<h2><a href="{$root}/journal/{@handle}/"><xsl:value-of select="fields/title"/></a></h2>
-			<xsl:copy-of select="fields/body/*"/>
+			<h2><a href="{$root}/journal/{title/@handle}/"><xsl:value-of select="title"/></a></h2>
+			<xsl:copy-of select="description/*"/>
 			<p class="entry_info">
-				<a href="{$root}/journal/{@handle}/">Read More</a>
+				<a href="{$root}/journal/{title/@handle}/">Read More</a>
 			</p>
 		</div><!-- END entry_body -->
 	</div><!-- END entry -->
+</xsl:template>
+
+<xsl:template name="no-archive-entries">
+	<div class="entry">
+		<p class="entry_data">Error</p>
+		<div class="entry_body">
+			<h2>No Entries Were Found</h2>
+			<p>Sorry. No entries were found in the archive for 
+				<xsl:text> </xsl:text>
+				<xsl:choose>
+					<xsl:when test="$month">
+						<xsl:call-template name="format-date">
+							<xsl:with-param name="date" select="concat($year, '-', $month)"/>
+							<xsl:with-param name="format" select="'M Y'"/>
+						</xsl:call-template>
+					</xsl:when>
+					<xsl:otherwise>
+						<xsl:call-template name="format-date">
+							<xsl:with-param name="date" select="$year"/>
+							<xsl:with-param name="format" select="'Y'"/>
+						</xsl:call-template>
+					</xsl:otherwise>
+				</xsl:choose>
+				<xsl:text>.</xsl:text>
+			</p>
+			<p class="entry_info">
+				<a href="{$root}/journal/archive/">Back to Archive</a>
+			</p>
+		</div><!-- END entry_body -->
+	</div><!-- END entry -->
+</xsl:template>
+
+<xsl:template name="archive-overview">
+	<h3>Archive Overview</h3>
+	<table style="width: 100%; border-collapse: collapse;">
+		<xsl:for-each select="archive-overview/year/month/entry">
+			<tr>
+				<td>
+					<xsl:call-template name="format-date">
+						<xsl:with-param name="date" select="date"/>
+						<xsl:with-param name="format" select="'x m Y'"/>
+					</xsl:call-template>
+				</td>
+				<td>
+					<a href="{$root}/journal/{title/@handle}/"><xsl:value-of select="title"/></a>
+				</td>
+				<td>
+					<xsl:apply-templates select="category/item" mode="category"/>
+				</td>
+			</tr>
+		</xsl:for-each>
+	</table>
+</xsl:template>
+
+<xsl:template match="category/item" mode="category">
+	<a href="{$root}/{$root-page}/category/{@handle}/"><xsl:value-of select="."/></a>
+</xsl:template>
+
+<xsl:template match="categories/item" mode="categories">
+	<a href="{$root}/{$root-page}/category/{@handle}/"><xsl:value-of select="."/></a>
+	<xsl:if test="position() != last()">, </xsl:if>
 </xsl:template>
 
 </xsl:stylesheet>

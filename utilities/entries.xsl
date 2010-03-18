@@ -29,24 +29,24 @@
 			</xsl:if>
 			<xsl:copy-of select="fields/more/*"/>
 		</xsl:if>
-	<xsl:if test="$format = 'brief'">
-		<p class="entry_info">
-			<a href="{$root}/journal/{@handle}/">Read More</a>
-			<xsl:text>. </xsl:text>
-			<a href="{$root}/journal/{@handle}/#comments">
-				<xsl:choose>
-					<xsl:when test="comments/@count = 0">No comments made.</xsl:when>
-					<xsl:when test="comments/@count = 1">1 comment.</xsl:when>
-					<xsl:otherwise><xsl:value-of select="comments/@count"/> comments.</xsl:otherwise>
-				</xsl:choose>
-			</a>
-		</p>
-		<p class="entry_info">Filed Under: <xsl:apply-templates select="fields/categories/item"/></p>
-	</xsl:if>
-	<xsl:if test="$format = 'more'">
-		<p class="entry_info"><em>Total Number of Words: <xsl:value-of select="fields/body/@word-count + number(fields/more/@word-count)"/></em></p>
-	</xsl:if>
-	</div><!-- END entry_body -->
+		<xsl:if test="$format = 'brief'">
+			<p class="entry_info">
+				<a href="{$root}/journal/{@handle}/">Read More</a>
+				<xsl:text>. </xsl:text>
+				<a href="{$root}/journal/{@handle}/#comments">
+					<xsl:choose>
+						<xsl:when test="comments/@count = 0">No comments made.</xsl:when>
+						<xsl:when test="comments/@count = 1">1 comment.</xsl:when>
+						<xsl:otherwise><xsl:value-of select="comments/@count"/> comments.</xsl:otherwise>
+					</xsl:choose>
+				</a>
+			</p>
+			<p class="entry_info">Filed Under: <xsl:apply-templates select="categories/item"/></p>
+		</xsl:if>
+		<xsl:if test="$format = 'more'">
+			<p class="entry_info"><em>Total Number of Words: <xsl:value-of select="fields/body/@word-count + number(fields/more/@word-count)"/></em></p>
+		</xsl:if>
+		</div><!-- END entry_body -->
 	</div><!-- END entry -->
 </xsl:template>
 
@@ -59,4 +59,5 @@
 	<xsl:value-of select="."/>
 	<xsl:if test="position() != last()">, </xsl:if>
 </xsl:template>
+
 </xsl:stylesheet>

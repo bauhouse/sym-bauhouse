@@ -21,10 +21,10 @@
 						<xsl:for-each select="resource/entry">
 							<div class="entry">
 								<p class="entry_data">
-									<xsl:value-of select="type"/>
+									<a href="{$root}/{$current-page}/{category/item/@handle}/"><xsl:value-of select="category/item"/></a>
 								</p>
 								<div class="entry_body">
-									<h2><a href="{$root}/{$current-page}/{$type}/{title/@handle}/"><xsl:value-of select="title"/></a></h2>
+									<h2><a href="{$root}/{$current-page}/{$category}/{title/@handle}/"><xsl:value-of select="title"/></a></h2>
 									<xsl:for-each select="description/*"><xsl:copy-of select="."/></xsl:for-each>
 									<xsl:if test="(images/item)">
 										<img class="entry_image" src="{$root}/{images/@path}/{images/filename}" alt="{title}"/>
@@ -70,12 +70,12 @@
 								<xsl:for-each select="resources/entry">
 									<div class="entry">
 										<p class="entry_data">
-											<xsl:value-of select="type"/>
+											<a href="{$root}/{$current-page}/{category/item/@handle}/"><xsl:value-of select="category/item"/></a>
 										</p>
 										<div class="entry_body">
 											<h2>
 												<xsl:call-template name="resource-title-link">
-													<xsl:with-param name="resource-type" select="type"/>
+													<xsl:with-param name="resource-type" select="type/item"/>
 												</xsl:call-template>
 											</h2>
 											<xsl:copy-of select="description/*"/>
@@ -84,7 +84,7 @@
 													<xsl:choose>
 														<xsl:when test="body">
 															<xsl:call-template name="resource-readmore-link">
-																<xsl:with-param name="resource-type" select="type"/>
+																<xsl:with-param name="resource-type" select="type/item"/>
 															</xsl:call-template>
 														</xsl:when>
 														<xsl:otherwise>View Site </xsl:otherwise>
@@ -113,81 +113,23 @@
 									<h3><xsl:value-of select="h4"/></h3>
 									<xsl:apply-templates select="p[1]" mode="about"/>
 								</xsl:for-each>
-
-								<h3>Photography</h3>
-								<ul class="links">
-									<xsl:for-each select="resources/entry[type/item/@handle = 'photography']">
-										<xsl:sort select="title/@handle"/>
-										<li>
-											<xsl:call-template name="resource-title-link">
-												<xsl:with-param name="resource-type" select="type/item/@handle"/>
-											</xsl:call-template>
-										</li>
-									</xsl:for-each>
-								</ul>
 								
-								<h3>Sites</h3>
-								<ul class="links">
-									<xsl:for-each select="resources/entry[type/item/@handle = 'sites']">
-										<xsl:sort select="title/@handle"/>
-										<li>
-											<xsl:call-template name="resource-title-link">
-												<xsl:with-param name="resource-type" select="type/item/@handle"/>
-											</xsl:call-template>
-										</li>
-									</xsl:for-each>
-								</ul>
-								
-								<h3>Weblogs</h3>
-								<ul class="links">
-									<xsl:for-each select="resources/entry[type/item/@handle = 'weblogs']">
-										<xsl:sort select="title/@handle"/>
-										<li>
-											<xsl:call-template name="resource-title-link">
-												<xsl:with-param name="resource-type" select="type/item/@handle"/>
-											</xsl:call-template>
-										</li>
-									</xsl:for-each>
-								</ul>
-								
-								<h3>Articles</h3>
-								<ul class="links">
-									<xsl:for-each select="resources/entry[type/item/@handle = 'articles']">
-										<li>
-											<xsl:call-template name="resource-title-link">
-												<xsl:with-param name="resource-type" select="type/item/@handle"/>
-											</xsl:call-template>
-											<xsl:call-template name="format-date">
-												<xsl:with-param name="date" select="date"/>
-												<xsl:with-param name="format" select="'x M Y'"/>
-											</xsl:call-template>
-										</li>
-									</xsl:for-each>
-								</ul>
-								
-								<h3>Applications</h3>
-								<ul class="links">
-									<xsl:for-each select="resources/entry[type/item/@handle = 'applications']">
-										<xsl:sort select="title/@handle"/>
-										<li>
-											<xsl:call-template name="resource-title-link">
-												<xsl:with-param name="resource-type" select="type/item/@handle"/>
-											</xsl:call-template>
-										</li>
-									</xsl:for-each>
-								</ul>
-								
-								<h3>Scripts</h3>
-								<ul class="links">
-									<xsl:for-each select="resources/entry[type/item/@handle = 'scripts']">
-										<xsl:sort select="title/@handle"/>
-										<li>
-											<xsl:call-template name="resource-title-link">
-												<xsl:with-param name="resource-type" select="type/item/@handle"/>
-											</xsl:call-template>
-										</li>
-									</xsl:for-each>
-								</ul>
+								<xsl:choose>
+									<xsl:when test="$category">
+										<h3>Categories</h3>
+										<ul class="categories">
+											<xsl:for-each select="categories/entry[title/@handle = /data/resources-by-category/entry/category/item/@handle]">
+												<li><a href="{$root}/{$current-page}/{title/@handle}/"><xsl:value-of select="title"/></a></li>
+											</xsl:for-each>
+										</ul>
+									</xsl:when>
+									<xsl:otherwise>
+										<xsl:for-each select="categories/entry[title/@handle = /data/resources-by-category/entry/category/item/@handle]">
+											<h3><a href="{$root}/{$current-page}/{title/@handle}/"><xsl:value-of select="title"/></a></h3>
+											<xsl:call-template name="list-resources-by-category"/>
+										</xsl:for-each>
+									</xsl:otherwise>
+								</xsl:choose>
 
 							</div><!-- End lists -->
 						</div><!-- End colB -->
@@ -196,6 +138,25 @@
 			</xsl:choose>
 		</div><!-- END #box_content -->
 	</div><!-- END #middle -->
+</xsl:template>
+
+<xsl:template name="list-resources-by-category">
+	<xsl:param name="resource-category" select="title/@handle"/>
+	<ul class="links">
+		<xsl:for-each select="/data/resources-by-category/entry[category/item/@handle = $resource-category]">
+			<li>
+				<xsl:call-template name="resource-title-link">
+					<xsl:with-param name="resource-type" select="$resource-category"/>
+				</xsl:call-template>
+				<xsl:if test="$resource-category = 'articles'">
+					<xsl:call-template name="format-date">
+						<xsl:with-param name="date" select="date"/>
+						<xsl:with-param name="format" select="'x M Y'"/>
+					</xsl:call-template>
+				</xsl:if>
+			</li>
+		</xsl:for-each>
+	</ul>
 </xsl:template>
 
 </xsl:stylesheet>

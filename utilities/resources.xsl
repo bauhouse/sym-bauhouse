@@ -6,7 +6,7 @@
 
 <xsl:template name="resource-title-link">
 	<xsl:param name="resource-type">
-		<xsl:value-of select="type"/>
+		<xsl:value-of select="type/item"/>
 	</xsl:param>
 	<xsl:param name="type">
 		<xsl:call-template name="make-handle">
@@ -21,7 +21,7 @@
 
 <xsl:template name="resource-readmore-link">
 	<xsl:param name="resource-type">
-		<xsl:value-of select="type"/>
+		<xsl:value-of select="type/item"/>
 	</xsl:param>
 	<xsl:param name="type">
 		<xsl:call-template name="make-handle">

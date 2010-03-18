@@ -13,7 +13,7 @@
 		<h2>Journal : Category
 			<xsl:if test="$category != ''">
 			<xsl:text>: </xsl:text>
-			<xsl:for-each select="category-list/options/option[@handle=$category]">
+			<xsl:for-each select="categories/entry[title/@handle=$category]">
 				<xsl:value-of select="."/>
 			</xsl:for-each>
 			</xsl:if>
@@ -24,46 +24,15 @@
 			<div class="content content_2col">
 				<div class="colA">
 					<div class="articles">
-						<xsl:for-each select="entries/entry[fields/categories/item/@handle = $category]">
-							<div class="entry">
-								<p class="entry_data">
-									<xsl:call-template name="get-formatted-date">
-										<xsl:with-param name="date" select="date"/>
-										<xsl:with-param name="format-type" select="'short'"/>
-									</xsl:call-template>
-								</p>
-								<div class="entry_body">
-									<h2><a href="{$root}/journal/{@handle}/"><xsl:value-of select="fields/title"/></a></h2>
-									<xsl:copy-of select="fields/body/*"/>
-									<xsl:if test="@handle = $entry">
-										<xsl:if test="fields/photo/item">
-											<div class="image-block">
-												<xsl:apply-templates select="fields/photo/item"/>
-											</div>
-										</xsl:if>
-										<xsl:copy-of select="fields/more/*"/>
-									</xsl:if>
-									<xsl:if test="@handle != $entry">
-										<p class="entry_info">
-											<a href="{$root}/journal/{@handle}/">Read More</a>
-										</p>
-									</xsl:if>
-									<p class="entry_info">Filed Under: <xsl:apply-templates select="fields/categories/item"/></p>
-									<p class="entry_info">Total Number of Words: 
-										<xsl:choose>
-											<xsl:when test="(fields/more/@word-count)">
-												<xsl:value-of select="number(fields/body/@word-count) + 
-											number(fields/more/@word-count)"/>
-											</xsl:when>
-											<xsl:otherwise>
-												<xsl:value-of select="number(fields/body/@word-count)"/>
-											</xsl:otherwise>
-										</xsl:choose>
-									</p>
-								</div><!-- END entry_body -->
-							</div><!-- END entry -->
-						</xsl:for-each>
-					</div><!-- END articles -->
+						<xsl:choose>
+							<xsl:when test="archive-entry-list/year/month/entry">
+								<xsl:apply-templates select="archive-entry-list/year/month/entry"/>
+							</xsl:when>
+							<xsl:otherwise>
+								<xsl:apply-templates select="entries-by-category"/>
+							</xsl:otherwise>
+						</xsl:choose>
+					</div><!-- End articles -->
 				</div><!-- END colA -->
 				<div class="colB">
 					<div class="lists">
@@ -73,8 +42,12 @@
 						</xsl:for-each>
 						<h3>Archives by Category</h3>
 						<ul class="categories">
-							<xsl:for-each select="category-list/options/option[@entry-count!='0']">
-								<li><a href="{$root}/journal/category/{@handle}/"><xsl:value-of select="."/></a></li>
+							<xsl:for-each select="entries-by-category/category">
+								<li>
+									<a href="{$root}/journal/category/{@link-handle}/">
+										<xsl:call-template name="category-title"/>
+									</a>
+								</li>
 							</xsl:for-each>
 						</ul>
 					</div><!-- END lists -->
@@ -82,6 +55,55 @@
 			</div><!-- END content -->
 		</div><!-- END #box_content -->
 	</div><!-- END #middle -->
+</xsl:template>
+
+<xsl:template match="entries-by-category">
+	<h3>Archive by Category</h3>
+	<table style="width: 100%; border-collapse: collapse;">
+		<xsl:choose>
+			<xsl:when test="$category">
+				<xsl:for-each select="category[@link-handle = $category]">
+					<xsl:call-template name="list-entries-by-category"/>
+				</xsl:for-each>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:for-each select="category">
+					<xsl:call-template name="list-entries-by-category"/>
+				</xsl:for-each>
+			</xsl:otherwise>
+		</xsl:choose>
+	</table>
+</xsl:template>
+
+<xsl:template name="list-entries-by-category">
+	<tr>
+		<td colspan="3">
+			<h4>
+				<xsl:call-template name="category-title"/>
+			</h4>
+		</td>
+	</tr>
+	<xsl:for-each select="entry">
+		<tr>
+			<td>
+				<xsl:call-template name="format-date">
+					<xsl:with-param name="date" select="date"/>
+					<xsl:with-param name="format" select="'x m Y'"/>
+				</xsl:call-template>
+			</td>
+			<td>
+				<a href="{$root}/journal/{title/@handle}/"><xsl:value-of select="title"/></a>
+			</td>
+			<td>
+				<xsl:apply-templates select="category/item" mode="category"/>
+			</td>
+		</tr>
+	</xsl:for-each>
+</xsl:template>
+
+<xsl:template name="category-title">
+	<xsl:param name="category-id" select="@link-id"/>
+	<xsl:value-of select="/data/categories/entry[@id = $category-id]/title"/>
 </xsl:template>
 
 </xsl:stylesheet>
