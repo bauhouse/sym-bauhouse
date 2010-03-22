@@ -313,29 +313,29 @@ CREATE TABLE `tbl_entries_data_10` (
   PRIMARY KEY (`id`),
   KEY `entry_id` (`entry_id`),
   KEY `value` (`value`)
-) ENGINE=MyISAM AUTO_INCREMENT=69 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=88 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_10` ***
 INSERT INTO `tbl_entries_data_10` (`id`, `entry_id`, `value`) VALUES (6, 11, 'yes');
-INSERT INTO `tbl_entries_data_10` (`id`, `entry_id`, `value`) VALUES (54, 21, 'yes');
-INSERT INTO `tbl_entries_data_10` (`id`, `entry_id`, `value`) VALUES (68, 22, 'yes');
-INSERT INTO `tbl_entries_data_10` (`id`, `entry_id`, `value`) VALUES (67, 27, 'yes');
-INSERT INTO `tbl_entries_data_10` (`id`, `entry_id`, `value`) VALUES (17, 30, 'yes');
+INSERT INTO `tbl_entries_data_10` (`id`, `entry_id`, `value`) VALUES (86, 21, 'yes');
+INSERT INTO `tbl_entries_data_10` (`id`, `entry_id`, `value`) VALUES (73, 22, 'yes');
+INSERT INTO `tbl_entries_data_10` (`id`, `entry_id`, `value`) VALUES (85, 27, 'yes');
+INSERT INTO `tbl_entries_data_10` (`id`, `entry_id`, `value`) VALUES (84, 30, 'yes');
 INSERT INTO `tbl_entries_data_10` (`id`, `entry_id`, `value`) VALUES (62, 31, 'yes');
-INSERT INTO `tbl_entries_data_10` (`id`, `entry_id`, `value`) VALUES (36, 33, 'yes');
-INSERT INTO `tbl_entries_data_10` (`id`, `entry_id`, `value`) VALUES (33, 36, 'yes');
-INSERT INTO `tbl_entries_data_10` (`id`, `entry_id`, `value`) VALUES (34, 43, 'yes');
-INSERT INTO `tbl_entries_data_10` (`id`, `entry_id`, `value`) VALUES (38, 44, 'yes');
-INSERT INTO `tbl_entries_data_10` (`id`, `entry_id`, `value`) VALUES (41, 45, 'yes');
-INSERT INTO `tbl_entries_data_10` (`id`, `entry_id`, `value`) VALUES (37, 53, 'yes');
-INSERT INTO `tbl_entries_data_10` (`id`, `entry_id`, `value`) VALUES (42, 54, 'yes');
-INSERT INTO `tbl_entries_data_10` (`id`, `entry_id`, `value`) VALUES (43, 55, 'yes');
-INSERT INTO `tbl_entries_data_10` (`id`, `entry_id`, `value`) VALUES (44, 56, 'yes');
-INSERT INTO `tbl_entries_data_10` (`id`, `entry_id`, `value`) VALUES (60, 57, 'yes');
-INSERT INTO `tbl_entries_data_10` (`id`, `entry_id`, `value`) VALUES (46, 58, 'yes');
-INSERT INTO `tbl_entries_data_10` (`id`, `entry_id`, `value`) VALUES (49, 59, 'yes');
-INSERT INTO `tbl_entries_data_10` (`id`, `entry_id`, `value`) VALUES (52, 60, 'yes');
-INSERT INTO `tbl_entries_data_10` (`id`, `entry_id`, `value`) VALUES (64, 61, 'yes');
+INSERT INTO `tbl_entries_data_10` (`id`, `entry_id`, `value`) VALUES (83, 33, 'yes');
+INSERT INTO `tbl_entries_data_10` (`id`, `entry_id`, `value`) VALUES (82, 36, 'yes');
+INSERT INTO `tbl_entries_data_10` (`id`, `entry_id`, `value`) VALUES (81, 43, 'yes');
+INSERT INTO `tbl_entries_data_10` (`id`, `entry_id`, `value`) VALUES (80, 44, 'yes');
+INSERT INTO `tbl_entries_data_10` (`id`, `entry_id`, `value`) VALUES (87, 45, 'yes');
+INSERT INTO `tbl_entries_data_10` (`id`, `entry_id`, `value`) VALUES (79, 53, 'yes');
+INSERT INTO `tbl_entries_data_10` (`id`, `entry_id`, `value`) VALUES (78, 54, 'yes');
+INSERT INTO `tbl_entries_data_10` (`id`, `entry_id`, `value`) VALUES (77, 55, 'yes');
+INSERT INTO `tbl_entries_data_10` (`id`, `entry_id`, `value`) VALUES (76, 56, 'yes');
+INSERT INTO `tbl_entries_data_10` (`id`, `entry_id`, `value`) VALUES (75, 57, 'yes');
+INSERT INTO `tbl_entries_data_10` (`id`, `entry_id`, `value`) VALUES (74, 58, 'yes');
+INSERT INTO `tbl_entries_data_10` (`id`, `entry_id`, `value`) VALUES (72, 59, 'yes');
+INSERT INTO `tbl_entries_data_10` (`id`, `entry_id`, `value`) VALUES (71, 60, 'yes');
+INSERT INTO `tbl_entries_data_10` (`id`, `entry_id`, `value`) VALUES (70, 61, 'yes');
 
 -- *** STRUCTURE: `tbl_entries_data_11` ***
 DROP TABLE IF EXISTS `tbl_entries_data_11`;
@@ -1056,29 +1056,29 @@ CREATE TABLE `tbl_entries_data_3` (
   KEY `entry_id` (`entry_id`),
   KEY `handle` (`handle`),
   KEY `value` (`value`)
-) ENGINE=MyISAM AUTO_INCREMENT=69 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=88 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_3` ***
 INSERT INTO `tbl_entries_data_3` (`id`, `entry_id`, `handle`, `value`) VALUES (6, 11, 'home', 'Home');
-INSERT INTO `tbl_entries_data_3` (`id`, `entry_id`, `handle`, `value`) VALUES (54, 21, 'about', 'About');
-INSERT INTO `tbl_entries_data_3` (`id`, `entry_id`, `handle`, `value`) VALUES (68, 22, 'journal', 'Journal');
-INSERT INTO `tbl_entries_data_3` (`id`, `entry_id`, `handle`, `value`) VALUES (67, 27, 'portfolio', 'Portfolio');
-INSERT INTO `tbl_entries_data_3` (`id`, `entry_id`, `handle`, `value`) VALUES (17, 30, 'resources', 'Resources');
+INSERT INTO `tbl_entries_data_3` (`id`, `entry_id`, `handle`, `value`) VALUES (86, 21, 'about', 'About');
+INSERT INTO `tbl_entries_data_3` (`id`, `entry_id`, `handle`, `value`) VALUES (73, 22, 'journal', 'Journal');
+INSERT INTO `tbl_entries_data_3` (`id`, `entry_id`, `handle`, `value`) VALUES (85, 27, 'portfolio', 'Portfolio');
+INSERT INTO `tbl_entries_data_3` (`id`, `entry_id`, `handle`, `value`) VALUES (84, 30, 'resources', 'Resources');
 INSERT INTO `tbl_entries_data_3` (`id`, `entry_id`, `handle`, `value`) VALUES (62, 31, 'contact', 'Contact');
-INSERT INTO `tbl_entries_data_3` (`id`, `entry_id`, `handle`, `value`) VALUES (36, 33, 'imagine', 'Imagine');
-INSERT INTO `tbl_entries_data_3` (`id`, `entry_id`, `handle`, `value`) VALUES (33, 36, 'resources', 'Resources');
-INSERT INTO `tbl_entries_data_3` (`id`, `entry_id`, `handle`, `value`) VALUES (34, 43, 'theory', 'Theory');
-INSERT INTO `tbl_entries_data_3` (`id`, `entry_id`, `handle`, `value`) VALUES (38, 44, 'research', 'Research');
-INSERT INTO `tbl_entries_data_3` (`id`, `entry_id`, `handle`, `value`) VALUES (41, 45, 'strategy', 'Strategy');
-INSERT INTO `tbl_entries_data_3` (`id`, `entry_id`, `handle`, `value`) VALUES (37, 53, 'design', 'Design');
-INSERT INTO `tbl_entries_data_3` (`id`, `entry_id`, `handle`, `value`) VALUES (42, 54, 'identity', 'Identity');
-INSERT INTO `tbl_entries_data_3` (`id`, `entry_id`, `handle`, `value`) VALUES (43, 55, 'print', 'Print');
-INSERT INTO `tbl_entries_data_3` (`id`, `entry_id`, `handle`, `value`) VALUES (44, 56, 'web', 'Web');
-INSERT INTO `tbl_entries_data_3` (`id`, `entry_id`, `handle`, `value`) VALUES (60, 57, 'type', 'Type');
-INSERT INTO `tbl_entries_data_3` (`id`, `entry_id`, `handle`, `value`) VALUES (46, 58, 'build', 'Build');
-INSERT INTO `tbl_entries_data_3` (`id`, `entry_id`, `handle`, `value`) VALUES (49, 59, 'people', 'People');
-INSERT INTO `tbl_entries_data_3` (`id`, `entry_id`, `handle`, `value`) VALUES (52, 60, 'relationships', 'Relationships');
-INSERT INTO `tbl_entries_data_3` (`id`, `entry_id`, `handle`, `value`) VALUES (64, 61, 'community', 'Community');
+INSERT INTO `tbl_entries_data_3` (`id`, `entry_id`, `handle`, `value`) VALUES (83, 33, 'imagine', 'Imagine');
+INSERT INTO `tbl_entries_data_3` (`id`, `entry_id`, `handle`, `value`) VALUES (82, 36, 'resources', 'Resources');
+INSERT INTO `tbl_entries_data_3` (`id`, `entry_id`, `handle`, `value`) VALUES (81, 43, 'theory', 'Theory');
+INSERT INTO `tbl_entries_data_3` (`id`, `entry_id`, `handle`, `value`) VALUES (80, 44, 'research', 'Research');
+INSERT INTO `tbl_entries_data_3` (`id`, `entry_id`, `handle`, `value`) VALUES (87, 45, 'strategy', 'Strategy');
+INSERT INTO `tbl_entries_data_3` (`id`, `entry_id`, `handle`, `value`) VALUES (79, 53, 'design', 'Design');
+INSERT INTO `tbl_entries_data_3` (`id`, `entry_id`, `handle`, `value`) VALUES (78, 54, 'identity', 'Identity');
+INSERT INTO `tbl_entries_data_3` (`id`, `entry_id`, `handle`, `value`) VALUES (77, 55, 'print', 'Print');
+INSERT INTO `tbl_entries_data_3` (`id`, `entry_id`, `handle`, `value`) VALUES (76, 56, 'web', 'Web');
+INSERT INTO `tbl_entries_data_3` (`id`, `entry_id`, `handle`, `value`) VALUES (75, 57, 'type', 'Type');
+INSERT INTO `tbl_entries_data_3` (`id`, `entry_id`, `handle`, `value`) VALUES (74, 58, 'build', 'Build');
+INSERT INTO `tbl_entries_data_3` (`id`, `entry_id`, `handle`, `value`) VALUES (72, 59, 'people', 'People');
+INSERT INTO `tbl_entries_data_3` (`id`, `entry_id`, `handle`, `value`) VALUES (71, 60, 'relationships', 'Relationships');
+INSERT INTO `tbl_entries_data_3` (`id`, `entry_id`, `handle`, `value`) VALUES (70, 61, 'community', 'Community');
 
 -- *** STRUCTURE: `tbl_entries_data_31` ***
 DROP TABLE IF EXISTS `tbl_entries_data_31`;
@@ -1447,29 +1447,29 @@ CREATE TABLE `tbl_entries_data_4` (
   KEY `entry_id` (`entry_id`),
   KEY `handle` (`handle`),
   KEY `page_id` (`page_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=69 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=88 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_4` ***
 INSERT INTO `tbl_entries_data_4` (`id`, `entry_id`, `page_id`, `title`, `handle`) VALUES (6, 11, 1, 'Home', 'home');
-INSERT INTO `tbl_entries_data_4` (`id`, `entry_id`, `page_id`, `title`, `handle`) VALUES (54, 21, 2, 'About', 'about');
-INSERT INTO `tbl_entries_data_4` (`id`, `entry_id`, `page_id`, `title`, `handle`) VALUES (68, 22, 3, 'Journal', 'journal');
-INSERT INTO `tbl_entries_data_4` (`id`, `entry_id`, `page_id`, `title`, `handle`) VALUES (67, 27, 5, 'Portfolio', 'portfolio');
-INSERT INTO `tbl_entries_data_4` (`id`, `entry_id`, `page_id`, `title`, `handle`) VALUES (17, 30, 6, 'Resources', 'resources');
+INSERT INTO `tbl_entries_data_4` (`id`, `entry_id`, `page_id`, `title`, `handle`) VALUES (86, 21, 2, 'About', 'about');
+INSERT INTO `tbl_entries_data_4` (`id`, `entry_id`, `page_id`, `title`, `handle`) VALUES (73, 22, 3, 'Journal', 'journal');
+INSERT INTO `tbl_entries_data_4` (`id`, `entry_id`, `page_id`, `title`, `handle`) VALUES (85, 27, 5, 'Portfolio', 'portfolio');
+INSERT INTO `tbl_entries_data_4` (`id`, `entry_id`, `page_id`, `title`, `handle`) VALUES (84, 30, 6, 'Resources', 'resources');
 INSERT INTO `tbl_entries_data_4` (`id`, `entry_id`, `page_id`, `title`, `handle`) VALUES (62, 31, 7, 'Contact', 'contact');
-INSERT INTO `tbl_entries_data_4` (`id`, `entry_id`, `page_id`, `title`, `handle`) VALUES (36, 33, 8, 'Imagine', 'imagine');
-INSERT INTO `tbl_entries_data_4` (`id`, `entry_id`, `page_id`, `title`, `handle`) VALUES (33, 36, 19, 'Resources', 'resources');
-INSERT INTO `tbl_entries_data_4` (`id`, `entry_id`, `page_id`, `title`, `handle`) VALUES (34, 43, 20, 'Theory', 'theory');
-INSERT INTO `tbl_entries_data_4` (`id`, `entry_id`, `page_id`, `title`, `handle`) VALUES (38, 44, 21, 'Research', 'research');
-INSERT INTO `tbl_entries_data_4` (`id`, `entry_id`, `page_id`, `title`, `handle`) VALUES (41, 45, 22, 'Strategy', 'strategy');
-INSERT INTO `tbl_entries_data_4` (`id`, `entry_id`, `page_id`, `title`, `handle`) VALUES (37, 53, 9, 'Design', 'design');
-INSERT INTO `tbl_entries_data_4` (`id`, `entry_id`, `page_id`, `title`, `handle`) VALUES (42, 54, 11, 'Identity', 'identity');
-INSERT INTO `tbl_entries_data_4` (`id`, `entry_id`, `page_id`, `title`, `handle`) VALUES (43, 55, 12, 'Print', 'print');
-INSERT INTO `tbl_entries_data_4` (`id`, `entry_id`, `page_id`, `title`, `handle`) VALUES (44, 56, 13, 'Web', 'web');
-INSERT INTO `tbl_entries_data_4` (`id`, `entry_id`, `page_id`, `title`, `handle`) VALUES (60, 57, 14, 'Type', 'type');
-INSERT INTO `tbl_entries_data_4` (`id`, `entry_id`, `page_id`, `title`, `handle`) VALUES (46, 58, 10, 'Build', 'build');
-INSERT INTO `tbl_entries_data_4` (`id`, `entry_id`, `page_id`, `title`, `handle`) VALUES (49, 59, 23, 'People', 'people');
-INSERT INTO `tbl_entries_data_4` (`id`, `entry_id`, `page_id`, `title`, `handle`) VALUES (52, 60, 24, 'Relationships', 'relationships');
-INSERT INTO `tbl_entries_data_4` (`id`, `entry_id`, `page_id`, `title`, `handle`) VALUES (64, 61, 25, 'Community', 'community');
+INSERT INTO `tbl_entries_data_4` (`id`, `entry_id`, `page_id`, `title`, `handle`) VALUES (83, 33, 8, 'Imagine', 'imagine');
+INSERT INTO `tbl_entries_data_4` (`id`, `entry_id`, `page_id`, `title`, `handle`) VALUES (82, 36, 19, 'Resources', 'resources');
+INSERT INTO `tbl_entries_data_4` (`id`, `entry_id`, `page_id`, `title`, `handle`) VALUES (81, 43, 20, 'Theory', 'theory');
+INSERT INTO `tbl_entries_data_4` (`id`, `entry_id`, `page_id`, `title`, `handle`) VALUES (80, 44, 21, 'Research', 'research');
+INSERT INTO `tbl_entries_data_4` (`id`, `entry_id`, `page_id`, `title`, `handle`) VALUES (87, 45, 22, 'Strategy', 'strategy');
+INSERT INTO `tbl_entries_data_4` (`id`, `entry_id`, `page_id`, `title`, `handle`) VALUES (79, 53, 9, 'Design', 'design');
+INSERT INTO `tbl_entries_data_4` (`id`, `entry_id`, `page_id`, `title`, `handle`) VALUES (78, 54, 11, 'Identity', 'identity');
+INSERT INTO `tbl_entries_data_4` (`id`, `entry_id`, `page_id`, `title`, `handle`) VALUES (77, 55, 12, 'Print', 'print');
+INSERT INTO `tbl_entries_data_4` (`id`, `entry_id`, `page_id`, `title`, `handle`) VALUES (76, 56, 13, 'Web', 'web');
+INSERT INTO `tbl_entries_data_4` (`id`, `entry_id`, `page_id`, `title`, `handle`) VALUES (75, 57, 14, 'Type', 'type');
+INSERT INTO `tbl_entries_data_4` (`id`, `entry_id`, `page_id`, `title`, `handle`) VALUES (74, 58, 10, 'Build', 'build');
+INSERT INTO `tbl_entries_data_4` (`id`, `entry_id`, `page_id`, `title`, `handle`) VALUES (72, 59, 23, 'People', 'people');
+INSERT INTO `tbl_entries_data_4` (`id`, `entry_id`, `page_id`, `title`, `handle`) VALUES (71, 60, 24, 'Relationships', 'relationships');
+INSERT INTO `tbl_entries_data_4` (`id`, `entry_id`, `page_id`, `title`, `handle`) VALUES (70, 61, 25, 'Community', 'community');
 
 -- *** STRUCTURE: `tbl_entries_data_40` ***
 DROP TABLE IF EXISTS `tbl_entries_data_40`;
@@ -1653,29 +1653,29 @@ CREATE TABLE `tbl_entries_data_5` (
   KEY `entry_id` (`entry_id`),
   KEY `handle` (`handle`),
   KEY `value` (`value`)
-) ENGINE=MyISAM AUTO_INCREMENT=65 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=84 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_5` ***
 INSERT INTO `tbl_entries_data_5` (`id`, `entry_id`, `handle`, `value`) VALUES (6, 11, 'the-elementary-forms', 'The Elementary Forms');
-INSERT INTO `tbl_entries_data_5` (`id`, `entry_id`, `handle`, `value`) VALUES (50, 21, 'putting-ideas-into-practice', 'Putting Ideas into Practice');
-INSERT INTO `tbl_entries_data_5` (`id`, `entry_id`, `handle`, `value`) VALUES (64, 22, 'flow-of-consciousness', 'Flow of Consciousness');
-INSERT INTO `tbl_entries_data_5` (`id`, `entry_id`, `handle`, `value`) VALUES (63, 27, 'design-as-adapting-to-change', 'Design as Adapting to Change');
-INSERT INTO `tbl_entries_data_5` (`id`, `entry_id`, `handle`, `value`) VALUES (17, 30, 'learning-by-doing', 'Learning by Doing');
+INSERT INTO `tbl_entries_data_5` (`id`, `entry_id`, `handle`, `value`) VALUES (82, 21, 'putting-ideas-into-practice', 'Putting Ideas into Practice');
+INSERT INTO `tbl_entries_data_5` (`id`, `entry_id`, `handle`, `value`) VALUES (69, 22, 'flow-of-consciousness', 'Flow of Consciousness');
+INSERT INTO `tbl_entries_data_5` (`id`, `entry_id`, `handle`, `value`) VALUES (81, 27, 'design-as-adapting-to-change', 'Design as Adapting to Change');
+INSERT INTO `tbl_entries_data_5` (`id`, `entry_id`, `handle`, `value`) VALUES (80, 30, 'learning-by-doing', 'Learning by Doing');
 INSERT INTO `tbl_entries_data_5` (`id`, `entry_id`, `handle`, `value`) VALUES (58, 31, 'send-me-a-message', 'Send Me a Message');
-INSERT INTO `tbl_entries_data_5` (`id`, `entry_id`, `handle`, `value`) VALUES (32, 33, 'imagine-something-better', 'Imagine Something Better');
-INSERT INTO `tbl_entries_data_5` (`id`, `entry_id`, `handle`, `value`) VALUES (30, 43, 'ideas-about-design', 'Ideas About Design');
-INSERT INTO `tbl_entries_data_5` (`id`, `entry_id`, `handle`, `value`) VALUES (29, 36, 'adapting-to-changing-technology', 'Adapting to Changing Technology');
-INSERT INTO `tbl_entries_data_5` (`id`, `entry_id`, `handle`, `value`) VALUES (33, 53, 'design-to-make-an-impact', 'Design to Make an Impact');
-INSERT INTO `tbl_entries_data_5` (`id`, `entry_id`, `handle`, `value`) VALUES (34, 44, 'design-thinking', 'Design Thinking');
-INSERT INTO `tbl_entries_data_5` (`id`, `entry_id`, `handle`, `value`) VALUES (37, 45, 'a-cohesive-plan-for-change', 'A Cohesive Plan for Change');
-INSERT INTO `tbl_entries_data_5` (`id`, `entry_id`, `handle`, `value`) VALUES (38, 54, 'putting-a-face-to-the-name', 'Putting a Face to the Name');
-INSERT INTO `tbl_entries_data_5` (`id`, `entry_id`, `handle`, `value`) VALUES (39, 55, 'an-ancient-art-a-technological-revolution', 'An Ancient Art, A Technological Revolution');
-INSERT INTO `tbl_entries_data_5` (`id`, `entry_id`, `handle`, `value`) VALUES (40, 56, 'focusing-on-user-experience', 'Focusing on User Experience');
-INSERT INTO `tbl_entries_data_5` (`id`, `entry_id`, `handle`, `value`) VALUES (56, 57, 'the-democratization-of-typography', 'The Democratization of Typography');
-INSERT INTO `tbl_entries_data_5` (`id`, `entry_id`, `handle`, `value`) VALUES (42, 58, 'build-your-business-and-your-community', 'Build your business and your community');
-INSERT INTO `tbl_entries_data_5` (`id`, `entry_id`, `handle`, `value`) VALUES (45, 59, 'empowering-people-to-build', 'Empowering People to Build');
-INSERT INTO `tbl_entries_data_5` (`id`, `entry_id`, `handle`, `value`) VALUES (48, 60, 'connecting-people', 'Connecting People');
-INSERT INTO `tbl_entries_data_5` (`id`, `entry_id`, `handle`, `value`) VALUES (60, 61, 'coming-together-to-achieve-common-goals', 'Coming Together to Achieve Common Goals');
+INSERT INTO `tbl_entries_data_5` (`id`, `entry_id`, `handle`, `value`) VALUES (79, 33, 'imagine-something-better', 'Imagine Something Better');
+INSERT INTO `tbl_entries_data_5` (`id`, `entry_id`, `handle`, `value`) VALUES (77, 43, 'ideas-about-design', 'Ideas About Design');
+INSERT INTO `tbl_entries_data_5` (`id`, `entry_id`, `handle`, `value`) VALUES (78, 36, 'adapting-to-changing-technology', 'Adapting to Changing Technology');
+INSERT INTO `tbl_entries_data_5` (`id`, `entry_id`, `handle`, `value`) VALUES (75, 53, 'design-to-make-an-impact', 'Design to Make an Impact');
+INSERT INTO `tbl_entries_data_5` (`id`, `entry_id`, `handle`, `value`) VALUES (76, 44, 'design-thinking', 'Design Thinking');
+INSERT INTO `tbl_entries_data_5` (`id`, `entry_id`, `handle`, `value`) VALUES (83, 45, 'a-cohesive-plan-for-change', 'A Cohesive Plan for Change');
+INSERT INTO `tbl_entries_data_5` (`id`, `entry_id`, `handle`, `value`) VALUES (74, 54, 'putting-a-face-to-the-name', 'Putting a Face to the Name');
+INSERT INTO `tbl_entries_data_5` (`id`, `entry_id`, `handle`, `value`) VALUES (73, 55, 'an-ancient-art-a-technological-revolution', 'An Ancient Art, A Technological Revolution');
+INSERT INTO `tbl_entries_data_5` (`id`, `entry_id`, `handle`, `value`) VALUES (72, 56, 'focusing-on-user-experience', 'Focusing on User Experience');
+INSERT INTO `tbl_entries_data_5` (`id`, `entry_id`, `handle`, `value`) VALUES (71, 57, 'the-democratization-of-typography', 'The Democratization of Typography');
+INSERT INTO `tbl_entries_data_5` (`id`, `entry_id`, `handle`, `value`) VALUES (70, 58, 'build-your-business-and-your-community', 'Build your business and your community');
+INSERT INTO `tbl_entries_data_5` (`id`, `entry_id`, `handle`, `value`) VALUES (68, 59, 'empowering-people-to-build', 'Empowering People to Build');
+INSERT INTO `tbl_entries_data_5` (`id`, `entry_id`, `handle`, `value`) VALUES (67, 60, 'connecting-people', 'Connecting People');
+INSERT INTO `tbl_entries_data_5` (`id`, `entry_id`, `handle`, `value`) VALUES (66, 61, 'coming-together-to-achieve-common-goals', 'Coming Together to Achieve Common Goals');
 
 -- *** STRUCTURE: `tbl_entries_data_50` ***
 DROP TABLE IF EXISTS `tbl_entries_data_50`;
@@ -1916,29 +1916,29 @@ CREATE TABLE `tbl_entries_data_6` (
   PRIMARY KEY (`id`),
   KEY `entry_id` (`entry_id`),
   FULLTEXT KEY `value` (`value`)
-) ENGINE=MyISAM AUTO_INCREMENT=69 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=88 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_6` ***
 INSERT INTO `tbl_entries_data_6` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (6, 11, 'The Bauhouse is the portfolio site and web development sandbox of Stephen Bau, Designer and Web Developer', '<p>The Bauhouse is the portfolio site and web development sandbox of Stephen Bau, Designer and Web Developer</p>\n');
-INSERT INTO `tbl_entries_data_6` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (68, 22, NULL, NULL);
-INSERT INTO `tbl_entries_data_6` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (54, 21, '#### Bauhouse Design\r\n\r\nThe Bauhouse is the digital sandbox and personal portfolio of Stephen Bau, Professional Member of the Society of Graphic Designers of Canada.\r\n\r\nIn the world of social media, bauhouse is my screen name. You\'ll find that I spend most of my time on the Symphony CMS forum and on GitHub, designing and developing with XML, XSLT, XHTML and CSS.\r\n', '<h4>Bauhouse Design</h4>\n\n<p>The Bauhouse is the digital sandbox and personal portfolio of Stephen Bau, Professional Member of the Society of Graphic Designers of Canada.</p>\n\n<p>In the world of social media, bauhouse is my screen name. You&#8217;ll find that I spend most of my time on the Symphony CMS forum and on GitHub, designing and developing with XML, XSLT, XHTML and CSS.</p>\n');
-INSERT INTO `tbl_entries_data_6` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (67, 27, 'Creating a body of work while adapting to the changing tools of the trade', '<p>Creating a body of work while adapting to the changing tools of the trade</p>\n');
-INSERT INTO `tbl_entries_data_6` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (17, 30, 'So many things to learn and do', '<p>So many things to learn and do</p>\n');
+INSERT INTO `tbl_entries_data_6` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (73, 22, NULL, NULL);
+INSERT INTO `tbl_entries_data_6` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (86, 21, '#### Bauhouse Design\r\n\r\nThe Bauhouse is the digital sandbox and personal portfolio of Stephen Bau, Professional Member of the Society of Graphic Designers of Canada.\r\n\r\nIn the world of social media, bauhouse is my screen name. You\'ll find that I spend most of my time on the Symphony CMS forum and on GitHub, designing and developing with XML, XSLT, XHTML and CSS.\r\n', '<h4>Bauhouse Design</h4>\n\n<p>The Bauhouse is the digital sandbox and personal portfolio of Stephen Bau, Professional Member of the Society of Graphic Designers of Canada.</p>\n\n<p>In the world of social media, bauhouse is my screen name. You&#8217;ll find that I spend most of my time on the Symphony CMS forum and on GitHub, designing and developing with XML, XSLT, XHTML and CSS.</p>\n');
+INSERT INTO `tbl_entries_data_6` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (85, 27, 'Creating a body of work while adapting to the changing tools of the trade', '<p>Creating a body of work while adapting to the changing tools of the trade</p>\n');
+INSERT INTO `tbl_entries_data_6` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (84, 30, 'So many things to learn and do', '<p>So many things to learn and do</p>\n');
 INSERT INTO `tbl_entries_data_6` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (62, 31, '#### Contact Form Notes\r\n\r\n* It\'s preferred to use the contact form rather than email. There is always a chance for emails to be picked up as spam.\r\n* I will generally reply to messages within 24 hours unless I am horribly swamped.', '<h4>Contact Form Notes</h4>\n\n<ul>\n<li>It&#8217;s preferred to use the contact form rather than email. There is always a chance for emails to be picked up as spam.</li>\n<li>I will generally reply to messages within 24 hours unless I am horribly swamped.</li>\n</ul>\n');
-INSERT INTO `tbl_entries_data_6` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (36, 33, 'It starts with an idea to meet a need, to solve a problem, to overcome a challenge, to improve upon the status quo, to reach beyond the ordinary, to realize a dream. Then comes the part where the world of ideas meets everyday life. All these ideas we have are very abstract and subjective. How can we bring these ideas into reality and accomplish these goals and objectives in the real world? Here is where design can help.', '<p>It starts with an idea to meet a need, to solve a problem, to overcome a challenge, to improve upon the status quo, to reach beyond the ordinary, to realize a dream. Then comes the part where the world of ideas meets everyday life. All these ideas we have are very abstract and subjective. How can we bring these ideas into reality and accomplish these goals and objectives in the real world? Here is where design can help.</p>\n');
-INSERT INTO `tbl_entries_data_6` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (33, 36, 'The tools of the trade from pencils, pens, rapidographs and rubylith to fonts, software and hardware to CMYK printing, foil stamping, stochastic screens and paper stocks: The breadth and depth of resources required for competence in graphic design and strategic corporate communications grows as technology advances. Here, I try to catalog some of those resources.', '<p>The tools of the trade from pencils, pens, rapidographs and rubylith to fonts, software and hardware to CMYK printing, foil stamping, stochastic screens and paper stocks: The breadth and depth of resources required for competence in graphic design and strategic corporate communications grows as technology advances. Here, I try to catalog some of those resources.</p>\n');
-INSERT INTO `tbl_entries_data_6` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (34, 43, 'Line. Shape. Colour. Texture. Type. Grid. Style. \r\n\r\nStandards. Accessibility. Usability.\r\n\r\nBranding. Identity. Design.', '<p>Line. Shape. Colour. Texture. Type. Grid. Style.</p>\n\n<p>Standards. Accessibility. Usability.</p>\n\n<p>Branding. Identity. Design.</p>\n');
-INSERT INTO `tbl_entries_data_6` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (38, 44, 'Studies and experiments regarding design.', '<p>Studies and experiments regarding design.</p>\n');
-INSERT INTO `tbl_entries_data_6` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (41, 45, 'Putting it all together requires a process that can take a project from brief, proposal and concept to design, application, and implementation, assessing results and ensuring quality and consistency.', '<p>Putting it all together requires a process that can take a project from brief, proposal and concept to design, application, and implementation, assessing results and ensuring quality and consistency.</p>\n');
-INSERT INTO `tbl_entries_data_6` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (37, 53, 'Design brings ideas to life. Design is communication using technology, the tools humans create to make life better. The technology of the alphabet is one of those tools, and its uses have expanded from inscribed stone to printing press to electronic media, transforming the way we live. Design develops ideas, tools, objects and processes that transform culture by creating culture, bringing to life new ways of thinking and living.', '<p>Design brings ideas to life. Design is communication using technology, the tools humans create to make life better. The technology of the alphabet is one of those tools, and its uses have expanded from inscribed stone to printing press to electronic media, transforming the way we live. Design develops ideas, tools, objects and processes that transform culture by creating culture, bringing to life new ways of thinking and living.</p>\n');
-INSERT INTO `tbl_entries_data_6` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (42, 54, 'Who am I? What do I do? What is my purpose? What do I value most? Why am I here? These basic questions have complex answers. The answers we decide form our identity, which then becomes the foundation for self-perceptions and actions. Your visual identity is the face that the world sees. Your brand identity is the heart of who you are.', '<p>Who am I? What do I do? What is my purpose? What do I value most? Why am I here? These basic questions have complex answers. The answers we decide form our identity, which then becomes the foundation for self-perceptions and actions. Your visual identity is the face that the world sees. Your brand identity is the heart of who you are.</p>\n');
-INSERT INTO `tbl_entries_data_6` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (43, 55, 'Printing has always been intimately connected with advances in technology. The Chinese are credited with the invention of moveable type (Bi Sheng invented the use of clay type in 1041), but the number of characters used in the complex Chinese pictographic writing system made the process impractical. The Koreans developed a phonetic writing system which was better suited to the use of the movable type printing press, which Chwe Yun-Ui invented in 1234 during the Goryeo Dynasty, an ancient Korean nation. In Western European tradition, Johann Gutenberg is credited with the invention of the movable type printing press, sparking a cultural revolution through the spread of ideas.', '<p>Printing has always been intimately connected with advances in technology. The Chinese are credited with the invention of moveable type (Bi Sheng invented the use of clay type in 1041), but the number of characters used in the complex Chinese pictographic writing system made the process impractical. The Koreans developed a phonetic writing system which was better suited to the use of the movable type printing press, which Chwe Yun-Ui invented in 1234 during the Goryeo Dynasty, an ancient Korean nation. In Western European tradition, Johann Gutenberg is credited with the invention of the movable type printing press, sparking a cultural revolution through the spread of ideas.</p>\n');
-INSERT INTO `tbl_entries_data_6` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (44, 56, 'The internet has come of age. The world wide web is everywhere. Where at one time corporations and individuals quickly bought up domain names to secure a presence on the web, information dissemination and consumption on the internet is becoming more sophisticated and complex. The ideas and interests of science quickly gave way to the dominance of commerce on the web, and web designers adopted various technologies in attempts to improve the quality and aesthetics of communication. It soon became apparent that with attempts to overcome the limitations of the medium and a growing reliance on proprietary technologies, there was a need for standards. The Web Standards and open source movements have changed the way websites look and work, with greater emphasis placed on the accessibility of information and the quality of the user experience.', '<p>The internet has come of age. The world wide web is everywhere. Where at one time corporations and individuals quickly bought up domain names to secure a presence on the web, information dissemination and consumption on the internet is becoming more sophisticated and complex. The ideas and interests of science quickly gave way to the dominance of commerce on the web, and web designers adopted various technologies in attempts to improve the quality and aesthetics of communication. It soon became apparent that with attempts to overcome the limitations of the medium and a growing reliance on proprietary technologies, there was a need for standards. The Web Standards and open source movements have changed the way websites look and work, with greater emphasis placed on the accessibility of information and the quality of the user experience.</p>\n');
-INSERT INTO `tbl_entries_data_6` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (60, 57, 'Since the European invention of the printing press, traditionally attributed to Gutenberg in 1451, type design or typography has progressed relatively slowly over the centuries, until the past century. At one time a highly skilled profession, requiring a lengthy apprenticeship to learn the craft, type design has been revolutionized by the accessibility of inexpensive font design software. The result has been an exponential proliferation of typeface designs and fonts.\r\n', '<p>Since the European invention of the printing press, traditionally attributed to Gutenberg in 1451, type design or typography has progressed relatively slowly over the centuries, until the past century. At one time a highly skilled profession, requiring a lengthy apprenticeship to learn the craft, type design has been revolutionized by the accessibility of inexpensive font design software. The result has been an exponential proliferation of typeface designs and fonts.</p>\n');
-INSERT INTO `tbl_entries_data_6` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (46, 58, 'Design goes beyond the pragmatic application of visual style to cultural artifacts. In other words, design is more than making things look pretty. It is a business management tool that enhances the ability of an individual or group of individuals to build relationships with the people in their community, locally and globally, and to realize their vision to meet needs, solve problems, overcome challenges and realize dreams.', '<p>Design goes beyond the pragmatic application of visual style to cultural artifacts. In other words, design is more than making things look pretty. It is a business management tool that enhances the ability of an individual or group of individuals to build relationships with the people in their community, locally and globally, and to realize their vision to meet needs, solve problems, overcome challenges and realize dreams.</p>\n');
-INSERT INTO `tbl_entries_data_6` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (49, 59, 'Design empowers individuals by providing the tools necessary to reach one\'s goals and objectives. The process of thinking through a problem helps to define the challenges and the changes necessary to overcome them. These changes can make an effective impression in the community, distilling complex messages into creative expressions of thoughtfully considered ideas.', '<p>Design empowers individuals by providing the tools necessary to reach one&#8217;s goals and objectives. The process of thinking through a problem helps to define the challenges and the changes necessary to overcome them. These changes can make an effective impression in the community, distilling complex messages into creative expressions of thoughtfully considered ideas.</p>\n');
-INSERT INTO `tbl_entries_data_6` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (52, 60, 'How does one thing relate to another? How do people relate to one another? Building a brand and building a customer base or broad support for an idea, cause or product requires building relationships.\r\n', '<p>How does one thing relate to another? How do people relate to one another? Building a brand and building a customer base or broad support for an idea, cause or product requires building relationships.</p>\n');
-INSERT INTO `tbl_entries_data_6` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (64, 61, 'What is community? Common space. Common thoughts. Common language. Common world. Where anything is held in common, there is community. The global village has many voices wanting to be heard. Community is built on the ability to listen and to understand.', '<p>What is community? Common space. Common thoughts. Common language. Common world. Where anything is held in common, there is community. The global village has many voices wanting to be heard. Community is built on the ability to listen and to understand.</p>\n');
+INSERT INTO `tbl_entries_data_6` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (83, 33, 'It starts with an idea to meet a need, to solve a problem, to overcome a challenge, to improve upon the status quo, to reach beyond the ordinary, to realize a dream. Then comes the part where the world of ideas meets everyday life. All these ideas we have are very abstract and subjective. How can we bring these ideas into reality and accomplish these goals and objectives in the real world? Here is where design can help.', '<p>It starts with an idea to meet a need, to solve a problem, to overcome a challenge, to improve upon the status quo, to reach beyond the ordinary, to realize a dream. Then comes the part where the world of ideas meets everyday life. All these ideas we have are very abstract and subjective. How can we bring these ideas into reality and accomplish these goals and objectives in the real world? Here is where design can help.</p>\n');
+INSERT INTO `tbl_entries_data_6` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (82, 36, 'The tools of the trade from pencils, pens, rapidographs and rubylith to fonts, software and hardware to CMYK printing, foil stamping, stochastic screens and paper stocks: The breadth and depth of resources required for competence in graphic design and strategic corporate communications grows as technology advances. Here, I try to catalog some of those resources.', '<p>The tools of the trade from pencils, pens, rapidographs and rubylith to fonts, software and hardware to CMYK printing, foil stamping, stochastic screens and paper stocks: The breadth and depth of resources required for competence in graphic design and strategic corporate communications grows as technology advances. Here, I try to catalog some of those resources.</p>\n');
+INSERT INTO `tbl_entries_data_6` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (81, 43, 'Line. Shape. Colour. Texture. Type. Grid. Style. \r\n\r\nStandards. Accessibility. Usability.\r\n\r\nBranding. Identity. Design.', '<p>Line. Shape. Colour. Texture. Type. Grid. Style.</p>\n\n<p>Standards. Accessibility. Usability.</p>\n\n<p>Branding. Identity. Design.</p>\n');
+INSERT INTO `tbl_entries_data_6` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (80, 44, 'Studies and experiments regarding design.', '<p>Studies and experiments regarding design.</p>\n');
+INSERT INTO `tbl_entries_data_6` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (87, 45, 'Putting it all together requires a process that can take a project from brief, proposal and concept to design, application, and implementation, assessing results and ensuring quality and consistency.', '<p>Putting it all together requires a process that can take a project from brief, proposal and concept to design, application, and implementation, assessing results and ensuring quality and consistency.</p>\n');
+INSERT INTO `tbl_entries_data_6` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (79, 53, 'Design brings ideas to life. Design is communication using technology, the tools humans create to make life better. The technology of the alphabet is one of those tools, and its uses have expanded from inscribed stone to printing press to electronic media, transforming the way we live. Design develops ideas, tools, objects and processes that transform culture by creating culture, bringing to life new ways of thinking and living.', '<p>Design brings ideas to life. Design is communication using technology, the tools humans create to make life better. The technology of the alphabet is one of those tools, and its uses have expanded from inscribed stone to printing press to electronic media, transforming the way we live. Design develops ideas, tools, objects and processes that transform culture by creating culture, bringing to life new ways of thinking and living.</p>\n');
+INSERT INTO `tbl_entries_data_6` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (78, 54, 'Who am I? What do I do? What is my purpose? What do I value most? Why am I here? These basic questions have complex answers. The answers we decide form our identity, which then becomes the foundation for self-perceptions and actions. Your visual identity is the face that the world sees. Your brand identity is the heart of who you are.', '<p>Who am I? What do I do? What is my purpose? What do I value most? Why am I here? These basic questions have complex answers. The answers we decide form our identity, which then becomes the foundation for self-perceptions and actions. Your visual identity is the face that the world sees. Your brand identity is the heart of who you are.</p>\n');
+INSERT INTO `tbl_entries_data_6` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (77, 55, 'Printing has always been intimately connected with advances in technology. The Chinese are credited with the invention of moveable type (Bi Sheng invented the use of clay type in 1041), but the number of characters used in the complex Chinese pictographic writing system made the process impractical. The Koreans developed a phonetic writing system which was better suited to the use of the movable type printing press, which Chwe Yun-Ui invented in 1234 during the Goryeo Dynasty, an ancient Korean nation. In Western European tradition, Johann Gutenberg is credited with the invention of the movable type printing press, sparking a cultural revolution through the spread of ideas.', '<p>Printing has always been intimately connected with advances in technology. The Chinese are credited with the invention of moveable type (Bi Sheng invented the use of clay type in 1041), but the number of characters used in the complex Chinese pictographic writing system made the process impractical. The Koreans developed a phonetic writing system which was better suited to the use of the movable type printing press, which Chwe Yun-Ui invented in 1234 during the Goryeo Dynasty, an ancient Korean nation. In Western European tradition, Johann Gutenberg is credited with the invention of the movable type printing press, sparking a cultural revolution through the spread of ideas.</p>\n');
+INSERT INTO `tbl_entries_data_6` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (76, 56, 'The internet has come of age. The world wide web is everywhere. Where at one time corporations and individuals quickly bought up domain names to secure a presence on the web, information dissemination and consumption on the internet is becoming more sophisticated and complex. The ideas and interests of science quickly gave way to the dominance of commerce on the web, and web designers adopted various technologies in attempts to improve the quality and aesthetics of communication. It soon became apparent that with attempts to overcome the limitations of the medium and a growing reliance on proprietary technologies, there was a need for standards. The Web Standards and open source movements have changed the way websites look and work, with greater emphasis placed on the accessibility of information and the quality of the user experience.', '<p>The internet has come of age. The world wide web is everywhere. Where at one time corporations and individuals quickly bought up domain names to secure a presence on the web, information dissemination and consumption on the internet is becoming more sophisticated and complex. The ideas and interests of science quickly gave way to the dominance of commerce on the web, and web designers adopted various technologies in attempts to improve the quality and aesthetics of communication. It soon became apparent that with attempts to overcome the limitations of the medium and a growing reliance on proprietary technologies, there was a need for standards. The Web Standards and open source movements have changed the way websites look and work, with greater emphasis placed on the accessibility of information and the quality of the user experience.</p>\n');
+INSERT INTO `tbl_entries_data_6` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (75, 57, 'Since the European invention of the printing press, traditionally attributed to Gutenberg in 1451, type design or typography has progressed relatively slowly over the centuries, until the past century. At one time a highly skilled profession, requiring a lengthy apprenticeship to learn the craft, type design has been revolutionized by the accessibility of inexpensive font design software. The result has been an exponential proliferation of typeface designs and fonts.\r\n', '<p>Since the European invention of the printing press, traditionally attributed to Gutenberg in 1451, type design or typography has progressed relatively slowly over the centuries, until the past century. At one time a highly skilled profession, requiring a lengthy apprenticeship to learn the craft, type design has been revolutionized by the accessibility of inexpensive font design software. The result has been an exponential proliferation of typeface designs and fonts.</p>\n');
+INSERT INTO `tbl_entries_data_6` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (74, 58, 'Design goes beyond the pragmatic application of visual style to cultural artifacts. In other words, design is more than making things look pretty. It is a business management tool that enhances the ability of an individual or group of individuals to build relationships with the people in their community, locally and globally, and to realize their vision to meet needs, solve problems, overcome challenges and realize dreams.', '<p>Design goes beyond the pragmatic application of visual style to cultural artifacts. In other words, design is more than making things look pretty. It is a business management tool that enhances the ability of an individual or group of individuals to build relationships with the people in their community, locally and globally, and to realize their vision to meet needs, solve problems, overcome challenges and realize dreams.</p>\n');
+INSERT INTO `tbl_entries_data_6` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (72, 59, 'Design empowers individuals by providing the tools necessary to reach one\'s goals and objectives. The process of thinking through a problem helps to define the challenges and the changes necessary to overcome them. These changes can make an effective impression in the community, distilling complex messages into creative expressions of thoughtfully considered ideas.', '<p>Design empowers individuals by providing the tools necessary to reach one&#8217;s goals and objectives. The process of thinking through a problem helps to define the challenges and the changes necessary to overcome them. These changes can make an effective impression in the community, distilling complex messages into creative expressions of thoughtfully considered ideas.</p>\n');
+INSERT INTO `tbl_entries_data_6` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (71, 60, 'How does one thing relate to another? How do people relate to one another? Building a brand and building a customer base or broad support for an idea, cause or product requires building relationships.\r\n', '<p>How does one thing relate to another? How do people relate to one another? Building a brand and building a customer base or broad support for an idea, cause or product requires building relationships.</p>\n');
+INSERT INTO `tbl_entries_data_6` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (70, 61, 'What is community? Common space. Common thoughts. Common language. Common world. Where anything is held in common, there is community. The global village has many voices wanting to be heard. Community is built on the ability to listen and to understand.', '<p>What is community? Common space. Common thoughts. Common language. Common world. Where anything is held in common, there is community. The global village has many voices wanting to be heard. Community is built on the ability to listen and to understand.</p>\n');
 
 -- *** STRUCTURE: `tbl_entries_data_60` ***
 DROP TABLE IF EXISTS `tbl_entries_data_60`;
@@ -2239,35 +2239,6 @@ CREATE TABLE `tbl_entries_data_63` (
 ) ENGINE=MyISAM AUTO_INCREMENT=89 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_63` ***
-INSERT INTO `tbl_entries_data_63` (`id`, `entry_id`, `handle`, `value`) VALUES (2, 67, 'the-wild-orange-spa-logo-design', 'the Wild Orange spa Logo Design');
-INSERT INTO `tbl_entries_data_63` (`id`, `entry_id`, `handle`, `value`) VALUES (85, 68, 'big-bear-classic', 'Big Bear Classic');
-INSERT INTO `tbl_entries_data_63` (`id`, `entry_id`, `handle`, `value`) VALUES (88, 69, 'hilfsaktion-maertyrerkirche-website', 'Hilfsaktion Maertyrerkirche Website');
-INSERT INTO `tbl_entries_data_63` (`id`, `entry_id`, `handle`, `value`) VALUES (86, 70, 'bpa-group-website', 'BPA Group Website');
-INSERT INTO `tbl_entries_data_63` (`id`, `entry_id`, `handle`, `value`) VALUES (84, 71, 'renter-registry-logo', 'Renter Registry Logo');
-INSERT INTO `tbl_entries_data_63` (`id`, `entry_id`, `handle`, `value`) VALUES (83, 72, 'bpa-group-presentation-cover', 'BPA Group Presentation Cover');
-INSERT INTO `tbl_entries_data_63` (`id`, `entry_id`, `handle`, `value`) VALUES (82, 73, 'rcabc-invitation', 'RCABC Invitation');
-INSERT INTO `tbl_entries_data_63` (`id`, `entry_id`, `handle`, `value`) VALUES (81, 74, 'bristol-gardens-logo', 'Bristol Gardens Logo');
-INSERT INTO `tbl_entries_data_63` (`id`, `entry_id`, `handle`, `value`) VALUES (80, 75, 'st-johns-logo', 'St John\'s Logo');
-INSERT INTO `tbl_entries_data_63` (`id`, `entry_id`, `handle`, `value`) VALUES (79, 76, 'u-turn-logo', 'U-Turn Logo');
-INSERT INTO `tbl_entries_data_63` (`id`, `entry_id`, `handle`, `value`) VALUES (78, 77, 'the-wild-orange-spa-calendar-2006', 'The Wild Orange Spa Calendar 2006');
-INSERT INTO `tbl_entries_data_63` (`id`, `entry_id`, `handle`, `value`) VALUES (77, 78, 'columbia-national-investments-logo', 'Columbia National Investments Logo');
-INSERT INTO `tbl_entries_data_63` (`id`, `entry_id`, `handle`, `value`) VALUES (74, 79, 'idop-2004-website', 'IDOP 2004 Website');
-INSERT INTO `tbl_entries_data_63` (`id`, `entry_id`, `handle`, `value`) VALUES (73, 80, 'columbia-national-website', 'Columbia National Website');
-INSERT INTO `tbl_entries_data_63` (`id`, `entry_id`, `handle`, `value`) VALUES (68, 81, 'life-above-the-rim-logo-design', 'Life Above the Rim Logo Design');
-INSERT INTO `tbl_entries_data_63` (`id`, `entry_id`, `handle`, `value`) VALUES (67, 82, '300ccom-website', '300C.com Website');
-INSERT INTO `tbl_entries_data_63` (`id`, `entry_id`, `handle`, `value`) VALUES (66, 83, 'design-one-website', 'Design One Website');
-INSERT INTO `tbl_entries_data_63` (`id`, `entry_id`, `handle`, `value`) VALUES (65, 84, 'international-christian-response-website', 'International Christian Response Website');
-INSERT INTO `tbl_entries_data_63` (`id`, `entry_id`, `handle`, `value`) VALUES (64, 85, 'the-rice-raiser-website', 'The Rice Raiser Website');
-INSERT INTO `tbl_entries_data_63` (`id`, `entry_id`, `handle`, `value`) VALUES (63, 86, 'the-rice-raiser-logo-design', 'The Rice Raiser Logo Design');
-INSERT INTO `tbl_entries_data_63` (`id`, `entry_id`, `handle`, `value`) VALUES (62, 87, 'pacific-coastal-airlines-website', 'Pacific Coastal Airlines Website');
-INSERT INTO `tbl_entries_data_63` (`id`, `entry_id`, `handle`, `value`) VALUES (61, 88, 'camp-qwanoes-classic-crest', 'Camp Qwanoes Classic Crest');
-INSERT INTO `tbl_entries_data_63` (`id`, `entry_id`, `handle`, `value`) VALUES (60, 89, 'sahara-furniture-catalog', 'Sahara Furniture Catalog');
-INSERT INTO `tbl_entries_data_63` (`id`, `entry_id`, `handle`, `value`) VALUES (59, 90, 'quantex-capital-corporation-logo-design', 'Quantex Capital Corporation Logo Design');
-INSERT INTO `tbl_entries_data_63` (`id`, `entry_id`, `handle`, `value`) VALUES (58, 91, 'the-total-package-logo-design', 'The Total Package Logo Design');
-INSERT INTO `tbl_entries_data_63` (`id`, `entry_id`, `handle`, `value`) VALUES (57, 92, 'sahara-furniture', 'Sahara Furniture');
-INSERT INTO `tbl_entries_data_63` (`id`, `entry_id`, `handle`, `value`) VALUES (56, 93, 'bc-boys-a-provincial-championships', 'BC Boys A Provincial Championships');
-INSERT INTO `tbl_entries_data_63` (`id`, `entry_id`, `handle`, `value`) VALUES (55, 94, 'moonrattles-logo-design', 'MoonRattles Logo Design');
-INSERT INTO `tbl_entries_data_63` (`id`, `entry_id`, `handle`, `value`) VALUES (54, 95, 'arbutus-meadows-logo-design', 'Arbutus Meadows Logo Design');
 
 -- *** STRUCTURE: `tbl_entries_data_64` ***
 DROP TABLE IF EXISTS `tbl_entries_data_64`;
@@ -2283,12 +2254,6 @@ CREATE TABLE `tbl_entries_data_64` (
 ) ENGINE=MyISAM AUTO_INCREMENT=27 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_64` ***
-INSERT INTO `tbl_entries_data_64` (`id`, `entry_id`, `handle`, `value`) VALUES (25, 70, 'http-wwwbpa-groupcom', 'http://www.bpa-group.com/');
-INSERT INTO `tbl_entries_data_64` (`id`, `entry_id`, `handle`, `value`) VALUES (24, 79, 'http-wwwdesignprojectxcom-idop', 'http://www.designprojectx.com/idop/');
-INSERT INTO `tbl_entries_data_64` (`id`, `entry_id`, `handle`, `value`) VALUES (23, 80, 'http-wwwdesignprojectxcom-cni', 'http://www.designprojectx.com/cni/');
-INSERT INTO `tbl_entries_data_64` (`id`, `entry_id`, `handle`, `value`) VALUES (18, 82, 'http-www300ccom', 'http://www.300c.com/');
-INSERT INTO `tbl_entries_data_64` (`id`, `entry_id`, `handle`, `value`) VALUES (17, 84, 'http-wwwchristianresponseorg', 'http://www.christianresponse.org/');
-INSERT INTO `tbl_entries_data_64` (`id`, `entry_id`, `handle`, `value`) VALUES (16, 85, 'http-wwwriceraiserorg', 'http://www.riceraiser.org/');
 
 -- *** STRUCTURE: `tbl_entries_data_65` ***
 DROP TABLE IF EXISTS `tbl_entries_data_65`;
@@ -2304,35 +2269,6 @@ CREATE TABLE `tbl_entries_data_65` (
 ) ENGINE=MyISAM AUTO_INCREMENT=89 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_65` ***
-INSERT INTO `tbl_entries_data_65` (`id`, `entry_id`, `value`, `local`, `gmt`) VALUES (2, 67, '2003-09-09T00:00:00-07:00', 1063090800, 1063090800);
-INSERT INTO `tbl_entries_data_65` (`id`, `entry_id`, `value`, `local`, `gmt`) VALUES (85, 68, '2005-12-09T00:00:00-08:00', 1134115200, 1134115200);
-INSERT INTO `tbl_entries_data_65` (`id`, `entry_id`, `value`, `local`, `gmt`) VALUES (88, 69, '2004-11-03T00:00:00-08:00', 1099468800, 1099468800);
-INSERT INTO `tbl_entries_data_65` (`id`, `entry_id`, `value`, `local`, `gmt`) VALUES (86, 70, '2004-03-01T00:00:00-08:00', 1078128000, 1078128000);
-INSERT INTO `tbl_entries_data_65` (`id`, `entry_id`, `value`, `local`, `gmt`) VALUES (84, 71, '2003-09-05T00:00:00-07:00', 1062745200, 1062745200);
-INSERT INTO `tbl_entries_data_65` (`id`, `entry_id`, `value`, `local`, `gmt`) VALUES (83, 72, '2006-03-27T00:00:00-08:00', 1143446400, 1143446400);
-INSERT INTO `tbl_entries_data_65` (`id`, `entry_id`, `value`, `local`, `gmt`) VALUES (82, 73, '2002-06-15T00:00:00-07:00', 1024124400, 1024124400);
-INSERT INTO `tbl_entries_data_65` (`id`, `entry_id`, `value`, `local`, `gmt`) VALUES (81, 74, '1989-12-01T00:00:00-08:00', 628502400, 628502400);
-INSERT INTO `tbl_entries_data_65` (`id`, `entry_id`, `value`, `local`, `gmt`) VALUES (80, 75, '1989-07-01T00:00:00-07:00', 615279600, 615279600);
-INSERT INTO `tbl_entries_data_65` (`id`, `entry_id`, `value`, `local`, `gmt`) VALUES (79, 76, '1994-04-14T00:00:00-07:00', 766306800, 766306800);
-INSERT INTO `tbl_entries_data_65` (`id`, `entry_id`, `value`, `local`, `gmt`) VALUES (78, 77, '2005-12-01T00:00:00-08:00', 1133424000, 1133424000);
-INSERT INTO `tbl_entries_data_65` (`id`, `entry_id`, `value`, `local`, `gmt`) VALUES (77, 78, '2005-09-01T00:00:00-07:00', 1125558000, 1125558000);
-INSERT INTO `tbl_entries_data_65` (`id`, `entry_id`, `value`, `local`, `gmt`) VALUES (74, 79, '2004-07-22T00:00:00-07:00', 1090479600, 1090479600);
-INSERT INTO `tbl_entries_data_65` (`id`, `entry_id`, `value`, `local`, `gmt`) VALUES (73, 80, '2005-08-16T00:00:00-07:00', 1124175600, 1124175600);
-INSERT INTO `tbl_entries_data_65` (`id`, `entry_id`, `value`, `local`, `gmt`) VALUES (68, 81, '1993-07-12T00:00:00-07:00', 742460400, 742460400);
-INSERT INTO `tbl_entries_data_65` (`id`, `entry_id`, `value`, `local`, `gmt`) VALUES (67, 82, '2005-12-17T00:00:00-08:00', 1134806400, 1134806400);
-INSERT INTO `tbl_entries_data_65` (`id`, `entry_id`, `value`, `local`, `gmt`) VALUES (66, 83, '2002-12-01T00:00:00-08:00', 1038729600, 1038729600);
-INSERT INTO `tbl_entries_data_65` (`id`, `entry_id`, `value`, `local`, `gmt`) VALUES (65, 84, '2005-03-02T00:00:00-08:00', 1109750400, 1109750400);
-INSERT INTO `tbl_entries_data_65` (`id`, `entry_id`, `value`, `local`, `gmt`) VALUES (64, 85, '2005-05-05T00:00:00-07:00', 1115276400, 1115276400);
-INSERT INTO `tbl_entries_data_65` (`id`, `entry_id`, `value`, `local`, `gmt`) VALUES (63, 86, '2005-01-18T00:00:00-08:00', 1106035200, 1106035200);
-INSERT INTO `tbl_entries_data_65` (`id`, `entry_id`, `value`, `local`, `gmt`) VALUES (62, 87, '2004-05-24T00:00:00-07:00', 1085382000, 1085382000);
-INSERT INTO `tbl_entries_data_65` (`id`, `entry_id`, `value`, `local`, `gmt`) VALUES (61, 88, '1994-06-14T00:00:00-07:00', 771577200, 771577200);
-INSERT INTO `tbl_entries_data_65` (`id`, `entry_id`, `value`, `local`, `gmt`) VALUES (60, 89, '2004-04-14T00:00:00-07:00', 1081926000, 1081926000);
-INSERT INTO `tbl_entries_data_65` (`id`, `entry_id`, `value`, `local`, `gmt`) VALUES (59, 90, '2005-04-21T00:00:00-07:00', 1114066800, 1114066800);
-INSERT INTO `tbl_entries_data_65` (`id`, `entry_id`, `value`, `local`, `gmt`) VALUES (58, 91, '1994-06-17T00:00:00-07:00', 771836400, 771836400);
-INSERT INTO `tbl_entries_data_65` (`id`, `entry_id`, `value`, `local`, `gmt`) VALUES (57, 92, '2004-02-12T00:00:00-08:00', 1076572800, 1076572800);
-INSERT INTO `tbl_entries_data_65` (`id`, `entry_id`, `value`, `local`, `gmt`) VALUES (56, 93, '2004-02-04T00:00:00-08:00', 1075881600, 1075881600);
-INSERT INTO `tbl_entries_data_65` (`id`, `entry_id`, `value`, `local`, `gmt`) VALUES (55, 94, '2006-09-08T00:00:00-07:00', 1157698800, 1157698800);
-INSERT INTO `tbl_entries_data_65` (`id`, `entry_id`, `value`, `local`, `gmt`) VALUES (54, 95, '2005-11-07T00:00:00-08:00', 1131350400, 1131350400);
 
 -- *** STRUCTURE: `tbl_entries_data_66` ***
 DROP TABLE IF EXISTS `tbl_entries_data_66`;
@@ -2348,35 +2284,6 @@ CREATE TABLE `tbl_entries_data_66` (
 ) ENGINE=MyISAM AUTO_INCREMENT=89 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_66` ***
-INSERT INTO `tbl_entries_data_66` (`id`, `entry_id`, `handle`, `value`) VALUES (2, 67, 'the-wild-orange-spa', 'the Wild Orange spa');
-INSERT INTO `tbl_entries_data_66` (`id`, `entry_id`, `handle`, `value`) VALUES (85, 68, 'st-john-brebeuf-secondary-school', 'St John Brebeuf Secondary School');
-INSERT INTO `tbl_entries_data_66` (`id`, `entry_id`, `handle`, `value`) VALUES (88, 69, 'international-christian-response', 'International Christian Response');
-INSERT INTO `tbl_entries_data_66` (`id`, `entry_id`, `handle`, `value`) VALUES (86, 70, 'bpa-group', 'BPA Group');
-INSERT INTO `tbl_entries_data_66` (`id`, `entry_id`, `handle`, `value`) VALUES (84, 71, 'renterregistrycom', 'RenterRegistry.com');
-INSERT INTO `tbl_entries_data_66` (`id`, `entry_id`, `handle`, `value`) VALUES (83, 72, 'bpa-group', 'BPA Group');
-INSERT INTO `tbl_entries_data_66` (`id`, `entry_id`, `handle`, `value`) VALUES (82, 73, 'roofing-contractors-association-of-bc', 'Roofing Contractors Association of BC');
-INSERT INTO `tbl_entries_data_66` (`id`, `entry_id`, `handle`, `value`) VALUES (81, 74, 'bristol-gardens', 'Bristol Gardens');
-INSERT INTO `tbl_entries_data_66` (`id`, `entry_id`, `handle`, `value`) VALUES (80, 75, 'st-johns-school', 'St John\'s School');
-INSERT INTO `tbl_entries_data_66` (`id`, `entry_id`, `handle`, `value`) VALUES (79, 76, 'south-delta-baptist-church', 'South Delta Baptist Church');
-INSERT INTO `tbl_entries_data_66` (`id`, `entry_id`, `handle`, `value`) VALUES (78, 77, 'the-wild-orange-spa', 'The Wild Orange Spa');
-INSERT INTO `tbl_entries_data_66` (`id`, `entry_id`, `handle`, `value`) VALUES (77, 78, 'columbia-national-investments', 'Columbia National Investments');
-INSERT INTO `tbl_entries_data_66` (`id`, `entry_id`, `handle`, `value`) VALUES (74, 79, 'international-day-of-prayer', 'International Day of Prayer');
-INSERT INTO `tbl_entries_data_66` (`id`, `entry_id`, `handle`, `value`) VALUES (73, 80, 'columbia-national-investments', 'Columbia National Investments');
-INSERT INTO `tbl_entries_data_66` (`id`, `entry_id`, `handle`, `value`) VALUES (68, 81, 'south-delta-baptist-church', 'South Delta Baptist Church');
-INSERT INTO `tbl_entries_data_66` (`id`, `entry_id`, `handle`, `value`) VALUES (67, 82, 'manfred-leiser', 'Manfred Leiser');
-INSERT INTO `tbl_entries_data_66` (`id`, `entry_id`, `handle`, `value`) VALUES (66, 83, 'design-one-graphics-group', 'Design One Graphics Group');
-INSERT INTO `tbl_entries_data_66` (`id`, `entry_id`, `handle`, `value`) VALUES (65, 84, 'international-christian-response', 'International Christian Response');
-INSERT INTO `tbl_entries_data_66` (`id`, `entry_id`, `handle`, `value`) VALUES (64, 85, 'hunger-response-international', 'Hunger Response International');
-INSERT INTO `tbl_entries_data_66` (`id`, `entry_id`, `handle`, `value`) VALUES (63, 86, 'the-rice-raiser', 'The Rice Raiser');
-INSERT INTO `tbl_entries_data_66` (`id`, `entry_id`, `handle`, `value`) VALUES (62, 87, 'design-one-graphics-group', 'Design One Graphics Group');
-INSERT INTO `tbl_entries_data_66` (`id`, `entry_id`, `handle`, `value`) VALUES (61, 88, 'camp-qwanoes', 'Camp Qwanoes');
-INSERT INTO `tbl_entries_data_66` (`id`, `entry_id`, `handle`, `value`) VALUES (60, 89, 'sahara-furniture-manufacturing', 'Sahara Furniture Manufacturing');
-INSERT INTO `tbl_entries_data_66` (`id`, `entry_id`, `handle`, `value`) VALUES (59, 90, 'quantex-capital-corporation', 'Quantex Capital Corporation');
-INSERT INTO `tbl_entries_data_66` (`id`, `entry_id`, `handle`, `value`) VALUES (58, 91, 'campus-crusade-for-christ-canada', 'Campus Crusade for Christ Canada');
-INSERT INTO `tbl_entries_data_66` (`id`, `entry_id`, `handle`, `value`) VALUES (57, 92, 'sahara-furniture-manufacturing', 'Sahara Furniture Manufacturing');
-INSERT INTO `tbl_entries_data_66` (`id`, `entry_id`, `handle`, `value`) VALUES (56, 93, 'st-john-brebeuf-secondary-school', 'St John Brebeuf Secondary School');
-INSERT INTO `tbl_entries_data_66` (`id`, `entry_id`, `handle`, `value`) VALUES (55, 94, 'moonrattles', 'MoonRattles');
-INSERT INTO `tbl_entries_data_66` (`id`, `entry_id`, `handle`, `value`) VALUES (54, 95, 'arbutus-meadows', 'Arbutus Meadows');
 
 -- *** STRUCTURE: `tbl_entries_data_67` ***
 DROP TABLE IF EXISTS `tbl_entries_data_67`;
@@ -2392,35 +2299,6 @@ CREATE TABLE `tbl_entries_data_67` (
 ) ENGINE=MyISAM AUTO_INCREMENT=89 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_67` ***
-INSERT INTO `tbl_entries_data_67` (`id`, `entry_id`, `handle`, `value`) VALUES (2, 67, 'corporate-identity', 'Corporate Identity');
-INSERT INTO `tbl_entries_data_67` (`id`, `entry_id`, `handle`, `value`) VALUES (85, 68, 'logo-design', 'Logo Design');
-INSERT INTO `tbl_entries_data_67` (`id`, `entry_id`, `handle`, `value`) VALUES (88, 69, 'hilfsaktion-maertyrerkirche-website-redesign', 'Hilfsaktion Maertyrerkirche Website Redesign');
-INSERT INTO `tbl_entries_data_67` (`id`, `entry_id`, `handle`, `value`) VALUES (86, 70, 'website-design', 'Website Design');
-INSERT INTO `tbl_entries_data_67` (`id`, `entry_id`, `handle`, `value`) VALUES (84, 71, 'renter-registry-website', 'Renter Registry Website');
-INSERT INTO `tbl_entries_data_67` (`id`, `entry_id`, `handle`, `value`) VALUES (83, 72, 'presentation-cover', 'Presentation Cover');
-INSERT INTO `tbl_entries_data_67` (`id`, `entry_id`, `handle`, `value`) VALUES (82, 73, 'grand-opening-invitation', 'Grand Opening Invitation');
-INSERT INTO `tbl_entries_data_67` (`id`, `entry_id`, `handle`, `value`) VALUES (81, 74, 'logo-design', 'Logo Design');
-INSERT INTO `tbl_entries_data_67` (`id`, `entry_id`, `handle`, `value`) VALUES (80, 75, 'logo-design', 'Logo Design');
-INSERT INTO `tbl_entries_data_67` (`id`, `entry_id`, `handle`, `value`) VALUES (79, 76, 'u-turn-t-shirt-design', 'U-Turn T-shirt Design');
-INSERT INTO `tbl_entries_data_67` (`id`, `entry_id`, `handle`, `value`) VALUES (78, 77, 'calendar-2006', 'Calendar 2006');
-INSERT INTO `tbl_entries_data_67` (`id`, `entry_id`, `handle`, `value`) VALUES (77, 78, 'corporate-identity', 'Corporate Identity');
-INSERT INTO `tbl_entries_data_67` (`id`, `entry_id`, `handle`, `value`) VALUES (74, 79, 'idop-2004-faith-on-the-frontline', 'IDOP 2004: Faith on the Frontline');
-INSERT INTO `tbl_entries_data_67` (`id`, `entry_id`, `handle`, `value`) VALUES (73, 80, 'website-design', 'Website Design');
-INSERT INTO `tbl_entries_data_67` (`id`, `entry_id`, `handle`, `value`) VALUES (68, 81, 'life-above-the-rim-logo-design', 'Life Above the Rim Logo Design');
-INSERT INTO `tbl_entries_data_67` (`id`, `entry_id`, `handle`, `value`) VALUES (67, 82, '300ccom-website', '300C.com Website');
-INSERT INTO `tbl_entries_data_67` (`id`, `entry_id`, `handle`, `value`) VALUES (66, 83, 'website-design', 'Website Design');
-INSERT INTO `tbl_entries_data_67` (`id`, `entry_id`, `handle`, `value`) VALUES (65, 84, 'website-design', 'Website Design');
-INSERT INTO `tbl_entries_data_67` (`id`, `entry_id`, `handle`, `value`) VALUES (64, 85, 'the-rice-raiser-website', 'The Rice Raiser Website');
-INSERT INTO `tbl_entries_data_67` (`id`, `entry_id`, `handle`, `value`) VALUES (63, 86, 'logo-design', 'Logo Design');
-INSERT INTO `tbl_entries_data_67` (`id`, `entry_id`, `handle`, `value`) VALUES (62, 87, 'pacific-coastal-airlines-website', 'Pacific Coastal Airlines Website');
-INSERT INTO `tbl_entries_data_67` (`id`, `entry_id`, `handle`, `value`) VALUES (61, 88, 'tshirt-design', 'Tshirt Design');
-INSERT INTO `tbl_entries_data_67` (`id`, `entry_id`, `handle`, `value`) VALUES (60, 89, 'catalog-design', 'Catalog Design');
-INSERT INTO `tbl_entries_data_67` (`id`, `entry_id`, `handle`, `value`) VALUES (59, 90, 'logo-design', 'Logo Design');
-INSERT INTO `tbl_entries_data_67` (`id`, `entry_id`, `handle`, `value`) VALUES (58, 91, 'the-total-package', 'The Total Package');
-INSERT INTO `tbl_entries_data_67` (`id`, `entry_id`, `handle`, `value`) VALUES (57, 92, 'logo-design', 'Logo Design');
-INSERT INTO `tbl_entries_data_67` (`id`, `entry_id`, `handle`, `value`) VALUES (56, 93, 'logo-design', 'Logo Design');
-INSERT INTO `tbl_entries_data_67` (`id`, `entry_id`, `handle`, `value`) VALUES (55, 94, 'corporate-identity', 'Corporate Identity');
-INSERT INTO `tbl_entries_data_67` (`id`, `entry_id`, `handle`, `value`) VALUES (54, 95, 'corporate-identity', 'Corporate Identity');
 
 -- *** STRUCTURE: `tbl_entries_data_68` ***
 DROP TABLE IF EXISTS `tbl_entries_data_68`;
@@ -2434,35 +2312,6 @@ CREATE TABLE `tbl_entries_data_68` (
 ) ENGINE=MyISAM AUTO_INCREMENT=88 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_68` ***
-INSERT INTO `tbl_entries_data_68` (`id`, `entry_id`, `relation_id`) VALUES (1, 67, 63);
-INSERT INTO `tbl_entries_data_68` (`id`, `entry_id`, `relation_id`) VALUES (84, 68, 63);
-INSERT INTO `tbl_entries_data_68` (`id`, `entry_id`, `relation_id`) VALUES (87, 69, 65);
-INSERT INTO `tbl_entries_data_68` (`id`, `entry_id`, `relation_id`) VALUES (85, 70, 65);
-INSERT INTO `tbl_entries_data_68` (`id`, `entry_id`, `relation_id`) VALUES (83, 71, 63);
-INSERT INTO `tbl_entries_data_68` (`id`, `entry_id`, `relation_id`) VALUES (82, 72, 64);
-INSERT INTO `tbl_entries_data_68` (`id`, `entry_id`, `relation_id`) VALUES (81, 73, 64);
-INSERT INTO `tbl_entries_data_68` (`id`, `entry_id`, `relation_id`) VALUES (80, 74, 63);
-INSERT INTO `tbl_entries_data_68` (`id`, `entry_id`, `relation_id`) VALUES (79, 75, 63);
-INSERT INTO `tbl_entries_data_68` (`id`, `entry_id`, `relation_id`) VALUES (78, 76, 63);
-INSERT INTO `tbl_entries_data_68` (`id`, `entry_id`, `relation_id`) VALUES (77, 77, 64);
-INSERT INTO `tbl_entries_data_68` (`id`, `entry_id`, `relation_id`) VALUES (76, 78, 63);
-INSERT INTO `tbl_entries_data_68` (`id`, `entry_id`, `relation_id`) VALUES (73, 79, 65);
-INSERT INTO `tbl_entries_data_68` (`id`, `entry_id`, `relation_id`) VALUES (72, 80, 65);
-INSERT INTO `tbl_entries_data_68` (`id`, `entry_id`, `relation_id`) VALUES (67, 81, 63);
-INSERT INTO `tbl_entries_data_68` (`id`, `entry_id`, `relation_id`) VALUES (66, 82, 65);
-INSERT INTO `tbl_entries_data_68` (`id`, `entry_id`, `relation_id`) VALUES (65, 83, 65);
-INSERT INTO `tbl_entries_data_68` (`id`, `entry_id`, `relation_id`) VALUES (64, 84, 65);
-INSERT INTO `tbl_entries_data_68` (`id`, `entry_id`, `relation_id`) VALUES (63, 85, 65);
-INSERT INTO `tbl_entries_data_68` (`id`, `entry_id`, `relation_id`) VALUES (62, 86, 63);
-INSERT INTO `tbl_entries_data_68` (`id`, `entry_id`, `relation_id`) VALUES (61, 87, 65);
-INSERT INTO `tbl_entries_data_68` (`id`, `entry_id`, `relation_id`) VALUES (60, 88, 63);
-INSERT INTO `tbl_entries_data_68` (`id`, `entry_id`, `relation_id`) VALUES (59, 89, 64);
-INSERT INTO `tbl_entries_data_68` (`id`, `entry_id`, `relation_id`) VALUES (58, 90, 63);
-INSERT INTO `tbl_entries_data_68` (`id`, `entry_id`, `relation_id`) VALUES (57, 91, 63);
-INSERT INTO `tbl_entries_data_68` (`id`, `entry_id`, `relation_id`) VALUES (56, 92, 63);
-INSERT INTO `tbl_entries_data_68` (`id`, `entry_id`, `relation_id`) VALUES (55, 93, 63);
-INSERT INTO `tbl_entries_data_68` (`id`, `entry_id`, `relation_id`) VALUES (54, 94, 63);
-INSERT INTO `tbl_entries_data_68` (`id`, `entry_id`, `relation_id`) VALUES (53, 95, 63);
 
 -- *** STRUCTURE: `tbl_entries_data_69` ***
 DROP TABLE IF EXISTS `tbl_entries_data_69`;
@@ -2477,35 +2326,6 @@ CREATE TABLE `tbl_entries_data_69` (
 ) ENGINE=MyISAM AUTO_INCREMENT=89 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_69` ***
-INSERT INTO `tbl_entries_data_69` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (2, 67, 'Building a brand from a napkin sketch to a first class spa in Abbotsford has been a process of adding one thing to another, maintaining a high level of visual style with a minimalist design aesthetic.', '<p>Building a brand from a napkin sketch to a first class spa in Abbotsford has been a process of adding one thing to another, maintaining a high level of visual style with a minimalist design aesthetic.</p>\n');
-INSERT INTO `tbl_entries_data_69` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (85, 68, 'The St John Brebeuf Secondary School Basketball Team logo, featuring a fierce bear equal to the skills represented by this top ranking highschool team.', '<p>The St John Brebeuf Secondary School Basketball Team logo, featuring a fierce bear equal to the skills represented by this top ranking highschool team.</p>\n');
-INSERT INTO `tbl_entries_data_69` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (88, 69, 'Hilfsaktion Märtyrerkirche, in Switzerland, needed a redesigned website developed using XHTML, CSS and TYPO3. It needed to be multi-lingual (German and French) to be able to serve the same content for their French counterpart, Aide aux Eglises Martyres. This solution also incorporated Flash to feature testimonies of persecuted Christians in various countries.', '<p>Hilfsaktion Märtyrerkirche, in Switzerland, needed a redesigned website developed using XHTML, CSS and TYPO3. It needed to be multi-lingual (German and French) to be able to serve the same content for their French counterpart, Aide aux Eglises Martyres. This solution also incorporated Flash to feature testimonies of persecuted Christians in various countries.</p>\n');
-INSERT INTO `tbl_entries_data_69` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (86, 70, 'An architecture/engineering group with offices in Vancouver, Seattle, Los Angeles and Shanghai needed a website to position themselves as an international entity. Partnering with Tom Abbühl of Grafus, we developed this site in Flash for the BPA Group.', '<p>An architecture/engineering group with offices in Vancouver, Seattle, Los Angeles and Shanghai needed a website to position themselves as an international entity. Partnering with Tom Abbühl of Grafus, we developed this site in Flash for the BPA Group.</p>\n');
-INSERT INTO `tbl_entries_data_69` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (84, 71, 'The idea itself had some merit: a website that helped landlords qualify renters based on past renting history and helped renters find good landlords. So I came up with the idea of building a dwelling out of the letter R and building a street that had houses for landlords and tenants. Since the site would have three parts to it for landlords, renters and administrators, the lights would turn on when you moused over the icon that represented the entrance to each portion of the site. You can view the results of my experiments for the website layout on my test site. Unfortunately, the project did not progress past the conceptual stage.', '<p>The idea itself had some merit: a website that helped landlords qualify renters based on past renting history and helped renters find good landlords. So I came up with the idea of building a dwelling out of the letter R and building a street that had houses for landlords and tenants. Since the site would have three parts to it for landlords, renters and administrators, the lights would turn on when you moused over the icon that represented the entrance to each portion of the site. You can view the results of my experiments for the website layout on my test site. Unfortunately, the project did not progress past the conceptual stage.</p>\n');
-INSERT INTO `tbl_entries_data_69` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (83, 72, 'As the work of Bogdanov Pao and Associates extended from Vancouver to Seattle, Los Angeles and Shanghai, the visual identity required strengthening. Proposals were wrapped in covers that consisted of a logo and address. To establish a much more international feel and continue enhancing the BPA Group brand, the presentation covers were redesigned, but in a way that maintained the ability to bind the presentations inhouse.', '<p>As the work of Bogdanov Pao and Associates extended from Vancouver to Seattle, Los Angeles and Shanghai, the visual identity required strengthening. Proposals were wrapped in covers that consisted of a logo and address. To establish a much more international feel and continue enhancing the BPA Group brand, the presentation covers were redesigned, but in a way that maintained the ability to bind the presentations inhouse.</p>\n');
-INSERT INTO `tbl_entries_data_69` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (82, 73, 'I love this piece because it was finally a chance to do something out of the ordinary and play around with an architectural design style, drawing some inspiration from the unique roof design that is the main feature of the building for which this invitation announced the Phase II Grand Opening Gala.', '<p>I love this piece because it was finally a chance to do something out of the ordinary and play around with an architectural design style, drawing some inspiration from the unique roof design that is the main feature of the building for which this invitation announced the Phase II Grand Opening Gala.</p>\n');
-INSERT INTO `tbl_entries_data_69` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (81, 74, 'A logo I designed for a residential development while employed at Doug Fleming Graphics, again before the age of Adobe Illustrator. This was hand drawn and inked with a rapidograph and brush. The part I liked best were the fiddly bits and the swash of the letter R that completes the circle. However, the Senior Designer took issue with the fiddly bits, convinced that they wouldn\'t reproduce well. I came back the next day to find that my work had been replaced with the leaves redrawn in reverse. I liked my original so much better, I redrew it in Illustrator for my portfolio.', '<p>A logo I designed for a residential development while employed at Doug Fleming Graphics, again before the age of Adobe Illustrator. This was hand drawn and inked with a rapidograph and brush. The part I liked best were the fiddly bits and the swash of the letter R that completes the circle. However, the Senior Designer took issue with the fiddly bits, convinced that they wouldn&#8217;t reproduce well. I came back the next day to find that my work had been replaced with the leaves redrawn in reverse. I liked my original so much better, I redrew it in Illustrator for my portfolio.</p>\n');
-INSERT INTO `tbl_entries_data_69` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (80, 75, 'This is one of the first logos I had the opportunity to design while working for Doug Fleming back in my first year out of design school and working in a downtown Vancouver design studio. Yaletown was definitely not what it is now. I can remember drawing this logo by hand with french curves and set squares, cutting the rubylith, taking the camera ready artwork to the process camera and developing PMTs in the darkroom for the various sizes required for the brochure I helped to paste up. Doug ended up designing the cover of the brochure with a blind embossed logo.', '<p>This is one of the first logos I had the opportunity to design while working for Doug Fleming back in my first year out of design school and working in a downtown Vancouver design studio. Yaletown was definitely not what it is now. I can remember drawing this logo by hand with french curves and set squares, cutting the rubylith, taking the camera ready artwork to the process camera and developing PMTs in the darkroom for the various sizes required for the brochure I helped to paste up. Doug ended up designing the cover of the brochure with a blind embossed logo.</p>\n');
-INSERT INTO `tbl_entries_data_69` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (79, 76, 'What does it take to turn a life around? Signposts provide warnings that can be heeded or not. This T-shirt design for a church youth group presentation was silkscreened white on a black shirt.', '<p>What does it take to turn a life around? Signposts provide warnings that can be heeded or not. This T-shirt design for a church youth group presentation was silkscreened white on a black shirt.</p>\n');
-INSERT INTO `tbl_entries_data_69` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (78, 77, 'The calendar was a great idea that came too soon. You may have to wait until 2007 to see this calendar on your desk.', '<p>The calendar was a great idea that came too soon. You may have to wait until 2007 to see this calendar on your desk.</p>\n');
-INSERT INTO `tbl_entries_data_69` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (77, 78, 'After operating without a logo for over a decade, it was time to start branding their company as they put forward ideas and proposals for discussions with federal and provincial governments. Because their business encompassed many activities: land development, project management, building construction and financial investments, the challenge was to produce an identity that would encompass these facets and allow for future growth.', '<p>After operating without a logo for over a decade, it was time to start branding their company as they put forward ideas and proposals for discussions with federal and provincial governments. Because their business encompassed many activities: land development, project management, building construction and financial investments, the challenge was to produce an identity that would encompass these facets and allow for future growth.</p>\n');
-INSERT INTO `tbl_entries_data_69` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (74, 79, 'The International Day of Prayer is an event the reminds us to pray for Christians who are being persecuted for believing that God so loved the world that he gave his only son. The inexplicable happened when God gave his son to the world in the form of baby born in an insignificant town, a mere outpost of the cruel Roman Empire, as a member of one of the most hated races in history, as a child who had nowhere but a feeding trough to begin his days on earth. Somehow, by Jesus\' suffering and death, God ripped a whole in the fabric of time, entered his creation, and changed it forever. He has ushered in an upside down kingdom by proclaiming, \"Blessed are the persecuted.\" The IDOP website was redesigned for the International Day of Prayer Canada, held in November 2004. The project involved creating the logo, developing the website and authoring a CD with resources for participating churches and groups. The site was built with XHTML and CSS, but also featured a Flash movie to be used as an introduction to the theme for that year: Faith on the Frontline.', '<p>The International Day of Prayer is an event the reminds us to pray for Christians who are being persecuted for believing that God so loved the world that he gave his only son. The inexplicable happened when God gave his son to the world in the form of baby born in an insignificant town, a mere outpost of the cruel Roman Empire, as a member of one of the most hated races in history, as a child who had nowhere but a feeding trough to begin his days on earth. Somehow, by Jesus&#8217; suffering and death, God ripped a whole in the fabric of time, entered his creation, and changed it forever. He has ushered in an upside down kingdom by proclaiming, &#8220;Blessed are the persecuted.&#8221; The IDOP website was redesigned for the International Day of Prayer Canada, held in November 2004. The project involved creating the logo, developing the website and authoring a CD with resources for participating churches and groups. The site was built with XHTML and CSS, but also featured a Flash movie to be used as an introduction to the theme for that year: Faith on the Frontline.</p>\n');
-INSERT INTO `tbl_entries_data_69` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (73, 80, 'A land development, project management and building construction company approached me to create a logo design for them. The partners had been operating without a logo for over a decade, but it was time to start branding their company as they put forward ideas and proposals for discussions with federal and provincial governments. A website would be one more step toward establishing credibility. This design was my proposal. This is one of those projects that I wish I had been able to finish, but because of a change in personnel (my contact left the company), that never happened. You can still view the CSS layout I developed on my test site.', '<p>A land development, project management and building construction company approached me to create a logo design for them. The partners had been operating without a logo for over a decade, but it was time to start branding their company as they put forward ideas and proposals for discussions with federal and provincial governments. A website would be one more step toward establishing credibility. This design was my proposal. This is one of those projects that I wish I had been able to finish, but because of a change in personnel (my contact left the company), that never happened. You can still view the CSS layout I developed on my test site.</p>\n');
-INSERT INTO `tbl_entries_data_69` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (68, 81, 'South Delta Baptist Church was running a basketball camp for kids in the neighbourhood. Colourful T-shirts were one of the benefits of taking part in the game.', '<p>South Delta Baptist Church was running a basketball camp for kids in the neighbourhood. Colourful T-shirts were one of the benefits of taking part in the game.</p>\n');
-INSERT INTO `tbl_entries_data_69` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (67, 82, 'Some like it hot. For those who do, they can find Hot Deals on Hotels, Cruises and Travel Packages at 300C.com. Building this site in Textpattern allowed for an easily maintained site, with a content management system that manages associations between cities, regions and countries. The XHTML and CSS based layout seamlessly integrates with affiliate marketing systems and booking engines.', '<p>Some like it hot. For those who do, they can find Hot Deals on Hotels, Cruises and Travel Packages at 300C.com. Building this site in Textpattern allowed for an easily maintained site, with a content management system that manages associations between cities, regions and countries. The XHTML and CSS based layout seamlessly integrates with affiliate marketing systems and booking engines.</p>\n');
-INSERT INTO `tbl_entries_data_69` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (65, 84, 'Trying to develop an information rich site without endangering the very people we are trying to help is quite a challenge. Christians face terrible suffering and persecution around the world, but this news seldom rates very high in the priorities of the mainstream press. International Christian Response exists to provide a means of responding to the needs of persecuted Christians.', '<p>Trying to develop an information rich site without endangering the very people we are trying to help is quite a challenge. Christians face terrible suffering and persecution around the world, but this news seldom rates very high in the priorities of the mainstream press. International Christian Response exists to provide a means of responding to the needs of persecuted Christians.</p>\n');
-INSERT INTO `tbl_entries_data_69` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (64, 85, 'Students, teachers and community leaders are the intended audience for a site that is promoting a novel idea for raising food and raising funds: The Rice Raiser. The project informs young people about hunger, both locally and globally, and provides a means by which students can get involved in feeding people in their own neighbourhoods and in communities around the world. We were delighted to find The Rice Raiser featured on CSS Beauty.', '<p>Students, teachers and community leaders are the intended audience for a site that is promoting a novel idea for raising food and raising funds: The Rice Raiser. The project informs young people about hunger, both locally and globally, and provides a means by which students can get involved in feeding people in their own neighbourhoods and in communities around the world. We were delighted to find The Rice Raiser featured on CSS Beauty.</p>\n');
-INSERT INTO `tbl_entries_data_69` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (63, 86, 'The mission of Hunger Response International is to educate and mobilize people to respond to the needs of the hungry both locally and globally. The organization grew out of the success of The Rice Raiser, a food drive / fund raiser designed to feed the poor both locally and internationally at the same time. The Rice Raiser provides inclusive opportunity for Canadians to learn about and actively address global hunger.', '<p>The mission of Hunger Response International is to educate and mobilize people to respond to the needs of the hungry both locally and globally. The organization grew out of the success of The Rice Raiser, a food drive / fund raiser designed to feed the poor both locally and internationally at the same time. The Rice Raiser provides inclusive opportunity for Canadians to learn about and actively address global hunger.</p>\n');
-INSERT INTO `tbl_entries_data_69` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (62, 87, 'This website design for Pacific Coastal Airlines was developed in partnership with Design One using web standards. The flight booking system was set up by InteliSys with additional backend coding by PhenixFilms.', '<p>This website design for Pacific Coastal Airlines was developed in partnership with Design One using web standards. The flight booking system was set up by InteliSys with additional backend coding by PhenixFilms.</p>\n');
-INSERT INTO `tbl_entries_data_69` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (61, 88, 'Camp Qwanoes is a camp for all ages, and this design was meant to appeal to mature campers.', '<p>Camp Qwanoes is a camp for all ages, and this design was meant to appeal to mature campers.</p>\n');
-INSERT INTO `tbl_entries_data_69` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (60, 89, 'In reaching a North American retail market, Sahara Furniture Manufacturing needed a means to present their furniture in the best possible light.', '<p>In reaching a North American retail market, Sahara Furniture Manufacturing needed a means to present their furniture in the best possible light.</p>\n');
-INSERT INTO `tbl_entries_data_69` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (59, 90, 'The challenge was to design a logo with a solid corporate look for Quantex, a merchant bank which raises capital to buy and grow businesses.', '<p>The challenge was to design a logo with a solid corporate look for Quantex, a merchant bank which raises capital to buy and grow businesses.</p>\n');
-INSERT INTO `tbl_entries_data_69` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (58, 91, 'Campus Crusade for Christ wanted to produce a package of materials, including a magazine, video and a Bible to provide to those who attended their youth events. The Total Package was produced as something tangible to take away from an experience that may have represented a first step toward a changed life. This logo tied all the pieces of The Total Package together.', '<p>Campus Crusade for Christ wanted to produce a package of materials, including a magazine, video and a Bible to provide to those who attended their youth events. The Total Package was produced as something tangible to take away from an experience that may have represented a first step toward a changed life. This logo tied all the pieces of The Total Package together.</p>\n');
-INSERT INTO `tbl_entries_data_69` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (57, 92, 'A new furniture catalog designed to position Sahara Furniture as a world-class manufacturer of high quality furniture required a logo design that worked well with the design. The design alludes to both the sand dunes of the Sahara and wood grain.', '<p>A new furniture catalog designed to position Sahara Furniture as a world-class manufacturer of high quality furniture required a logo design that worked well with the design. The design alludes to both the sand dunes of the Sahara and wood grain.</p>\n');
-INSERT INTO `tbl_entries_data_69` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (56, 93, 'St John Brebeuf School hosted the 2004 BC Boys \"A\" Provincial Basketball Championships. This logo was created for the program, T-shirts and other promotional materials.', '<p>St John Brebeuf School hosted the 2004 BC Boys &#8220;A&#8221; Provincial Basketball Championships. This logo was created for the program, T-shirts and other promotional materials.</p>\n');
-INSERT INTO `tbl_entries_data_69` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (55, 94, 'MoonRattles is developing a business to provide tools to ethnically diverse families to enable parents to help connect their children with their cultural heritage and historical roots. These tools will be offered as individual kits or on a subscription basis to provide educational materials and suggestions for activities related to music, literature, history, language, food and other heritage topics.', '<p>MoonRattles is developing a business to provide tools to ethnically diverse families to enable parents to help connect their children with their cultural heritage and historical roots. These tools will be offered as individual kits or on a subscription basis to provide educational materials and suggestions for activities related to music, literature, history, language, food and other heritage topics.</p>\n');
-INSERT INTO `tbl_entries_data_69` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (54, 95, 'Arbutus Meadows Equestrian Centre in Nanoose Bay is home to a large indoor arena and over 140 acres of land, suitable for trail rides, show jumping, and even indoor motorcross racing. A new visual identity is helping to raise the profile of this multi-use facility.', '<p>Arbutus Meadows Equestrian Centre in Nanoose Bay is home to a large indoor arena and over 140 acres of land, suitable for trail rides, show jumping, and even indoor motorcross racing. A new visual identity is helping to raise the profile of this multi-use facility.</p>\n');
-INSERT INTO `tbl_entries_data_69` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (66, 83, 'While I was working at Design One and before I knew how to use Flash, I had an idea to build a website for our design firm that had a splash of Flash. In an effort to convince ourselves and our clients that adherence to a process would ensure the best design solutions, I came up with a rather esoteric means of describing our design process. It went something like this: \r\n\r\n### The Conceptual Process in Four Dimensions\r\n\r\nThe four dimensions of time and space provide a visual metaphor for the design process at work. An idea is an abstract concept that has no concrete reality beyond the imagination. Design is the process of realizing an idea: bringing an idea to reality, making imagination tangible.\r\n\r\n#### Idea\r\n\r\nIt starts with an idea. A point of origin. A single pixel of light. The nucleus of an idea. A spark of creativity. From a vast ocean of ideas emerges a singular vision of the future. Design starts with helping you define your needs, goals and desired results.\r\n\r\n#### Direction\r\n\r\nThe first dimension: **width**\r\n\r\nAn idea starts to become real as it gains momentum in a particular direction. It enters the first dimension of the conceptual process, moving one step closer to reality from the world of pure abstraction. Research and information gathering add dimension to the initial idea. \r\n\r\n#### Shape\r\n\r\nThe second dimension: **height**\r\n\r\nOnce a direction has been established for the idea, a number of different concepts can start to take shape. Through exploration and experimentation, an idea takes on added dimension. At this stage, rough concepts are developed based on the research gathered previously.\r\n\r\n#### Structure\r\n\r\nThe third dimension: **depth**\r\n\r\nThe shape becomes the basis for a fully three-dimensional structure. Throughout production of the finished project, the different sides of a design problem and the various possible points of view are considered to ensure impact and consistency across all media and applications.\r\n\r\n#### Reality\r\n\r\nThe fourth dimension: **time**\r\n\r\nThe idea becomes reality when it enters real time. It becomes a tangible entity that can be tested based on its ability to produce real world results: increased sales, a more cohesive corporate identity, greater brand presence, by building relationships between your business and the marketplace.', '<p>While I was working at Design One and before I knew how to use Flash, I had an idea to build a website for our design firm that had a splash of Flash. In an effort to convince ourselves and our clients that adherence to a process would ensure the best design solutions, I came up with a rather esoteric means of describing our design process. It went something like this:</p>\n\n<h3>The Conceptual Process in Four Dimensions</h3>\n\n<p>The four dimensions of time and space provide a visual metaphor for the design process at work. An idea is an abstract concept that has no concrete reality beyond the imagination. Design is the process of realizing an idea: bringing an idea to reality, making imagination tangible.</p>\n\n<h4>Idea</h4>\n\n<p>It starts with an idea. A point of origin. A single pixel of light. The nucleus of an idea. A spark of creativity. From a vast ocean of ideas emerges a singular vision of the future. Design starts with helping you define your needs, goals and desired results.</p>\n\n<h4>Direction</h4>\n\n<p>The first dimension: <strong>width</strong></p>\n\n<p>An idea starts to become real as it gains momentum in a particular direction. It enters the first dimension of the conceptual process, moving one step closer to reality from the world of pure abstraction. Research and information gathering add dimension to the initial idea.</p>\n\n<h4>Shape</h4>\n\n<p>The second dimension: <strong>height</strong></p>\n\n<p>Once a direction has been established for the idea, a number of different concepts can start to take shape. Through exploration and experimentation, an idea takes on added dimension. At this stage, rough concepts are developed based on the research gathered previously.</p>\n\n<h4>Structure</h4>\n\n<p>The third dimension: <strong>depth</strong></p>\n\n<p>The shape becomes the basis for a fully three-dimensional structure. Throughout production of the finished project, the different sides of a design problem and the various possible points of view are considered to ensure impact and consistency across all media and applications.</p>\n\n<h4>Reality</h4>\n\n<p>The fourth dimension: <strong>time</strong></p>\n\n<p>The idea becomes reality when it enters real time. It becomes a tangible entity that can be tested based on its ability to produce real world results: increased sales, a more cohesive corporate identity, greater brand presence, by building relationships between your business and the marketplace.</p>\n');
 
 -- *** STRUCTURE: `tbl_entries_data_7` ***
 DROP TABLE IF EXISTS `tbl_entries_data_7`;
@@ -2517,29 +2337,29 @@ CREATE TABLE `tbl_entries_data_7` (
   PRIMARY KEY (`id`),
   KEY `entry_id` (`entry_id`),
   FULLTEXT KEY `value` (`value`)
-) ENGINE=MyISAM AUTO_INCREMENT=69 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=88 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_7` ***
 INSERT INTO `tbl_entries_data_7` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (6, 11, NULL, NULL);
-INSERT INTO `tbl_entries_data_7` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (54, 21, '#### Domain7\r\n\r\nSince 2007, I have been working as Lead Designer at Domain7 Solutions Inc, Vancouver, BC, Canada.\r\n\r\n#### Bauhouse Visual Communications\r\n\r\nI have been practicing design since 1988 and established Bauhouse Visual Communications in 1991 in homage to the influential Bauhaus schools in Germany and Chicago. \r\n\r\n#### The Bauhaus\r\n\r\nThe Bauhaus has had a strong aesthetic influence on my design, though I do not have a house style. In fact, much of my design could be considered antithetical to the Modernist ideals of the Bauhaus. As a person of faith, I am both intrigued and disturbed by the high philosophical ideals of Modernism and by the notions of faith propounded in the Bauhaus manifesto of 1919.\r\n\r\nI struggle between the sacred and the secular, the east and the west, the altruistic and the commercial, the elitist and the populist, the rare and the common, the modern and the postmodern. I am both and I am neither. Yet all of it informs my identity and my design.', '<h4>Domain7</h4>\n\n<p>Since 2007, I have been working as Lead Designer at Domain7 Solutions Inc, Vancouver, BC, Canada.</p>\n\n<h4>Bauhouse Visual Communications</h4>\n\n<p>I have been practicing design since 1988 and established Bauhouse Visual Communications in 1991 in homage to the influential Bauhaus schools in Germany and Chicago.</p>\n\n<h4>The Bauhaus</h4>\n\n<p>The Bauhaus has had a strong aesthetic influence on my design, though I do not have a house style. In fact, much of my design could be considered antithetical to the Modernist ideals of the Bauhaus. As a person of faith, I am both intrigued and disturbed by the high philosophical ideals of Modernism and by the notions of faith propounded in the Bauhaus manifesto of 1919.</p>\n\n<p>I struggle between the sacred and the secular, the east and the west, the altruistic and the commercial, the elitist and the populist, the rare and the common, the modern and the postmodern. I am both and I am neither. Yet all of it informs my identity and my design.</p>\n');
-INSERT INTO `tbl_entries_data_7` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (68, 22, NULL, NULL);
-INSERT INTO `tbl_entries_data_7` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (67, 27, NULL, NULL);
-INSERT INTO `tbl_entries_data_7` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (17, 30, NULL, NULL);
+INSERT INTO `tbl_entries_data_7` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (86, 21, '#### Domain7\r\n\r\nSince 2007, I have been working as Lead Designer at Domain7 Solutions Inc, Vancouver, BC, Canada.\r\n\r\n#### Bauhouse Visual Communications\r\n\r\nI have been practicing design since 1988 and established Bauhouse Visual Communications in 1991 in homage to the influential Bauhaus schools in Germany and Chicago. \r\n\r\n#### The Bauhaus\r\n\r\nThe Bauhaus has had a strong aesthetic influence on my design, though I do not have a house style. In fact, much of my design could be considered antithetical to the Modernist ideals of the Bauhaus. As a person of faith, I am both intrigued and disturbed by the high philosophical ideals of Modernism and by the notions of faith propounded in the Bauhaus manifesto of 1919.\r\n\r\nI struggle between the sacred and the secular, the east and the west, the altruistic and the commercial, the elitist and the populist, the rare and the common, the modern and the postmodern. I am both and I am neither. Yet all of it informs my identity and my design.', '<h4>Domain7</h4>\n\n<p>Since 2007, I have been working as Lead Designer at Domain7 Solutions Inc, Vancouver, BC, Canada.</p>\n\n<h4>Bauhouse Visual Communications</h4>\n\n<p>I have been practicing design since 1988 and established Bauhouse Visual Communications in 1991 in homage to the influential Bauhaus schools in Germany and Chicago.</p>\n\n<h4>The Bauhaus</h4>\n\n<p>The Bauhaus has had a strong aesthetic influence on my design, though I do not have a house style. In fact, much of my design could be considered antithetical to the Modernist ideals of the Bauhaus. As a person of faith, I am both intrigued and disturbed by the high philosophical ideals of Modernism and by the notions of faith propounded in the Bauhaus manifesto of 1919.</p>\n\n<p>I struggle between the sacred and the secular, the east and the west, the altruistic and the commercial, the elitist and the populist, the rare and the common, the modern and the postmodern. I am both and I am neither. Yet all of it informs my identity and my design.</p>\n');
+INSERT INTO `tbl_entries_data_7` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (73, 22, NULL, NULL);
+INSERT INTO `tbl_entries_data_7` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (85, 27, NULL, NULL);
+INSERT INTO `tbl_entries_data_7` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (84, 30, NULL, NULL);
 INSERT INTO `tbl_entries_data_7` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (62, 31, NULL, NULL);
-INSERT INTO `tbl_entries_data_7` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (36, 33, NULL, NULL);
-INSERT INTO `tbl_entries_data_7` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (33, 36, NULL, NULL);
-INSERT INTO `tbl_entries_data_7` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (34, 43, NULL, NULL);
-INSERT INTO `tbl_entries_data_7` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (38, 44, NULL, NULL);
-INSERT INTO `tbl_entries_data_7` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (41, 45, NULL, NULL);
-INSERT INTO `tbl_entries_data_7` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (37, 53, NULL, NULL);
-INSERT INTO `tbl_entries_data_7` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (42, 54, NULL, NULL);
-INSERT INTO `tbl_entries_data_7` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (43, 55, NULL, NULL);
-INSERT INTO `tbl_entries_data_7` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (44, 56, NULL, NULL);
-INSERT INTO `tbl_entries_data_7` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (60, 57, '#### The OpenType Format\r\n\r\nThanks to Adobe Systems, we now have PostScript technology that allows the ability to use mathematical descriptions of type outlines that can be scaled to any size. Adobe has been converting all their fonts to a new format that they have developed that finally does away with cross-platform compatibility problems, called OpenType. The primary benefit is the ability to access more than 256 characters within a single font file. This allows for greater typographic control and features, including automatic application of ligatures, small caps, lining and old style figures, and character variants.\r\n\r\nThe OpenType format provides a flexibility that did not exist with the older TrueType and PostScript formats, and this was enough of an incentive for me to invest in the purchase of a [license](/journal/font-licensing/) for the [Adobe OpenType Collection](http://monotypefonts.com/WhatsNew/pr-display.asp?year=2006&pr=279), with over 2900 typefaces.', '<h4>The OpenType Format</h4>\n\n<p>Thanks to Adobe Systems, we now have PostScript technology that allows the ability to use mathematical descriptions of type outlines that can be scaled to any size. Adobe has been converting all their fonts to a new format that they have developed that finally does away with cross-platform compatibility problems, called OpenType. The primary benefit is the ability to access more than 256 characters within a single font file. This allows for greater typographic control and features, including automatic application of ligatures, small caps, lining and old style figures, and character variants.</p>\n\n<p>The OpenType format provides a flexibility that did not exist with the older TrueType and PostScript formats, and this was enough of an incentive for me to invest in the purchase of a <a href=\"/journal/font-licensing/\">license</a> for the <a href=\"http://monotypefonts.com/WhatsNew/pr-display.asp?year=2006&amp;pr=279\">Adobe OpenType Collection</a>, with over 2900 typefaces.</p>\n');
-INSERT INTO `tbl_entries_data_7` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (46, 58, NULL, NULL);
-INSERT INTO `tbl_entries_data_7` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (49, 59, NULL, NULL);
-INSERT INTO `tbl_entries_data_7` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (64, 61, '#### Open Source Software\r\n\r\nThe best tools are often the simplest. Open source applications and community-contributed tools are helping people to focus on what they do best. Finding the best tool also requires some knowledge of the available options and choosing the one that is the best fit for the job.\r\n\r\nCommunities are coming together to produce standards that help aid the flow of ideas and communication. Individual contributions to collaborative projects are helping to make technology better and easier to use. Web Standards, Open Source Software, and distributed version control systems are helping to bring people together to create the best tools. Tap in to the power of the collective.', '<h4>Open Source Software</h4>\n\n<p>The best tools are often the simplest. Open source applications and community-contributed tools are helping people to focus on what they do best. Finding the best tool also requires some knowledge of the available options and choosing the one that is the best fit for the job.</p>\n\n<p>Communities are coming together to produce standards that help aid the flow of ideas and communication. Individual contributions to collaborative projects are helping to make technology better and easier to use. Web Standards, Open Source Software, and distributed version control systems are helping to bring people together to create the best tools. Tap in to the power of the collective.</p>\n');
-INSERT INTO `tbl_entries_data_7` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (52, 60, 'Technology can often be a barrier to entry. Design seeks to remove the barriers and use technology as a means to connect, through words, images, messages, and media. Ultimately, it is an aid to facilitate the kind of communication that simply cannot be improved upon: face to face, meaningful conversation, where people are able to listen and to understand at various levels of verbal and non-verbal communication. Design enhances the experience, by clarifying and simplifying ideas so they can be easier and better understood.', '<p>Technology can often be a barrier to entry. Design seeks to remove the barriers and use technology as a means to connect, through words, images, messages, and media. Ultimately, it is an aid to facilitate the kind of communication that simply cannot be improved upon: face to face, meaningful conversation, where people are able to listen and to understand at various levels of verbal and non-verbal communication. Design enhances the experience, by clarifying and simplifying ideas so they can be easier and better understood.</p>\n');
+INSERT INTO `tbl_entries_data_7` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (83, 33, NULL, NULL);
+INSERT INTO `tbl_entries_data_7` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (82, 36, NULL, NULL);
+INSERT INTO `tbl_entries_data_7` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (81, 43, NULL, NULL);
+INSERT INTO `tbl_entries_data_7` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (80, 44, NULL, NULL);
+INSERT INTO `tbl_entries_data_7` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (87, 45, NULL, NULL);
+INSERT INTO `tbl_entries_data_7` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (79, 53, NULL, NULL);
+INSERT INTO `tbl_entries_data_7` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (78, 54, NULL, NULL);
+INSERT INTO `tbl_entries_data_7` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (77, 55, NULL, NULL);
+INSERT INTO `tbl_entries_data_7` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (76, 56, NULL, NULL);
+INSERT INTO `tbl_entries_data_7` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (75, 57, '#### The OpenType Format\r\n\r\nThanks to Adobe Systems, we now have PostScript technology that allows the ability to use mathematical descriptions of type outlines that can be scaled to any size. Adobe has been converting all their fonts to a new format that they have developed that finally does away with cross-platform compatibility problems, called OpenType. The primary benefit is the ability to access more than 256 characters within a single font file. This allows for greater typographic control and features, including automatic application of ligatures, small caps, lining and old style figures, and character variants.\r\n\r\nThe OpenType format provides a flexibility that did not exist with the older TrueType and PostScript formats, and this was enough of an incentive for me to invest in the purchase of a [license](/journal/font-licensing/) for the [Adobe OpenType Collection](http://monotypefonts.com/WhatsNew/pr-display.asp?year=2006&pr=279), with over 2900 typefaces.', '<h4>The OpenType Format</h4>\n\n<p>Thanks to Adobe Systems, we now have PostScript technology that allows the ability to use mathematical descriptions of type outlines that can be scaled to any size. Adobe has been converting all their fonts to a new format that they have developed that finally does away with cross-platform compatibility problems, called OpenType. The primary benefit is the ability to access more than 256 characters within a single font file. This allows for greater typographic control and features, including automatic application of ligatures, small caps, lining and old style figures, and character variants.</p>\n\n<p>The OpenType format provides a flexibility that did not exist with the older TrueType and PostScript formats, and this was enough of an incentive for me to invest in the purchase of a <a href=\"/journal/font-licensing/\">license</a> for the <a href=\"http://monotypefonts.com/WhatsNew/pr-display.asp?year=2006&amp;pr=279\">Adobe OpenType Collection</a>, with over 2900 typefaces.</p>\n');
+INSERT INTO `tbl_entries_data_7` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (74, 58, NULL, NULL);
+INSERT INTO `tbl_entries_data_7` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (72, 59, NULL, NULL);
+INSERT INTO `tbl_entries_data_7` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (70, 61, '#### Open Source Software\r\n\r\nThe best tools are often the simplest. Open source applications and community-contributed tools are helping people to focus on what they do best. Finding the best tool also requires some knowledge of the available options and choosing the one that is the best fit for the job.\r\n\r\nCommunities are coming together to produce standards that help aid the flow of ideas and communication. Individual contributions to collaborative projects are helping to make technology better and easier to use. Web Standards, Open Source Software, and distributed version control systems are helping to bring people together to create the best tools. Tap in to the power of the collective.', '<h4>Open Source Software</h4>\n\n<p>The best tools are often the simplest. Open source applications and community-contributed tools are helping people to focus on what they do best. Finding the best tool also requires some knowledge of the available options and choosing the one that is the best fit for the job.</p>\n\n<p>Communities are coming together to produce standards that help aid the flow of ideas and communication. Individual contributions to collaborative projects are helping to make technology better and easier to use. Web Standards, Open Source Software, and distributed version control systems are helping to bring people together to create the best tools. Tap in to the power of the collective.</p>\n');
+INSERT INTO `tbl_entries_data_7` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (71, 60, 'Technology can often be a barrier to entry. Design seeks to remove the barriers and use technology as a means to connect, through words, images, messages, and media. Ultimately, it is an aid to facilitate the kind of communication that simply cannot be improved upon: face to face, meaningful conversation, where people are able to listen and to understand at various levels of verbal and non-verbal communication. Design enhances the experience, by clarifying and simplifying ideas so they can be easier and better understood.', '<p>Technology can often be a barrier to entry. Design seeks to remove the barriers and use technology as a means to connect, through words, images, messages, and media. Ultimately, it is an aid to facilitate the kind of communication that simply cannot be improved upon: face to face, meaningful conversation, where people are able to listen and to understand at various levels of verbal and non-verbal communication. Design enhances the experience, by clarifying and simplifying ideas so they can be easier and better understood.</p>\n');
 
 -- *** STRUCTURE: `tbl_entries_data_70` ***
 DROP TABLE IF EXISTS `tbl_entries_data_70`;
@@ -2554,35 +2374,6 @@ CREATE TABLE `tbl_entries_data_70` (
 ) ENGINE=MyISAM AUTO_INCREMENT=89 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_70` ***
-INSERT INTO `tbl_entries_data_70` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (2, 67, NULL, NULL);
-INSERT INTO `tbl_entries_data_70` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (85, 68, NULL, NULL);
-INSERT INTO `tbl_entries_data_70` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (88, 69, NULL, NULL);
-INSERT INTO `tbl_entries_data_70` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (86, 70, NULL, NULL);
-INSERT INTO `tbl_entries_data_70` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (84, 71, NULL, NULL);
-INSERT INTO `tbl_entries_data_70` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (83, 72, NULL, NULL);
-INSERT INTO `tbl_entries_data_70` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (82, 73, NULL, NULL);
-INSERT INTO `tbl_entries_data_70` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (81, 74, NULL, NULL);
-INSERT INTO `tbl_entries_data_70` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (80, 75, NULL, NULL);
-INSERT INTO `tbl_entries_data_70` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (79, 76, NULL, NULL);
-INSERT INTO `tbl_entries_data_70` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (78, 77, NULL, NULL);
-INSERT INTO `tbl_entries_data_70` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (77, 78, NULL, NULL);
-INSERT INTO `tbl_entries_data_70` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (74, 79, NULL, NULL);
-INSERT INTO `tbl_entries_data_70` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (73, 80, NULL, NULL);
-INSERT INTO `tbl_entries_data_70` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (68, 81, NULL, NULL);
-INSERT INTO `tbl_entries_data_70` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (67, 82, NULL, NULL);
-INSERT INTO `tbl_entries_data_70` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (66, 83, NULL, NULL);
-INSERT INTO `tbl_entries_data_70` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (65, 84, NULL, NULL);
-INSERT INTO `tbl_entries_data_70` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (64, 85, NULL, NULL);
-INSERT INTO `tbl_entries_data_70` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (63, 86, NULL, NULL);
-INSERT INTO `tbl_entries_data_70` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (62, 87, NULL, NULL);
-INSERT INTO `tbl_entries_data_70` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (61, 88, NULL, NULL);
-INSERT INTO `tbl_entries_data_70` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (60, 89, NULL, NULL);
-INSERT INTO `tbl_entries_data_70` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (59, 90, NULL, NULL);
-INSERT INTO `tbl_entries_data_70` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (58, 91, NULL, NULL);
-INSERT INTO `tbl_entries_data_70` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (57, 92, NULL, NULL);
-INSERT INTO `tbl_entries_data_70` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (56, 93, NULL, NULL);
-INSERT INTO `tbl_entries_data_70` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (55, 94, NULL, NULL);
-INSERT INTO `tbl_entries_data_70` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (54, 95, NULL, NULL);
 
 -- *** STRUCTURE: `tbl_entries_data_71` ***
 DROP TABLE IF EXISTS `tbl_entries_data_71`;
@@ -2598,35 +2389,6 @@ CREATE TABLE `tbl_entries_data_71` (
 ) ENGINE=MyISAM AUTO_INCREMENT=89 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_71` ***
-INSERT INTO `tbl_entries_data_71` (`id`, `entry_id`, `handle`, `value`) VALUES (2, 67, 'bauhouse-visual-communications', 'Bauhouse Visual Communications');
-INSERT INTO `tbl_entries_data_71` (`id`, `entry_id`, `handle`, `value`) VALUES (85, 68, 'bauhouse-visual-communications', 'Bauhouse Visual Communications');
-INSERT INTO `tbl_entries_data_71` (`id`, `entry_id`, `handle`, `value`) VALUES (88, 69, 'international-christian-response', 'International Christian Response');
-INSERT INTO `tbl_entries_data_71` (`id`, `entry_id`, `handle`, `value`) VALUES (86, 70, 'grafus', 'Grafus');
-INSERT INTO `tbl_entries_data_71` (`id`, `entry_id`, `handle`, `value`) VALUES (84, 71, 'bauhouse-visual-communications', 'Bauhouse Visual Communications');
-INSERT INTO `tbl_entries_data_71` (`id`, `entry_id`, `handle`, `value`) VALUES (83, 72, 'bauhouse-visual-communications', 'Bauhouse Visual Communications');
-INSERT INTO `tbl_entries_data_71` (`id`, `entry_id`, `handle`, `value`) VALUES (82, 73, 'design-one-graphics-group', 'Design One Graphics Group');
-INSERT INTO `tbl_entries_data_71` (`id`, `entry_id`, `handle`, `value`) VALUES (81, 74, 'doug-fleming-graphics-now-fleming-design', 'Doug Fleming Graphics (now Fleming Design)');
-INSERT INTO `tbl_entries_data_71` (`id`, `entry_id`, `handle`, `value`) VALUES (80, 75, 'doug-fleming-graphics-now-fleming-design', 'Doug Fleming Graphics (now Fleming Design)');
-INSERT INTO `tbl_entries_data_71` (`id`, `entry_id`, `handle`, `value`) VALUES (79, 76, 'bauhouse-visual-communications', 'Bauhouse Visual Communications');
-INSERT INTO `tbl_entries_data_71` (`id`, `entry_id`, `handle`, `value`) VALUES (78, 77, 'bauhouse-visual-communications', 'Bauhouse Visual Communications');
-INSERT INTO `tbl_entries_data_71` (`id`, `entry_id`, `handle`, `value`) VALUES (77, 78, 'bauhouse-visual-communications', 'Bauhouse Visual Communications');
-INSERT INTO `tbl_entries_data_71` (`id`, `entry_id`, `handle`, `value`) VALUES (74, 79, 'evangelical-fellowship-of-canada', 'Evangelical Fellowship of Canada');
-INSERT INTO `tbl_entries_data_71` (`id`, `entry_id`, `handle`, `value`) VALUES (73, 80, 'bauhouse-visual-communications', 'Bauhouse Visual Communications');
-INSERT INTO `tbl_entries_data_71` (`id`, `entry_id`, `handle`, `value`) VALUES (68, 81, 'bauhouse-visual-communications', 'Bauhouse Visual Communications');
-INSERT INTO `tbl_entries_data_71` (`id`, `entry_id`, `handle`, `value`) VALUES (67, 82, 'bauhouse-visual-communications', 'Bauhouse Visual Communications');
-INSERT INTO `tbl_entries_data_71` (`id`, `entry_id`, `handle`, `value`) VALUES (66, 83, 'design-one-graphics-group', 'Design One Graphics Group');
-INSERT INTO `tbl_entries_data_71` (`id`, `entry_id`, `handle`, `value`) VALUES (65, 84, 'international-christian-response', 'International Christian Response');
-INSERT INTO `tbl_entries_data_71` (`id`, `entry_id`, `handle`, `value`) VALUES (64, 85, 'bauhouse-visual-communications', 'Bauhouse Visual Communications');
-INSERT INTO `tbl_entries_data_71` (`id`, `entry_id`, `handle`, `value`) VALUES (63, 86, 'hunger-response-international', 'Hunger Response International');
-INSERT INTO `tbl_entries_data_71` (`id`, `entry_id`, `handle`, `value`) VALUES (62, 87, 'bauhouse-visual-communications', 'Bauhouse Visual Communications');
-INSERT INTO `tbl_entries_data_71` (`id`, `entry_id`, `handle`, `value`) VALUES (61, 88, 'bauhouse-visual-communications', 'Bauhouse Visual Communications');
-INSERT INTO `tbl_entries_data_71` (`id`, `entry_id`, `handle`, `value`) VALUES (60, 89, 'bauhouse-visual-communications', 'Bauhouse Visual Communications');
-INSERT INTO `tbl_entries_data_71` (`id`, `entry_id`, `handle`, `value`) VALUES (59, 90, 'viperlink-communications', 'Viperlink Communications');
-INSERT INTO `tbl_entries_data_71` (`id`, `entry_id`, `handle`, `value`) VALUES (58, 91, 'bauhouse-visual-communications', 'Bauhouse Visual Communications');
-INSERT INTO `tbl_entries_data_71` (`id`, `entry_id`, `handle`, `value`) VALUES (57, 92, 'bauhouse-visual-communications', 'Bauhouse Visual Communications');
-INSERT INTO `tbl_entries_data_71` (`id`, `entry_id`, `handle`, `value`) VALUES (56, 93, 'bauhouse-visual-communications', 'Bauhouse Visual Communications');
-INSERT INTO `tbl_entries_data_71` (`id`, `entry_id`, `handle`, `value`) VALUES (55, 94, 'domain7', 'Domain7');
-INSERT INTO `tbl_entries_data_71` (`id`, `entry_id`, `handle`, `value`) VALUES (54, 95, 'bauhouse-visual-communications', 'Bauhouse Visual Communications');
 
 -- *** STRUCTURE: `tbl_entries_data_72` ***
 DROP TABLE IF EXISTS `tbl_entries_data_72`;
@@ -2642,35 +2404,6 @@ CREATE TABLE `tbl_entries_data_72` (
 ) ENGINE=MyISAM AUTO_INCREMENT=89 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_72` ***
-INSERT INTO `tbl_entries_data_72` (`id`, `entry_id`, `handle`, `value`) VALUES (2, 67, 'design-studio', 'Design Studio');
-INSERT INTO `tbl_entries_data_72` (`id`, `entry_id`, `handle`, `value`) VALUES (85, 68, 'design-studio', 'Design Studio');
-INSERT INTO `tbl_entries_data_72` (`id`, `entry_id`, `handle`, `value`) VALUES (88, 69, 'organization', 'Organization');
-INSERT INTO `tbl_entries_data_72` (`id`, `entry_id`, `handle`, `value`) VALUES (86, 70, 'web-design-firm', 'Web Design Firm');
-INSERT INTO `tbl_entries_data_72` (`id`, `entry_id`, `handle`, `value`) VALUES (84, 71, 'design-studio', 'Design Studio');
-INSERT INTO `tbl_entries_data_72` (`id`, `entry_id`, `handle`, `value`) VALUES (83, 72, 'design-studio', 'Design Studio');
-INSERT INTO `tbl_entries_data_72` (`id`, `entry_id`, `handle`, `value`) VALUES (82, 73, 'design-studio', 'Design Studio');
-INSERT INTO `tbl_entries_data_72` (`id`, `entry_id`, `handle`, `value`) VALUES (81, 74, 'design-studio', 'Design Studio');
-INSERT INTO `tbl_entries_data_72` (`id`, `entry_id`, `handle`, `value`) VALUES (80, 75, 'employer', 'Employer');
-INSERT INTO `tbl_entries_data_72` (`id`, `entry_id`, `handle`, `value`) VALUES (79, 76, 'design-studio', 'Design Studio');
-INSERT INTO `tbl_entries_data_72` (`id`, `entry_id`, `handle`, `value`) VALUES (78, 77, 'design-studio', 'Design Studio');
-INSERT INTO `tbl_entries_data_72` (`id`, `entry_id`, `handle`, `value`) VALUES (77, 78, 'design-studio', 'Design Studio');
-INSERT INTO `tbl_entries_data_72` (`id`, `entry_id`, `handle`, `value`) VALUES (74, 79, 'organization', 'Organization');
-INSERT INTO `tbl_entries_data_72` (`id`, `entry_id`, `handle`, `value`) VALUES (73, 80, 'design-studio', 'Design Studio');
-INSERT INTO `tbl_entries_data_72` (`id`, `entry_id`, `handle`, `value`) VALUES (68, 81, 'design-studio', 'Design Studio');
-INSERT INTO `tbl_entries_data_72` (`id`, `entry_id`, `handle`, `value`) VALUES (67, 82, 'design-studio', 'Design Studio');
-INSERT INTO `tbl_entries_data_72` (`id`, `entry_id`, `handle`, `value`) VALUES (66, 83, 'employer', 'Employer');
-INSERT INTO `tbl_entries_data_72` (`id`, `entry_id`, `handle`, `value`) VALUES (65, 84, 'organization', 'Organization');
-INSERT INTO `tbl_entries_data_72` (`id`, `entry_id`, `handle`, `value`) VALUES (64, 85, 'design-studio', 'Design Studio');
-INSERT INTO `tbl_entries_data_72` (`id`, `entry_id`, `handle`, `value`) VALUES (63, 86, 'organization', 'Organization');
-INSERT INTO `tbl_entries_data_72` (`id`, `entry_id`, `handle`, `value`) VALUES (62, 87, 'design-studio', 'Design Studio');
-INSERT INTO `tbl_entries_data_72` (`id`, `entry_id`, `handle`, `value`) VALUES (61, 88, 'design-studio', 'Design Studio');
-INSERT INTO `tbl_entries_data_72` (`id`, `entry_id`, `handle`, `value`) VALUES (60, 89, 'design-studio', 'Design Studio');
-INSERT INTO `tbl_entries_data_72` (`id`, `entry_id`, `handle`, `value`) VALUES (59, 90, 'advertising-agency', 'Advertising Agency');
-INSERT INTO `tbl_entries_data_72` (`id`, `entry_id`, `handle`, `value`) VALUES (58, 91, 'design-studio', 'Design Studio');
-INSERT INTO `tbl_entries_data_72` (`id`, `entry_id`, `handle`, `value`) VALUES (57, 92, 'design-studio', 'Design Studio');
-INSERT INTO `tbl_entries_data_72` (`id`, `entry_id`, `handle`, `value`) VALUES (56, 93, 'design-studio', 'Design Studio');
-INSERT INTO `tbl_entries_data_72` (`id`, `entry_id`, `handle`, `value`) VALUES (55, 94, 'web-design-firm', 'Web Design Firm');
-INSERT INTO `tbl_entries_data_72` (`id`, `entry_id`, `handle`, `value`) VALUES (54, 95, 'design-studio', 'Design Studio');
 
 -- *** STRUCTURE: `tbl_entries_data_73` ***
 DROP TABLE IF EXISTS `tbl_entries_data_73`;
@@ -2686,15 +2419,6 @@ CREATE TABLE `tbl_entries_data_73` (
 ) ENGINE=MyISAM AUTO_INCREMENT=29 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_73` ***
-INSERT INTO `tbl_entries_data_73` (`id`, `entry_id`, `handle`, `value`) VALUES (28, 70, 'tom-abbuehl', 'Tom Abbühl');
-INSERT INTO `tbl_entries_data_73` (`id`, `entry_id`, `handle`, `value`) VALUES (27, 73, 'craig-davies', 'Craig Davies');
-INSERT INTO `tbl_entries_data_73` (`id`, `entry_id`, `handle`, `value`) VALUES (26, 74, 'doug-fleming', 'Doug Fleming');
-INSERT INTO `tbl_entries_data_73` (`id`, `entry_id`, `handle`, `value`) VALUES (25, 75, 'doug-fleming', 'Doug Fleming');
-INSERT INTO `tbl_entries_data_73` (`id`, `entry_id`, `handle`, `value`) VALUES (24, 83, 'craig-davies', 'Craig Davies');
-INSERT INTO `tbl_entries_data_73` (`id`, `entry_id`, `handle`, `value`) VALUES (23, 87, 'craig-davies', 'Craig Davies');
-INSERT INTO `tbl_entries_data_73` (`id`, `entry_id`, `handle`, `value`) VALUES (22, 90, 'sabrina-draper', 'Sabrina Draper');
-INSERT INTO `tbl_entries_data_73` (`id`, `entry_id`, `handle`, `value`) VALUES (21, 91, 'george-pytlik-campus-crusade-for-christ', 'George Pytlik, Campus Crusade for Christ');
-INSERT INTO `tbl_entries_data_73` (`id`, `entry_id`, `handle`, `value`) VALUES (20, 94, 'shawn-neumann', 'Shawn Neumann');
 
 -- *** STRUCTURE: `tbl_entries_data_74` ***
 DROP TABLE IF EXISTS `tbl_entries_data_74`;
@@ -2710,7 +2434,6 @@ CREATE TABLE `tbl_entries_data_74` (
 ) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_74` ***
-INSERT INTO `tbl_entries_data_74` (`id`, `entry_id`, `handle`, `value`) VALUES (3, 94, 'tracey-falk', 'Tracey Falk');
 
 -- *** STRUCTURE: `tbl_entries_data_75` ***
 DROP TABLE IF EXISTS `tbl_entries_data_75`;
@@ -2726,35 +2449,6 @@ CREATE TABLE `tbl_entries_data_75` (
 ) ENGINE=MyISAM AUTO_INCREMENT=89 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_75` ***
-INSERT INTO `tbl_entries_data_75` (`id`, `entry_id`, `handle`, `value`) VALUES (2, 67, 'stephen-bau', 'Stephen Bau');
-INSERT INTO `tbl_entries_data_75` (`id`, `entry_id`, `handle`, `value`) VALUES (85, 68, 'stephen-bau', 'Stephen Bau');
-INSERT INTO `tbl_entries_data_75` (`id`, `entry_id`, `handle`, `value`) VALUES (88, 69, 'stephen-bau', 'Stephen Bau');
-INSERT INTO `tbl_entries_data_75` (`id`, `entry_id`, `handle`, `value`) VALUES (86, 70, 'stephen-bau', 'Stephen Bau');
-INSERT INTO `tbl_entries_data_75` (`id`, `entry_id`, `handle`, `value`) VALUES (84, 71, 'stephen-bau', 'Stephen Bau');
-INSERT INTO `tbl_entries_data_75` (`id`, `entry_id`, `handle`, `value`) VALUES (83, 72, 'stephen-bau', 'Stephen Bau');
-INSERT INTO `tbl_entries_data_75` (`id`, `entry_id`, `handle`, `value`) VALUES (82, 73, 'stephen-bau', 'Stephen Bau');
-INSERT INTO `tbl_entries_data_75` (`id`, `entry_id`, `handle`, `value`) VALUES (81, 74, 'stephen-bau', 'Stephen Bau');
-INSERT INTO `tbl_entries_data_75` (`id`, `entry_id`, `handle`, `value`) VALUES (80, 75, 'stephen-bau', 'Stephen Bau');
-INSERT INTO `tbl_entries_data_75` (`id`, `entry_id`, `handle`, `value`) VALUES (79, 76, 'stephen-bau', 'Stephen Bau');
-INSERT INTO `tbl_entries_data_75` (`id`, `entry_id`, `handle`, `value`) VALUES (78, 77, 'stephen-bau', 'Stephen Bau');
-INSERT INTO `tbl_entries_data_75` (`id`, `entry_id`, `handle`, `value`) VALUES (77, 78, 'stephen-bau', 'Stephen Bau');
-INSERT INTO `tbl_entries_data_75` (`id`, `entry_id`, `handle`, `value`) VALUES (74, 79, 'stephen-bau', 'Stephen Bau');
-INSERT INTO `tbl_entries_data_75` (`id`, `entry_id`, `handle`, `value`) VALUES (73, 80, 'stephen-bau', 'Stephen Bau');
-INSERT INTO `tbl_entries_data_75` (`id`, `entry_id`, `handle`, `value`) VALUES (68, 81, 'stephen-bau', 'Stephen Bau');
-INSERT INTO `tbl_entries_data_75` (`id`, `entry_id`, `handle`, `value`) VALUES (67, 82, 'stephen-bau', 'Stephen Bau');
-INSERT INTO `tbl_entries_data_75` (`id`, `entry_id`, `handle`, `value`) VALUES (66, 83, 'stephen-bau', 'Stephen Bau');
-INSERT INTO `tbl_entries_data_75` (`id`, `entry_id`, `handle`, `value`) VALUES (65, 84, 'stephen-bau', 'Stephen Bau');
-INSERT INTO `tbl_entries_data_75` (`id`, `entry_id`, `handle`, `value`) VALUES (64, 85, 'stephen-bau', 'Stephen Bau');
-INSERT INTO `tbl_entries_data_75` (`id`, `entry_id`, `handle`, `value`) VALUES (63, 86, 'stephen-bau', 'Stephen Bau');
-INSERT INTO `tbl_entries_data_75` (`id`, `entry_id`, `handle`, `value`) VALUES (62, 87, 'stephen-bau', 'Stephen Bau');
-INSERT INTO `tbl_entries_data_75` (`id`, `entry_id`, `handle`, `value`) VALUES (61, 88, 'stephen-bau', 'Stephen Bau');
-INSERT INTO `tbl_entries_data_75` (`id`, `entry_id`, `handle`, `value`) VALUES (60, 89, 'stephen-bau', 'Stephen Bau');
-INSERT INTO `tbl_entries_data_75` (`id`, `entry_id`, `handle`, `value`) VALUES (59, 90, 'stephen-bau', 'Stephen Bau');
-INSERT INTO `tbl_entries_data_75` (`id`, `entry_id`, `handle`, `value`) VALUES (58, 91, 'stephen-bau', 'Stephen Bau');
-INSERT INTO `tbl_entries_data_75` (`id`, `entry_id`, `handle`, `value`) VALUES (57, 92, 'stephen-bau', 'Stephen Bau');
-INSERT INTO `tbl_entries_data_75` (`id`, `entry_id`, `handle`, `value`) VALUES (56, 93, 'stephen-bau', 'Stephen Bau');
-INSERT INTO `tbl_entries_data_75` (`id`, `entry_id`, `handle`, `value`) VALUES (55, 94, 'stephen-bau', 'Stephen Bau');
-INSERT INTO `tbl_entries_data_75` (`id`, `entry_id`, `handle`, `value`) VALUES (54, 95, 'stephen-bau', 'Stephen Bau');
 
 -- *** STRUCTURE: `tbl_entries_data_76` ***
 DROP TABLE IF EXISTS `tbl_entries_data_76`;
@@ -2770,8 +2464,6 @@ CREATE TABLE `tbl_entries_data_76` (
 ) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_76` ***
-INSERT INTO `tbl_entries_data_76` (`id`, `entry_id`, `handle`, `value`) VALUES (2, 67, 'getty-images', 'Getty Images');
-INSERT INTO `tbl_entries_data_76` (`id`, `entry_id`, `handle`, `value`) VALUES (5, 89, 'bob-fugger', 'Bob Fugger');
 
 -- *** STRUCTURE: `tbl_entries_data_77` ***
 DROP TABLE IF EXISTS `tbl_entries_data_77`;
@@ -2787,9 +2479,6 @@ CREATE TABLE `tbl_entries_data_77` (
 ) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_77` ***
-INSERT INTO `tbl_entries_data_77` (`id`, `entry_id`, `handle`, `value`) VALUES (2, 67, 'globe-printers', 'Globe Printers');
-INSERT INTO `tbl_entries_data_77` (`id`, `entry_id`, `handle`, `value`) VALUES (8, 89, 'globe-printers', 'Globe Printers');
-INSERT INTO `tbl_entries_data_77` (`id`, `entry_id`, `handle`, `value`) VALUES (7, 90, 'globe-printers', 'Globe Printers');
 
 -- *** STRUCTURE: `tbl_entries_data_78` ***
 DROP TABLE IF EXISTS `tbl_entries_data_78`;
@@ -2822,35 +2511,6 @@ CREATE TABLE `tbl_entries_data_79` (
 ) ENGINE=MyISAM AUTO_INCREMENT=84 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_79` ***
-INSERT INTO `tbl_entries_data_79` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (2, 67, '/assets/portfolio/wos-logo.gif', 6888, 'image/gif', 'a:3:{s:8:\"creation\";s:25:\"2009-07-21T22:10:11-07:00\";s:5:\"width\";i:323;s:6:\"height\";i:215;}');
-INSERT INTO `tbl_entries_data_79` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (81, 68, '/assets/portfolio/sjb-big_bear_logo.jpg', 16630, 'image/jpg', 'a:3:{s:8:\"creation\";s:25:\"2009-07-21T22:33:46-07:00\";s:5:\"width\";i:323;s:6:\"height\";i:215;}');
-INSERT INTO `tbl_entries_data_79` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (82, 70, '/assets/portfolio/bpa-web_bridges.jpg', 23910, 'image/jpg', 'a:3:{s:8:\"creation\";s:25:\"2009-07-23T12:19:46-07:00\";s:5:\"width\";i:323;s:6:\"height\";i:215;}');
-INSERT INTO `tbl_entries_data_79` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (80, 71, '/assets/portfolio/rentreg-logo.jpg', 10835, 'image/jpeg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T13:00:06-08:00\";s:5:\"width\";i:323;s:6:\"height\";i:215;}');
-INSERT INTO `tbl_entries_data_79` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (79, 72, '/assets/portfolio/bpa-prescover.jpg', 32658, 'image/jpeg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T12:58:17-08:00\";s:5:\"width\";i:323;s:6:\"height\";i:215;}');
-INSERT INTO `tbl_entries_data_79` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (78, 73, '/assets/portfolio/d1-rcabc_invite.jpg', 15732, 'image/jpeg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T11:52:51-08:00\";s:5:\"width\";i:323;s:6:\"height\";i:215;}');
-INSERT INTO `tbl_entries_data_79` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (77, 74, '/assets/portfolio/dfg-bristol_gardens.gif', 6818, 'image/gif', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T11:48:17-08:00\";s:5:\"width\";i:323;s:6:\"height\";i:215;}');
-INSERT INTO `tbl_entries_data_79` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (76, 75, '/assets/portfolio/dfg-stjohns_logo.gif', 7473, 'image/gif', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T11:43:34-08:00\";s:5:\"width\";i:323;s:6:\"height\";i:215;}');
-INSERT INTO `tbl_entries_data_79` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (75, 76, '/assets/portfolio/sdbc-uturn_logo.jpg', 15468, 'image/jpeg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T11:41:29-08:00\";s:5:\"width\";i:323;s:6:\"height\";i:215;}');
-INSERT INTO `tbl_entries_data_79` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (65, 81, '/assets/portfolio/sdbc-abovetherim.gif', 12129, 'image/gif', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T11:22:19-08:00\";s:5:\"width\";i:323;s:6:\"height\";i:215;}');
-INSERT INTO `tbl_entries_data_79` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (63, 83, '/assets/portfolio/d1-web_process.jpg', 15820, 'image/jpg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T10:46:35-08:00\";s:5:\"width\";i:323;s:6:\"height\";i:215;}');
-INSERT INTO `tbl_entries_data_79` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (51, 95, '/assets/portfolio/amec-logo.gif', 7857, 'image/gif', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T08:15:16-08:00\";s:5:\"width\";i:323;s:6:\"height\";i:215;}');
-INSERT INTO `tbl_entries_data_79` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (52, 94, '/assets/portfolio/d7-moonrattles_logo.gif', 10181, 'image/gif', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T08:31:56-08:00\";s:5:\"width\";i:323;s:6:\"height\";i:215;}');
-INSERT INTO `tbl_entries_data_79` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (53, 93, '/assets/portfolio/sjb-boysbasketball_logo.gif', 21254, 'image/gif', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T09:31:17-08:00\";s:5:\"width\";i:323;s:6:\"height\";i:215;}');
-INSERT INTO `tbl_entries_data_79` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (54, 92, '/assets/portfolio/sfm-logo.gif', 8593, 'image/gif', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T10:18:45-08:00\";s:5:\"width\";i:323;s:6:\"height\";i:215;}');
-INSERT INTO `tbl_entries_data_79` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (55, 91, '/assets/portfolio/ccc-totalpackage_logo.jpg', 18975, 'image/jpg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T10:21:46-08:00\";s:5:\"width\";i:323;s:6:\"height\";i:215;}');
-INSERT INTO `tbl_entries_data_79` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (56, 90, '/assets/portfolio/vlc-quantex_logo.gif', 6535, 'image/gif', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T10:26:50-08:00\";s:5:\"width\";i:323;s:6:\"height\";i:215;}');
-INSERT INTO `tbl_entries_data_79` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (57, 89, '/assets/portfolio/sfm-catalog.jpg', 21718, 'image/jpg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T10:28:56-08:00\";s:5:\"width\";i:323;s:6:\"height\";i:215;}');
-INSERT INTO `tbl_entries_data_79` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (58, 88, '/assets/portfolio/qwa-crest_logo.gif', 10747, 'image/gif', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T10:32:34-08:00\";s:5:\"width\";i:323;s:6:\"height\";i:215;}');
-INSERT INTO `tbl_entries_data_79` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (59, 87, '/assets/portfolio/d1-pca_web_home.jpg', 34892, 'image/jpg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T10:35:00-08:00\";s:5:\"width\";i:323;s:6:\"height\";i:215;}');
-INSERT INTO `tbl_entries_data_79` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (60, 86, '/assets/portfolio/hri-riceraiser_logo.jpg', 12781, 'image/jpg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T10:37:16-08:00\";s:5:\"width\";i:323;s:6:\"height\";i:215;}');
-INSERT INTO `tbl_entries_data_79` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (61, 85, '/assets/portfolio/hri-riceraiser_web.jpg', 31644, 'image/jpg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T10:40:59-08:00\";s:5:\"width\";i:323;s:6:\"height\";i:215;}');
-INSERT INTO `tbl_entries_data_79` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (62, 84, '/assets/portfolio/icr-web_home.jpg', 27976, 'image/jpg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T10:43:10-08:00\";s:5:\"width\";i:323;s:6:\"height\";i:215;}');
-INSERT INTO `tbl_entries_data_79` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (64, 82, '/assets/portfolio/300c-web_home.jpg', 35928, 'image/jpg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T11:02:03-08:00\";s:5:\"width\";i:323;s:6:\"height\";i:215;}');
-INSERT INTO `tbl_entries_data_79` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (70, 79, '/assets/portfolio/idop-web_home.jpg', 25571, 'image/jpg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T11:25:20-08:00\";s:5:\"width\";i:323;s:6:\"height\";i:215;}');
-INSERT INTO `tbl_entries_data_79` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (69, 80, '/assets/portfolio/cni-web_home.jpg', 27676, 'image/jpg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T11:29:33-08:00\";s:5:\"width\";i:323;s:6:\"height\";i:215;}');
-INSERT INTO `tbl_entries_data_79` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (73, 78, '/assets/portfolio/cni-logo.gif', 4318, 'image/gif', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T11:31:30-08:00\";s:5:\"width\";i:323;s:6:\"height\";i:215;}');
-INSERT INTO `tbl_entries_data_79` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (74, 77, '/assets/portfolio/wos-calendar_oct2006.jpg', 13704, 'image/jpg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T11:35:19-08:00\";s:5:\"width\";i:323;s:6:\"height\";i:215;}');
-INSERT INTO `tbl_entries_data_79` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (83, 69, '/assets/portfolio/hmk-web_home.jpg', 22339, 'image/jpeg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T20:51:30-08:00\";s:5:\"width\";i:323;s:6:\"height\";i:215;}');
 
 -- *** STRUCTURE: `tbl_entries_data_8` ***
 DROP TABLE IF EXISTS `tbl_entries_data_8`;
@@ -2861,29 +2521,29 @@ CREATE TABLE `tbl_entries_data_8` (
   PRIMARY KEY (`id`),
   KEY `entry_id` (`entry_id`),
   KEY `relation_id` (`relation_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=69 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=88 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_8` ***
 INSERT INTO `tbl_entries_data_8` (`id`, `entry_id`, `relation_id`) VALUES (6, 11, 1);
-INSERT INTO `tbl_entries_data_8` (`id`, `entry_id`, `relation_id`) VALUES (54, 21, 1);
-INSERT INTO `tbl_entries_data_8` (`id`, `entry_id`, `relation_id`) VALUES (68, 22, NULL);
-INSERT INTO `tbl_entries_data_8` (`id`, `entry_id`, `relation_id`) VALUES (67, 27, NULL);
-INSERT INTO `tbl_entries_data_8` (`id`, `entry_id`, `relation_id`) VALUES (17, 30, 1);
+INSERT INTO `tbl_entries_data_8` (`id`, `entry_id`, `relation_id`) VALUES (86, 21, NULL);
+INSERT INTO `tbl_entries_data_8` (`id`, `entry_id`, `relation_id`) VALUES (73, 22, NULL);
+INSERT INTO `tbl_entries_data_8` (`id`, `entry_id`, `relation_id`) VALUES (85, 27, NULL);
+INSERT INTO `tbl_entries_data_8` (`id`, `entry_id`, `relation_id`) VALUES (84, 30, NULL);
 INSERT INTO `tbl_entries_data_8` (`id`, `entry_id`, `relation_id`) VALUES (62, 31, NULL);
-INSERT INTO `tbl_entries_data_8` (`id`, `entry_id`, `relation_id`) VALUES (36, 33, 2);
-INSERT INTO `tbl_entries_data_8` (`id`, `entry_id`, `relation_id`) VALUES (33, 36, 33);
-INSERT INTO `tbl_entries_data_8` (`id`, `entry_id`, `relation_id`) VALUES (34, 43, 33);
-INSERT INTO `tbl_entries_data_8` (`id`, `entry_id`, `relation_id`) VALUES (38, 44, 33);
-INSERT INTO `tbl_entries_data_8` (`id`, `entry_id`, `relation_id`) VALUES (41, 45, 33);
-INSERT INTO `tbl_entries_data_8` (`id`, `entry_id`, `relation_id`) VALUES (37, 53, 2);
-INSERT INTO `tbl_entries_data_8` (`id`, `entry_id`, `relation_id`) VALUES (42, 54, 53);
-INSERT INTO `tbl_entries_data_8` (`id`, `entry_id`, `relation_id`) VALUES (43, 55, 53);
-INSERT INTO `tbl_entries_data_8` (`id`, `entry_id`, `relation_id`) VALUES (44, 56, 53);
-INSERT INTO `tbl_entries_data_8` (`id`, `entry_id`, `relation_id`) VALUES (60, 57, 53);
-INSERT INTO `tbl_entries_data_8` (`id`, `entry_id`, `relation_id`) VALUES (46, 58, 2);
-INSERT INTO `tbl_entries_data_8` (`id`, `entry_id`, `relation_id`) VALUES (49, 59, 58);
-INSERT INTO `tbl_entries_data_8` (`id`, `entry_id`, `relation_id`) VALUES (52, 60, 58);
-INSERT INTO `tbl_entries_data_8` (`id`, `entry_id`, `relation_id`) VALUES (64, 61, 58);
+INSERT INTO `tbl_entries_data_8` (`id`, `entry_id`, `relation_id`) VALUES (83, 33, NULL);
+INSERT INTO `tbl_entries_data_8` (`id`, `entry_id`, `relation_id`) VALUES (82, 36, 33);
+INSERT INTO `tbl_entries_data_8` (`id`, `entry_id`, `relation_id`) VALUES (81, 43, 33);
+INSERT INTO `tbl_entries_data_8` (`id`, `entry_id`, `relation_id`) VALUES (80, 44, 33);
+INSERT INTO `tbl_entries_data_8` (`id`, `entry_id`, `relation_id`) VALUES (87, 45, 33);
+INSERT INTO `tbl_entries_data_8` (`id`, `entry_id`, `relation_id`) VALUES (79, 53, NULL);
+INSERT INTO `tbl_entries_data_8` (`id`, `entry_id`, `relation_id`) VALUES (78, 54, 53);
+INSERT INTO `tbl_entries_data_8` (`id`, `entry_id`, `relation_id`) VALUES (77, 55, 53);
+INSERT INTO `tbl_entries_data_8` (`id`, `entry_id`, `relation_id`) VALUES (76, 56, 53);
+INSERT INTO `tbl_entries_data_8` (`id`, `entry_id`, `relation_id`) VALUES (75, 57, 53);
+INSERT INTO `tbl_entries_data_8` (`id`, `entry_id`, `relation_id`) VALUES (74, 58, NULL);
+INSERT INTO `tbl_entries_data_8` (`id`, `entry_id`, `relation_id`) VALUES (72, 59, 58);
+INSERT INTO `tbl_entries_data_8` (`id`, `entry_id`, `relation_id`) VALUES (71, 60, 58);
+INSERT INTO `tbl_entries_data_8` (`id`, `entry_id`, `relation_id`) VALUES (70, 61, 58);
 
 -- *** STRUCTURE: `tbl_entries_data_80` ***
 DROP TABLE IF EXISTS `tbl_entries_data_80`;
@@ -2901,35 +2561,6 @@ CREATE TABLE `tbl_entries_data_80` (
 ) ENGINE=MyISAM AUTO_INCREMENT=84 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_80` ***
-INSERT INTO `tbl_entries_data_80` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (2, 67, '/assets/portfolio/wos-logo_med.gif', 3532, 'image/gif', 'a:3:{s:8:\"creation\";s:25:\"2009-07-21T22:10:11-07:00\";s:5:\"width\";i:107;s:6:\"height\";i:107;}');
-INSERT INTO `tbl_entries_data_80` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (81, 68, '/assets/portfolio/sjb-big_bear_logo_med.jpg', 8370, 'image/jpg', 'a:3:{s:8:\"creation\";s:25:\"2009-07-21T22:33:46-07:00\";s:5:\"width\";i:107;s:6:\"height\";i:107;}');
-INSERT INTO `tbl_entries_data_80` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (82, 70, '/assets/portfolio/bpa-web_med.jpg', 5725, 'image/jpg', 'a:3:{s:8:\"creation\";s:25:\"2009-07-23T12:19:46-07:00\";s:5:\"width\";i:107;s:6:\"height\";i:107;}');
-INSERT INTO `tbl_entries_data_80` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (80, 71, '/assets/portfolio/rentreg-logo_med.jpg', 5294, 'image/jpeg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T13:00:06-08:00\";s:5:\"width\";i:107;s:6:\"height\";i:107;}');
-INSERT INTO `tbl_entries_data_80` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (79, 72, '/assets/portfolio/bpa-prescover_med.jpg', 8535, 'image/jpeg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T12:58:17-08:00\";s:5:\"width\";i:107;s:6:\"height\";i:107;}');
-INSERT INTO `tbl_entries_data_80` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (78, 73, '/assets/portfolio/d1-rcabc_invite_med.jpg', 5096, 'image/jpeg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T11:52:51-08:00\";s:5:\"width\";i:107;s:6:\"height\";i:107;}');
-INSERT INTO `tbl_entries_data_80` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (77, 74, '/assets/portfolio/dfg-bristol_gardens_med.gif', 4792, 'image/gif', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T11:48:17-08:00\";s:5:\"width\";i:107;s:6:\"height\";i:107;}');
-INSERT INTO `tbl_entries_data_80` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (76, 75, '/assets/portfolio/dfg-stjohns_logo_med.gif', 3907, 'image/gif', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T11:43:34-08:00\";s:5:\"width\";i:107;s:6:\"height\";i:107;}');
-INSERT INTO `tbl_entries_data_80` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (75, 76, '/assets/portfolio/sdbc-uturn_logo_med.jpg', 6276, 'image/jpeg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T11:41:29-08:00\";s:5:\"width\";i:107;s:6:\"height\";i:107;}');
-INSERT INTO `tbl_entries_data_80` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (69, 80, '/assets/portfolio/cni-web_med.jpg', 6659, 'image/jpg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T11:29:33-08:00\";s:5:\"width\";i:107;s:6:\"height\";i:107;}');
-INSERT INTO `tbl_entries_data_80` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (65, 81, '/assets/portfolio/sdbc-abovetherim_med.gif', 4223, 'image/gif', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T11:22:19-08:00\";s:5:\"width\";i:107;s:6:\"height\";i:107;}');
-INSERT INTO `tbl_entries_data_80` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (63, 83, '/assets/portfolio/d1-web_med.jpg', 3784, 'image/jpg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T10:46:35-08:00\";s:5:\"width\";i:107;s:6:\"height\";i:107;}');
-INSERT INTO `tbl_entries_data_80` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (51, 95, '/assets/portfolio/amec-logo_med.gif', 2510, 'image/gif', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T08:15:16-08:00\";s:5:\"width\";i:107;s:6:\"height\";i:107;}');
-INSERT INTO `tbl_entries_data_80` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (52, 94, '/assets/portfolio/d7-moonrattles_logo_med.gif', 5152, 'image/gif', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T08:31:56-08:00\";s:5:\"width\";i:107;s:6:\"height\";i:107;}');
-INSERT INTO `tbl_entries_data_80` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (53, 93, '/assets/portfolio/sjb-boysbask_logo_med.gif', 7898, 'image/gif', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T09:31:17-08:00\";s:5:\"width\";i:107;s:6:\"height\";i:107;}');
-INSERT INTO `tbl_entries_data_80` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (54, 92, '/assets/portfolio/sfm-logo_med.gif', 2406, 'image/gif', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T10:18:45-08:00\";s:5:\"width\";i:107;s:6:\"height\";i:107;}');
-INSERT INTO `tbl_entries_data_80` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (55, 91, '/assets/portfolio/ccc-totalpackage_med.gif', 5372, 'image/gif', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T10:21:46-08:00\";s:5:\"width\";i:107;s:6:\"height\";i:107;}');
-INSERT INTO `tbl_entries_data_80` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (56, 90, '/assets/portfolio/vlc-quantex_logo_med.gif', 3223, 'image/gif', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T10:26:50-08:00\";s:5:\"width\";i:107;s:6:\"height\";i:107;}');
-INSERT INTO `tbl_entries_data_80` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (57, 89, '/assets/portfolio/sfm-catalog_med.jpg', 5715, 'image/jpg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T10:28:56-08:00\";s:5:\"width\";i:107;s:6:\"height\";i:107;}');
-INSERT INTO `tbl_entries_data_80` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (58, 88, '/assets/portfolio/qwa-crest_logo_med.gif', 6930, 'image/gif', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T10:32:34-08:00\";s:5:\"width\";i:107;s:6:\"height\";i:107;}');
-INSERT INTO `tbl_entries_data_80` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (59, 87, '/assets/portfolio/d1-pca_website_med.jpg', 6323, 'image/jpg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T10:35:00-08:00\";s:5:\"width\";i:107;s:6:\"height\";i:107;}');
-INSERT INTO `tbl_entries_data_80` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (60, 86, '/assets/portfolio/hri-riceraiser_med.jpg', 3597, 'image/jpg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T10:37:16-08:00\";s:5:\"width\";i:107;s:6:\"height\";i:107;}');
-INSERT INTO `tbl_entries_data_80` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (61, 85, '/assets/portfolio/hri-riceraiser_site_med.jpg', 6336, 'image/jpg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T10:40:59-08:00\";s:5:\"width\";i:107;s:6:\"height\";i:107;}');
-INSERT INTO `tbl_entries_data_80` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (62, 84, '/assets/portfolio/icr-website_med.jpg', 6259, 'image/jpg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T10:43:10-08:00\";s:5:\"width\";i:107;s:6:\"height\";i:107;}');
-INSERT INTO `tbl_entries_data_80` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (64, 82, '/assets/portfolio/300c-web_med.jpg', 9721, 'image/jpg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T11:02:03-08:00\";s:5:\"width\";i:107;s:6:\"height\";i:107;}');
-INSERT INTO `tbl_entries_data_80` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (70, 79, '/assets/portfolio/idop-web_med.jpg', 4765, 'image/jpg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T11:25:20-08:00\";s:5:\"width\";i:107;s:6:\"height\";i:107;}');
-INSERT INTO `tbl_entries_data_80` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (73, 78, '/assets/portfolio/cni-logo_med.gif', 1526, 'image/gif', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T11:31:30-08:00\";s:5:\"width\";i:107;s:6:\"height\";i:107;}');
-INSERT INTO `tbl_entries_data_80` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (74, 77, '/assets/portfolio/wos-calendar_med.jpg', 5375, 'image/jpg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T11:35:19-08:00\";s:5:\"width\";i:107;s:6:\"height\";i:107;}');
-INSERT INTO `tbl_entries_data_80` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (83, 69, '/assets/portfolio/hmk-web_med.jpg', 5743, 'image/jpeg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T20:51:30-08:00\";s:5:\"width\";i:107;s:6:\"height\";i:107;}');
 
 -- *** STRUCTURE: `tbl_entries_data_81` ***
 DROP TABLE IF EXISTS `tbl_entries_data_81`;
@@ -2947,35 +2578,6 @@ CREATE TABLE `tbl_entries_data_81` (
 ) ENGINE=MyISAM AUTO_INCREMENT=84 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_81` ***
-INSERT INTO `tbl_entries_data_81` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (2, 67, '/assets/portfolio/wos-logo_med_off.gif', 2209, 'image/gif', 'a:3:{s:8:\"creation\";s:25:\"2009-07-21T22:10:11-07:00\";s:5:\"width\";i:107;s:6:\"height\";i:107;}');
-INSERT INTO `tbl_entries_data_81` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (81, 68, '/assets/portfolio/sjb-big_bear_logo_med_off.jpg', 4119, 'image/jpg', 'a:3:{s:8:\"creation\";s:25:\"2009-07-21T22:33:46-07:00\";s:5:\"width\";i:107;s:6:\"height\";i:107;}');
-INSERT INTO `tbl_entries_data_81` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (82, 70, '/assets/portfolio/bpa-web_med_off.jpg', 2662, 'image/jpg', 'a:3:{s:8:\"creation\";s:25:\"2009-07-23T12:19:46-07:00\";s:5:\"width\";i:107;s:6:\"height\";i:107;}');
-INSERT INTO `tbl_entries_data_81` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (80, 71, '/assets/portfolio/rentreg-logo_med_off.jpg', 2063, 'image/jpeg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T13:00:06-08:00\";s:5:\"width\";i:107;s:6:\"height\";i:107;}');
-INSERT INTO `tbl_entries_data_81` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (79, 72, '/assets/portfolio/bpa-prescover_med_off.jpg', 3371, 'image/jpeg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T12:58:17-08:00\";s:5:\"width\";i:107;s:6:\"height\";i:107;}');
-INSERT INTO `tbl_entries_data_81` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (78, 73, '/assets/portfolio/d1-rcabc_invite_med_off.jpg', 2297, 'image/jpeg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T11:52:51-08:00\";s:5:\"width\";i:107;s:6:\"height\";i:107;}');
-INSERT INTO `tbl_entries_data_81` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (77, 74, '/assets/portfolio/dfg-bristol_gardens_med_off.gif', 4250, 'image/gif', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T11:48:17-08:00\";s:5:\"width\";i:107;s:6:\"height\";i:107;}');
-INSERT INTO `tbl_entries_data_81` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (76, 75, '/assets/portfolio/dfg-stjohns_logo_med_off.gif', 3398, 'image/gif', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T11:43:34-08:00\";s:5:\"width\";i:107;s:6:\"height\";i:107;}');
-INSERT INTO `tbl_entries_data_81` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (75, 76, '/assets/portfolio/sdbc-uturn_logo_med_off.jpg', 2152, 'image/jpeg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T11:41:29-08:00\";s:5:\"width\";i:107;s:6:\"height\";i:107;}');
-INSERT INTO `tbl_entries_data_81` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (69, 80, '/assets/portfolio/cni-web_med_off.jpg', 3129, 'image/jpg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T11:29:33-08:00\";s:5:\"width\";i:107;s:6:\"height\";i:107;}');
-INSERT INTO `tbl_entries_data_81` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (65, 81, '/assets/portfolio/sdbc-abovetherim_med_off.gif', 3557, 'image/gif', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T11:22:19-08:00\";s:5:\"width\";i:107;s:6:\"height\";i:107;}');
-INSERT INTO `tbl_entries_data_81` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (63, 83, '/assets/portfolio/d1-web_med_off.jpg', 1931, 'image/jpg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T10:46:35-08:00\";s:5:\"width\";i:107;s:6:\"height\";i:107;}');
-INSERT INTO `tbl_entries_data_81` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (51, 95, '/assets/portfolio/amec-logo_med_off.gif', 1563, 'image/gif', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T08:15:16-08:00\";s:5:\"width\";i:107;s:6:\"height\";i:107;}');
-INSERT INTO `tbl_entries_data_81` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (52, 94, '/assets/portfolio/d7-moonrattles_logo_med_off.gif', 4326, 'image/gif', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T08:31:56-08:00\";s:5:\"width\";i:107;s:6:\"height\";i:107;}');
-INSERT INTO `tbl_entries_data_81` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (53, 93, '/assets/portfolio/sjb-boysbask_logo_med_off.gif', 5270, 'image/gif', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T09:31:17-08:00\";s:5:\"width\";i:107;s:6:\"height\";i:107;}');
-INSERT INTO `tbl_entries_data_81` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (54, 92, '/assets/portfolio/sfm-logo_med_off.gif', 1595, 'image/gif', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T10:18:45-08:00\";s:5:\"width\";i:107;s:6:\"height\";i:107;}');
-INSERT INTO `tbl_entries_data_81` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (55, 91, '/assets/portfolio/ccc-totalpackage_med_off.gif', 4150, 'image/gif', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T10:21:46-08:00\";s:5:\"width\";i:107;s:6:\"height\";i:107;}');
-INSERT INTO `tbl_entries_data_81` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (56, 90, '/assets/portfolio/vlc-quantex_logo_med_off.gif', 2239, 'image/gif', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T10:26:50-08:00\";s:5:\"width\";i:107;s:6:\"height\";i:107;}');
-INSERT INTO `tbl_entries_data_81` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (57, 89, '/assets/portfolio/sfm-catalog_med_off.jpg', 2475, 'image/jpg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T10:28:56-08:00\";s:5:\"width\";i:107;s:6:\"height\";i:107;}');
-INSERT INTO `tbl_entries_data_81` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (58, 88, '/assets/portfolio/qwa-crest_logo_med_off.gif', 5111, 'image/gif', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T10:32:34-08:00\";s:5:\"width\";i:107;s:6:\"height\";i:107;}');
-INSERT INTO `tbl_entries_data_81` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (59, 87, '/assets/portfolio/d1-pca_website_med_off.jpg', 3041, 'image/jpg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T10:35:00-08:00\";s:5:\"width\";i:107;s:6:\"height\";i:107;}');
-INSERT INTO `tbl_entries_data_81` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (60, 86, '/assets/portfolio/hri-riceraiser_med_off.jpg', 1979, 'image/jpg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T10:37:16-08:00\";s:5:\"width\";i:107;s:6:\"height\";i:107;}');
-INSERT INTO `tbl_entries_data_81` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (61, 85, '/assets/portfolio/hri-riceraiser_site_med_off.jpg', 2841, 'image/jpg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T10:40:59-08:00\";s:5:\"width\";i:107;s:6:\"height\";i:107;}');
-INSERT INTO `tbl_entries_data_81` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (62, 84, '/assets/portfolio/icr-website_med_off.jpg', 3320, 'image/jpg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T10:43:10-08:00\";s:5:\"width\";i:107;s:6:\"height\";i:107;}');
-INSERT INTO `tbl_entries_data_81` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (64, 82, '/assets/portfolio/300c-web_med_off.jpg', 3748, 'image/jpg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T11:02:03-08:00\";s:5:\"width\";i:107;s:6:\"height\";i:107;}');
-INSERT INTO `tbl_entries_data_81` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (70, 79, '/assets/portfolio/idop-web_med_off.jpg', 1731, 'image/jpg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T11:25:20-08:00\";s:5:\"width\";i:107;s:6:\"height\";i:107;}');
-INSERT INTO `tbl_entries_data_81` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (73, 78, '/assets/portfolio/cni-logo_med_off.gif', 1477, 'image/gif', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T11:31:30-08:00\";s:5:\"width\";i:107;s:6:\"height\";i:107;}');
-INSERT INTO `tbl_entries_data_81` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (74, 77, '/assets/portfolio/wos-calendar_med_off.jpg', 2280, 'image/jpg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T11:35:19-08:00\";s:5:\"width\";i:107;s:6:\"height\";i:107;}');
-INSERT INTO `tbl_entries_data_81` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (83, 69, '/assets/portfolio/hmk-web_med_off.jpg', 2711, 'image/jpeg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T20:51:30-08:00\";s:5:\"width\";i:107;s:6:\"height\";i:107;}');
 
 -- *** STRUCTURE: `tbl_entries_data_82` ***
 DROP TABLE IF EXISTS `tbl_entries_data_82`;
@@ -2993,35 +2595,6 @@ CREATE TABLE `tbl_entries_data_82` (
 ) ENGINE=MyISAM AUTO_INCREMENT=84 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_82` ***
-INSERT INTO `tbl_entries_data_82` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (2, 67, '/assets/portfolio/wos-logo_thb.gif', 1542, 'image/gif', 'a:3:{s:8:\"creation\";s:25:\"2009-07-21T22:10:11-07:00\";s:5:\"width\";i:53;s:6:\"height\";i:53;}');
-INSERT INTO `tbl_entries_data_82` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (81, 68, '/assets/portfolio/sjb-bears_logo_thb.gif', 2218, 'image/gif', 'a:3:{s:8:\"creation\";s:25:\"2009-07-21T22:33:46-07:00\";s:5:\"width\";i:53;s:6:\"height\";i:53;}');
-INSERT INTO `tbl_entries_data_82` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (82, 70, '/assets/portfolio/bpa-web_thb.jpg', 1692, 'image/jpg', 'a:3:{s:8:\"creation\";s:25:\"2009-07-23T12:19:46-07:00\";s:5:\"width\";i:53;s:6:\"height\";i:53;}');
-INSERT INTO `tbl_entries_data_82` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (80, 71, '/assets/portfolio/rentreg-logo_thb.jpg', 2421, 'image/jpeg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T13:00:06-08:00\";s:5:\"width\";i:53;s:6:\"height\";i:53;}');
-INSERT INTO `tbl_entries_data_82` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (79, 72, '/assets/portfolio/bpa-prescover_thb.jpg', 2539, 'image/jpeg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T12:58:17-08:00\";s:5:\"width\";i:53;s:6:\"height\";i:53;}');
-INSERT INTO `tbl_entries_data_82` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (78, 73, '/assets/portfolio/d1-rcabc_invite_thb.jpg', 2127, 'image/jpeg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T11:52:51-08:00\";s:5:\"width\";i:53;s:6:\"height\";i:53;}');
-INSERT INTO `tbl_entries_data_82` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (77, 74, '/assets/portfolio/dfg-bristol_gardens_thb.gif', 1153, 'image/gif', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T11:48:17-08:00\";s:5:\"width\";i:53;s:6:\"height\";i:53;}');
-INSERT INTO `tbl_entries_data_82` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (76, 75, '/assets/portfolio/dfg-stjohns_logo_thb.gif', 1282, 'image/gif', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T11:43:34-08:00\";s:5:\"width\";i:53;s:6:\"height\";i:53;}');
-INSERT INTO `tbl_entries_data_82` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (75, 76, '/assets/portfolio/sdbc-uturn_logo_thb.jpg', 2260, 'image/jpeg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T11:41:29-08:00\";s:5:\"width\";i:53;s:6:\"height\";i:53;}');
-INSERT INTO `tbl_entries_data_82` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (69, 80, '/assets/portfolio/cni-web_thb.jpg', 2228, 'image/jpg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T11:29:33-08:00\";s:5:\"width\";i:53;s:6:\"height\";i:53;}');
-INSERT INTO `tbl_entries_data_82` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (65, 81, '/assets/portfolio/sdbc-abovetherim_thb.gif', 2417, 'image/gif', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T11:22:19-08:00\";s:5:\"width\";i:53;s:6:\"height\";i:53;}');
-INSERT INTO `tbl_entries_data_82` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (63, 83, '/assets/portfolio/d1-web_thb.jpg', 1062, 'image/jpg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T10:46:35-08:00\";s:5:\"width\";i:53;s:6:\"height\";i:53;}');
-INSERT INTO `tbl_entries_data_82` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (51, 95, '/assets/portfolio/amec-logo_thb.gif', 1572, 'image/gif', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T08:15:16-08:00\";s:5:\"width\";i:53;s:6:\"height\";i:53;}');
-INSERT INTO `tbl_entries_data_82` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (52, 94, '/assets/portfolio/d7-moonrattles_logo_thb.gif', 2616, 'image/gif', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T08:31:56-08:00\";s:5:\"width\";i:53;s:6:\"height\";i:53;}');
-INSERT INTO `tbl_entries_data_82` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (53, 93, '/assets/portfolio/sjb-boysbask_logo_thb.gif', 3605, 'image/gif', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T09:31:17-08:00\";s:5:\"width\";i:53;s:6:\"height\";i:53;}');
-INSERT INTO `tbl_entries_data_82` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (54, 92, '/assets/portfolio/sfm-logo_thb.gif', 1589, 'image/gif', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T10:18:45-08:00\";s:5:\"width\";i:53;s:6:\"height\";i:53;}');
-INSERT INTO `tbl_entries_data_82` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (55, 91, '/assets/portfolio/ccc-totalpackage_thb.gif', 2610, 'image/gif', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T10:21:46-08:00\";s:5:\"width\";i:53;s:6:\"height\";i:53;}');
-INSERT INTO `tbl_entries_data_82` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (56, 90, '/assets/portfolio/vlc-quantex_logo_thb.gif', 1944, 'image/gif', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T10:26:50-08:00\";s:5:\"width\";i:53;s:6:\"height\";i:53;}');
-INSERT INTO `tbl_entries_data_82` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (57, 89, '/assets/portfolio/sfm-catalog_thb.jpg', 1975, 'image/jpg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T10:28:56-08:00\";s:5:\"width\";i:53;s:6:\"height\";i:53;}');
-INSERT INTO `tbl_entries_data_82` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (58, 88, '/assets/portfolio/qwa-crest_logo_thb.gif', 2004, 'image/gif', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T10:32:34-08:00\";s:5:\"width\";i:53;s:6:\"height\";i:53;}');
-INSERT INTO `tbl_entries_data_82` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (59, 87, '/assets/portfolio/d1-pca_website_thb.jpg', 1958, 'image/jpg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T10:35:00-08:00\";s:5:\"width\";i:53;s:6:\"height\";i:53;}');
-INSERT INTO `tbl_entries_data_82` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (60, 86, '/assets/portfolio/hri-riceraiser_thb.jpg', 2269, 'image/jpg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T10:37:16-08:00\";s:5:\"width\";i:53;s:6:\"height\";i:53;}');
-INSERT INTO `tbl_entries_data_82` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (61, 85, '/assets/portfolio/hri-riceraiser_site_thb.jpg', 1801, 'image/jpg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T10:40:59-08:00\";s:5:\"width\";i:53;s:6:\"height\";i:53;}');
-INSERT INTO `tbl_entries_data_82` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (62, 84, '/assets/portfolio/icr-website_thb.jpg', 1564, 'image/jpg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T10:43:10-08:00\";s:5:\"width\";i:53;s:6:\"height\";i:53;}');
-INSERT INTO `tbl_entries_data_82` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (64, 82, '/assets/portfolio/300c-web_thb.jpg', 3171, 'image/jpg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T11:02:03-08:00\";s:5:\"width\";i:53;s:6:\"height\";i:53;}');
-INSERT INTO `tbl_entries_data_82` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (70, 79, '/assets/portfolio/idop-web_thb.jpg', 2289, 'image/jpg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T11:25:20-08:00\";s:5:\"width\";i:53;s:6:\"height\";i:53;}');
-INSERT INTO `tbl_entries_data_82` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (73, 78, '/assets/portfolio/cni-logo_thb.gif', 860, 'image/gif', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T11:31:30-08:00\";s:5:\"width\";i:53;s:6:\"height\";i:53;}');
-INSERT INTO `tbl_entries_data_82` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (74, 77, '/assets/portfolio/wos-calendar_thb.jpg', 1683, 'image/jpg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T11:35:19-08:00\";s:5:\"width\";i:53;s:6:\"height\";i:53;}');
-INSERT INTO `tbl_entries_data_82` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (83, 69, '/assets/portfolio/hmk-web_thb.jpg', 2031, 'image/jpeg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T20:51:30-08:00\";s:5:\"width\";i:53;s:6:\"height\";i:53;}');
 
 -- *** STRUCTURE: `tbl_entries_data_83` ***
 DROP TABLE IF EXISTS `tbl_entries_data_83`;
@@ -3039,35 +2612,6 @@ CREATE TABLE `tbl_entries_data_83` (
 ) ENGINE=MyISAM AUTO_INCREMENT=84 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_83` ***
-INSERT INTO `tbl_entries_data_83` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (2, 67, '/assets/portfolio/wos-logo_thb_off.gif', 798, 'image/gif', 'a:3:{s:8:\"creation\";s:25:\"2009-07-21T22:10:11-07:00\";s:5:\"width\";i:53;s:6:\"height\";i:53;}');
-INSERT INTO `tbl_entries_data_83` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (81, 68, '/assets/portfolio/sjb-bears_logo_thb_off.gif', 1432, 'image/gif', 'a:3:{s:8:\"creation\";s:25:\"2009-07-21T22:33:46-07:00\";s:5:\"width\";i:53;s:6:\"height\";i:53;}');
-INSERT INTO `tbl_entries_data_83` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (82, 70, '/assets/portfolio/bpa-web_thb_off.jpg', 966, 'image/jpg', 'a:3:{s:8:\"creation\";s:25:\"2009-07-23T12:19:46-07:00\";s:5:\"width\";i:53;s:6:\"height\";i:53;}');
-INSERT INTO `tbl_entries_data_83` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (80, 71, '/assets/portfolio/rentreg-logo_thb_off.jpg', 1036, 'image/jpeg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T13:00:06-08:00\";s:5:\"width\";i:53;s:6:\"height\";i:53;}');
-INSERT INTO `tbl_entries_data_83` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (79, 72, '/assets/portfolio/bpa-prescover_thb_off.jpg', 1179, 'image/jpeg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T12:58:17-08:00\";s:5:\"width\";i:53;s:6:\"height\";i:53;}');
-INSERT INTO `tbl_entries_data_83` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (78, 73, '/assets/portfolio/d1-rcabc_invite_thb_off.jpg', 1117, 'image/jpeg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T11:52:51-08:00\";s:5:\"width\";i:53;s:6:\"height\";i:53;}');
-INSERT INTO `tbl_entries_data_83` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (77, 74, '/assets/portfolio/dfg-bristol_gardens_thb_off.gif', 1203, 'image/gif', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T11:48:17-08:00\";s:5:\"width\";i:53;s:6:\"height\";i:53;}');
-INSERT INTO `tbl_entries_data_83` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (76, 75, '/assets/portfolio/dfg-stjohns_logo_thb_off.gif', 1239, 'image/gif', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T11:43:34-08:00\";s:5:\"width\";i:53;s:6:\"height\";i:53;}');
-INSERT INTO `tbl_entries_data_83` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (75, 76, '/assets/portfolio/sdbc-uturn_logo_thb_off.jpg', 844, 'image/jpeg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T11:41:29-08:00\";s:5:\"width\";i:53;s:6:\"height\";i:53;}');
-INSERT INTO `tbl_entries_data_83` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (69, 80, '/assets/portfolio/cni-web_thb_off.jpg', 1135, 'image/jpg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T11:29:33-08:00\";s:5:\"width\";i:53;s:6:\"height\";i:53;}');
-INSERT INTO `tbl_entries_data_83` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (65, 81, '/assets/portfolio/sdbc-abovetherim_thb_off.gif', 2325, 'image/gif', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T11:22:19-08:00\";s:5:\"width\";i:53;s:6:\"height\";i:53;}');
-INSERT INTO `tbl_entries_data_83` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (63, 83, '/assets/portfolio/d1-web_thb_off.jpg', 766, 'image/jpg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T10:46:35-08:00\";s:5:\"width\";i:53;s:6:\"height\";i:53;}');
-INSERT INTO `tbl_entries_data_83` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (51, 95, '/assets/portfolio/amec-logo_thb_off.gif', 939, 'image/gif', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T08:15:16-08:00\";s:5:\"width\";i:53;s:6:\"height\";i:53;}');
-INSERT INTO `tbl_entries_data_83` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (52, 94, '/assets/portfolio/d7-moonrattles_logo_thb_off.gif', 2005, 'image/gif', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T08:31:56-08:00\";s:5:\"width\";i:53;s:6:\"height\";i:53;}');
-INSERT INTO `tbl_entries_data_83` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (53, 93, '/assets/portfolio/sjb-boysbask_logo_thb_off.gif', 2284, 'image/gif', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T09:31:17-08:00\";s:5:\"width\";i:53;s:6:\"height\";i:53;}');
-INSERT INTO `tbl_entries_data_83` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (54, 92, '/assets/portfolio/sfm-logo_thb_off.gif', 1166, 'image/gif', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T10:18:45-08:00\";s:5:\"width\";i:53;s:6:\"height\";i:53;}');
-INSERT INTO `tbl_entries_data_83` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (55, 91, '/assets/portfolio/ccc-totalpackage_thb_off.gif', 1747, 'image/gif', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T10:21:46-08:00\";s:5:\"width\";i:53;s:6:\"height\";i:53;}');
-INSERT INTO `tbl_entries_data_83` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (56, 90, '/assets/portfolio/vlc-quantex_logo_thb_off.gif', 1458, 'image/gif', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T10:26:50-08:00\";s:5:\"width\";i:53;s:6:\"height\";i:53;}');
-INSERT INTO `tbl_entries_data_83` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (57, 89, '/assets/portfolio/sfm-catalog_thb_off.jpg', 972, 'image/jpg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T10:28:56-08:00\";s:5:\"width\";i:53;s:6:\"height\";i:53;}');
-INSERT INTO `tbl_entries_data_83` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (58, 88, '/assets/portfolio/qwa-crest_logo_thb_off.gif', 1232, 'image/gif', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T10:32:34-08:00\";s:5:\"width\";i:53;s:6:\"height\";i:53;}');
-INSERT INTO `tbl_entries_data_83` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (59, 87, '/assets/portfolio/d1-pca_website_thb_off.jpg', 998, 'image/jpg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T10:35:00-08:00\";s:5:\"width\";i:53;s:6:\"height\";i:53;}');
-INSERT INTO `tbl_entries_data_83` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (60, 86, '/assets/portfolio/hri-riceraiser_thb_off.jpg', 1288, 'image/jpg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T10:37:16-08:00\";s:5:\"width\";i:53;s:6:\"height\";i:53;}');
-INSERT INTO `tbl_entries_data_83` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (61, 85, '/assets/portfolio/hri-riceraiser_site_thb_off.jpg', 1018, 'image/jpg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T10:40:59-08:00\";s:5:\"width\";i:53;s:6:\"height\";i:53;}');
-INSERT INTO `tbl_entries_data_83` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (62, 84, '/assets/portfolio/icr-website_thb_off.jpg', 944, 'image/jpg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T10:43:10-08:00\";s:5:\"width\";i:53;s:6:\"height\";i:53;}');
-INSERT INTO `tbl_entries_data_83` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (64, 82, '/assets/portfolio/300c-web_thb_off.jpg', 1319, 'image/jpg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T11:02:03-08:00\";s:5:\"width\";i:53;s:6:\"height\";i:53;}');
-INSERT INTO `tbl_entries_data_83` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (70, 79, '/assets/portfolio/idop-web_thb_off.jpg', 1278, 'image/jpg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T11:25:20-08:00\";s:5:\"width\";i:53;s:6:\"height\";i:53;}');
-INSERT INTO `tbl_entries_data_83` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (73, 78, '/assets/portfolio/cni-logo_thb_off.gif', 846, 'image/gif', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T11:31:30-08:00\";s:5:\"width\";i:53;s:6:\"height\";i:53;}');
-INSERT INTO `tbl_entries_data_83` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (74, 77, '/assets/portfolio/wos-calendar_thb_off.jpg', 886, 'image/jpg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T11:35:19-08:00\";s:5:\"width\";i:53;s:6:\"height\";i:53;}');
-INSERT INTO `tbl_entries_data_83` (`id`, `entry_id`, `file`, `size`, `mimetype`, `meta`) VALUES (83, 69, '/assets/portfolio/hmk-web_thb_off.jpg', 1324, 'image/jpeg', 'a:3:{s:8:\"creation\";s:25:\"2010-02-14T20:51:30-08:00\";s:5:\"width\";i:53;s:6:\"height\";i:53;}');
 
 -- *** STRUCTURE: `tbl_entries_data_84` ***
 DROP TABLE IF EXISTS `tbl_entries_data_84`;
@@ -3078,28 +2622,28 @@ CREATE TABLE `tbl_entries_data_84` (
   PRIMARY KEY (`id`),
   KEY `entry_id` (`entry_id`),
   KEY `relation_id` (`relation_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=58 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=77 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_84` ***
 INSERT INTO `tbl_entries_data_84` (`id`, `entry_id`, `relation_id`) VALUES (3, 11, 15);
-INSERT INTO `tbl_entries_data_84` (`id`, `entry_id`, `relation_id`) VALUES (47, 21, 19);
-INSERT INTO `tbl_entries_data_84` (`id`, `entry_id`, `relation_id`) VALUES (57, 22, 23);
-INSERT INTO `tbl_entries_data_84` (`id`, `entry_id`, `relation_id`) VALUES (56, 27, 25);
-INSERT INTO `tbl_entries_data_84` (`id`, `entry_id`, `relation_id`) VALUES (13, 30, 28);
-INSERT INTO `tbl_entries_data_84` (`id`, `entry_id`, `relation_id`) VALUES (29, 33, 16);
-INSERT INTO `tbl_entries_data_84` (`id`, `entry_id`, `relation_id`) VALUES (27, 36, 34);
-INSERT INTO `tbl_entries_data_84` (`id`, `entry_id`, `relation_id`) VALUES (28, 43, 37);
-INSERT INTO `tbl_entries_data_84` (`id`, `entry_id`, `relation_id`) VALUES (31, 44, 39);
-INSERT INTO `tbl_entries_data_84` (`id`, `entry_id`, `relation_id`) VALUES (34, 45, 41);
-INSERT INTO `tbl_entries_data_84` (`id`, `entry_id`, `relation_id`) VALUES (30, 53, 17);
-INSERT INTO `tbl_entries_data_84` (`id`, `entry_id`, `relation_id`) VALUES (35, 54, 46);
-INSERT INTO `tbl_entries_data_84` (`id`, `entry_id`, `relation_id`) VALUES (36, 55, 47);
-INSERT INTO `tbl_entries_data_84` (`id`, `entry_id`, `relation_id`) VALUES (37, 56, 48);
-INSERT INTO `tbl_entries_data_84` (`id`, `entry_id`, `relation_id`) VALUES (50, 57, 49);
-INSERT INTO `tbl_entries_data_84` (`id`, `entry_id`, `relation_id`) VALUES (39, 58, 18);
-INSERT INTO `tbl_entries_data_84` (`id`, `entry_id`, `relation_id`) VALUES (42, 59, 50);
-INSERT INTO `tbl_entries_data_84` (`id`, `entry_id`, `relation_id`) VALUES (45, 60, 51);
-INSERT INTO `tbl_entries_data_84` (`id`, `entry_id`, `relation_id`) VALUES (53, 61, 52);
+INSERT INTO `tbl_entries_data_84` (`id`, `entry_id`, `relation_id`) VALUES (75, 21, NULL);
+INSERT INTO `tbl_entries_data_84` (`id`, `entry_id`, `relation_id`) VALUES (62, 22, NULL);
+INSERT INTO `tbl_entries_data_84` (`id`, `entry_id`, `relation_id`) VALUES (74, 27, NULL);
+INSERT INTO `tbl_entries_data_84` (`id`, `entry_id`, `relation_id`) VALUES (73, 30, NULL);
+INSERT INTO `tbl_entries_data_84` (`id`, `entry_id`, `relation_id`) VALUES (72, 33, NULL);
+INSERT INTO `tbl_entries_data_84` (`id`, `entry_id`, `relation_id`) VALUES (71, 36, NULL);
+INSERT INTO `tbl_entries_data_84` (`id`, `entry_id`, `relation_id`) VALUES (70, 43, NULL);
+INSERT INTO `tbl_entries_data_84` (`id`, `entry_id`, `relation_id`) VALUES (69, 44, NULL);
+INSERT INTO `tbl_entries_data_84` (`id`, `entry_id`, `relation_id`) VALUES (76, 45, NULL);
+INSERT INTO `tbl_entries_data_84` (`id`, `entry_id`, `relation_id`) VALUES (68, 53, NULL);
+INSERT INTO `tbl_entries_data_84` (`id`, `entry_id`, `relation_id`) VALUES (67, 54, NULL);
+INSERT INTO `tbl_entries_data_84` (`id`, `entry_id`, `relation_id`) VALUES (66, 55, NULL);
+INSERT INTO `tbl_entries_data_84` (`id`, `entry_id`, `relation_id`) VALUES (65, 56, NULL);
+INSERT INTO `tbl_entries_data_84` (`id`, `entry_id`, `relation_id`) VALUES (64, 57, NULL);
+INSERT INTO `tbl_entries_data_84` (`id`, `entry_id`, `relation_id`) VALUES (63, 58, NULL);
+INSERT INTO `tbl_entries_data_84` (`id`, `entry_id`, `relation_id`) VALUES (61, 59, NULL);
+INSERT INTO `tbl_entries_data_84` (`id`, `entry_id`, `relation_id`) VALUES (60, 60, NULL);
+INSERT INTO `tbl_entries_data_84` (`id`, `entry_id`, `relation_id`) VALUES (59, 61, NULL);
 INSERT INTO `tbl_entries_data_84` (`id`, `entry_id`, `relation_id`) VALUES (51, 31, NULL);
 
 -- *** STRUCTURE: `tbl_entries_data_85` ***
@@ -3136,29 +2680,29 @@ CREATE TABLE `tbl_entries_data_9` (
   PRIMARY KEY (`id`),
   KEY `entry_id` (`entry_id`),
   KEY `value` (`value`)
-) ENGINE=MyISAM AUTO_INCREMENT=69 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=88 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_9` ***
 INSERT INTO `tbl_entries_data_9` (`id`, `entry_id`, `value`) VALUES (6, 11, 1);
-INSERT INTO `tbl_entries_data_9` (`id`, `entry_id`, `value`) VALUES (54, 21, 2);
-INSERT INTO `tbl_entries_data_9` (`id`, `entry_id`, `value`) VALUES (68, 22, 3);
-INSERT INTO `tbl_entries_data_9` (`id`, `entry_id`, `value`) VALUES (67, 27, 4);
-INSERT INTO `tbl_entries_data_9` (`id`, `entry_id`, `value`) VALUES (17, 30, 5);
+INSERT INTO `tbl_entries_data_9` (`id`, `entry_id`, `value`) VALUES (86, 21, 2);
+INSERT INTO `tbl_entries_data_9` (`id`, `entry_id`, `value`) VALUES (73, 22, 3);
+INSERT INTO `tbl_entries_data_9` (`id`, `entry_id`, `value`) VALUES (85, 27, 4);
+INSERT INTO `tbl_entries_data_9` (`id`, `entry_id`, `value`) VALUES (84, 30, 5);
 INSERT INTO `tbl_entries_data_9` (`id`, `entry_id`, `value`) VALUES (62, 31, 6);
-INSERT INTO `tbl_entries_data_9` (`id`, `entry_id`, `value`) VALUES (36, 33, 7);
-INSERT INTO `tbl_entries_data_9` (`id`, `entry_id`, `value`) VALUES (33, 36, 8);
-INSERT INTO `tbl_entries_data_9` (`id`, `entry_id`, `value`) VALUES (34, 43, 9);
-INSERT INTO `tbl_entries_data_9` (`id`, `entry_id`, `value`) VALUES (38, 44, 10);
-INSERT INTO `tbl_entries_data_9` (`id`, `entry_id`, `value`) VALUES (41, 45, 11);
-INSERT INTO `tbl_entries_data_9` (`id`, `entry_id`, `value`) VALUES (37, 53, 12);
-INSERT INTO `tbl_entries_data_9` (`id`, `entry_id`, `value`) VALUES (42, 54, 13);
-INSERT INTO `tbl_entries_data_9` (`id`, `entry_id`, `value`) VALUES (43, 55, 14);
-INSERT INTO `tbl_entries_data_9` (`id`, `entry_id`, `value`) VALUES (44, 56, 15);
-INSERT INTO `tbl_entries_data_9` (`id`, `entry_id`, `value`) VALUES (60, 57, 16);
-INSERT INTO `tbl_entries_data_9` (`id`, `entry_id`, `value`) VALUES (46, 58, 17);
-INSERT INTO `tbl_entries_data_9` (`id`, `entry_id`, `value`) VALUES (49, 59, 18);
-INSERT INTO `tbl_entries_data_9` (`id`, `entry_id`, `value`) VALUES (52, 60, 19);
-INSERT INTO `tbl_entries_data_9` (`id`, `entry_id`, `value`) VALUES (64, 61, 20);
+INSERT INTO `tbl_entries_data_9` (`id`, `entry_id`, `value`) VALUES (83, 33, 7);
+INSERT INTO `tbl_entries_data_9` (`id`, `entry_id`, `value`) VALUES (82, 36, 8);
+INSERT INTO `tbl_entries_data_9` (`id`, `entry_id`, `value`) VALUES (81, 43, 9);
+INSERT INTO `tbl_entries_data_9` (`id`, `entry_id`, `value`) VALUES (80, 44, 10);
+INSERT INTO `tbl_entries_data_9` (`id`, `entry_id`, `value`) VALUES (87, 45, 11);
+INSERT INTO `tbl_entries_data_9` (`id`, `entry_id`, `value`) VALUES (79, 53, 12);
+INSERT INTO `tbl_entries_data_9` (`id`, `entry_id`, `value`) VALUES (78, 54, 13);
+INSERT INTO `tbl_entries_data_9` (`id`, `entry_id`, `value`) VALUES (77, 55, 14);
+INSERT INTO `tbl_entries_data_9` (`id`, `entry_id`, `value`) VALUES (76, 56, 15);
+INSERT INTO `tbl_entries_data_9` (`id`, `entry_id`, `value`) VALUES (75, 57, 16);
+INSERT INTO `tbl_entries_data_9` (`id`, `entry_id`, `value`) VALUES (74, 58, 17);
+INSERT INTO `tbl_entries_data_9` (`id`, `entry_id`, `value`) VALUES (72, 59, 18);
+INSERT INTO `tbl_entries_data_9` (`id`, `entry_id`, `value`) VALUES (71, 60, 19);
+INSERT INTO `tbl_entries_data_9` (`id`, `entry_id`, `value`) VALUES (70, 61, 20);
 
 -- *** DATA: `tbl_entries` ***
 INSERT INTO `tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`) VALUES (1, 1, 1, '2009-07-06 06:23:57', '2009-07-06 13:23:57');
@@ -3226,35 +2770,6 @@ INSERT INTO `tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `cr
 INSERT INTO `tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`) VALUES (64, 6, 1, '2009-07-21 16:49:19', '2009-07-21 23:49:19');
 INSERT INTO `tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`) VALUES (65, 6, 1, '2009-07-21 16:49:31', '2009-07-21 23:49:31');
 INSERT INTO `tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`) VALUES (66, 6, 1, '2009-07-21 16:50:31', '2009-07-21 23:50:31');
-INSERT INTO `tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`) VALUES (67, 12, 1, '2009-07-21 22:10:11', '2009-07-22 05:10:11');
-INSERT INTO `tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`) VALUES (68, 12, 1, '2009-07-21 22:33:46', '2009-07-22 05:33:46');
-INSERT INTO `tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`) VALUES (69, 12, 0, '2009-07-23 12:14:54', '2009-07-23 19:14:54');
-INSERT INTO `tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`) VALUES (70, 12, 0, '2009-07-23 12:17:26', '2009-07-23 19:17:26');
-INSERT INTO `tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`) VALUES (71, 12, 0, '2009-07-23 12:23:34', '2009-07-23 19:23:34');
-INSERT INTO `tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`) VALUES (72, 12, 0, '2009-07-23 12:32:23', '2009-07-23 19:32:23');
-INSERT INTO `tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`) VALUES (73, 12, 0, '2009-07-23 12:43:00', '2009-07-23 19:43:00');
-INSERT INTO `tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`) VALUES (74, 12, 0, '2009-07-23 12:43:08', '2009-07-23 19:43:08');
-INSERT INTO `tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`) VALUES (75, 12, 0, '2009-07-23 12:43:37', '2009-07-23 19:43:37');
-INSERT INTO `tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`) VALUES (76, 12, 0, '2009-07-23 12:43:45', '2009-07-23 19:43:45');
-INSERT INTO `tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`) VALUES (77, 12, 0, '2009-07-23 12:43:52', '2009-07-23 19:43:52');
-INSERT INTO `tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`) VALUES (78, 12, 0, '2009-07-23 12:43:57', '2009-07-23 19:43:57');
-INSERT INTO `tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`) VALUES (79, 12, 0, '2009-07-23 12:44:02', '2009-07-23 19:44:02');
-INSERT INTO `tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`) VALUES (80, 12, 0, '2009-07-23 12:44:06', '2009-07-23 19:44:06');
-INSERT INTO `tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`) VALUES (81, 12, 0, '2009-07-23 12:44:12', '2009-07-23 19:44:12');
-INSERT INTO `tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`) VALUES (82, 12, 0, '2009-07-23 12:44:50', '2009-07-23 19:44:50');
-INSERT INTO `tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`) VALUES (83, 12, 0, '2009-07-23 12:44:58', '2009-07-23 19:44:58');
-INSERT INTO `tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`) VALUES (84, 12, 0, '2009-07-23 12:45:06', '2009-07-23 19:45:06');
-INSERT INTO `tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`) VALUES (85, 12, 0, '2009-07-23 12:45:11', '2009-07-23 19:45:11');
-INSERT INTO `tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`) VALUES (86, 12, 0, '2009-07-23 12:45:16', '2009-07-23 19:45:16');
-INSERT INTO `tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`) VALUES (87, 12, 0, '2009-07-23 12:45:21', '2009-07-23 19:45:21');
-INSERT INTO `tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`) VALUES (88, 12, 0, '2009-07-23 12:45:27', '2009-07-23 19:45:27');
-INSERT INTO `tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`) VALUES (89, 12, 0, '2009-07-23 12:45:33', '2009-07-23 19:45:33');
-INSERT INTO `tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`) VALUES (90, 12, 0, '2009-07-23 12:45:41', '2009-07-23 19:45:41');
-INSERT INTO `tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`) VALUES (91, 12, 0, '2009-07-23 12:45:47', '2009-07-23 19:45:47');
-INSERT INTO `tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`) VALUES (92, 12, 0, '2009-07-23 12:45:53', '2009-07-23 19:45:53');
-INSERT INTO `tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`) VALUES (93, 12, 0, '2009-07-23 12:45:58', '2009-07-23 19:45:58');
-INSERT INTO `tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`) VALUES (94, 12, 0, '2009-07-23 12:46:07', '2009-07-23 19:46:07');
-INSERT INTO `tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`) VALUES (95, 12, 0, '2009-07-23 12:46:13', '2009-07-23 19:46:13');
 INSERT INTO `tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`) VALUES (96, 11, 1, '2010-02-16 22:40:14', '2010-02-17 06:40:14');
 INSERT INTO `tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`) VALUES (97, 11, 1, '2010-02-16 22:41:33', '2010-02-17 06:41:33');
 INSERT INTO `tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`) VALUES (98, 11, 1, '2010-02-16 22:42:27', '2010-02-17 06:42:27');
@@ -3379,15 +2894,14 @@ INSERT INTO `tbl_extensions` (`id`, `name`, `status`, `version`) VALUES (35, 'co
 INSERT INTO `tbl_extensions` (`id`, `name`, `status`, `version`) VALUES (4, 'entity_diagram', 'enabled', 1.3);
 INSERT INTO `tbl_extensions` (`id`, `name`, `status`, `version`) VALUES (37, 'export_ensemble', 'enabled', 1.11);
 INSERT INTO `tbl_extensions` (`id`, `name`, `status`, `version`) VALUES (6, 'enhancedtaglist', 'enabled', 1.2);
-INSERT INTO `tbl_extensions` (`id`, `name`, `status`, `version`) VALUES (7, 'numberfield', 'enabled', 1.4);
 INSERT INTO `tbl_extensions` (`id`, `name`, `status`, `version`) VALUES (8, 'pagesfield', 'enabled', 1.2);
 INSERT INTO `tbl_extensions` (`id`, `name`, `status`, `version`) VALUES (53, 'referencelink', 'enabled', '1.3.2');
 INSERT INTO `tbl_extensions` (`id`, `name`, `status`, `version`) VALUES (38, 'reflectionfield', 'enabled', '1.0.8');
 INSERT INTO `tbl_extensions` (`id`, `name`, `status`, `version`) VALUES (39, 'selectbox_link_field', 'enabled', 1.18);
 INSERT INTO `tbl_extensions` (`id`, `name`, `status`, `version`) VALUES (36, 'debugdevkit', 'enabled', '1.0.5');
-INSERT INTO `tbl_extensions` (`id`, `name`, `status`, `version`) VALUES (40, 'jit_image_manipulation', 'enabled', 1.07);
+INSERT INTO `tbl_extensions` (`id`, `name`, `status`, `version`) VALUES (58, 'jit_image_manipulation', 'enabled', 1.08);
 INSERT INTO `tbl_extensions` (`id`, `name`, `status`, `version`) VALUES (42, 'maintenance_mode', 'enabled', 1.2);
-INSERT INTO `tbl_extensions` (`id`, `name`, `status`, `version`) VALUES (43, 'markdown', 'enabled', 1.9);
+INSERT INTO `tbl_extensions` (`id`, `name`, `status`, `version`) VALUES (59, 'markdown', 'enabled', 1.10);
 INSERT INTO `tbl_extensions` (`id`, `name`, `status`, `version`) VALUES (44, 'order_entries', 'enabled', 1.8);
 INSERT INTO `tbl_extensions` (`id`, `name`, `status`, `version`) VALUES (45, 'profiledevkit', 'enabled', '1.0.1');
 INSERT INTO `tbl_extensions` (`id`, `name`, `status`, `version`) VALUES (41, 'logsdevkit', 'enabled', '1.0.2');
@@ -3403,7 +2917,6 @@ INSERT INTO `tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`
 INSERT INTO `tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (51, 38, '/publish/edit/', 'EntryPostEdit', 'compileBackendFields');
 INSERT INTO `tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (50, 38, '/publish/new/', 'EntryPostCreate', 'compileBackendFields');
 INSERT INTO `tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (49, 37, '/system/preferences/', 'AddCustomPreferenceFieldsets', 'appendPreferences');
-INSERT INTO `tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (53, 40, '/system/preferences/', 'AddCustomPreferenceFieldsets', 'appendPreferences');
 INSERT INTO `tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (61, 42, '/frontend/', 'FrontendParamsResolve', '__addParam');
 INSERT INTO `tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (60, 42, '/frontend/', 'FrontendPrePageResolve', '__checkForMaintenanceMode');
 INSERT INTO `tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (59, 42, '/system/preferences/', 'CustomActions', '__toggleMaintenanceMode');
@@ -3418,9 +2931,10 @@ INSERT INTO `tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`
 INSERT INTO `tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (56, 41, '/frontend/', 'ManipulateDevKitNavigation', 'manipulateDevKitNavigation');
 INSERT INTO `tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (55, 41, '/frontend/', 'FrontendDevKitResolve', 'frontendDevKitResolve');
 INSERT INTO `tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (44, 34, '/frontend/', 'FrontendDevKitResolve', 'frontendDevKitResolve');
-INSERT INTO `tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (54, 40, '/system/preferences/', 'Save', '__SavePreferences');
+INSERT INTO `tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (78, 58, '/system/preferences/', 'AddCustomPreferenceFieldsets', 'appendPreferences');
 INSERT INTO `tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (62, 42, '/backend/', 'AppendPageAlert', '__appendAlert');
 INSERT INTO `tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (77, 56, '/backend/', 'InitaliseAdminPageHead', 'initaliseAdminPageHead');
+INSERT INTO `tbl_extensions_delegates` (`id`, `extension_id`, `page`, `delegate`, `callback`) VALUES (79, 58, '/system/preferences/', 'Save', '__SavePreferences');
 
 -- *** DATA: `tbl_fields` ***
 INSERT INTO `tbl_fields` (`id`, `label`, `element_name`, `type`, `parent_section`, `required`, `sortorder`, `location`, `show_column`) VALUES (1, 'Navigation', 'navigation', 'input', 1, 'yes', 0, 'main', 'yes');
